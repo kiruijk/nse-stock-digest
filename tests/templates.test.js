@@ -69,3 +69,13 @@ test('renderKeyRatios explains missing values and flags risks', () => {
   assert.strictEqual(isThinlyTraded({ avgDailyTurnover: 5e6 }), false);
   assert.strictEqual(isThinlyTraded({ avgDailyTurnover: null }), false);
 });
+
+test('suspended stocks come last on sector pages and in the static homepage list', () => {
+  const { renderStaticStocks } = require('../templates/home');
+  const big = { ...stock, symbol: 'BIG', marketCap: 9e12, suspended: true, changePercent: 9 };
+  const html = renderSector('Telecommunication', null, [big, stock], { sectors: ['Telecommunication'], site: SITE });
+  assert.ok(html.indexOf('stocks/scom.html') < html.indexOf('stocks/big.html'));
+  const list = renderStaticStocks([big, stock]);
+  assert.ok(list.indexOf('SCOM') < list.indexOf('BIG'));
+  assert.match(list, /BIG — .*\(suspended\)/);
+});

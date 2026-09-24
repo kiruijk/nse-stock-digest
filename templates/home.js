@@ -32,9 +32,10 @@ function renderMarketStrip(market, stocks) {
 
 // Stocks by 1-day change, as a plain list of links
 function renderStaticStocks(stocks) {
-  const ranked = [...stocks].sort((a, b) => (b.changePercent ?? -Infinity) - (a.changePercent ?? -Infinity));
+  // Suspended counters last; they can't be traded
+  const ranked = [...stocks].sort((a, b) => (Boolean(a.suspended) - Boolean(b.suspended)) || (b.changePercent ?? -Infinity) - (a.changePercent ?? -Infinity));
   return `<ol class="static-list">
-${ranked.map(s => `          <li><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol} — ${escapeHtml(s.name)}</a> KES ${formatPrice(s.price)} (${formatPct(s.changePercent)} today)</li>`).join('\n')}
+${ranked.map(s => `          <li><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol} — ${escapeHtml(s.name)}</a> KES ${formatPrice(s.price)} ${s.suspended ? '(suspended)' : `(${formatPct(s.changePercent)} today)`}</li>`).join('\n')}
         </ol>`;
 }
 

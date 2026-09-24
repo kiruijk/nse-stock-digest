@@ -32,7 +32,8 @@ function renderSector(sector, content, stocks, opts = {}) {
   const plain = (s) => String(s || '').replace(/<[^>]+>/g, '');
   const description = plain(content?.summary) ||
     `${sector} stocks on the Nairobi Securities Exchange: share prices, returns, P/E ratios, dividend yields and news.`;
-  const byCap = [...stocks].sort((a, b) => (b.marketCap ?? -1) - (a.marketCap ?? -1));
+  // Suspended counters last; they can't be traded
+  const byCap = [...stocks].sort((a, b) => (Boolean(a.suspended) - Boolean(b.suspended)) || (b.marketCap ?? -1) - (a.marketCap ?? -1));
   const stats = sectorStats(stocks);
 
   const background = content

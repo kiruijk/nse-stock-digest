@@ -188,6 +188,19 @@
       color: #b45309;
     }
 
+    .group-label {
+      grid-column: 1 / -1;
+      margin-top: 0.75rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+
+    .stock-card.suspended,
+    .screener tr.suspended-row td:not(.pin) {
+      opacity: 0.6;
+    }
+
     .theme-count {
       opacity: 0.6;
       font-weight: 500;
@@ -1130,18 +1143,18 @@
           <li><a href="stocks/skl.html">SKL — Shri Krishana Overseas Ltd</a> KES 16.75 (-3.46% today)</li>
           <li><a href="stocks/smer.html">SMER — Sameer Africa Plc</a> KES 16.20 (-4.14% today)</li>
           <li><a href="stocks/alp.html">ALP — ALP Real Estate Investment Trust</a> KES 1.02 (— today)</li>
-          <li><a href="stocks/arm.html">ARM — ARM Cement Ltd</a> KES 5.50 (— today)</li>
-          <li><a href="stocks/bamb.html">BAMB — Bamburi Cement Ltd</a> KES 54.00 (— today)</li>
-          <li><a href="stocks/cabl.html">CABL — East African Cables</a> KES 1.71 (— today)</li>
-          <li><a href="stocks/dcon.html">DCON — Deacons East Africa</a> KES 0.45 (— today)</li>
           <li><a href="stocks/hbe.html">HBE — Homeboyz Entertainment</a> KES 4.66 (— today)</li>
           <li><a href="stocks/kplc-p4.html">KPLC-P4 — Kenya Power 4% Preference Shares</a> KES 5.26 (— today)</li>
           <li><a href="stocks/kplc-p7.html">KPLC-P7 — Kenya Power 7% Preference Shares</a> KES 6.00 (— today)</li>
           <li><a href="stocks/kurv.html">KURV — Kurwitu Ventures Ltd</a> KES 1,355.00 (— today)</li>
           <li><a href="stocks/lapr.html">LAPR — Laptrust Imara Income-REIT</a> KES 20.00 (— today)</li>
-          <li><a href="stocks/msc.html">MSC — Mumias Sugar Company Ltd</a> KES 0.28 (— today)</li>
-          <li><a href="stocks/tcl.html">TCL — TransCentury Plc</a> KES 1.12 (— today)</li>
           <li><a href="stocks/trfc.html">TRFC — TRIFIC Green USD I-REIT</a> KES 1.23 (— today)</li>
+          <li><a href="stocks/arm.html">ARM — ARM Cement Ltd</a> KES 5.50 (suspended)</li>
+          <li><a href="stocks/bamb.html">BAMB — Bamburi Cement Ltd</a> KES 54.00 (suspended)</li>
+          <li><a href="stocks/cabl.html">CABL — East African Cables</a> KES 1.71 (suspended)</li>
+          <li><a href="stocks/dcon.html">DCON — Deacons East Africa</a> KES 0.45 (suspended)</li>
+          <li><a href="stocks/msc.html">MSC — Mumias Sugar Company Ltd</a> KES 0.28 (suspended)</li>
+          <li><a href="stocks/tcl.html">TCL — TransCentury Plc</a> KES 1.12 (suspended)</li>
         </ol><!-- /STATIC_STOCKS --></div>
       </section>
 
@@ -3911,28 +3924,31 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 2.41,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 2.63,
+          "oneMonth": -0.43,
+          "sixMonth": -7.33,
+          "ytd": -6.87,
+          "oneYear": -11.28,
+          "threeYear": 148.94,
+          "fiveYear": 14.99,
           "tenYear": null,
-          "pe": null,
+          "pe": 7.98,
           "pb": null,
           "roe": null,
-          "payoutRatio": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
-          "avgDailyTurnover": null,
-          "liquidityRank": null,
-          "volatility1y": null,
-          "maxDrawdown5y": null,
-          "maxDrawdownSince": null,
+          "payoutRatio": 42.65,
+          "dividendYield": 5.34,
+          "marketCap": 5016960000,
+          "range52w": {
+            "low": 8.32,
+            "high": 11
+          },
+          "fromHigh52w": -14.91,
+          "fromLow52w": 12.5,
+          "avgDailyTurnover": 224582,
+          "liquidityRank": 38,
+          "volatility1y": 28.26,
+          "maxDrawdown5y": -57.62,
+          "maxDrawdownSince": "2021-09-24",
           "news": [
             {
               "title": "Liberty Holdings profit falls on lower investment income",
@@ -3953,7 +3969,15 @@
               "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZ3puWjhpNHRBak41Q3Vwb09HWlFSbFRrVEYzLU5famR1U3k4RzVubnN4cnR0enRzUnFTVlMyczd2bHhEZGFNYmlpbHlGcFFNXzBmcEhtTVpWWC1Pb1hucjBvVXh2Rkd6VElyZzhmVjM0MS0xUkpIaTA3bTZzVm9GQ296clNxSEtDRjl5ZGp2U0hWOGs?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [9.12,9.18,9.36,9.14,9.36,9.36],
+            "oneMonth": [9.4,9.66,9.6,9.5,9.36,9.42,9.26,9.3,9.22,9.52,9.26,9.22,9.22,9.38,9.52,9.38,9.4,9.24,9.12,9.18,9.36,9.14,9.36,9.36],
+            "sixMonth": [10.1,9.98,9.7,9.98,9.98,9.96,9.54,9.96,9.8,9.58,9.84,9.78,9.86,10,9.9,10,9.88,9.74,9.12,9.42,9,8.32,9.02,9.08,8.82,9.28,9.28,9.16,9.78,9.46,9.62,9.32,9.18,9.5,9.26,9.52,9.22,9.4,9.18,9.36,9.36],
+            "ytd": [10.05,10.2,10.2,9.7,9.84,9.62,9.98,10,10.15,10.4,10.05,10.1,10.1,10.05,10,9.98,9.78,9.96,9.84,9.84,9.64,10,9.7,9.96,9.38,8.98,9,9.1,9.08,8.9,9.28,9.34,9.36,9.5,9.18,9.5,9.22,9.38,9.24,9.36,9.36],
+            "oneYear": [10.55,10.95,11,10.65,10.35,10.45,10.4,10.25,10.2,9.5,10.1,10.15,10.3,10,9.7,9.98,10.15,10.2,10.1,10.1,9.7,9.88,9.78,9.86,9.78,9.64,9.68,9.9,9.38,9.12,9.1,9.06,9.18,9.34,9.46,9.16,9.5,9.52,9.4,9.36,9.36],
+            "threeYear": [4,4,3.85,3.65,5.02,5.5,5.44,5.44,5.36,5.8,5.32,4.93,5.32,5.46,7.54,6.88,6.42,7.2,7.98,7.6,11.7,11.45,10.85,9.92,10.9,10.95,10.5,10.9,10.4,9.52,10.3,9.98,10.1,9.88,9.78,9.9,9.1,9.34,9.5,9.36,9.36],
+            "fiveYear": [8.14,7.38,7.4,7,6,5.28,5.4,6.78,5.6,4.98,4.59,4.98,4.03,4,4.15,4,3.79,3.56,5.02,5.04,4.99,5.8,5.6,5.58,6.88,6.9,7.38,7.6,11.7,9.5,10.9,11,10.35,9.52,9.7,10.1,9.78,9.08,9.46,9.36,9.36]
+          }
         },
         "LIMT": {
           "symbol": "LIMT",
@@ -3966,28 +3990,31 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": -4.67,
+          "oneMonth": -2.86,
+          "sixMonth": 2,
+          "ytd": 10.87,
+          "oneYear": 36.09,
+          "threeYear": 34.21,
+          "fiveYear": 59.38,
           "tenYear": null,
           "pe": null,
           "pb": null,
           "roe": null,
           "payoutRatio": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
-          "avgDailyTurnover": null,
-          "liquidityRank": null,
-          "volatility1y": null,
-          "maxDrawdown5y": null,
-          "maxDrawdownSince": null,
+          "marketCap": 1224000000,
+          "range52w": {
+            "low": 339.5,
+            "high": 550
+          },
+          "fromHigh52w": -7.27,
+          "fromLow52w": 50.22,
+          "avgDailyTurnover": 21676,
+          "liquidityRank": 59,
+          "volatility1y": 39.65,
+          "maxDrawdown5y": -42.16,
+          "maxDrawdownSince": "2021-09-24",
           "news": [
             {
               "title": "Limuru Tea stock holds steady as investors await fresh financial updates",
@@ -4008,7 +4035,15 @@
               "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV1k5dzJSMEV4ZmlzZzJwbnczY1Bxd3lybmlYM2Fya0o3YXBKZjhWQTdHSG4wdWZPOUdrdVZXc3hOVzV5T1o4WHN4MEtpVk1PRm5iNGVjLUg1SG5HaHNpLUhmdVBuQ09KV0xhaENKaElqbVRXYUR4T1VIUjNFZ0xxa3lDTFhuS0tqX3JPNkc2b1JqUnM?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [535,535,510,510,510,510],
+            "oneMonth": [525,525,525,525,525,490,491.75,491.75,525,525,525,525,525,525,525,525,535,535,535,535,510,510,510,510],
+            "sixMonth": [500,514,514,514,511,519,510,510,510,510,480,480,482.5,482.5,484.75,446.75,446.75,449,449,493.75,538,538,538,538,538,538,538,538,525,525,525,525,525,525,491.75,525,525,535,535,510,510],
+            "ytd": [460,460,460,460,460,460,446,508,517,550,512,511,500,514,514,511,510,510,510,480,482.5,482.5,484.75,446.75,449,490,538,538,538,538,538,538,525,525,525,525,525,525,535,510,510],
+            "oneYear": [374.75,380,380,375,385,423.5,465.75,460,460,460,460,460,460,460,445.25,524,531,542,511,500,514,514,510,510,507,482.5,482.5,446.75,449,538,538,538,538,538,525,525,525,525,535,510,510],
+            "threeYear": [380,380,380,380,380,380,380,380,380,380,380,379.75,365,365,365,365,350,314,299,320,320,320,320,310,310,310.25,374.75,376.75,423.5,460,460,524,511,514,507,446.75,538,538,525,510,510],
+            "fiveYear": [320,300,320,320,320,320,320,500,420,420,420,400,400,420,410,430,380,380,380,380,380,380,380,365,365,350,314,320,320,320,310,310,385,460,445.25,500,507,538,525,510,510]
+          }
         },
         "LKL": {
           "symbol": "LKL",
@@ -5630,12 +5665,12 @@
       if (!tableSort) return rankBy(stocks, period.field);
       const key = TABLE_SORTS[tableSort.key];
       const dir = tableSort.dir;
-      return Object.values(stocks).sort((a, b) => {
+      return suspendedLast(Object.values(stocks).sort((a, b) => {
         const av = key(a), bv = key(b);
         if (av == null) return 1;
         if (bv == null) return -1;
         return dir === 'asc' ? av - bv : bv - av;
-      });
+      }));
     }
 
     function renderTable(sorted) {
@@ -5658,8 +5693,8 @@
           ${th('Turnover/day', 'data-sort="turnover"', sortState('turnover'))}
         </tr>`;
       const rows = sorted.map((s, i) => `
-        <tr>
-          <td class="left pin pin-rank" style="color: #9ca3af;">${i + 1}</td>
+        <tr${s.suspended ? ' class="suspended-row"' : ''}>
+          <td class="left pin pin-rank" style="color: #9ca3af;">${s.suspended ? '' : i + 1}</td>
           <td class="left pin pin-ticker"><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.stale ? ' <span class="stale-badge" title="Prices not refreshed on the latest update">!</span>' : ''}</td>
           <td class="left pin pin-name" title="${s.name}">${s.name}${s.suspended ? ' <span class="data-only-tag">Suspended</span>' : ''}</td>
           <td>${formatPrice(s.price)}</td>
@@ -5752,11 +5787,17 @@
 
     // Best performer for the selected period first; stocks with no data for it go last
     function rankBy(stocks, field) {
-      return Object.values(stocks).sort((a, b) => {
+      return suspendedLast(Object.values(stocks).sort((a, b) => {
         if (a[field] == null) return 1;
         if (b[field] == null) return -1;
         return b[field] - a[field];
-      });
+      }));
+    }
+
+    // Suspended counters can't be traded, so they sit unranked below every active stock
+    // (keeping their order within the group)
+    function suspendedLast(list) {
+      return [...list.filter(s => !s.suspended), ...list.filter(s => s.suspended)];
     }
 
     function renderPeriodPicker() {
@@ -5790,7 +5831,7 @@
       const before = cardPositions();
       renderStocks(ranked, previousRanks);
       animateReorder(before);
-      previousRanks = Object.fromEntries(ranked.map((stock, i) => [stock.symbol, i + 1]));
+      previousRanks = Object.fromEntries(ranked.filter(s => !s.suspended).map((stock, i) => [stock.symbol, i + 1]));
     }
 
     function cardPositions() {
@@ -5838,6 +5879,9 @@
 
       ranked.forEach((stock, i) => {
         const symbol = stock.symbol;
+        if (stock.suspended && (i === 0 || !ranked[i - 1].suspended)) {
+          html += '<div class="group-label">Suspended from trading <span class="column-subtitle">not ranked</span></div>';
+        }
         // Badge under the price follows the selected period. 1D uses the quote's exact
         // dollar change; longer periods back out the starting price from the % return.
         const pct = stock[period.field];
@@ -5857,7 +5901,7 @@
           : '';
         const profileUrl = `stocks/${symbol.toLowerCase()}.html`;
         // Places moved since the previous period's ranking (none on first load)
-        const moved = previousRanks && previousRanks[symbol] ? previousRanks[symbol] - (i + 1) : 0;
+        const moved = !stock.suspended && previousRanks && previousRanks[symbol] ? previousRanks[symbol] - (i + 1) : 0;
         const rankMove = moved > 0
           ? `<span class="rank-move up" title="Up ${moved} from previous view">▲${moved}</span>`
           : moved < 0
@@ -5865,10 +5909,10 @@
             : '';
 
         html += `
-      <a class="stock-card" data-symbol="${symbol}" href="${profileUrl}">
+      <a class="stock-card${stock.suspended ? ' suspended' : ''}" data-symbol="${symbol}" href="${profileUrl}">
           <div class="stock-header">
           <div>
-            <div class="stock-symbol"><span class="stock-rank">#${i + 1}</span>${stock.symbol}${staleBadge}${rankMove}</div>
+            <div class="stock-symbol">${stock.suspended ? '' : `<span class="stock-rank">#${i + 1}</span>`}${stock.symbol}${staleBadge}${rankMove}</div>
             <div class="stock-name">${stock.name}${stock.suspended ? ' <span class="data-only-tag" title="Trading suspended on the NSE; last traded price shown">Suspended</span>' : isThin(stock) ? ` <span class="data-only-tag thin-tag" title="Averages under KES 1M traded per session over 3 months; prices can be stale">Thinly traded</span>` : ''}</div>
           </div>
           ${sparkline(stock)}
