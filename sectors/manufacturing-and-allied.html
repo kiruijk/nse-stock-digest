@@ -537,6 +537,53 @@
       }
     }
 
+    /* Key stats row in the page header */
+    header {
+      flex-wrap: wrap;
+    }
+
+    .header-stats {
+      flex-basis: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      justify-content: start;
+      gap: 0.5rem 2.25rem;
+      margin-top: 1rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .header-stats dt {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      opacity: 0.75;
+    }
+
+    .header-stats dd {
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .header-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.6rem 1rem;
+        margin-top: 0.25rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .header-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .header-stats dd {
+        white-space: normal;
+      }
+    }
+
     .site-nav {
       background: #0d3b2e;
       color: white;
@@ -714,7 +761,7 @@
       <h2>Sector at a Glance</h2>
       <div class="summary-stats">
         <div class="card"><div class="card-subtitle">Listed</div><div class="card-value">8</div></div>
-        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">KES 292.6B</div></div>
+        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">KES 293.0B</div></div>
         <div class="card"><div class="card-subtitle">Median P/E</div><div class="card-value">11.3×</div></div>
         <div class="card"><div class="card-subtitle">Median Yield (payers)</div><div class="card-value">5.7%</div></div>
       </div>
@@ -777,9 +824,9 @@
             <td>Flame Tree Group Holdings</td>
             <td class="num">2.11</td>
             <td class="num" style="color: #059669">+4.98%</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
+            <td class="num" style="color: #059669">+32.70%</td>
+            <td class="num" style="color: #059669">+24.12%</td>
+            <td class="num">KES 375.6M</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>

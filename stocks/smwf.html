@@ -537,6 +537,53 @@
       }
     }
 
+    /* Key stats row in the page header */
+    header {
+      flex-wrap: wrap;
+    }
+
+    .header-stats {
+      flex-basis: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      justify-content: start;
+      gap: 0.5rem 2.25rem;
+      margin-top: 1rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .header-stats dt {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      opacity: 0.75;
+    }
+
+    .header-stats dd {
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .header-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.6rem 1rem;
+        margin-top: 0.25rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .header-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .header-stats dd {
+        white-space: normal;
+      }
+    }
+
     .site-nav {
       background: #0d3b2e;
       color: white;
@@ -711,6 +758,14 @@
       <div class="header-price-value">KES 971.00</div>
       <div class="header-price-change">+0.00%</div>
     </div>
+    <dl class="header-stats">
+      <div><dt>Market Cap</dt><dd>—</dd></div>
+      <div><dt>P/E</dt><dd>—</dd></div>
+      <div><dt>Div Yield</dt><dd>—</dd></div>
+      <div><dt>EPS</dt><dd>—</dd></div>
+      <div><dt>DPS</dt><dd>—</dd></div>
+      <div><dt>52W Range</dt><dd>—</dd></div>
+    </dl>
   </header>
 
   <div class="container">
