@@ -4,30 +4,36 @@
     "nasiChange": -0.54,
     "nasiChangePercent": -0.22,
     "nasiYtdPercent": 32.5,
-    "marketCap": 4190000000000.0005,
-    "asOf": "2026-09-23T15:13:12+00:00"
+    "marketCap": 4210000000000,
+    "asOf": "2026-09-24T12:32:13+00:00"
   },
   "stocks": {
     "ABSA": {
       "symbol": "ABSA",
       "name": "Absa Bank Kenya Plc",
       "sector": "Banking",
-      "price": 33,
-      "change": -0.05,
-      "changePercent": -0.15,
-      "volume": 213157,
+      "price": 33.1,
+      "change": 0.1,
+      "changePercent": 0.3,
+      "volume": 293656,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.15,
-      "fiveDay": 10,
-      "oneMonth": -5.58,
-      "sixMonth": 10.92,
-      "ytd": 33.6,
-      "oneYear": 62.16,
-      "threeYear": 178.48,
-      "fiveYear": 212.8,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.3,
+      "fiveDay": 10.33,
+      "oneMonth": -5.29,
+      "sixMonth": 11.26,
+      "ytd": 34.01,
+      "oneYear": 62.65,
+      "threeYear": 179.32,
+      "fiveYear": 213.74,
       "tenYear": null,
       "news": [
+        {
+          "title": "Absa Bank, UNCDF & UNDP launch financing partnership to close Kenya’s $2.1B cold storage gap",
+          "source": "HapaKenya -",
+          "date": "2026-09-24T11:13:27.000Z",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVzVnZ1hVX0IzZ25IMm0tcWlKUzRjRks5UEpaNHhjX0ZPNS1fSFQ4QmRNdjItMzJqMW9fVDFZSktKMU1tQ2VVRjJPcEZDRXhTNnJlaDhSNlphM3FmYVVndzJsU3NsbmJKZnAycGpoUnlyUE1xMnZxRzQ4alN5X3BWc3kyTkhQR0JMT1N1THhGU0pjcTVIZXhIbXpCQ0ZRTEVHN0kxZTF5VHFTNXNldXEyamN5RHdNMkp1Y1JiTXBB?oc=5"
+        },
         {
           "title": "StanChart and Absa lose grip as homegrown lenders gain",
           "source": "Business Daily",
@@ -47,14 +53,8 @@
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSEhnZGNrYVoybURLUkNQdGRiYWNpMnNjejlHeTdMd3Q3WXp5QTdHbEpqYmkycC1QMGxhUnFwd1JBd3ZlbmZyOWdORlZySWptWGVoN3ZuTG9UdnNCdXh5cXM4S19hS2VyT09tT1F6d0Mwdk1KVjNQc0pUR1ZqdFhvb0IwYzEzSWZucmpiOXhqdWpVSUI5WFZvdWhTYmM?oc=5"
         },
         {
-          "title": "Absa Kenya, Vivo Energy sign MOU to finance Shell dealers",
-          "source": "techtrendske.co.ke",
-          "date": "2026-09-17T10:54:35.000Z",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcUN1NXo3M1ZaemtHV3N6V2s5MDVaRXpRYVBEQ1hqVm04NWJBVV91TmNYanZaRE9OcElmMGFKZ3Fkam1sNlQyNk9YM08zazlZdEtJQm1nMFFmQnBsdmRmMW1mcDhyNmcwc0xicktUMjZnNWFjR1NiYmlNaTZza0llT2F5ZEQzOHlaRGpWcmh4bW5BS1dPTENUenlDUQ?oc=5"
-        },
-        {
           "title": "Absa Bank Kenya celebrates Nairobi's successful Bid to host 2029 World Athletics Championships",
-          "source": "KBC Digital",
+          "source": "kbc.co.ke",
           "date": "2026-09-16T17:08:43.000Z",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOV2NZa2FTanBsUFUtTFVYdklQbW5VOHF6aTN0d1VCWC1GVzA0dFZkMnFMWUszUlk3T3k4ZmxKeFNPNmJ2U1FXcEhaMHpCVi0zeF9xc0J2YjRWeVRTRkUxb2lKeVIxMU1GdWd4ZHhtZ18yY1BNR1JDdkRYYVJxbHpMYzRLSlVTZ3lkTXNOMGdhWG5lVXN4QmhiaXNLUXV5aWVaUGVXQXM1dGtXcjRoWXQyRUpwNDZJVjQ?oc=5"
         },
@@ -75,11 +75,11 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 2,
       "ytd": null,
       "oneYear": null,
       "threeYear": null,
@@ -87,10 +87,40 @@
       "tenYear": null,
       "news": [
         {
-          "title": "New investment to boost warehouse space and help Kenyan businesses grow",
-          "source": "GOV.UK",
-          "date": "2026-03-11T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdjdDTG1hdmdXRFFvX0prNlpZQVg0c1BELWRqbDI4WmxXcDlxclFiRUo0U1ZJUGxmamVib0JVVC00NnNRbTVoV1BuWFFPa2NzbG8xd3NfampGMURuOExyeTNRelp0V0lyNVpkQzJMMUhGOTZfQWFfNG1WbEFYeVVQYWcxNV83T1ppT0ZZRnROVDV0MHhYb2pBaU9nS28xYzVmcXo5OWpiYV92Zw?oc=5"
+          "title": "Warehouse developer gets Sh228m boost on Finance Act relief",
+          "source": "Business Daily",
+          "date": "2026-08-09T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQktxV3NuVGltXzczSVRhbHBWYW8tRV9jYlhIMEdZTmtwSlBHQlhBLWVFMHI5S1VEYWtzVFFJM3loeHVCODNXNHZqelE2em12LUVCMHlPa0x5b2lJZG5wMmpZby1aNWFuZlZhZ3IzYmhnVFIzbnJIYU1qUFlaVzl5OW1nV0NXeWlyZmgxb1FBSWwwbWl0R3ptZng5UlJNN0dfS0xld2Y5Rkl1OHpXMHhYMFBoeExaMl9KMmpER202MmtDeG1N?oc=5"
+        },
+        {
+          "title": "ALP REIT posts maiden profit, eyes fourth property acquisition after NSE debut",
+          "source": "Capital FM Africa",
+          "date": "2026-08-03T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMEhNZmozTEM5TXZzWjE0UzlCMWhVNUwyZ2xaVWFJemhNbW9rTnR2aWU5NVZLS2ZoR1VnalA5Sm5wNzhrWXNqeTFSOXBvMGhWLWZRNXgwbUlKY01kM29XeVY1eTFLTDFscERUNjJpNkRQNHg1U0pZcmV1eHNQbDU0WW05OVU5ZExsZm01ajRNYXhMNDAySjhYVDBHN2VlQ2NIZ0pWMUpn?oc=5"
+        },
+        {
+          "title": "NSE-listed dollar REIT posts first-ever profit after market debut",
+          "source": "the-star.co.ke",
+          "date": "2026-08-03T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMTdCVTJzYTY0T1hSQl9uWDNsWmFkWmlpS3k5aEVNYzh6cmM4Ykl6bm52Sk9ZUFJRcGhHUm4xLTBNSlR1NWszVWJSSjFFSnIyX1FkaTM5cHRwNnJNRmloeXUxUnZ2bG03ZGluZ1U2aDM5MUw4eW9jckQ4LThMRDhXX2psaUtab1RuYURYd0pnNkJ5YzJZQnR2NEFEZmZpRnhNRUxWNVJUMndGMndMNUoxYWRqNlVPTDZDa0E?oc=5"
+        },
+        {
+          "title": "ALP Reit Lists on NSE as First USD-Based Security",
+          "source": "Dabafinance",
+          "date": "2026-03-22T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUnB5YzhuV00wcjFTa1lOX1RwaC1TMUNFUURQWlNpeC1qaXZSQ1Y4cXdNVVNBeWMtWDZ2a2l3TnlHRnlHaHczNlFHdGVINkZZUVpIQURmbDlqY2VkVFBONDdLRW04el9JeU85ckctcDRhYmJ1UGtTRzdLaloyTl90cWRhdEgzbWE2c2NPcjNFOUw?oc=5"
+        },
+        {
+          "title": "ALP REIT lists on Nairobi exchange, raising $34.55 million",
+          "source": "Logistics Update Africa",
+          "date": "2026-03-18T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSjEyOUJDLTQ4RlBHWF9NcmhFVmI4ZWl3SWNJNkxhbHBxVnd5bkR2ZmY3amE5bWY3VEpEdGtYaGtTVFQ1UWNBMlhyVW11a2Q2a1VjWUpidVljSXZzdVdHV1BSa1RaV1RLeHQtWmszdVpaNEFQLXNGMWliMFdpcGpwSFB1cGlwTEdlMW9TVWFKUkFJT2pDYWN6X0hLMzlOaTZOVzF4dTZwOVbSAa4BQVVfeXFMT2RLdmhibVBqQkJFZS1UM013elVOd2Juc0x2cnd4Z0pqMXJoZGJ1Z1JLTWlUMGRETjRRbHFMNWVZenVMMTQzWVVFSVI1a0Zvenh6bG9Sdjg2ZjlIWU9CUllHRGVscUZzMURsRE80QktRSW5pZmpkNmJTQ09BeGFhTmdNdGlBX0E2TTZ0RmdCc0o2ZmZhQjFfMnFfLWctTWlQZ0FDcnFYdHFMSUNfQWt3?oc=5"
+        },
+        {
+          "title": "UK Govt Backs East Africa’s First Industrial REIT with KES 3.14 Billion on the NSE",
+          "source": "tech-ish.com",
+          "date": "2026-03-13T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNM3p6dGRzVk9PbnVCdHh6UmdpZzRWcTRCQ3ZRNTRKNG9DM0Z4aUFQRUpNdG9PdU55RFRDWnFQUnR2cVBBdzlvYjVtVlFYc29LZ3ZzVW1sa21kcUxibEpSN0w5QkhLMVdQY19zTHdISEhVb2doN3JRdHZvaHhvTmdlb3hOYlFZdUc4Rl9seDQ3UlZUTlpzMmxGS2dlLVdjZTVVSEJBbzhqYkJweC1ReVpKa2JJc0k?oc=5"
         }
       ]
     },
@@ -98,25 +128,25 @@
       "symbol": "AMAC",
       "name": "Africa Mega Agricorp",
       "sector": "Agricultural",
-      "price": 329.5,
-      "change": 29.5,
-      "changePercent": 9.83,
-      "volume": 1278,
+      "price": 360.75,
+      "change": 31.25,
+      "changePercent": 9.48,
+      "volume": 792,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 9.83,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 9.48,
+      "fiveDay": 6.18,
+      "oneMonth": 157.68,
+      "sixMonth": 214.38,
+      "ytd": 411.7,
+      "oneYear": 455,
+      "threeYear": 1750,
+      "fiveYear": 3368.75,
       "tenYear": null,
       "news": [
         {
           "title": "Africa Mega Agricorp Plc Makes Board, Management Changes",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-12T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBQY2xpamVrYTR6M1UyQUlaSC1tOExPNHlCVzI5MWFxQ294V3J6X0FyQmpEci05OVprVGJRYm9ZU0QzamxSOTlEbG1nZjd0RExvV2x2T3JHS0pDN2pRVHQ2bEVzNXp1X3g3R290RkxwSmdjb25JRzY0Sg?oc=5"
         },
@@ -146,7 +176,7 @@
         },
         {
           "title": "Kenya Orchards rebrands to Africa Mega Agricorp after $5.88M majority stake sale",
-          "source": "FreshPlaza",
+          "source": "freshplaza.com",
           "date": "2025-02-04T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN0pHeHNqd2M3ekRucGdkV3dYTWhyOXZHbkpEUUhwQ3NTMS1VbzFiUGFPSDhkWnV2cWxHRnBERk93eHF5OGUwaGp6SXBUUzlwY3FJUUVLRDZzc3pEZ3RjTlpLZEtZNXA1b1hPSUtZYUZaMWRSTHFsZWFqVEp2WjdENWlmTERiblN4Undmd3RvYjR3RFZqUGExWjdSa08xWEgxWDdSYXhybFY5cTRmdlZjN1B6eUpabzdZdXoxa1loZmYzWU1oZkM5WWlR?oc=5"
         }
@@ -161,20 +191,20 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
+      "fiveYear": 0,
       "tenYear": null,
       "news": [
         {
           "title": "ARM Cement Set for Final Closure Amid Ksh11.8B Debt",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-02-27T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9MZlFiUFpqdjlKc1VONTdCM2pMX1p4NXZmeW8xTzlYOW1JWDdScF9uYkJDazJfOEZ0WHhxeU1fc05jd0tNMzFJTVBwandiTmdSOU96a1hzS2IwcEhoYnNwSGpHWk9qNXBPNjVEazVB?oc=5"
         },
@@ -185,14 +215,8 @@
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYlI5WXozbzNITzJJQ0x6YXRjZFh4dkJRRlF4Ml9yY0RIMzJXUGdDbWJ0U1NMNFJJeHdpVUhfcG1iT2pZa0tmWWJyUGprVmhhbnR1Tm5zOTdxOXN3UEpyUVpqUEdfSFhvUFY3MTVMN05nS3laSzcxLVAtckxZSTVVMkpBcnRDVHJNYWFKNHhhYTRqa0dtOXZjR2dOcVdUd1hwRkQtZUJRYTZpcHhpSEluaDVMdnhaQ0ZjNkFHcTRB?oc=5"
         },
         {
-          "title": "ARM Cement to shut down after tax, debt settlements",
-          "source": "Capital FM Africa",
-          "date": "2026-02-26T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZTFmbmd5TG9LOFVYTHBfNHVRVWtsOFlTd2xCYzhLS0hITTZrWm5fbHljR1hoYXI3UndiVU10ZFdJRVVqM0xxY2dzcHZsMld1TGZFVUZGcjBaeHJ6ME1kRWNGa2pVaDMtMUVKcDZQVnowVW1DaEVjQmlsRmYyVVdPdzVn?oc=5"
-        },
-        {
           "title": "National cement to retain 1,100 ARM employees",
-          "source": "financialfortunemedia.com",
+          "source": "Financial Fortune Media",
           "date": "2026-01-01T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQakFCLVQxTDRHb0RGZU5rTy1zQjZCTWItUkVyblRIU0ZWU1lJWXdxczV5VThMeGc4SWRXeU5jalN0aXBoa3RhdzN4NkZ3enpzX3R0M1ptTkRzS3FjM3dDV2JaNDByUENmT01zMDhLVU1jN0pVbHV0TTAtOHNkSFVhLWQzN0Z6akdFNTVR?oc=5"
         },
@@ -207,6 +231,12 @@
           "source": "The Kenyan Wallstreet",
           "date": "2025-10-26T14:22:41.000Z",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1WMnNGTWl5aW9DZllUdW9ud0pNWWkxbGFZSERKd3AzYmstSEFVY3ZPTUwxeUgtb05JYldlTE1Rb2lLcmlBcHp0aUdKelpEaTRsdXlTTmhUZUhiaUx3emItWmk0Mlo3Qm5jRUI4NUhOaThVWWNJSWNMT2F6dw?oc=5"
+        },
+        {
+          "title": "Bondholders, Stanbic lose billions as ARM Cement saga ends",
+          "source": "Business Daily",
+          "date": "2024-12-03T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeXRvWVc3M0dhN3ZtZ2NqRlA2ZDdsNzE3QUxocVcxdVN6V3ozcnFHQzQ2MGdQVGtCdW1yNmE5WTQxT3JLQ2VwTEx2N3luZDJuR040YlBYTFpwRFBDaE5wVVdqeXJkZ1ZxSE83V2U2Z0lCM3Nmc3AxVE9PcFNncDUyWEp1Wk5sek8xN2FaSEJMNTdYMnRORlhZeVQtOVJlWmo0MHd3T3FZeC1pdnVmWDRybkszbm1iaTdwNlBMTTFXT250QQ?oc=5"
         }
       ]
     },
@@ -219,20 +249,20 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 115.14,
+      "fiveYear": 42.11,
       "tenYear": null,
       "news": [
         {
           "title": "Bamburi Cement stock holds as market data stays limited",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-23T02:46:07.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFBaX1VNbVdlMXR5N2VRVndiN2d0TUZlOTdpam5hNEhvR3ByRk91b0hWT0drcGJqSkd4LWZmT3pxUmZYcVlsZ3AtTUFTWlVUMTNIZ2hzbURXemZiOC1BRTR5TDI5UnBra2JNaDN0TE9FM3NCeGplMWJ5NXRJRnh3Q2xpM3RDWURBcUgycjFwUVgxd3NUMGJFbW41aFljOHRtS1ZMQXRyekZHV0RZVEE0WnQ0RWI?oc=5"
         },
@@ -245,7 +275,7 @@
         {
           "title": "Bamburi Cement owner to build 10 hospitals for Sh4.5bn",
           "source": "Capital FM Africa",
-          "date": "2026-09-14T06:38:27.000Z",
+          "date": "2026-09-14T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQkdQNXgza2lXXzd5ZU51RUFQejBFYlRScGhFTlhDMk1pRmVrX2thTldNRXZJaGxaT29EbWZfU3o5VkpGSWxfVnJhVXhGMUJrN0JHdERnaTg4WU8yTWY1cHh4Ym1NSlM1akxrWmFTcGNyRG52V2dXMjhfd0V2QTBMa3l1M1d1ZHM?oc=5"
         },
         {
@@ -256,15 +286,15 @@
         },
         {
           "title": "HOAX: This video advertising jobs at Bamburi Cement is fraudulent",
-          "source": "pesacheck.org",
+          "source": "PesaCheck",
           "date": "2026-09-10T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOODJDMU5iMEctQzZ1NnBvRUVNV1FGeUZwTFlnMmZIMWxKUTJmNUNzNUlzbjg3cGtsdC1iQU9pTU9lMERxempkZm5FRHZFZkZsRVpnS18wa3NCcVRBekFBbERZSVdCNWdCNjl0U29UamY4MDRiT0dSSi1UQV9xcDdnc1JxU2xOZEt2d3B4UnF1TlA?oc=5"
         },
         {
-          "title": "KETRACO meets Bamburi Cement to discuss Coast power supply plans",
-          "source": "Mjengo Hub",
-          "date": "2026-08-25T11:50:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbkpTcmthQlFPYTlwWmRKcnR6OGlyNkxnSkIxSS1sYnNhbThlcU5IdEw3Tm4xVG9fSGFkOXY2NGJmb2NWTnZ1M0tlek5qRnVPeXllZUhHZDlOOG1YRTgwMGhSMGRUcDFyUUdHcldfX00yOFd2RmhkbEVwXzM3SDNFLUJoWHpZSGdfVlo5R19MMEpBbnNiY295TVdRbHFzeGlNcENPMEVWYTQ1aWM?oc=5"
+          "title": "Billionaires Narendra Raval, Edha Nahdi bet $600 million on clinker as Sarbjit Rai enters cement business",
+          "source": "Billionaires.Africa",
+          "date": "2026-08-29T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTmZUWXFfRlczTG5BVlF0VG5nQ29NYVM2ckY4dXg0ZVVQOVVydzhzVTdIQ2dzQk1fVWNHNWxQOVduZXBZRHk1TnQ3YUJFRWdvOGphS3FmMDktSkhHSXJSX3pxUFE0UDNqallibzlmbkwxVnZHa0p2YV9nMHlabVpjQXNETkVWNnZTMVhVaXkwWnVwMjZrYjA0bnRZSXNKd0pSSElfamJteXcyZ0VHQ2RHVlRqMkdacWZ4eU1NZk52TXZRakhyWGk4WjNkNmZuUGU3N1ZNUGVGRl9HR00yVjMzYg?oc=5"
         }
       ]
     },
@@ -272,27 +302,33 @@
       "symbol": "BAT",
       "name": "British American Tobacco Kenya",
       "sector": "Manufacturing & Allied",
-      "price": 561,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 3011,
+      "price": 566,
+      "change": 5,
+      "changePercent": 0.89,
+      "volume": 6178,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.89,
+      "fiveDay": 3.47,
+      "oneMonth": -0.53,
+      "sixMonth": -0.53,
+      "ytd": 23.04,
+      "oneYear": 32.01,
+      "threeYear": 34.92,
+      "fiveYear": 26.91,
       "tenYear": null,
       "news": [
         {
-          "title": "Mastermind Tobacco tycoon died in 2019 and his empire collapsed",
-          "source": "Billionaires.Africa",
-          "date": "2026-09-05T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa041ZTd4bGNkSFVBdlEyWVJteFRHdGlNaVZhd0FzcmYtengwSTJWU2V3OTktQTh6TFR2cFlKekc3ZkpxZ3BQZkJvUW5zcDEzc3ZfLW55bTFlNFZHVXJodU5IQ2FUbDh6S0cyUmhGUjI5QV9LSmM5dTkxVC0yc01WOG5PcFkwdnMxaWtvS0lIbXE4WWo4U1ZSblpFMDMtMXFCZmgzZU1RTE5semtkSnk2eE1NbDhSOWR1VHJzYmV2c1hnS0ZyN0xzZ29R?oc=5"
+          "title": "Kenyan batsmen shine in Africa Cup final victory over Uganda",
+          "source": "Daily Nation",
+          "date": "2026-09-21T03:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZDVIX2s5M3J6TVF4bUJzdW9COUNLc2Z4ZXB2WWJEOElaaUkzUGpqZFVOalM4eHVSY1dVakMxVnpOeTYwQkhocjNnZFlGaGs3QURWeFVwbU1kZDJ4Vjl5TXhHc1Z4QW9naU1FSW81ZEtNSmJnR3lFYUlyeFk1elFWdHpfTEVFSllQSGtYZ0tJLTBaOG9CeF94YTlKX0FPOVI1ZGxScXcxaHkyZ3V2MVFxeU5hVzQ?oc=5"
+        },
+        {
+          "title": "BAT Kenya CEO Sidney Wafula on illicit trade, new nicotine products and tax policy",
+          "source": "Business Daily",
+          "date": "2026-08-20T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYjFjYVVUUDlzU096ZmhOaXo4VzZUY1B4STBVQkxhNVFaMUEyQ3NRVWVOQWdLMzlCQ2FRb2U4VVMtRE1HcGRvQTJqemJfbVh4VWQyb29jVVJHVXZVdlRpX0RzY1dXQ0FqNzE4d3VESXdpMUpncnRHb24tTUVFV01nTVByeUJ3MG9kZWxRSHdaaEpLdHBJbnpiVGQ3Q1BoQ3J0T0tDemxYVlNZYTdXTjVoMF85UFZWeGZMOGpoZzduVWhwS3Fvcmc?oc=5"
         },
         {
           "title": "Why BAT wants court to strike out Sh4.5 billion Velo claim",
@@ -301,28 +337,22 @@
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdzVrTldmSVZBbkZnVWRVTmVtdldqMnBSTDZRSXgtY1VBNHFSbkpzWEdrSDZDRkpfRUE0cWR5MjE0QktfclpsSjg2dXZUeHl5NE9nSFppUFU1Z3NGSl91TVc2dkJva2p0ZmpDd0VEU0lKc2hab21hTm1jUEZuV0tGWVNJZlhCalRTSXZYbHVSdUhEQ2tVTWVSVXBRNEQ0ZUFXUmZaYTVR?oc=5"
         },
         {
-          "title": "British American Tobacco Kenya Says HY Net Revenue KShs 12.3 Billion",
-          "source": "TradingView",
-          "date": "2026-07-23T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTXNhUGI1SVhDQW1BNWtFVzdXdUJPdGNFX3BYeXJQRktNRnNTNDd6ZlJURFFXSEoySE9RTHc5LWNtQUM3TjZpZWRxNHNESko3MEdKa3FyOVR0cEpTZ1hqZ3lMSDVNMVpjOV9la1JYRF9OZkU0OUdpaEY3dk1uWGI1VExFRzBtQmJ3aTRsWDMyaF9GakJwVWM1aWdTZF9MMTNyU0pfa1RrQ1c5QjVoUnUtSXZNZHF3akZnRkZud0ZES2ItRUowTURtMTRwRElIWnp1MjJMQw?oc=5"
+          "title": "BAT Kenya sounds alarm over illicit cigarettes as tax losses hit Sh12bn",
+          "source": "the-star.co.ke",
+          "date": "2026-07-25T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcjhKbzBfVTBBVDNPcGYxZ1FIczNtOGR2N1BvNVdFSGlCbW9waEpuMWNQOG9KZjQyX2x4SUFNSU9ZVTJnWU02Y2FlU0tsa2pQWS1RVUlZZjNibVFJUTFpZmlibHBnOHlOdkhBZVFIbDhuRG93Tjhpc2lFSDNpMXphQVlJWTRVWUpCZmphekFSN0l2NVVnOV9TX3pLM09xcHJxNXU1VmNqVVQtc0tOX3hGTEJCZkRrNndfeFE?oc=5"
         },
         {
-          "title": "BAT Kenya Says Proposed Laws Threaten 100K Jobs",
-          "source": "Tobacco Reporter",
-          "date": "2026-05-26T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQktpMW10ZWtrRm5Ma3dISW9KMTNOQl90TGdsSGxTZGp6eWk3aEJMSkdkUncxZEhSdWxETHEwWVU4NGd2ZXZOamd5V0RzYTlGY29WR3VRUWtKd3JXVFk0Tk43R2VzOHdQTUt5eU42OU9WTDU1RDd3U2JCNG9vZUNHcEZ4ckw3QmhDMlJpLVVua2k?oc=5"
-        },
-        {
-          "title": "BAT Kenya warns Tobacco Bill could cost government Ksh.12B annually",
+          "title": "BAT Kenya profit rises 2% to Ksh.4.4 Billion amid illicit trade pressure",
           "source": "Citizen Digital",
-          "date": "2026-05-20T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQVJMbXlGX0x0UTdXQXg2MmZLSGNOUUhZQzU3djFWWjlVMnA3LUxaMzcwY2pzR0NwY2RNNVJIZGwxQVNBSjJjZDdYVm01NURRYmQwOEh0Y0UyYmdOWVdfeXBFT2hydjFMTEZJQ1hsbWt6NG9MNnNMTmFCdEF6Q2EzOUtUZHZLM0V0Z19YSHZ1Ykt3MGUtVVYweVJBQ2Q5RjJFanBOSDJZWVZFZw?oc=5"
+          "date": "2026-07-24T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNa2NfblFpcktiMnJyZGxnZHduRkpoWWUzWUF6VEJWRi0xcmZQUnhzRUd5dl9aNXdvTWF4OXhvYVluOWU3RExTWGZUdlBLVDdGWTJVMER5MlZ6MXphczNGSjR1YUZPVDlxTnY1SEgxOUdBbV9TcXo5M3JaQ2psVFlqNmVTcnFGQ1FDb21CTnlPYmc1NWJMYkdEejRiODZIdkpGTUtham5hNDFtamkwUFE?oc=5"
         },
         {
-          "title": "BAT Kenya appoints Sidney Wafula as new MD amidst leadership upheavals",
-          "source": "Africa Business Communities",
-          "date": "2026-03-05T12:59:23.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN2NMcEJQU3UzdjdwOHZtRE9RdkRVWlhaZFdtd0Z3ZUpKeXlrZ0dRTm14ZVlnUlFISDVsR3RQdGlpVG95Z1p5MG1wSnRwS2pwaFJaY0NOMVhIamxhS1RiOVlyenV2aXZnSlR6bE1sNFZtZUhDVk50UUYxU09ldS1fTHBJM04tdEZ2RWF4dEpoendjQk9vcnVTRHJSYk8xdFdnSXBidkpJTHRtZzhlZFlIYWtkd2Q?oc=5"
+          "title": "BAT Kenya Profit Rises to Ksh4.4B as Export Sales Boost Earnings",
+          "source": "businesstoday.co.ke",
+          "date": "2026-07-24T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5vNWt5OUE4M1lNU1pOajdWT1k0QzJRaHBJeW9KSHpVR1phcTAwOFdlUXhmY1hGNklqQU03OTU0VGJMZVd1ZG5JME1GT1NOZmhxRDRBdlp3dkFmMFZQN3FfZWtNZUs1cS1hdXJXZ2ljQQ?oc=5"
         }
       ]
     },
@@ -331,19 +361,19 @@
       "name": "BK Group Plc",
       "sector": "Banking",
       "price": 58.75,
-      "change": -1,
-      "changePercent": -1.67,
-      "volume": 37774,
+      "change": 0,
+      "changePercent": 0,
+      "volume": 4824,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.67,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0,
+      "fiveDay": 7.31,
+      "oneMonth": -6.75,
+      "sixMonth": 25.27,
+      "ytd": 39.71,
+      "oneYear": 52.4,
+      "threeYear": 63.42,
+      "fiveYear": 110.57,
       "tenYear": null,
       "news": [
         {
@@ -388,20 +418,20 @@
       "symbol": "BOC",
       "name": "BOC Kenya Ltd",
       "sector": "Manufacturing & Allied",
-      "price": 192.75,
-      "change": -3.5,
-      "changePercent": -1.78,
-      "volume": 1782,
+      "price": 186.5,
+      "change": -6.25,
+      "changePercent": -3.24,
+      "volume": 442,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.78,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -3.24,
+      "fiveDay": -4.48,
+      "oneMonth": -3.12,
+      "sixMonth": 55.42,
+      "ytd": 44.85,
+      "oneYear": 51.63,
+      "threeYear": 119.41,
+      "fiveYear": 162.68,
       "tenYear": null,
       "news": [
         {
@@ -436,7 +466,7 @@
         },
         {
           "title": "BOC Kenya Accepts Resignation of Ramashala as Non-Exec Director",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-07-06T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE93WTZ6MEdpczhiNVZINzR0cTBzUFdZb3F2dnRGWGQ3MFUwTFdBbDZ3aUU2TnB0ZnMtX2dZRTdkd3o5ejM2RmltazJ1ZzVKT0FWRUtLc0dyaGFvWjU4TDVtenFfQnZMNEFETExSckNmTDFrWFgxUzRySVZ2Zw?oc=5"
         }
@@ -446,20 +476,20 @@
       "symbol": "BRIT",
       "name": "Britam Holdings Ltd",
       "sector": "Insurance",
-      "price": 19,
-      "change": -0.45,
-      "changePercent": -2.31,
-      "volume": 423699,
+      "price": 19.05,
+      "change": 0.05,
+      "changePercent": 0.26,
+      "volume": 90633,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -2.31,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.26,
+      "fiveDay": 8.86,
+      "oneMonth": 3.25,
+      "sixMonth": 53.63,
+      "ytd": 109.8,
+      "oneYear": 111.67,
+      "threeYear": 292.78,
+      "fiveYear": 135.77,
       "tenYear": null,
       "news": [
         {
@@ -509,15 +539,15 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 83.87,
+      "fiveYear": 9.62,
       "tenYear": null,
       "news": [
         {
@@ -546,7 +576,7 @@
         },
         {
           "title": "East African Cables Plc Acquired by Cable Experts Limited",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-05-20T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Qd2NBOTMyMlk5QmdJUE80THlfSGdnelVsWXc0ZG1WZ1kxbmo3RWVKZzhaSW5HMGJ2WHNPY1ZmR3dsanpSR1l4MmVETHNpLVlxdF9ESDhTWHdnallLSTBFb09qSW9yLVMxSkJ5V05CbEd6azRDMDljeDBKWnIwaEE?oc=5"
         },
@@ -562,20 +592,20 @@
       "symbol": "CARB",
       "name": "Carbacid Investments",
       "sector": "Manufacturing & Allied",
-      "price": 43.15,
-      "change": -1.45,
-      "changePercent": -3.25,
-      "volume": 49377,
+      "price": 43.6,
+      "change": 0.45,
+      "changePercent": 1.04,
+      "volume": 27904,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -3.25,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.04,
+      "fiveDay": 13.1,
+      "oneMonth": -6.94,
+      "sixMonth": 44.13,
+      "ytd": 50.34,
+      "oneYear": 72.33,
+      "threeYear": 180.39,
+      "fiveYear": 263.33,
       "tenYear": null,
       "news": [
         {
@@ -597,6 +627,12 @@
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUjlhNXlrbTNBVlNOLThFbFhVa01WUmZmYnhVaVl6SmhUWEExREw5RDRVOWt3ZUZPYjd2MGFNWV95Tkh3d2Q0djh5NjBNWTY5OEpjTlFSOHdJVTBzU3Vqd1JLQ1FPV0NUUnBuTHlMSmQxTGthQzFEM2F0dDdnWTRSaUFHZnIySWxHaW5XZWtJZ2lSTF9FczZ2anVOTTBEZmtaV0J3dTZzWDlzY3hYQXNNdXNGSlNiSFdIUnFER1pQSTBkaDVPM0Zjc0hn?oc=5"
         },
         {
+          "title": "Carbacid Investments Plc (CARB.ke) HY2026 Interim Report",
+          "source": "africanfinancials.com",
+          "date": "2026-02-26T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5lZnNnaks0N3N0MVFUc0Q2UDlCbklLckswUm1ERUJBUnZVYlpraHdvSFVwcnBrSi1lT1UyR3lNc3p1SkVIZkl0bS0tZW1vTUJzTnBHX0ZGbl9hU3NPVzlPSzEzXzR3MzRiUkE?oc=5"
+        },
+        {
           "title": "Carbacid H1 2026 Earnings Lifted by Investment Gains",
           "source": "The Kenyan Wallstreet",
           "date": "2026-02-26T08:00:00.000Z",
@@ -607,12 +643,6 @@
           "source": "Business Daily",
           "date": "2026-02-26T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVI3MElWS29hRXZnRGM3SjR2WmwtT3AyYVpHVTVrQ2d1TDRqWXpYQUJFQ1NvMkYyb2hKR3lDWGJ0NDctc0daT0EwdFczaUhaUWhKWm4yMFNfY3d3T2NlTHZ6TGQ1WkFaMVdYUFBuU2ZqRmpUVFJYRjdSSU04RDZBakxHQTZ1N1NkMnVyRDBVZHdPbjZlV1VNWlIxY1JSUE5pam9ySE5nWTRNTHphRndVdFJQeWI?oc=5"
-        },
-        {
-          "title": "Carbacid to halve reliance on Kenya Power with switch to solar",
-          "source": "Business Daily",
-          "date": "2025-11-07T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMmdBakZrRl9aQzBwbVdwQ2JMYThrbXl3MmVqeFBsWWZmb3RMdWIzRmJGcGhIczkta2ZjenJHc3ZzQmJXWktfcTdfRmE2d2NSZjEtQUZ5eF92RGtGMEF6R2hOZzRtbHRWc2pmc1hydlgxNnFESWxqQkZJMWUyRzdKci1UYkZQb0VVMjh3WTFac0xRTVlMRzBKbldYeVhGM2hIV00xRHdfT29WSWVSdUlxZkU5clVqc2lBTEdTMm55dThjX3hE?oc=5"
         }
       ]
     },
@@ -620,20 +650,20 @@
       "symbol": "CGEN",
       "name": "Car and General Kenya Ltd",
       "sector": "Automobiles & Accessories",
-      "price": 299,
-      "change": 0.75,
-      "changePercent": 0.25,
-      "volume": 17875,
+      "price": 294.5,
+      "change": -4.5,
+      "changePercent": -1.51,
+      "volume": 1751,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.25,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -1.51,
+      "fiveDay": 21.57,
+      "oneMonth": -12.61,
+      "sixMonth": 333.09,
+      "ytd": 469.08,
+      "oneYear": 687.43,
+      "threeYear": 810.36,
+      "fiveYear": 850,
       "tenYear": null,
       "news": [
         {
@@ -656,7 +686,7 @@
         },
         {
           "title": "Car & General Gains as NSE Investors Bet on Electric Vehicles",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2025-10-12T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XYmY4anlteUVVZldUX1pUUVRWZUphajFnQ2VkV05SMmdFOUxhWFgzOWdLQUtoSlcxZ0QwYnd1X1VrYU9xWDEzR1dzNnJpellQeWdORGRnbFV4Q0dtZjNSbXFpd1B2MVdJOTZ3SThjVE91eGtXZ1dQa3lab2VoSTA?oc=5"
         },
@@ -678,22 +708,28 @@
       "symbol": "CIC",
       "name": "CIC Insurance Group Ltd",
       "sector": "Insurance",
-      "price": 4.85,
-      "change": 0.08,
-      "changePercent": 1.68,
-      "volume": 1822919,
+      "price": 5.04,
+      "change": 0.19,
+      "changePercent": 3.92,
+      "volume": 938608,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.68,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 3.92,
+      "fiveDay": 7.01,
+      "oneMonth": 7.23,
+      "sixMonth": 3.49,
+      "ytd": 10.28,
+      "oneYear": 9.57,
+      "threeYear": 136.62,
+      "fiveYear": 84.62,
       "tenYear": null,
       "news": [
+        {
+          "title": "CIC Insurance Group stock gains as H1 profit rises 70.3 percent",
+          "source": "AD HOC NEWS",
+          "date": "2026-09-24T12:00:17.000Z",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMFRLQUItS203S2F1Mkk4eGVGUHZHWHN3Rkdsb0FkMXR1QzRzT1NyaG9IYWtNSFh1N1pfYzlQUzJlQ1dqdkxLVWIxbnZ4WlBBYU5jR05EUDRRbHduZVpFWE9RT2x6NTl2NGxBNlVTZmlVYmVOZllocDNFVlJ4aXhFX1hCcF9veXlxVE9LTDQ3SkdBOFJ4SVZSVk9UeWJ4bEF4RjdfMl95aEp5ZFRtUDZ1bzVDNHVzeE1COEo1Zmgxaw?oc=5"
+        },
         {
           "title": "CIC Insurance Group profit jumps 70% on investment gains",
           "source": "Capital FM Africa",
@@ -707,28 +743,22 @@
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbDlKNDZwUzBWUFdYSXZPREhCV1dFdzhoYUtWb0JrOXFwZXY4bE9fU0xfZTBfNW1HTXRlZXRNVmh5c3d0Ql9takFSQUhVOEZTZzUyVTVlNGJ0VDRhaV95OE9Kb1hvOTI3aEd3Qzd5R1hmR0tjOHRUblpfa085T1VaVWhRYTFtZTZBczQyeUp4SGFYN0tSQjVNR3J5LV9FWEMySXN6TUFDNEs?oc=5"
         },
         {
+          "title": "CIC Insurance Group 2026 H1Net Profit Jumps 70.3% to KSh1.09Billion",
+          "source": "businesstoday.co.ke",
+          "date": "2026-08-28T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QSTR4d3VaVE9hTUVLZjlaRVdPbHdsOTdBY0NLai1CdVRLNW9uQVNjUU9jQ0Y1MEhETGx0RG9NQUhHY2U1MGVOZXJsZFlDdWtOT0E3V3lnSmpUNWtfWDRWcGFWWjBsanl1UW50eThZWVczYWJmU2l5Tzk3N0FLMGc?oc=5"
+        },
+        {
+          "title": "CIC Insurance creates subsidiary to target Kenya's low-income earners",
+          "source": "the-star.co.ke",
+          "date": "2026-07-31T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ2ZfcVBsc21lYjh0MTJoT0NITWNoOGNSUGV2ZGphcE1CYnRJa2s3bExOMmZVQ2tIdTZ3LWoxelZ1OGg1V2dBS0NMc1NoYWh5Q01yTHZXRk5iTjBPa3QwRmhGa2FPeEJiMk1DVjRXcnVUTVV4RXdBOXZRNkl6MHpzY3VsZGxYbGlOdTRmMU9rSFcyd09PaHBQMUgwVEpTX2tWRm9pM0duTzZWOTJt?oc=5"
+        },
+        {
           "title": "CIC teams up with Philippines company to deepen micro-cover reach",
           "source": "Business Daily",
           "date": "2026-07-30T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNHBMOVFjbzFxYlJlQWtVNmpBTGVVVExvUWJuM084Z3RHWTlnWnlDVTFWYWxTd0k5REs5Y3Qzd2hzUEdHeXUwLVhnMkJtdWNIM3BKNXo5TDR4Yi1iVHpTRTVXWFBDcUpENkFQNnVVa0JZMFJxTnVkV3FHTEVOU01tWnBDUk1OcTFNejQteXBaTEI0LTgzaEwzbzFkNzdvRVZ3SWNOelg5NmJqaktnNFVYdU5hZktVcTlsMXFaUE44cHlZMGdGREJVcg?oc=5"
-        },
-        {
-          "title": "CIC Insurance pays Ksh 1.33bn to Co-op Bank in partial loan settlement",
-          "source": "Sacco Review",
-          "date": "2026-04-27T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV3hGdGpveTlKUm9jMlFtTGNxYlMwTTUzRFBEOUJkcmFfMzVXOEd3ZUlSRlY0Rm5aRDRUUjNOeHR0TTFGMU1hSVNCaXhqQnFMTUNWTjBlX3lLS3lHdDBUUjhoOFdHRjBndnBTcEt4bU1DMVYtd0NOVUZPZXpuUVF6bFpXTUNJWWtseW5zVEhISXcydzZwM193a0RfX29VZw?oc=5"
-        },
-        {
-          "title": "CIC Insurance Group reports strong growth with Ksh.29.5B Revenue in 2025",
-          "source": "Citizen Digital",
-          "date": "2026-04-02T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaXFrblF3X29DUW03VlAyUFRqOXc3eFV1dHJJRnpxdXA3cWIxNGp1ME1iMjhiS3NWUHA0Rmc1TEp2bkgwMlRjc2QtWF9YNGlJQjNRdXNSRW5kN24xTGJNcDZ5VnUyUmxFTUtqTzJQR3loNnM1QjZIRVU3MlluVUNVN2VOOWw1b2RlQUJ2OWI1Z1RiT3dadjMzSEtZOUt6YWNjMDlFWGR6UzYtVHNTVDJZ?oc=5"
-        },
-        {
-          "title": "CIC Insurance Posts 82% Profit Drop as Underwriting Fails",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-03-31T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhSHNZRWRPMDAzakxVRTNvSFRpNGZleW9taTc2RXB3S3JzR01rU3VPeHVOdFhhbjFoamNhbEV3enhEZVpId2NFbFdCS1djYWhxV0hjUEM1SE52Q3VNZWZIOUI2dzloSHhsTVlMU2xJLTU?oc=5"
         }
       ]
     },
@@ -736,22 +766,34 @@
       "symbol": "COOP",
       "name": "Co-operative Bank of Kenya",
       "sector": "Banking",
-      "price": 37.1,
-      "change": -0.25,
-      "changePercent": -0.67,
-      "volume": 707829,
+      "price": 37.25,
+      "change": 0.15,
+      "changePercent": 0.4,
+      "volume": 720593,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.67,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.4,
+      "fiveDay": 16.59,
+      "oneMonth": -0.67,
+      "sixMonth": 26.49,
+      "ytd": 55.53,
+      "oneYear": 83.05,
+      "threeYear": 215.68,
+      "fiveYear": 182.2,
       "tenYear": null,
       "news": [
+        {
+          "title": "Co-operative Bank & UNCDF launch Ksh. 116M guarantee facility to fuel Kenya’s digital eenterprises",
+          "source": "HapaKenya -",
+          "date": "2026-09-24T11:01:17.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUzZka0RZdmhtMjFqR2owdHNVZ2EzSkxYS3YyZTNYUGl6czNUbm1xSmZLUVF3b3A1VkhrWE9IbU9XN2N5SElsYlBrM21ESms0NloxX2duRU8ydHpYMWF3dUlySlhWZno5aUVjLTdNQmJwcEtETm9HTkZkSDNmU3R6T08wSHhDSi1xcnkwN3AzOGpWZ3FVSTc5elBPUXBKUEVra2Rtczc3RVJuQ2FtZUhOcC1abXhJZXZmQkxPZkRfVlE4Nk5YeVFF?oc=5"
+        },
+        {
+          "title": "Kenyan banker Gideon Muriuki's Co-op Bank stake is closing in on $40 million",
+          "source": "Billionaires.Africa",
+          "date": "2026-09-24T08:15:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQV3Q0VEhzVkZvTmdYZkEtbHhiR0tra19oRmVGUUI3VEw1TnZ5T0NPTS0zYVdKMElpc2NLOHhYYnRjTjRsbHgtbXYwd0dMYjZidnU2aWNsdWpWVVZscHdaUXV5eGUtN1JHalg4TWNMU0hXaG5SZ1NwMFFFczRXTEhyenh5MTc3T0szVGVzTUotZnM5TTN0TGZ5R0pBVEFqbjNjY3FmUGpocjQxQ1F2ZW1yVy1yeVhtQ0lRaVE?oc=5"
+        },
         {
           "title": "Co-op Bank Announces Auction of 19 Vehicles, Including 2025 Models",
           "source": "Tuko News",
@@ -765,12 +807,6 @@
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYkRBb0UwWUNnV3ZfQlhMZ19pYjZDbXhrZHBabFl3QS0yZGVyTFVnczc3SVM3VzBwU29DZ05oNk9zcTFHWkJWdjhUSmZxM3g4S3NDZXMzZG1UWjAwV3MwcVlsdjNjLTZvaUViX3ZuOHlMdU5tdThFR0x0TnNMOXNQNA?oc=5"
         },
         {
-          "title": "StanChart falls to tier two bank, CBK data shows",
-          "source": "Capital FM Africa",
-          "date": "2026-09-22T12:11:59.000Z",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pOHI2Nms2MW55WURYY3lBRm1BUmtUalo2QlhHUVZkRWVUVUZIbDRhdEY3cHhRZFZQRWdZSFpwREw2c29WWjQ1dmlISFVnRVRzdTJtMWVIQ0JjWEpwcUdvMGRsVG9nZmwtazc4c0pJSHpvWUotQmdpNHNhNks3Zw?oc=5"
-        },
-        {
           "title": "Top 10 Largest Banks in Kenya by Market Share – Latest Ranking",
           "source": "The Kenya Times",
           "date": "2026-09-22T10:20:44.000Z",
@@ -781,12 +817,6 @@
           "source": "Kenyans.co.ke",
           "date": "2026-09-22T06:22:29.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcmhsMHAyS1EtNkpHUndYNXpIMGRIbVE4Zm1sUlF6UF85c2htMUpQRW9iMFhIWHZNc0ducmVDWE9RVFZaRzhpcE9XMWtJX3diVkhrT08zQWw0cl9yTWxNaGo1eU1UZ09WMEJtOGszekZ2TDltQ0FyYUdLRzBLc3Bna0tvcjR5TWdDV3Z3ek9ESXBpc21JRndRcTRyQkdzTmhkRTMyeWQwZTVoYzVtZ1Q1NVlaMXg?oc=5"
-        },
-        {
-          "title": "Kenyan bank dividends face new CBK rules as lenders build stronger capital buffers",
-          "source": "techtrendske.co.ke",
-          "date": "2026-09-21T12:00:23.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS2NnRGdudTJfV3AyUklLQzNPdGRNQkRsLWZ1YVhQTGJNZml0emRCMmZ2ZFdPYjk2TlV1RjJpMVFGbm51dkN3Z2tNWV9Oajc4QzZaeDN1WGVPaXBwX20tSDFTbkxzX1V3aVBGcVhBVmVjQ3l0d2Y1QlBfR1JmNm9zNVNxTVM?oc=5"
         }
       ]
     },
@@ -794,20 +824,20 @@
       "symbol": "CRWN",
       "name": "Crown Paints Kenya Ltd",
       "sector": "Construction & Allied",
-      "price": 58.75,
-      "change": 0.5,
-      "changePercent": 0.86,
-      "volume": 5503,
+      "price": 60,
+      "change": 1.25,
+      "changePercent": 2.13,
+      "volume": 274,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.86,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 2.13,
+      "fiveDay": -2.83,
+      "oneMonth": -4.76,
+      "sixMonth": 6.67,
+      "ytd": 9.59,
+      "oneYear": 12.15,
+      "threeYear": 51.52,
+      "fiveYear": 123.88,
       "tenYear": null,
       "news": [
         {
@@ -824,7 +854,7 @@
         },
         {
           "title": "Crown Paints Kenya stock eases after plant investment news",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-18T12:06:08.000Z",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeXVTaEhhM0N0bmEtbFJhWEVadkREcmFCUXQ0aWw4VHFabzU2VDFlZzMwaGlLeERGbHlRTmNueGRNRWUzWVA5bG9PWEt6OFYwYnAtOERMMEM2dG9WNXpnclA5cDU2dnVraEpmd0hwa284OXp4NjVsTktFQ3lNbHc3VFBsbEZIWkN1UzdzMGhJZVA5OXhJVEJCeFdDVllwa1RqUDFvLUVtNHVoVEdwd3Q1OVRRTnl4WkpS?oc=5"
         },
@@ -852,27 +882,27 @@
       "symbol": "CTUM",
       "name": "Centum Investment Company",
       "sector": "Investment",
-      "price": 18.25,
-      "change": 0.1,
-      "changePercent": 0.55,
-      "volume": 29472,
+      "price": 18.05,
+      "change": -0.2,
+      "changePercent": -1.1,
+      "volume": 17211,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.55,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -1.1,
+      "fiveDay": -2.43,
+      "oneMonth": 1.69,
+      "sixMonth": 23.21,
+      "ytd": 38.31,
+      "oneYear": 16.83,
+      "threeYear": 100.56,
+      "fiveYear": 5.87,
       "tenYear": null,
       "news": [
         {
           "title": "Why Centum tapped an insider to drive its next phase of cash returns",
           "source": "standardmedia.co.ke",
           "date": "2026-09-16T18:13:10.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNR090ZFplOFN5aGZQREJiVVljcGVpOGh4OUpMSmpHRV9ZNml4aDdoQjlfTU0xN1gyN0NHcjU2aFBWY3BHNHp3b0g3MTBUdEs0ZnFZcldDQVpfN1p3bmQ1V0FrWkw1c1lNOUNMZ0c2M2E3dExMUXRoSkY5bkJvUjY5bTFSb3lkVG5LUnUyd1U0c1lobVgxZHE0WGgtVFVHcml5dUxkTWthOUlYb1NEb3J2TnBjTUtQMU9kVG9HbFdxUXBxRTZZcWo5cTNjWGZXaGZNbFhjc2NIVHpJNVE3bmZWSmhmM2xWOFpYaE1FMkRYRGZqU3dP?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYUlUemw4Vm5rdElMZ05QWkE1Rm5tWnc2ak5mVHNlN1hKdndXM2MycXp2bFI5TC0tR1d5R1U0QmRRbjNMTFRWU19IRmlnOWthSlNoMzExY1AycU1saWFkUEZfQnVSQnJIN2JXSl9wY2kxcl9TcXdSdUp4LXZfQlpCOHhELXNpbkUyemFGcm1yRUZ6NHNBVjRZODMyLVZMVlBvdHhRV0tjX1lOZTA5MjNnQVpLSjhSUTVfMFN4SnNCeEoyTm5pUWFzQlFZcnlwOVh1R0U0?oc=5"
         },
         {
           "title": "Mworia exits Centum after 18 years, Achola takes over in acting role",
@@ -899,10 +929,10 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUzlJMjc4b0kyQVJ4YmpnR2I0ZjI2bXIxZ2I5QWl4Z3RUdFU5dlNPNF8zbGxWRC1UTUI3Y2R0WjlRNGVCSkhtYUNULTV3NEpEYkFINUhTZzR3ZHlTVGs5R1NRYkVXVjlHRFZ2TUpLWmtnRnpHOGpLOUNsQnBOVTI4eHZJSmFmM0gtaks4UjJmV2N3SjZzYWRKaE9qUE9LOUdnUVVIejRFTlVQZ2NfTHc?oc=5"
         },
         {
-          "title": "Centum turns debt-free after 5-year restructure",
+          "title": "Special payout lifts Centum’s total dividend to Sh521m",
           "source": "Business Daily",
-          "date": "2026-08-01T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZTBSWGxjbGJ4WHJVSEtFV0pUV25ZRVE1SEEzb3FXdVViSFVLRlhYQmg1NndxTGYtUk9hNlUxN3dUNExNc3ZQamNIZjJSSkJ3NXQ4VWM3MXFHZUtvQ2lfVDhVdERGNmhlWjZfVnpXRnJwYy1oLWRRM1JZZVd0Si16Z3JVZ3R6cldIY2FwaFNxS0ZvYThHR1d0SG01M0FrM0VTVmZJZy1wMDF1NFdYUGZEYktWYnk?oc=5"
+          "date": "2026-07-31T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQzdrMVlwcndzYWx1elRrU1NFclRaNW1WVnFjOE5HMXBVNE04VG9fbm5KV2RlMmxtajRoY01GVHZpNHhKUXF5RUxrQjNhbXVTUHh4QXdfNkJCWlNLeEZvMjR5MTJxOXhhY3hKMUxYREp2RmlGNjExNWgyMEJZXzMzcnp5RnI1RjJsNzVqeWtoUXdSUXI5VjEwamlFVFlLQmItN29SbTNlT0VHUU1zbGc?oc=5"
         }
       ]
     },
@@ -915,15 +945,15 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
+      "fiveYear": 0,
       "tenYear": null,
       "news": [
         {
@@ -968,25 +998,25 @@
       "symbol": "DTK",
       "name": "Diamond Trust Bank Kenya Ltd",
       "sector": "Banking",
-      "price": 188,
-      "change": 3.5,
-      "changePercent": 1.9,
-      "volume": 32054,
+      "price": 187.25,
+      "change": -0.75,
+      "changePercent": -0.4,
+      "volume": 80595,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.9,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.4,
+      "fiveDay": 10.64,
+      "oneMonth": 5.34,
+      "sixMonth": 22.19,
+      "ytd": 65.34,
+      "oneYear": 78.33,
+      "threeYear": 290.1,
+      "fiveYear": 194.88,
       "tenYear": null,
       "news": [
         {
           "title": "DTK stock advances as Diamond Trust Bank Kenya posts KES 88.00",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-02T07:39:30.000Z",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ0IxN0VVZnAzUlA0bFpiaHdqWTBTOEk3czNEX2duemJXeHQ2aC1wTGVoUUoyMUt4Z1ZRdzJ4M1ZsSWZESWloQXh0UVBLVkJsMmx0OXdXekVEcG1pcjM5MWRsVGFvaGtsTmtSVFN5OGppTGNtTUp0em44WnV1SkNFekJncll4cFhvOVJneDlJOEV2Q2pCSUs2c0NsWThjLV9QcjlXaXktSHFreE5NYXo1cTR4QV9YbzdKN2NsQ1pB?oc=5"
         },
@@ -1026,20 +1056,20 @@
       "symbol": "EABL",
       "name": "East African Breweries Ltd",
       "sector": "Manufacturing & Allied",
-      "price": 281.75,
-      "change": -0.25,
-      "changePercent": -0.09,
-      "volume": 22038,
+      "price": 285.25,
+      "change": 3.5,
+      "changePercent": 1.24,
+      "volume": 17250,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.09,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.24,
+      "fiveDay": -3.55,
+      "oneMonth": 2.24,
+      "sixMonth": 10.03,
+      "ytd": 7.44,
+      "oneYear": 32.52,
+      "threeYear": 117.75,
+      "fiveYear": 64.41,
       "tenYear": null,
       "news": [
         {
@@ -1061,22 +1091,22 @@
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUjZaQ2JjU19Fb3BMMFhOLWlYV1ZUMk05bWY0WGFaQzgzRGJWallZeUx0YjJWT0ZKTkRHcTQ3YWt2NnlHQWxjejdKSjhleXBPYUJ1OFh3YXZBdzB6S3AyTnVyRlUyYVFtcXN6RjE1dlFZdUIyVF9ZeG90MkJVb2xGN0RaOHR0aTRJVWZWQnkzR3BmSDRiazZLMVR2MkRHYXBieVA0UkltV0FNcjRIa0g5T004bw?oc=5"
         },
         {
+          "title": "Kenya clears Diageo's sale of EABL stake to Asahi for Ksh.297B",
+          "source": "Citizen Digital",
+          "date": "2026-09-11T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcm9JUGVBMmhyS0wwT01WMWQ5aWFuMFJXQnlobE04d0l4YnZGYllOQTdvdWVsZHoyMHI1XzIxSFVKbllTakQ1QmtZNEt3UmNNamxIcEM1VkJKUVlwVlUwdmcyU3FUVzZfSjhnVnRDeTlEbzd4Y0M3bW9mZmhWUjJZclVLR1UzTUR6aFhnUXJQcWJLd3ByOVBVQkNndEtLaXRvQkE?oc=5"
+        },
+        {
+          "title": "Kenya approves Asahi Group acquisition of Diageo Kenya assets",
+          "source": "Reuters",
+          "date": "2026-09-11T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObGRCQ0JQMUMxalZXbkw1bFZqY3BoOERaWUMwdmppVWU1MzJkclB5cWo2YllNOTl5ZDk0c1VOLW1YSXZIaENHejZqa1NOeFZKYzNYNndiS3E0Qy1kZWc3aHcwamVRcVdfdnVhMDlhaEk0Ym9ST3NNcjNUNmF1SFQwa2FYMHpacXJ6cmxPV0ktb0t2cFlBRXZBOFR5VFNNa3dnR0dRazRsT3BiXzQ?oc=5"
+        },
+        {
           "title": "Kenya clears EABL sale to Asahi, Diageo confirms",
           "source": "Just Drinks",
           "date": "2026-09-11T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORnhQRFNEMVJiNXJZbjlTbHUxcC05aFZRNFhMRl9wSV9rWXNzU1kzTFBDOXBHVDlUa2ZJc0RnRTF5VVhGOGt5MnVDYXAzSkVYWDJVVk5heUJvOGt4UHppREZGWkhCbWpzNjlGaTZncy1PMDhfWTM2R1N5UGRQWG1pUFBJNVlTRWZw?oc=5"
-        },
-        {
-          "title": "Kenya clears Diageo's sale of EABL stake to Asahi",
-          "source": "reuters.com",
-          "date": "2026-09-10T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTURkN2w1LTFFX093WGVXcG5wamFiTy0yb2M5bzI3Sk53QTN6d0V1ZVJ2YmpJek9mdHVTWnVZZGpCWE5XOTJoY2x0UDJ1YkN5UktfeVdHaW5UMkEwSTdzS2wxXzlNd0dpdmIyWDN1TjhXNUxJNkczMjd2cXFkZlRHNzRfYjd3cW01MkJNUkl0LVZHVnZvU3c?oc=5"
-        },
-        {
-          "title": "Diageo’s £1.7bn East African Breweries sale halted by Kenyan court",
-          "source": "The Drinks Business",
-          "date": "2026-09-07T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWGJkeTM2RUc4ZU03akNuMk1haWp1dVBTUi1UTGlVM0swUzBza3ZPSE1lVUpsSDBnb3hwZ1pqUFUxc1J4amZsYXJTSVFOMFdWbWZoRGFpaW5Rckd4REd0VVdNelhUNDRPNjRtSi12b2QtNWRNM2RXcHlHWXc0SkZ3MjdVWG05Mjd4d3Bmd1pfZHI0Z1Jlak1DNHVUaXVCdWQ5U2o2VDI2dFhwbEU?oc=5"
         }
       ]
     },
@@ -1084,31 +1114,31 @@
       "symbol": "EGAD",
       "name": "Eaagads Ltd",
       "sector": "Agricultural",
-      "price": 28.3,
-      "change": -0.4,
-      "changePercent": -1.39,
-      "volume": 2732,
+      "price": 28,
+      "change": -0.3,
+      "changePercent": -1.06,
+      "volume": 1154,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.39,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -1.06,
+      "fiveDay": 2.75,
+      "oneMonth": -1.23,
+      "sixMonth": -7.89,
+      "ytd": 36.25,
+      "oneYear": 41.06,
+      "threeYear": 100,
+      "fiveYear": 118.75,
       "tenYear": null,
       "news": [
         {
           "title": "Eaagads stock slips as Nairobi price eases after recent gains",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-19T10:18:18.000Z",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQXo3LVN2RHF3ZnBhSGRRWmIwSzFmVTk3cGt5NW5OVDNlUFJkX21PdF9PajRLLTFTOU9KbXBqejZxMmxlay1jT0pFX2V0d05iUGR1c01EV2dNcEIxRUFoYUphbS1rcVVzR3FELVRpQ2VOajJVNWVtUmRLZjZndmVaY3NhekdWbVlLRG1HRk94cjU5R1RtdnZWNXYwSlAzM2xkRTZBWkpVRVFYNGFZaFlLMDU4dkRERk5lbEF4VA?oc=5"
         },
         {
           "title": "Eaagads Net Profit Up 132.9% to KSh27.6Mn",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-07-29T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5kMmlESk9qVnVIRXIzNHZCdkdwSkVOVzRRdnpXRHN2ZkJiRGVGMlVpMVFBUFg2emlkQzVKeEF6ZV9veTA3cE9ZcEY4M3A5eHlLSmdRYzdYLXQxVDdvbkZEV3FmSGZQMldIbUgwcENwY3VlN2J4RDFKV21n?oc=5"
         },
@@ -1142,20 +1172,20 @@
       "symbol": "EQTY",
       "name": "Equity Group Holdings Ltd",
       "sector": "Banking",
-      "price": 107,
-      "change": 2,
-      "changePercent": 1.9,
-      "volume": 1135601,
+      "price": 107.75,
+      "change": 0.75,
+      "changePercent": 0.7,
+      "volume": 1818503,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.9,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.7,
+      "fiveDay": 12.24,
+      "oneMonth": 15.55,
+      "sixMonth": 48.11,
+      "ytd": 61.42,
+      "oneYear": 89.04,
+      "threeYear": 192.01,
+      "fiveYear": 113.37,
       "tenYear": null,
       "news": [
         {
@@ -1189,10 +1219,10 @@
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZXRiYy1lbzdrREVhX0ZBaU81V1E4b2Z6dDRyak5oNG1HV2JsRGpWWllBVGVPUjllV0hwVEVxbG9BaFFRNnJyblAweGdlUkVKUUUwNmZNWjZBb2M3T2xEbFpkSDJFWk9TWTNNVWtaY1JSTmdoZnItRjVHVVNJVmY1UG16Z01sN3k2aGdqa0lUOTBuMGoyb1E?oc=5"
         },
         {
-          "title": "Equity Afia: Scaling healthcare access and opportunity in Kenya",
-          "source": "Arise Investment",
-          "date": "2026-09-17T09:19:39.000Z",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeU5uQjJRNnc1VlRGbTk2QUFwRWNCYU5yck5sRnZyNXRZLTBBNUZuSjFMckZ0NktYRVJmb1E4eElsdUphQ1RqWE52Q0dEV1E3VVN0cnlnN3B6eHU5S2N1VzRXbXd0QXZ1eG9ybzloSE1BZEVlMll4bVVyTFZCV2N6Z3NQUzVpOUhHVkhzOUp1OGo?oc=5"
+          "title": "Equity Group Ranked Among 500 Top Performing Banks Globally",
+          "source": "The Kenya Times",
+          "date": "2026-09-15T11:47:27.000Z",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNkpXYVNBT1V3VHJJS0hoUFFYNzBteFJTb2I5cExJM3JuWElaQXprY2JtQTVuTWFLTVY3TU1rYW5kQ2MzUnBjQWl6Z3NGVTNpRk45RTVpY1RSbE5aWFNCbm54YXBvc29wRmJwSm1iLXhpbWpMWGxqQ05ZVXB3RnUwTkh2VUxTbE5BU0hVY2JseEp5U1JEcHozQw?oc=5"
         }
       ]
     },
@@ -1203,22 +1233,22 @@
       "price": 1,
       "change": 0,
       "changePercent": 0,
-      "volume": 247955,
+      "volume": 278488,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": -0.99,
+      "oneMonth": -4.76,
+      "sixMonth": -17.36,
+      "ytd": -30.07,
+      "oneYear": -31.03,
+      "threeYear": -26.47,
+      "fiveYear": -4.76,
       "tenYear": null,
       "news": [
         {
           "title": "Eveready East Africa stock holds steady as investors eye earnings outlook",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-20T10:09:44.000Z",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdXRLNDRibkVUYmJJbE5WanNDMlpPbGM2ZjFVWHdpZjJ5Nkw0SGVWZkJfbzVpWnNKMS1aOFN5MktYYkcwTzV6SWtKTHh3em56M3dlYUdkeGxmbjZyRzZtaWJEQzhzandYWUNpWVpqQ1Y3eUdmXzJQUUFNRkVBMi1RQ2ZtaXNqNnUwNUhfRXk1WTFDNERIU01jbnZWUzQ0Y1ZiR09FdUhCMGlKZXRXSmpaZmk0NmQ2OUl1VWpUOWZDRnRBb3lSaDBFdmdUeVY?oc=5"
         },
@@ -1236,7 +1266,7 @@
         },
         {
           "title": "Eveready East Africa Retools For Clean Energy Production",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-02-13T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbHdzWkh0RS1uVUtDaWFnY2NwOEI1eFVJc1NvQjF0azVXWDdhMkZlODlGQmtqejZZRG9PUl9uWnpBc2p0c2k1MGlDR2dWMS15bnZmd0lRLWV1MkVEUmMtamJHSVFLNzE3MG50bHpvb1A4anZiRmpMTE9nOTFyT29mWnNoTFhNSUF5RTRlVEpR?oc=5"
         },
@@ -1258,15 +1288,15 @@
       "symbol": "FMLY",
       "name": "Family Bank Ltd",
       "sector": "Banking",
-      "price": 29.25,
-      "change": -0.4,
-      "changePercent": -1.35,
-      "volume": 213142,
+      "price": 29.35,
+      "change": 0.1,
+      "changePercent": 0.34,
+      "volume": 161807,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.35,
-      "fiveDay": null,
-      "oneMonth": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.34,
+      "fiveDay": 4.26,
+      "oneMonth": -8.85,
       "sixMonth": null,
       "ytd": null,
       "oneYear": null,
@@ -1274,6 +1304,12 @@
       "fiveYear": null,
       "tenYear": null,
       "news": [
+        {
+          "title": "Women-led Agri-SMEs unlock millions in capital as Family Bank graduates second cohort",
+          "source": "HapaKenya -",
+          "date": "2026-09-24T07:52:33.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNDVTWlZ5YXR3YVRMQ0NhTTYzVkdvb3FCajNfaFMycjRVR3RQWk5CVGRac1AtSHF0ZUMtVThoaEZ0V2xQamZtYVN5UXFQWm1mTUpySm4xNEhVb0RzQTZENi1BdDNVSU84TlBUaWFMX1BKSk41NXFLTWJFZDEwY0xNbFFMN2VjV25Zb0YwT2JQTWJjbFBzUVdfRzZXT0NWWU95clZkeFBzSjZ3UE4yNXhkRXZfYkxjb2t4OUFv?oc=5"
+        },
         {
           "title": "Kenya’s Listed Banks Post Strongest Profit Growth in Two Years, Cytonn Report Shows",
           "source": "Khusoko",
@@ -1287,6 +1323,12 @@
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyWnBQX3p3S3Z0VTlTdldQOVgzdzRJSHI4RjB6S0xnUFVtWEZ5bmhzVjVLbTNMdmIySk5XdWEtOEZwankwd0dPdGFCYUlna3BZSnVtbFNWYXNoZ2VI?oc=5"
         },
         {
+          "title": "Family Bank Group Profits Jump 62% to Ksh 3.7 billion",
+          "source": "Citizen Digital",
+          "date": "2026-08-19T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaktkd3ZVQU1pUnpTQW1NU0t2MUZIYklaWEpabk96RjZYRmxMN2FSVGlsRDJlSGt4azE1bTFRb1d5OXJJNTJzU3hWRDhpaHlhMGc5SlV6NmY4X0pZNEZ5RVctR1FRU0xyWHZLTmE2YXZXYlRpWEktU1o1Q3lZLXBvOHdVMjZIa1JMWE82a3dqUVNCbkpYaGc?oc=5"
+        },
+        {
           "title": "Shaped by adversity, Family Bank founder Titus Muya’s biggest payday lies ahead",
           "source": "The Africa Report",
           "date": "2026-07-29T07:00:00.000Z",
@@ -1297,18 +1339,6 @@
           "source": "The Kenyan Wallstreet",
           "date": "2026-07-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CUVdUVk9tbW4yX1F0R1dDZzJUSzJyczFmTS14YWZ6Ti1Xdll4T3VPZ2JwX1pRcGd0bzFGT3lZRExTRmRJc3BSeHNZM19uQjJ4Q0l4LVdCWUMtSFVsa1czXzRSeHlKZUQ3Njd3?oc=5"
-        },
-        {
-          "title": "Founder resilience: A lesson from Family Bank",
-          "source": "Business Daily",
-          "date": "2026-07-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORTMxSFlrNGZDQ3plcm95aEZFZ1pWMWh3UDd0LW5QeHp6bjU2aHhCbzUyZDBYT0o0Vkhfdjl4a0lOX2htdDBlWHBhX1NHUV9RUjd4UXQ1RUx3SVVCUlpPbGFmbnE0YzFjT0NFajBNelpTRWQweWJwTzVWcXNGcXNmQ1BtMFZGR2FlSkhXaFRqWGd0eVcydFRHbmZ6eVNDSWFKRkdVV292LWdCOTg0Nk53b241MlBWOWs?oc=5"
-        },
-        {
-          "title": "Family Bank in Sh231m special payout to founder Muya",
-          "source": "Business Daily",
-          "date": "2026-06-24T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcWktNnZETzFfVDlWMUJxVDU1X3dabVo1UVVNc21FeHFoX1pvZlZRLUZ3Ti1ZZXQ3Sng2T0ItSUlJaTladjZNbXJwUG1qMXp2bXpEby0tMXhFWFB4dnl4MlZISkNPVkg1ZHpNdE8yTGFmZjcwYnNvbVdiVzZRMUlwSGhyTmN5ZEhzWkVaa2NhckVGUkpXRnF3eFpPQkZackhxOW92Rml1azc2YTZkY2FVbms2cVc1aks4a3Nv?oc=5"
         }
       ]
     },
@@ -1317,19 +1347,19 @@
       "name": "Flame Tree Group Holdings",
       "sector": "Manufacturing & Allied",
       "price": 2.11,
-      "change": 0.1,
-      "changePercent": 4.98,
-      "volume": 46950,
+      "change": 0,
+      "changePercent": 0,
+      "volume": 64566,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 4.98,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0,
+      "fiveDay": 13.44,
+      "oneMonth": -1.4,
+      "sixMonth": -17.9,
+      "ytd": 32.7,
+      "oneYear": 24.12,
+      "threeYear": 71.54,
+      "fiveYear": 58.65,
       "tenYear": null,
       "news": [
         {
@@ -1340,19 +1370,19 @@
         },
         {
           "title": "Flame Tree Group Holdings Cuts Net Loss to KSh15.9Mn as Debt Puts Pressure on Balance Sheet",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-05-11T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrTWtTOWlNTV9VQWRkOWVxbDhtejdBRlRfZkVoQUhONFY2V2J6anNZRUxoV3BBUXJUZV9UTVVsWjF5Q2piT211T1NFblVSMGFudzJzV0JiY1YtX1BYNjlEZVg3aUtrWFE4Q043UERKYVZmZTQ4YlRjOFBWOGw0aFU?oc=5"
         },
         {
           "title": "Flame Tree Group Holdings Issues Profit Drop Alert",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-04-30T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBlVE5JX200ek50WmxNeVFBSnQySlZTbUg2V0FZOF9IbGw1dEE4b2hyZDd1cFl6T0ZFV29LX25LMHl5d3hOaWdoOTFCNzdJYTJDV1hOa1kzb2dsVzFoWTZUS0t2M2tEWWtFR3NKZ3o3aGNMSnpZdDMwWjRB?oc=5"
         },
         {
           "title": "Top 10 Best-Performing NSE Stocks in February 2026",
-          "source": "Money254",
+          "source": "money254.co.ke",
           "date": "2026-03-13T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFFaTDlPMlFaM2ZGNkswdWZ3dGppNkpBWVI3SlVuOWp5cDRkdTBEbGZJcEEwWEFrRjl1bFlUdDQyajNDRGQ3NXV0VW9kZ2pnVEt0MmJTSlppcTFwdXNvMmxyejBOZFdpcWJkZ29SWU1pY25pdklyMmlFcGFkTjJtR21SQjBFTmkwQ0hUQkNrZWthTTRhUkFxM1Vn?oc=5"
         },
@@ -1364,7 +1394,7 @@
         },
         {
           "title": "Billionaire Heril Bangera Reaps Big From Flame Tree Upswing at NSE",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2025-09-16T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVW9QZU5iNXFsSG1IMHVVRFBQME1ldVhZOENBTUdnc000LVFzRnR5TVpGR2Q1ODE5Zm1ja1R5S21waGRQRDZfdUdXY1NSNlp5UVZBRzk2N2tNdUliS2hMc2F2LVdXV3M4VDZNYW44OGhzdDlkSGQzc2o3ZGQwRWotNlV0TDhnZVhNTDFxWnBnQUhzb2ZjWmFhbklOaw?oc=5"
         }
@@ -1374,25 +1404,49 @@
       "symbol": "GLD",
       "name": "Absa NewGold ETF",
       "sector": "Exchange Traded Funds",
-      "price": 5350,
-      "change": -40,
-      "changePercent": -0.74,
-      "volume": 178,
+      "price": 5325,
+      "change": -25,
+      "changePercent": -0.47,
+      "volume": 134,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.74,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.47,
+      "fiveDay": 2.4,
+      "oneMonth": -3.71,
+      "sixMonth": -1.66,
+      "ytd": -1.3,
+      "oneYear": 19.13,
+      "threeYear": 106.4,
+      "fiveYear": 187.06,
       "tenYear": null,
       "news": [
         {
+          "title": "ETF Momentum Continues as NEWGOLD and SIAMLETF40 Extend Gains",
+          "source": "Investors King",
+          "date": "2026-09-04T08:48:07.000Z",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWEpIOXZsZTBERWt1MkJ0Q181MktDVTZ5Um9SYzZhZDRlQVcxc0wtUjNsMy1Ya2hhVDBmdGliSDlTN3NybnU5RUxyU2NRbFoxUENlNHZ6ZWhNaGtCcEZXS09WNlZqeF94T2xONGlweDBUVzU0WHdVNUpTTzQzNjlQM3M2Ullpd1JtQm5peDhaU3hNYVpVbVB3eUdoSHlINU9T0gGmAUFVX3lxTE02R0VoMjJ6RXM3MzJIa0FPOGxoTGxiel9mSEp2RlRMMXExaTNSRHB1V1psSXFacUNTeXNZZkxPc2ZZd252X1BWcG5xcWtHNTJzRm1LeHdLYnU3QVhoSmRDalZpcGJOUHdhYmZQNjRKWGhYQ0ZPMEJLcVdfcDYyZVRMeUZXVlpDOS1DaU1uMDF6dWRKdll3cHMxUmt6amdnT09yZDRCRWc?oc=5"
+        },
+        {
+          "title": "NewGold ETF Assets Fall As Gold Price Slips",
+          "source": "News Ghana",
+          "date": "2026-07-16T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5zVk82UDk5a0FOZXJtTWozV3RuV0ZjejVXbVhNNklzUjk0aEJyNEtzeDBIX3ZET25WZUFHZkt3WGlYRnhrbC0tUE5nRThCdllvN2xpUGJfMDliOEFKYjRiSy1rUlItN09xTXNvd3Y2Mnl2WHdUVEszTg?oc=5"
+        },
+        {
+          "title": "NEWGOLD ETF Profile: Dividends, Returns (NSENG:NEWGOLD)",
+          "source": "TradingView",
+          "date": "2026-07-15T05:25:31.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9lR2poWFM4M1JlZWtERV8wQVdDM1BJZWhzZWcydkdSOXRXWlhQU202bXNfNUN4Z2RaenV2QVVyUU5wUnFoclNUSGxGeF9fWUNlUXJLRWZnOU5GTmZ0OHQyQjBiR3hiMGRhZGc?oc=5"
+        },
+        {
+          "title": "BOPP creates history: Becomes first GSE stock to hit GH¢100, joining NewGold ETF in triple-digit club",
+          "source": "Graphic Online",
+          "date": "2026-03-19T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPNnN4Skt5Mks4eGlfeHJ2ZXhsMk54RURta2JFV2ExbEdxbTNhWWxsNHZxemUxRUdLVjRHVXN4dzBQdms1cUZWUFU1MlkzTTVQNWhWT1FZc19DVDhTalliSmtzdW1sT2Z0SGx0M3lsamd2dzJ6bDdyV1JIZk9UcUp2TzJXbDV0Ynd1bERBMDZMNnV3UF9YOFhfT3Y3UWU0Mjl5aWtsNExySXA2OWh4Qjk1cFBXdTZOREJOMkd5WTUwWTRxal9iejJ4dGtrNXVnOHpJTzFKZEpsWks2ZXJ6bVZoanlFTXJSS0dpcVE?oc=5"
+        },
+        {
           "title": "Absa NewGold ETF Investors Win Big as Global Gold Prices Surge",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-01-27T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZWZFdHZERmRWYW9iVTR1ZVJqMnA4ZVRPd1g1THU4WHNyQ2RVcUtjQkVOYlU1NGh5Q0tkZTZ6U2tmX2dhaGNFZm90cFNSSFNDY0I4VkIydzZpTnhZMk5Lal9KTU5WQnNIMDA4SkN4RFFMa09KUXhhS3N3VmNJX2ZfYg?oc=5"
         },
@@ -1401,30 +1455,6 @@
           "source": "news24.com",
           "date": "2026-01-21T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdUZ6QkdLMkJ2SjBLeWJKVXlMOC1VQ1laTDBuYkl4TmFXNXNVY1NzdWFncUdTMWZnNXZkNHNwdFpFVFoxV3JZaVVpc0VnbzZQLUpZYUFycXJORUFmRUpsLUYyM0FvNkQyZzlycm5Wb3VTTk1MOFlFSHZ1Mm9rLXE3ZHBlc2N1dlV4cjFwd0gxaGpwNGVkZzNLX0tvbm91SV91QXc3bkdXX3E2NWRvYW4xQ3YyaVpISE9FVk5VS1ctZUgxT3pQ?oc=5"
-        },
-        {
-          "title": "NSE’s gold investors see rally spilling to this year",
-          "source": "Business Daily",
-          "date": "2026-01-02T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTll5U2EwcUo1UFoyX2Y1MlUyNnBwNl9DbDdYaVpBSnctcWpzZ3hYR2lWaTNsdTBkcW4xcC1GcjdxRVBTcTRsRmFfd1lxQzBHLVdfNVlFM0ZiMU5ZaFhOVUpUdzUzVWV0ZGZQZ0F2OUs1QzFnR0R5VVNaSjJjTHcydU93UzdEenpKQzVwd1AyVFgxY2NlZXVQWVRlc0JrXzUyZVJvdDRGNE5kLWdnelMzX1Q0SDIxQjNHaVFfRkhn?oc=5"
-        },
-        {
-          "title": "NewGold Records US$ 1.5Million Half-Year Net Profit",
-          "source": "The Kenyan Wallstreet",
-          "date": "2025-10-28T17:22:10.000Z",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtaFZTQ09qNlAwTnJJVndHanRfZ2lqOVFsUmItcXpBelhfVmstVUFTY2p6UUtubXVWT04tSDhRdkhGLWhrTER5SDFjeU9PRFhtVjRIV200T2tSeXlvbE5hLWxzVXBVeEhVanhCWFVR?oc=5"
-        },
-        {
-          "title": "NSE investors join gold rush on global price rally",
-          "source": "Business Daily",
-          "date": "2025-10-15T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNXzQwU01CR0ZhV1BXcW5kRDJhV1JuOXJOTDdMM0pqTWxQQ1A0amRyZGJnMXVPUHVmcHEtbUlvLXdnZGV1T3JqTGNIYTE2dVVaUjFiaG8wMklJTjQwNS1rN1lOUVpnWlpuU0s3N2thYjd2QkV0SUFRRmFTZEdwVVYxblNqWDJ2eXRhS1I3OUdOWl9GTU92eUNtUmE1ZzV2UUYzdlJMX1Q3THFuNGVKc0RoQTdrTWNEM0ZkSFpYLW5R?oc=5"
-        },
-        {
-          "title": "A Guide to Exchange Traded Funds (ETFs) in Kenya 2025",
-          "source": "The Kenyan Wallstreet",
-          "date": "2025-06-05T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRWsyQkM2U3o3WThpQ2xrbHBSVEdvUHh3cTd4MzR1TTE3Mm5tSk54ZUlBakMzT0dIYjM0a2ZCa2VPaVR0ZWFrVnJwaFItVHQ5OHdGMTdUbzdnaDl3d0RFWVJaR05KakxMdzVZQlI3dG1sRThFbVdrRzk0ajhhRnpiLUwteWMtSFE?oc=5"
         }
       ]
     },
@@ -1432,20 +1462,20 @@
       "symbol": "HAFR",
       "name": "Home Afrika Ltd",
       "sector": "Investment",
-      "price": 1.12,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 329301,
+      "price": 1.11,
+      "change": -0.01,
+      "changePercent": -0.89,
+      "volume": 308534,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.89,
+      "fiveDay": 3.74,
+      "oneMonth": -0.89,
+      "sixMonth": -31.06,
+      "ytd": -17.16,
+      "oneYear": 9.9,
+      "threeYear": 258.06,
+      "fiveYear": 184.62,
       "tenYear": null,
       "news": [
         {
@@ -1456,13 +1486,13 @@
         },
         {
           "title": "NSE: Speculative Traders Push Up Home Afrika Share Price",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-07-16T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0taDNHM3VDMzFtdlZrbEF0VDAzTGpBd3NwdGFOZGxmckZUQjZHc2J1TFg0TVE2X3pfVTFjMDdvUmxZTUdfRGpyZE1wQ3VrNG9iTFJ4b0VSWkpVXzVUWVphYmo5MVB3M295QW9vbVVVcXIxOFlVZXotRmw2MA?oc=5"
         },
         {
           "title": "Home Afrika Net Profit Up 11.7% to hit KSh 117.89m in 2025",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-04-30T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zN0FlV2c1b20yOHg0RDFvTjY3UHhrbHpIVVpQSEZyS0dXOGNYc0ZlM09MOXFuclNQR0NSVWhWcFBpb2pTVWxMeHVkaTNBX29IX1NEcHpwbkI0bFJodjdJN005bWRmR2x0UkkyajhNTzJ0UThnZ1BfNlJpMUhLYjQ?oc=5"
         },
@@ -1495,15 +1525,15 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
+      "fiveYear": 0,
       "tenYear": null,
       "news": [
         {
@@ -1548,20 +1578,20 @@
       "symbol": "HFCB",
       "name": "HFCB Group",
       "sector": "Banking",
-      "price": 12.15,
-      "change": -0.2,
-      "changePercent": -1.62,
-      "volume": 69276,
+      "price": 12.35,
+      "change": 0.2,
+      "changePercent": 1.65,
+      "volume": 222718,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.62,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.65,
+      "fiveDay": 7.39,
+      "oneMonth": -6.79,
+      "sixMonth": 19.32,
+      "ytd": 24.5,
+      "oneYear": 19.32,
+      "threeYear": 176.91,
+      "fiveYear": 202.7,
       "tenYear": null,
       "news": [
         {
@@ -1606,20 +1636,20 @@
       "symbol": "IMH",
       "name": "I&M Holdings Plc",
       "sector": "Banking",
-      "price": 81.5,
-      "change": 0.25,
-      "changePercent": 0.31,
-      "volume": 1304712,
+      "price": 83,
+      "change": 1.5,
+      "changePercent": 1.84,
+      "volume": 3113046,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.31,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.84,
+      "fiveDay": 4.73,
+      "oneMonth": 3.75,
+      "sixMonth": 66.33,
+      "ytd": 95.52,
+      "oneYear": 93.93,
+      "threeYear": 374.29,
+      "fiveYear": 260.87,
       "tenYear": null,
       "news": [
         {
@@ -1664,25 +1694,25 @@
       "symbol": "JUB",
       "name": "Jubilee Holdings Ltd",
       "sector": "Insurance",
-      "price": 407.5,
-      "change": 7.75,
-      "changePercent": 1.94,
-      "volume": 1209,
+      "price": 407.25,
+      "change": -0.25,
+      "changePercent": -0.06,
+      "volume": 778,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.94,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.06,
+      "fiveDay": -1.03,
+      "oneMonth": -1.09,
+      "sixMonth": 1.81,
+      "ytd": 21.57,
+      "oneYear": 29.29,
+      "threeYear": 125.31,
+      "fiveYear": 10.44,
       "tenYear": null,
       "news": [
         {
           "title": "Jubilee Holdings Declares Ksh145 Million Dividend as H1 Net Profit Grows 13%",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-08-31T06:41:55.000Z",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ0ctd0RXTlpxZXJaOXg4enBJX3VNN1dkNTJyQUxrT3NkOHNhOWRmSi03Q2dtcjNMSnllaWxUUldQLVRET1g1NEJjMUthRE42b3RQZHRNbHRUZVNHeVl0OGhWMzhyN2NBNW1LSlZKU09KMG9nYzFaWVVPdE94MmVYcnVJUzhJcjRIdVRGYnpEYjBxSTRZYUNUWW1OMmRaVDNfa3lxOUZmNA?oc=5"
         },
@@ -1722,20 +1752,20 @@
       "symbol": "KAPC",
       "name": "Kapchorua Tea Company Ltd",
       "sector": "Agricultural",
-      "price": 342,
-      "change": 5.75,
-      "changePercent": 1.71,
-      "volume": 839,
+      "price": 343,
+      "change": 1,
+      "changePercent": 0.29,
+      "volume": 505,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.71,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.29,
+      "fiveDay": 2.24,
+      "oneMonth": 1.4,
+      "sixMonth": 36.52,
+      "ytd": 49.62,
+      "oneYear": 4.89,
+      "threeYear": 83.91,
+      "fiveYear": 277.96,
       "tenYear": null,
       "news": [
         {
@@ -1783,19 +1813,31 @@
       "price": 93,
       "change": 0,
       "changePercent": 0,
-      "volume": 743476,
+      "volume": 2806809,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 10.39,
+      "oneMonth": -0.8,
+      "sixMonth": 29.17,
+      "ytd": 41.44,
+      "oneYear": 61.74,
+      "threeYear": 316.11,
+      "fiveYear": 97.45,
       "tenYear": null,
       "news": [
+        {
+          "title": "CBK report: Equity tops banks in branches, insured deposits and regional jobs",
+          "source": "the-star.co.ke",
+          "date": "2026-09-24T05:24:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUGkxWWYyUTFDa2k0UjM2ZVNRZm1pN0Fndy1IU2g5WDB3RWFHMjlKTjVxMmozV21ISktmeGQtT295eTNvVTZTZXdYbV9ZdXVvRHZkamhpeTBleVVhUnVBY01Udnd6Tm5yZEx4aWVvbk41SUczM0luU0VudHA4WXFZTE1RcDlvWWVzdHZzN2lEQU14T0ZjLTRCLWFWdzVrSldZZERYeDBiSzlsZ0JjSGpN?oc=5"
+        },
+        {
+          "title": "Which Kenyan Bank Earns Most? CBK Names KCB",
+          "source": "Khusoko",
+          "date": "2026-09-23T21:00:09.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBlb1R2a3JSWDlpa3d4dVItOFdWYm9telo3T2lpVUM1RXZNam1XbUx4emNZMVR3VW1QYTVmdjdsMjlUOUhld1gxUlA4bkROZ0k0S0U4V1JXRlQwSlA4dzA4cVNGYkcwb2FrRUZ6OU9nSlNTeFlLc1RSTA?oc=5"
+        },
         {
           "title": "Equity Group’s regional workforce crosses 5,200 mark driven by DRC expansion",
           "source": "Citizen Digital",
@@ -1809,28 +1851,16 @@
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPa0pOYi1NU0NRdVB6M0hVS24xWnpRREJvd1dwRm9FbmdPM09nbVhVYTRiTE1tUXZiYTVlTHlsZ1FWUXVsUGlkaG1hRnA5QjE5YnllblItVXd1NHRNNjEyTGFHcVo1cURvcm9YNndqZzFKX1psRmJIRDdVclVWdmExUlhpTnNlNlFBZ2l4cDh5ZHBXRFJ2NGtwMEg4TEdTaG1yNnNkVURwb09xTjlxcTcyMHlmMHlsT0FMYmc0YjlqNjhBTXM?oc=5"
         },
         {
-          "title": "KCB’s Pesapal Stake Surfaces in Tanzanian Regulatory Filing, Confirming 22.23% Deal",
-          "source": "Khusoko",
-          "date": "2026-09-23T07:13:13.000Z",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0xWnA1alRQdGlORGpHMFZhYi1LMFdxVlcyc00tSlFJOE9fUnhRd3BLLXVtZzktcEFDYXEtemVaRzBDMTNCd01pQnZwQk1SenJEQzRYS3VCckVPWEZtM2J4S0tfV3lfRHN4SDJhMjlFaGJBb3pSX0w3aQ?oc=5"
-        },
-        {
-          "title": "National Bank of Kenya delisted from NSE following takeover by KCB Group",
-          "source": "Citizen Digital",
-          "date": "2026-09-23T04:21:42.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU0kwOEVSenFiYlZ4MHVCYS1WbHZnc05WeHg2SkpzZFEzOXlUM1dsQWFnMHBvdW1TbXlEN3dXN0NUaGJ5TjAzM2pLd1pRZE56SURsdTNjd2ZqbmZtM3JZYms0a1NDODJUMGtqczVWRV8zR25xdFdhWDlqNkQ4MWhwR00zcUNsSkVocnRROXBhcjNldVNvX0tuNERNZUZhcGxMTExGQkNyMVJMMGRGUmNzR3pn?oc=5"
-        },
-        {
           "title": "KCB Bank linked to the collapse of a local firm over delayed multi-million shilling transfers",
           "source": "254news.co.ke",
           "date": "2026-09-22T19:29:43.000Z",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaTVFaDlkWXRURVpVaGJmVUFBdVJ0elZGeURwRXM1bEl1WG0zdFRITVBXRnJqcTI2TGNaTHIxbWRFc0c3cmRyNmJZWHFpSUIwQktHN0tHZHRpMmVJLVAxcjFHQ0NhRGtrdzNzd0tjYThia3p3bkpJeG1fS3FvOWV4SzdQdW9ZVmFDMG1KMmVkMHV4NlE0ME42NXlPU1FvSFFPRTJ1MGJBMGNvcE11ZUx6WlNVQjdFbGNscU5CQ280VdIBvwFBVV95cUxNaTVFaDlkWXRURVpVaGJmVUFBdVJ0elZGeURwRXM1bEl1WG0zdFRITVBXRnJqcTI2TGNaTHIxbWRFc0c3cmRyNmJZWHFpSUIwQktHN0tHZHRpMmVJLVAxcjFHQ0NhRGtrdzNzd0tjYThia3p3bkpJeG1fS3FvOWV4SzdQdW9ZVmFDMG1KMmVkMHV4NlE0ME42NXlPU1FvSFFPRTJ1MGJBMGNvcE11ZUx6WlNVQjdFbGNscU5CQ280VQ?oc=5"
         },
         {
-          "title": "KCB to Take 22.23% Stake in Pesapal, Tanzanian Regulator Reveals",
-          "source": "Techweez",
-          "date": "2026-09-22T12:22:54.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBPQWZZbkRXWkVYLVJ1Mk1ualFYUG5HVlVDWnc0Tm9LTGM4dUxnczMzVGxpclVaLWhqSmhYRVRCOUFkWFJnRmJHZm9wVDVvbHAwRFdUS1dMN01oSmp4UVk4?oc=5"
+          "title": "Top 10 Largest Banks in Kenya by Market Share – Latest Ranking",
+          "source": "The Kenya Times",
+          "date": "2026-09-22T10:20:44.000Z",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSEhnZGNrYVoybURLUkNQdGRiYWNpMnNjejlHeTdMd3Q3WXp5QTdHbEpqYmkycC1QMGxhUnFwd1JBd3ZlbmZyOWdORlZySWptWGVoN3ZuTG9UdnNCdXh5cXM4S19hS2VyT09tT1F6d0Mwdk1KVjNQc0pUR1ZqdFhvb0IwYzEzSWZucmpiOXhqdWpVSUI5WFZvdWhTYmM?oc=5"
         }
       ]
     },
@@ -1838,20 +1868,20 @@
       "symbol": "KEGN",
       "name": "KenGen Plc",
       "sector": "Energy & Petroleum",
-      "price": 10.8,
+      "price": 10.85,
       "change": 0.05,
-      "changePercent": 0.47,
-      "volume": 1566886,
+      "changePercent": 0.46,
+      "volume": 1374724,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.47,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.46,
+      "fiveDay": 7.96,
+      "oneMonth": -2.69,
+      "sixMonth": 16.17,
+      "ytd": 18.19,
+      "oneYear": 20.56,
+      "threeYear": 371.74,
+      "fiveYear": 130.85,
       "tenYear": null,
       "news": [
         {
@@ -1861,16 +1891,22 @@
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOakhtb0V3Um9Cbk9YRjRPSnBsb1lPRWRpTzB3Z2lYREdHMzRxSWFJV201TUt3TVZ0V2tvN194ZmtIVm82ZmtkMUhtV2I5Q0NVZTdpQTNVMG5GS3gyTjMzamo2Qnl1YTFONTlDNEZxT05ORDk2TldfSi14eHFNYVFJSzNMdWl1RjExVUY2N1kyUzNoS1F2WjdOUXAwTzU0VHdOcmJxUThPUGc4MEloa01yN2ZfZ0ZHLWEyZGZaTzdmRkhJWUg4?oc=5"
         },
         {
-          "title": "Ex-KenGen official jailed for 11 years over forgery of academic papers",
-          "source": "Citizen Digital",
-          "date": "2026-09-15T15:37:38.000Z",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdzJuWDFJTWw1eHJTdU82a3JqaXlha0NLeHhuTkZNOW5sWEMtOVdncjFNM3ZpX2NLY0FmTVdLVFpza1ptYWd6OXVUdk8tN08xd0RLSFVqTUpyQXNIdTMtSW9LaThOYWhaOHI1ZWFJXzhseXk0NGlSVUVJVS0tZG5Ha0RyRGRnVlo1QzV6SExHczNQQ2pPR0hackl4VWQ5RkxLQm85TlA3SW0wTFBfZTlF?oc=5"
+          "title": "Ndindi Nyoro proposes sale of a govt stake in KenGen to raise funds for cheaper electricity",
+          "source": "People Daily",
+          "date": "2026-09-16T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSC1OQWo3Q1l2cVB6Rm84VHJPa0wzTG9NNTdfZ1FqN2QxVEtidjZDcDIzd1BGN2c3QWF3RGFqY3RTSWlpQmtsbzdOLWk5RkFFNTFVMkJjWThpeTFvNlJ0LXNrYzQzWXVlUzRhdWZQTU1lTEdDeHNxRFZwemctenNLSUJpWG5VT3BnblFfcnVJYTF2NkRxY1RQTVJ6Ty1nSUJZb09aQ2JkbWN3X3U2RGlwNklIcnQ3N0NxSTV1Yl9wSUxubkRvd2Qw?oc=5"
         },
         {
-          "title": "Former KenGen official sentenced to 11 years over fraud",
-          "source": "KBC Digital",
-          "date": "2026-09-15T14:54:59.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbVl2ejZSOHdtNVBTMjJtcVlrSFlZYnBEbWVvMlNtQVhFVGVYWlZ3aUVCeEZqYW9iSWE0Ukw4RURpOWFLTGd5TllIMTE0aEtEeDFZYXUtbFJHTmhfZ3U1cldWYzA3dGJ2T3UyblBYYXdHS29odjhHc3VrYnNfQ3haWkVla2E?oc=5"
+          "title": "EX-KenGen employee jailed 11 years for using forged KCSE, disability certificates",
+          "source": "Capital FM Africa",
+          "date": "2026-09-15T13:58:35.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWlhISEZFV01mN3RDcEhXUlhpbF9EbnFGcko1cjg1akdiMXA1MFhjUHlKVG9teXA5eEx5ZktBQnVKRHMyZ2FuV0pVbU1odXZPS1N2SlNfbC11aGZwU0UtNmlZeHAydGhfMjdJV1ZUSGNzUTlfS1BoOHk1MXBiTldYUzRoMk1mbGhWdnVxT01SRWxWOUc3SGNoY09SakpvRzk5T3hSdGpiWU9SQQ?oc=5"
+        },
+        {
+          "title": "Ex-KenGen official jailed for 11 years over forgery of academic papers",
+          "source": "Citizen Digital",
+          "date": "2026-09-15T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdzJuWDFJTWw1eHJTdU82a3JqaXlha0NLeHhuTkZNOW5sWEMtOVdncjFNM3ZpX2NLY0FmTVdLVFpza1ptYWd6OXVUdk8tN08xd0RLSFVqTUpyQXNIdTMtSW9LaThOYWhaOHI1ZWFJXzhseXk0NGlSVUVJVS0tZG5Ha0RyRGRnVlo1QzV6SExHczNQQ2pPR0hackl4VWQ5RkxLQm85TlA3SW0wTFBfZTlF?oc=5"
         },
         {
           "title": "Ex-KenGen official jailed 11 years over forged academic papers",
@@ -1883,12 +1919,6 @@
           "source": "Business Daily",
           "date": "2026-09-15T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcFRkTkxQclBoczR0d1lzc3RWTkJQdEhWNUZkeWxGMWViSjdmNEpJQTBQUE4yc3EwSGJUbmxhOV9rcTU0YnhWWEFSVWVxaXhoUWU0SjJJNXNKYURPQlBzWXlwd1pGNFFWUUg5anhsNnJuNWtUMUJ3THVIR04xYmxqSDJIX1gwWng2Z0dQOXFPSjdneTU0QVlUQ0tYMVQ4bDE5elNLVkJQcjJLNGl5Q3o4WmxVWnA?oc=5"
-        },
-        {
-          "title": "KenGen cuts dividend by 16pc per share as profit stagnates",
-          "source": "standardmedia.co.ke",
-          "date": "2026-09-07T03:02:52.000Z",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRWRzZUUtMG5TUzJ5S3JqWEFVVWhJWjlsSjcwTF9oNmxrNk1PVlBRUVk4X2dPVExzZU1XVm9ZNlY2c1BUdDNTRHhXRHVLU2pucFYzNC1yaWJqendIa3lOQ0RYQ1BKa1VSR0c1a2hULUdDM1FUMW1aeHg3bTNlT3E2QmJXbnlsaWNaUDJkclBWaGN6X2RMTDNacmJTUVdZdnAyNXJoZ0ExOENhdWNsd2tLaUI5ZWVqZFR0Uy1zdUl0WEhGRC1teHc?oc=5"
         }
       ]
     },
@@ -1896,31 +1926,37 @@
       "symbol": "KNRE",
       "name": "Kenya Re-Insurance Corporation",
       "sector": "Insurance",
-      "price": 4.36,
-      "change": -0.01,
-      "changePercent": -0.23,
-      "volume": 1498785,
+      "price": 4.41,
+      "change": 0.05,
+      "changePercent": 1.15,
+      "volume": 656353,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.23,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.15,
+      "fiveDay": 13.95,
+      "oneMonth": 14.25,
+      "sixMonth": 23.53,
+      "ytd": 46.51,
+      "oneYear": 38.24,
+      "threeYear": 140.98,
+      "fiveYear": 76.4,
       "tenYear": null,
       "news": [
         {
           "title": "Kenya Re Boardroom fights: Why investors are not worried",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-07-30T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSnR6WFBKOG5lZThwZFBJZHoyMzhuRkRyeElVWkVlelk1Q0VrRkdFZ1RqMGI0MFBmLUJ2b1RUbmF5QmFWc3ROWjRPVHFaRlJKRTNBVVVyWktpSzFiNHR1QWEyYXlxZUNCZEFFRW4xNkNiUGVDeDl2eUgxUnhUVWQ3Yw?oc=5"
         },
         {
+          "title": "KNRE Forecast — Price Target — Prediction for 2027",
+          "source": "TradingView",
+          "date": "2026-07-18T12:37:20.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5OV05JWlVyR2dYRE5KTTRUS1d4aG56b204bVdZaWdxSjRKNzEtS3g5UVVwTFlENWNMVFZVMDFWbVB4U3EtSEk0UUdiWXR5NktPemNYbmpIakl4bGhLR2I5elE4eUJXd2ZqYWd2TmJLczhtNEUySk1faQ?oc=5"
+        },
+        {
           "title": "Kenya Re-Insurance Concludes Board Elections as State Consolidates Control",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-25T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaDl5bVhKYTVDekdua1FVQVItenFMd0xWWDZMVlpjNmt1aDRGbkxXVHp4bTRHaEpyX1pzUE15S0c0aVdXMHd5QTBmeFk2MVJQdEhoT0g5NGNhYjAzVjNmcXcwbm9ZZTZtcVJDdGZCR1Fia205WWhwekFUcnl6OTZoYg?oc=5"
         },
@@ -1937,12 +1973,6 @@
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOWJWSjVWbjhway1RZy1Oc2NZekFSbEtlaEhNQ3MwUjdCU0U5QVBfVUtaWDM2V3lHaXJwMFZiRFdDaDJHcmFGdG5vbHZGU1gwNGg1QXIzMS1GcUY3TGNRaWV6NjhJOGN3dEhpR0tRaHhRX1Z6SnNYVkdLUmFRaUhrQlpuUzg3YnNXWWFTbEdR?oc=5"
         },
         {
-          "title": "Kenya Re-Insurance Corporation Ltd. Balance Sheet – NSEKE:KNRE",
-          "source": "TradingView",
-          "date": "2024-01-13T18:21:56.000Z",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9lak1aQ2xlQnBxVHZiSlRPWG1SSzdPYVdKdzlYOENWN2FuelNKeWZjdE4yV2hnN21OWlh4c3pCc1I0SDRWaDNNbTdEd3dINDlBS19jb0hxWHJsUDdGeHNQVHJCWHlKanNiaF95blpCdUxXMHd6OEY3aTBDd2Q?oc=5"
-        },
-        {
           "title": "Technical Analysis of Kenya Re-Insurance Corporation Ltd. (NSEKE:KNRE)",
           "source": "TradingView",
           "date": "2024-01-05T05:07:44.000Z",
@@ -1957,19 +1987,25 @@
       "price": 9,
       "change": 0,
       "changePercent": 0,
-      "volume": 160999,
+      "volume": 244866,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
+      "fiveDay": 0,
+      "oneMonth": -0.66,
+      "sixMonth": -0.44,
       "ytd": null,
       "oneYear": null,
       "threeYear": null,
       "fiveYear": null,
       "tenYear": null,
       "news": [
+        {
+          "title": "KPC fellowship lands jobs for 30pc of first tech cohort",
+          "source": "TechTrendsKE",
+          "date": "2026-09-23T18:52:25.000Z",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeE83QWZ5NmFsTHdTc3p3N0c3UnZkSFpHN1QySWlQVWgzWWRRTDN6RFVKY2pER192Rm02eXBXbHJRMldMY2VVUXM1aEdNRkZENGZHeVlZVFlQMFVMbUV5dWxMNVVlNEFqTTQ0RXR2TWRHWWtTZkg5OWUybGM2aXpoRDJlVnFZSHZzYjBjTmd1enpnRk9CUlRnUXVR?oc=5"
+        },
         {
           "title": "Whistleblower wants probe on Kenya Pipeline IPO, alleges fraudulent transactions",
           "source": "Citizen Digital",
@@ -1978,15 +2014,9 @@
         },
         {
           "title": "Report Claims State Parastatals Were Coerced into Buying Kenya Pipeline Shares",
-          "source": "Money254",
+          "source": "money254.co.ke",
           "date": "2026-08-31T14:31:24.000Z",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY2Fabl9aZWxWSjBaMVVSV1hibjdRN1h4VFB0ei1LMlpZVHZNb1RkWkdDbllPd29DUEVDc3RUTGFxNDEtdXhqNW9tV3dQNGsxRU9scVVRR2UzZ2d6dU9ISUgyRmJEQXJvZldKYXV1a2UyWkNlTk1Yc2E4Q1pETkdyN1Z1bWNYS1BNa2RMVHdWRGw4RDdhbVRhcjhZSFRpQlRZdWlvVWp1WWxJejFqTFVkaDNzVUR6Zw?oc=5"
-        },
-        {
-          "title": "Kenya Pipeline IPO, Mansa X earn dealmakers and brokers Sh9.8bn",
-          "source": "Business Daily",
-          "date": "2026-08-31T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ0V4aDFwVndBRlN2akYwbjhKNU5SazF2Uk9HUW9jcXN0ZUQ4MXpHUTFyUzVyZjlnZ09VQnNyY19CYXcxN0lOSEo1VDJVRzl4bXhTcjJHZ1ZocDk5emJnX3duS2liR2FKNDNrTng0dTNJRmR6MHdWY2ZZNVlzOGZqQUl2SDItS0ppb1h5WTBMRFdTR0hJNEp2TzFmclpObGxleFdBYXdMaEloeXoxdHpyV1pSdDlLLVpLRXhPaW5QM1pwSmEwb3JwTA?oc=5"
         },
         {
           "title": "Kenya Pipeline Signs KSh 93.7 Billion Gulf Energy Oil Deal",
@@ -2012,39 +2042,27 @@
       "symbol": "KPLC",
       "name": "Kenya Power & Lighting Company",
       "sector": "Energy & Petroleum",
-      "price": 23.4,
+      "price": 23.45,
       "change": 0.05,
       "changePercent": 0.21,
-      "volume": 694775,
+      "volume": 390997,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0.21,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 7.32,
+      "oneMonth": 10.35,
+      "sixMonth": 39.17,
+      "ytd": 72.43,
+      "oneYear": 66.9,
+      "threeYear": 1473.83,
+      "fiveYear": 1271.35,
       "tenYear": null,
       "news": [
         {
-          "title": "Kaa rada: Kenya Power announces electricity cuts in 3 counties tomorrow",
-          "source": "Tuko News",
-          "date": "2026-09-20T14:29:36.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGl0TFAwb1REZnpwakNYMG1kOGNDUWxNSG1aY2xUV25TVG5nakFDZVl1TVJ3NnNJak5pd0Y4UmhGeHhNb05lanp4dmxKcXl3bTlxYUp6ZTJxVjAxcDFsZGExNHNxN2ZlZHRsUlRpODlXcHN4UjRZckV4T1VxWDh1Z0k2bVA2X2FNM0tCVnJHdXVENHdKT0h2Y0ZDdm5Ha1RVZGI1Y0VoeFJPZjF3M1Nfag?oc=5"
-        },
-        {
           "title": "HOAX: This job poster claiming that Kenya Power is recruiting for different roles is a sham",
-          "source": "pesacheck.org",
+          "source": "PesaCheck",
           "date": "2026-07-29T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcjhONllHNHltM25pSTZ0OThwdEpzVnVCaEJpUDlEdWF3dWJRRFRqSmVCOW1kZTdQRXFSb3U0OEVTSGt6MXJzLVRKUnNUcHBqTVVTSnJmNEVEdFZHdFp6QmVfeXlTbzlYTUU3akJmZ2dxX1ZMSGtPaUxJOWcwcVlTem54bzRCLTg5TGJERUIweHBVVjlwTjlwMTZoZlhNRFJEZElLRThLYkxWZUJDbTVQM09VVQ?oc=5"
-        },
-        {
-          "title": "𝐊𝐏𝐋𝐂 𝐫𝐞𝐟𝐮𝐭𝐞𝐬 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐞𝐫 𝐭𝐫𝐚𝐧𝐬𝐟𝐞𝐫 𝐜𝐥𝐚𝐢𝐦𝐬 The Kenya Power and Lighting Company (KPLC) has dismissed claims that transformers and electricity poles were secretly moved from Mbeere North Constituency in Embu County to Nyandarua",
-          "source": "facebook.com",
-          "date": "2026-07-12T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi7gVBVV95cUxOb0daNFhfcml2RjJNVmNPdGJXZGRmT2pQODFIODlsYkZwSG55T3JBZzZoY2hnenBkYkt6a2FDeTBYQXUweVRBaXlSZXJFUzJQTzNPeDJIbVh0dHNPeGdmajFWUlpydmJxY0J5RFYtaHN0Mm9qSENYenh4Tk45QldPWFdwT2dQdjl2MlRrTmZCODgtNGdGMzRvZDZ3eFZ4WXlLZHgxRmU3b1ctTWFYRUh4Y3BTb25LZjhsRUVnNWNqdExOa241X1lkUl95ZVFaTTlvWXZHRHQ0YXI5X1Jwd2JiX2Y3LW9tN3Foc3B6SThmNVVkS25kemRzZTFUejBtTXdyZkMxWkhSeVk2ckU4ajhwRHdlRVZjcDU0U0pObjd4YklsV0FsVG5tUUdMMWJoVEZ1bHdPYkdydktuWDNLVGNrdUo3aFliYlc2RU9zTXBqWHVWNHNWbUxON0RVM1hSN0lzWkF5c1NhVVZZWDhvSURPZnZ1Q2hZYjVWdGFYN0FPLUJYVU9hcUtYVEVlSEFsd210U2lGOGpjVWxuTHVxc2JMTlpUaUdZbW9NQUs3bk1vck5uc2R0MnAxSzdXREtXanVMS2VCX0JHeWtVWkkxS0Y5Y2pDUThQY1pFUHhSTTRhTVVReDA4Nm1YVnluVmZ2X2ROT2lPSXVWYlVjQ2RPVEVUSndtV1FKdTRaRkkwLWppdExGSzZtQWhLZXlUWjVON1J0QV9KWEk0UFR1aWpTN0tVMlNUOU9uLXY2TVhWWGI4dk1PbnNtZU9vWndlUUlRRVpsNDQ0M19jUzdZanI2ejBlcGd1MWUxMzFjRlZRNHM4VENSeVlicmp5UTlQUVZLUzYwMm9GSk5JV01MMnVyUk90aEl0cXhOeGJ6VGFyR3ZEcmMyRDhXWlpFQkUtQWVJWGNpZ00xUk5qNzJCOW14M2ROeGNFN1Q4YkoxUXRKbV9WRGY2a1lET2lGRS1JLXB2LU5HUnBTRmV5UkpBYS1YZ0E?oc=5"
         },
         {
           "title": "Kenya Power & Lighting Company Plc Actuals & Estimates (NSEKE:KPLC)",
@@ -2063,6 +2081,18 @@
           "source": "the-star.co.ke",
           "date": "2026-05-07T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYk9laThBVS1BQnJLcEVFTmU5eHdjU0NtbWpGUC1NandidS1oUkw3aTBiZHNRdTFfOWY5SmVOV3lMLTNfbVdBX25YU2pzU01qdV9NSmF5Y25scU9DakhzYUN0cUVTZXNSTGFhRWhEakFMLTVrM0J6cmtqMmlMeHM2RWxpOVpScUZacTRONE5CckZrekhpVHR4LQ?oc=5"
+        },
+        {
+          "title": "Kenya underscores Africa’s growing appeal as global energy investment hub",
+          "source": "kbc.co.ke",
+          "date": "2026-03-20T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX0FNSGJNTXNxUTNuQzMxbnNuWTd6elhsNUJDdWZ0aVgxQ2ZVN0hMUTkxTmZ6S2tISERrSGFrbmJncjBrejBLOWFYT2Zuei12Y2hUQUg1MTlXLTQtYlJoS3N4Nk5fSklqY0dhZzI2d3MxcUJSNldOdzd0dG5KVnRzenNfVFdXSjBrZW5PMkY3Qm5kV016ZWhYLU96RQ?oc=5"
+        },
+        {
+          "title": "Leadership at the Helm of Kenya’s Renewable Power Champion",
+          "source": "CFI.co — Capital Finance International",
+          "date": "2026-01-22T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSDlqWHdLcWNDWFB1eWdkOFAycjhaYkFYb1BEeW1CeXVVUWtHaV9PQzItSGQ0SFFtaVBZT0VqMmhEblBJUmppal9FcU5oY2R2T2ZNVjFDRU5xSDRDYk5NckpERHQwakp3dUlHNW1oNXdtQjlYNnBoMmxIbWVXdFRvVzJnU1lGRW0ySTZvMHRDTkxTZw?oc=5"
         }
       ]
     },
@@ -2075,17 +2105,54 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 5.2,
+      "sixMonth": 5.2,
+      "ytd": 5.2,
+      "oneYear": 28.29,
+      "threeYear": 27.98,
+      "fiveYear": 16.11,
       "tenYear": null,
-      "news": []
+      "news": [
+        {
+          "title": "For maintenance: KPLC lists parts of 7 counties facing power cuts tomorrow",
+          "source": "Tuko News",
+          "date": "2026-09-23T15:30:05.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOS0R3cGZRb241cmQ2UXFkT3FKcVVuRU00Qnh0UDBnckJSRkFTZ24zSUtlbzN4cG1LNE0xMXFLVmlLbXFXUktBWWh4dXcyRWwtVUpMVGktTXVfTk1mUXBkWmZHZXBtSmhPUE16b0dZTklRc3hpTkY4cTdvWmV4RmhVVWxFNC1hWUhOVzF2am12dmR1N2lvQlM1MFFOcHdoTUtYd2ptd09EV3RjQXB5c3FwakdFZnVjUDlGMlJr?oc=5"
+        },
+        {
+          "title": "Electricity theft, transmission losses at 11-year low",
+          "source": "Business Daily",
+          "date": "2026-09-23T14:45:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVGJnZ3EyclRRZVdmU1BNa3RWLXdwZHZKa1hjdGFHbExmeHN4ZXhUb3BzcFRBVjZ3MTY5QkNWeTcweU5oRXZ2WjJNNlVMUUtweVFpT01wUlc5Zzc4ZzFjMU5QVHhCOUVZVENxWUlZYTlGcDgtc3ZoSy1QTWJRZHBDV1V6Mk5fdUMtQXEyZXFobUROWm9JNUlydTFsRGNEYW5xcVNqUkNCTlBOX00?oc=5"
+        },
+        {
+          "title": "Kenya Power slashes finance costs after paying Sh8bn StanChart loan",
+          "source": "Business Daily",
+          "date": "2026-09-22T16:15:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLXNhSWJvcUlfbk5xaWEwY1NwVXAtMk5xNlYtQXh3Ny1zZ1VpMjNBRmw5SzB4dnlOSkE1ZmJOa1Q1REpKU3NxVEo3czFBNEpMZ1hBcG9KY2Q2WUkwZnRkRm9IbjloeWx1X1dkaDg5ZERmWGFuckp1TWFDYlFUbG1Pc3lkMGFhbHNaWW9XemFvZ0VhN2ZHYVA5TlFETm5ueE1UYVVSTlNpV0xCckFlUGxvREgyUkNjTHcwZE1ROW1aaWlfd1Q5ZHVr?oc=5"
+        },
+        {
+          "title": "Why MP Ndindi Nyoro is set to pocket Sh32.3m from Kenya Power",
+          "source": "NTV Kenya",
+          "date": "2026-09-22T09:14:41.000Z",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRk9nOF96M1JUckFKV0pJdHEtTUxCY3M1Qi1SbHJZdGtGT1RyUW1JRFBEQ0ZZTGl1ZExhUGh0MUR5WjZtS3FEODFmeURIU2FxUmRQbFhrTEtaaEt0OHQ5S0t0Z19WR0YyWTZhNE1fU3pYX09mYkV2cGxIVVU0cWpmN3QyWWd3RzBNTF9MalNhZE5KWTRw?oc=5"
+        },
+        {
+          "title": "Why MP Ndindi Nyoro is set to pocket Sh32.3 million from Kenya Power",
+          "source": "Daily Nation",
+          "date": "2026-09-22T03:08:12.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONHBsZnhQQ2o3SmRHcEVGeF9XVGdOT0lwX2luV3A0bGpkT3RJb0FWUXNTSWdqZnlRdGxTVHpVNER0ZVA1NGhyeWVhUmppbmpVMW1wOTZLS3RPamRpc19ScWVJQlEtRUdTMWJwVmltTUc0cFAwRkNyRDhaS0hhWnE0VEIyUXJ1VnJWQ0hZSV9RdWVKa1I5ZGVISW5rblF5THpjRWxEYXhpOFVSdnJtR1ZiMQ?oc=5"
+        },
+        {
+          "title": "Kenya Power lifts its dividend to KES 1.50 a share and Ndindi Nyoro's cut is about KES 32 million",
+          "source": "tech-ish.com",
+          "date": "2026-09-21T21:44:57.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVUVVZ1pmVlRJZjd4MThXbDBuV296YkJ1dWRIZ1RJWS1PZ2I2TTctV251Q0ZseENGamhnanFGQlV4WWlQb3FBQ21oSFNrSExEa3BTOWoyblNiSzBPc1h4Z1hhTnRiWWtEOUxLdDVRcWtlcXp0R1VWNFRwdVVUalFSTlJnWEpTV1lLN1VSMXBScm1OTmpOQjZPQVNCRFBRckltODhIRkszRXYzVTk2ZWw1a0UwanpZbWlBLXhnLWpTQm5FOUxMUzJFQQ?oc=5"
+        }
+      ]
     },
     "KPLC-P7": {
       "symbol": "KPLC-P7",
@@ -2096,28 +2163,52 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
+      "fiveYear": 0,
       "tenYear": null,
       "news": [
         {
-          "title": "Kenya Power & Lighting Co Plc Ord | (NSE: KPLC)",
-          "source": "AskTraders",
-          "date": "2024-05-29T12:39:03.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQzdQc0ZfQlNKTGxkaVYtYjZPUXhVUXA1LUhseTF0a2dQcnM1X2I0VUhzeHBqWk1wNHZSVjVqUDY2cEdPZkRSaTQtTkxVOTdnT3RMREVPdEVCZHlIZ2hsZ0pab2lwd1RnQy14aGtFLXBFajRnbWVKeXpXWHBTMWRNbldoYVc?oc=5"
+          "title": "For maintenance: KPLC lists parts of 7 counties facing power cuts tomorrow",
+          "source": "Tuko News",
+          "date": "2026-09-23T15:30:05.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOS0R3cGZRb241cmQ2UXFkT3FKcVVuRU00Qnh0UDBnckJSRkFTZ24zSUtlbzN4cG1LNE0xMXFLVmlLbXFXUktBWWh4dXcyRWwtVUpMVGktTXVfTk1mUXBkWmZHZXBtSmhPUE16b0dZTklRc3hpTkY4cTdvWmV4RmhVVWxFNC1hWUhOVzF2am12dmR1N2lvQlM1MFFOcHdoTUtYd2ptd09EV3RjQXB5c3FwakdFZnVjUDlGMlJr?oc=5"
         },
         {
-          "title": "Kenya Power & Lighting Plc | (NSE: KPLC-P4)",
-          "source": "AskTraders",
-          "date": "2024-05-29T12:36:55.000Z",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZekJ6WWJYb1N3dzdSTXI5LXpsQ2FUbjk4QXdIZTdwYWUyTGJXTURyNkNFNW1WN3RzR0Zqc2tOeW5FN2dCY082RlFRRlFOMVp0emNaLXF3Uks2V1gtT2k2WmxVVVVZY2M2YU84cGVrb0NhcnVpY3l1cVlFWQ?oc=5"
+          "title": "Electricity theft, transmission losses at 11-year low",
+          "source": "Business Daily",
+          "date": "2026-09-23T14:45:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVGJnZ3EyclRRZVdmU1BNa3RWLXdwZHZKa1hjdGFHbExmeHN4ZXhUb3BzcFRBVjZ3MTY5QkNWeTcweU5oRXZ2WjJNNlVMUUtweVFpT01wUlc5Zzc4ZzFjMU5QVHhCOUVZVENxWUlZYTlGcDgtc3ZoSy1QTWJRZHBDV1V6Mk5fdUMtQXEyZXFobUROWm9JNUlydTFsRGNEYW5xcVNqUkNCTlBOX00?oc=5"
+        },
+        {
+          "title": "Kenya Power slashes finance costs after paying Sh8bn StanChart loan",
+          "source": "Business Daily",
+          "date": "2026-09-22T16:15:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLXNhSWJvcUlfbk5xaWEwY1NwVXAtMk5xNlYtQXh3Ny1zZ1VpMjNBRmw5SzB4dnlOSkE1ZmJOa1Q1REpKU3NxVEo3czFBNEpMZ1hBcG9KY2Q2WUkwZnRkRm9IbjloeWx1X1dkaDg5ZERmWGFuckp1TWFDYlFUbG1Pc3lkMGFhbHNaWW9XemFvZ0VhN2ZHYVA5TlFETm5ueE1UYVVSTlNpV0xCckFlUGxvREgyUkNjTHcwZE1ROW1aaWlfd1Q5ZHVr?oc=5"
+        },
+        {
+          "title": "Why MP Ndindi Nyoro is set to pocket Sh32.3m from Kenya Power",
+          "source": "NTV Kenya",
+          "date": "2026-09-22T09:14:41.000Z",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRk9nOF96M1JUckFKV0pJdHEtTUxCY3M1Qi1SbHJZdGtGT1RyUW1JRFBEQ0ZZTGl1ZExhUGh0MUR5WjZtS3FEODFmeURIU2FxUmRQbFhrTEtaaEt0OHQ5S0t0Z19WR0YyWTZhNE1fU3pYX09mYkV2cGxIVVU0cWpmN3QyWWd3RzBNTF9MalNhZE5KWTRw?oc=5"
+        },
+        {
+          "title": "Why MP Ndindi Nyoro is set to pocket Sh32.3 million from Kenya Power",
+          "source": "Daily Nation",
+          "date": "2026-09-22T03:08:12.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONHBsZnhQQ2o3SmRHcEVGeF9XVGdOT0lwX2luV3A0bGpkT3RJb0FWUXNTSWdqZnlRdGxTVHpVNER0ZVA1NGhyeWVhUmppbmpVMW1wOTZLS3RPamRpc19ScWVJQlEtRUdTMWJwVmltTUc0cFAwRkNyRDhaS0hhWnE0VEIyUXJ1VnJWQ0hZSV9RdWVKa1I5ZGVISW5rblF5THpjRWxEYXhpOFVSdnJtR1ZiMQ?oc=5"
+        },
+        {
+          "title": "Kenya Power lifts its dividend to KES 1.50 a share and Ndindi Nyoro's cut is about KES 32 million",
+          "source": "tech-ish.com",
+          "date": "2026-09-21T21:44:57.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVUVVZ1pmVlRJZjd4MThXbDBuV296YkJ1dWRIZ1RJWS1PZ2I2TTctV251Q0ZseENGamhnanFGQlV4WWlQb3FBQ21oSFNrSExEa3BTOWoyblNiSzBPc1h4Z1hhTnRiWWtEOUxLdDVRcWtlcXp0R1VWNFRwdVVUalFSTlJnWEpTV1lLN1VSMXBScm1OTmpOQjZPQVNCRFBRckltODhIRkszRXYzVTk2ZWw1a0UwanpZbWlBLXhnLWpTQm5FOUxMUzJFQQ?oc=5"
         }
       ]
     },
@@ -2126,30 +2217,42 @@
       "name": "Kenya Airways Ltd",
       "sector": "Commercial & Services",
       "price": 5.7,
-      "change": 0.02,
-      "changePercent": 0.35,
-      "volume": 814623,
+      "change": 0,
+      "changePercent": 0,
+      "volume": 536352,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.35,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0,
+      "fiveDay": 0,
+      "oneMonth": 1.42,
+      "sixMonth": 9.62,
+      "ytd": 61.47,
+      "oneYear": 42.14,
+      "threeYear": 48.83,
+      "fiveYear": 48.83,
       "tenYear": null,
       "news": [
         {
+          "title": "Kenya Airways new acting CEO focused on financial stability",
+          "source": "aerospaceglobalnews.com",
+          "date": "2026-09-24T10:01:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPek52X1dXZ1FJTXRIaUZuZ1lieWtyNWdyVUljMXB5aUJoWUZpaDFEVXBSZGh4RlBXQkJFdDV6QklwT1lsWFBKSkJ0QXBaN3g0c2d6S1haWXNrRy1Ib0lINnBRRWZYTGRXTFNlWkZVZlpEaGZMWHg5WC1Ccm5KN0l3Z2pkeElnaUhWaUJfcExTY2laMnFReTViQkFlNnpSSktUb0NFWkpiVVV3TDB3WmdSUndFbXF1dw?oc=5"
+        },
+        {
+          "title": "Kenya Airways ditches 20-year-old booking system in tech overhaul",
+          "source": "the-star.co.ke",
+          "date": "2026-09-24T03:33:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMm5QckVkNEQ0Z3JDcWw0QW9qNXpqWndGcGNDM3JxMHRhU3B3VzA2Q3N4aWx5ZUo0T0h1a0lvN2gtaXdSZ1R4VGxKTll1cDVXVnNGQUl6NktaSmRoRmJXWjVxM0V4M3dxeFJvWk55RTdnOXk5RWp0Qy1oQTBtTzB5VERGb2t4Z0VXWHhTQTJSTU9tZXRJUzJybXFCeWp2bXZTX1RHLU5ZcTBHYU04Znc?oc=5"
+        },
+        {
           "title": "Kenya Airways partners with Sabre for airline retailing",
-          "source": "asianaviation.com",
+          "source": "Asian Aviation",
           "date": "2026-09-23T23:13:38.000Z",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSWlxS3hhdVBtQUEyVnNOVHFRaWRCdl8tVC01V0d6V1RRa0RaTjU5RGNVZGNQcFJmVndDQjNJRU5UYkpNVEJ6VlFoVXhxOXF4WHJVVGphVjJaTjgzWmF4cGhRelpERTh3dWRaQjducG55R2pZY2Rpclp4QXlCd1dxRlBRX1B0a0lsdkNkc3h3NW4?oc=5"
         },
         {
           "title": "New tech stack for Kenya Airways",
-          "source": "ITWeb Africa",
+          "source": "itweb.africa",
           "date": "2026-09-23T08:33:42.000Z",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRzdzQWhNcDIwb2t1N1ZySU1UQ1lCQXJvcFhEOEppMVV0TkFURjNkb01oQmcyaTJMV0x2MDQwOW80QzNJWW5MOUlTUlJZNm0zSzM1NzNKTEQ1d0ljVlZyMzYtUWR5SDNmZ2xmdjlWSUFoVlZVU2duSzNLaS1rZkRnaW9DUlc?oc=5"
         },
@@ -2160,22 +2263,10 @@
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOVVTVEtMbUFZQ29TLWJkLUY2MUloelpUb0g0LWQ5Sm53SmhIU3RONHg4VktMT2dyY2EyeWdFY3M4V0poemhRUzVPQUx2S1hFQ2gwM2YxeHprRVdQLW8ySE5IMmVULVNFOGRfZ1U0Y1EyX0VqaDhJQnM2a3U0UHlNYUlOdTVCWmNs0gGOAUFVX3lxTE1IalZENERkN2xYaWxPQkVkMHFRNkdHaHRPalZ3eWhSbWJQOENFdHZySDFIOGRLQS13T05aOEFWU0txeDN1cXNnSVVpMDVOWGtOQTJjVUM1aXhfMkp3N1VqRy0yc1p5TzZ3ZVI4N1RHeVZxS3o4QXhiV0NiRnh5Z1V2OElMMmk5OTBDUzExNGc?oc=5"
         },
         {
-          "title": "Kenya Airways Takes Off as a True Retailer, with Branchspace",
-          "source": "24-7pressrelease.com",
-          "date": "2026-09-23T07:08:59.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQejl6MGNwNnpBVGl0YVZ4dWllOXJTMExNRWFMN0lDZ18teEN6RDVUOXpkWi1oUTZHaklDNVlvRkw3YnFnOHljem5CSjJqV1R1SjNjUTJnYUk3VWVEQkxFcFpqTW05Q3c5WFljcVdjTEZqakthWFN2azJQRDZ6OUEtU3NlVER1UUdFcE5BdTJjM1A3cm13Y3VjX0hIdFZFZkFKXzdybGx5SU80LWZsd0dLRzFXcw?oc=5"
-        },
-        {
           "title": "Kenya Airways to replace 20-year-old booking and ticketing system",
           "source": "People Daily",
           "date": "2026-09-22T15:57:16.000Z",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSk9HOG84NHN0Y2JTQW1BT1JkbHZPenlUSUlPRUVDejFDSUkwMjFXN3VfVEc3emtFMWxoMVlVcVhCbzZOdE8yN0tFTHh4c0hSWnJkTGU4Tzdxa3RFLVVlMUFNaGZzdXBVWUVBOVUwTk95UGx0ajlYVWdQS1N2dHkwYThKbkgxZ2pUb19xUm42UmVLZ0JtSTRfb05MLWloOXdyRkJVSA?oc=5"
-        },
-        {
-          "title": "Kenya Airways hires Sabre and Branchspace to rebuild how you book a flight",
-          "source": "tech-ish.com",
-          "date": "2026-09-22T13:45:26.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU2tEZ0syOFJJUktUN3lYRmpxWnI3RE04ckdsbXRuNklBWENJc3ZaQlNhQThvZUR3Y3duTWliMmdYM3liS1FSSk5zODQ1WEVxdVRjbEdTRHVzNmlRVllfWXduZTZMZ0hDWjNYYkNZUmh3N1d5Vk1SeldCQ2VUa1ozUl9SRXo2UndUNzg4Vkc5WkEwOEpPaGR6dEFGdHM5U3VudE1PVncwZlBsS2c?oc=5"
         }
       ]
     },
@@ -2183,20 +2274,20 @@
       "symbol": "KUKZ",
       "name": "Kakuzi Ltd",
       "sector": "Agricultural",
-      "price": 435,
-      "change": -2.5,
-      "changePercent": -0.57,
-      "volume": 499,
+      "price": 437,
+      "change": 2,
+      "changePercent": 0.46,
+      "volume": 122,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.57,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.46,
+      "fiveDay": 3.25,
+      "oneMonth": 2.88,
+      "sixMonth": 3.19,
+      "ytd": 9.32,
+      "oneYear": 7.97,
+      "threeYear": 13.51,
+      "fiveYear": 12.05,
       "tenYear": null,
       "news": [
         {
@@ -2213,27 +2304,27 @@
         },
         {
           "title": "Kakuzi turns to blueberries after dramatic fall in half-year profit",
-          "source": "Fruitnet",
+          "source": "fruitnet.com",
           "date": "2026-09-03T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc19keXB2VzVkX3JPUUJBRnBHejhhNDdibm9UTExpT0NubXFMWFZveUZoR0YxdmNNUjFMNndDbFN4cXVIYUk0dGxKODY4SWxjRHdmR0pjMzJCaGtCc2lGeUN2QnNMMVJPUzVGdmQ3Q2ltcU0xZmtyMTJUYWJQQ3hUNEVIam1uQTJ2aXJpZjJGbzE2ZnY3U2NuSVpIS2xCZTU3NV9FSVltZjNBd0ZyRjdPWktpVVpJTU9H?oc=5"
         },
         {
           "title": "Kakuzi breaks ground for new blueberry production orchards",
-          "source": "KBC Digital",
+          "source": "kbc.co.ke",
           "date": "2026-09-01T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObU15SFNNSzNmamdwRnNhV1FSOWR0LVJWWmVuRkJiTFZsOUthdmZPQmhuTWhDa0Njc1lwMEtwbmFnSDc2eFF4c3dCM3ctWEhIeEJaXy1ZODA3b0lfMF8ybmFsQXlqMF9NU0dZZkkxMHg4ZHdEMEhCcl9hVHg4N3I2alBpUFhTWVJE?oc=5"
+        },
+        {
+          "title": "Kakuzi Plc Goes Full Scale on Blueberries With New 30-acre Greenhouse",
+          "source": "businesstoday.co.ke",
+          "date": "2026-09-01T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90Mlg2SFlFM3FZWEJTQ3oySFpteVFfZ3hiWXgxTGZ0OEF4VHVwbU9RRXJ6cE16ZC1PZlVWZXBRaldaSVVZSjdMMl81M1Z2ZkUxVjRvVkRYemNGdlNiRDRyT0tBTXl5eFB2b2tKNS02SE5UaDc3dzR5Q0x3?oc=5"
         },
         {
           "title": "Kakuzi profits plunge amid Midle East war",
           "source": "standardmedia.co.ke",
           "date": "2026-08-27T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcEUxQU1rQ1E0VlRGM0l5TzNzYkR2QmlqRGZEWUpURllRUDlIY0F4OVhtQlhPOTk3ckVtX2o1czBfaDVmVm1rT0xKTkN3M2JqR21RRlc3LTJDRFZpX2FqeFZSUHlmSTZEUS1tZUJaQWxqbkNJX19HZjUzM1hManJpSjFmdTlGMndBMm9PYUtuNmJVMlYxV0JIRVdSWHlqLTc2aTcwR2ZVZUN2dmxkaEVCSW80OTdxc19LbTVIVEZod2x6aWMx?oc=5"
-        },
-        {
-          "title": "Kakuzi H1 Profit Plunges 98% as Export Crops Falter",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-08-26T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50TGhhd0Z0aHVERHZGaHlEdUVTOTRMaUNVTWc4R2pnNThTMU5XaktRQ2FwUW1WUlF1b1JKcndZZG9KMmJPSkI4YnktcXYxSG5ldllEdFV3?oc=5"
         }
       ]
     },
@@ -2242,19 +2333,19 @@
       "name": "Kurwitu Ventures Ltd",
       "sector": "Investment",
       "price": 1355,
-      "change": null,
-      "changePercent": null,
-      "volume": null,
+      "change": 0,
+      "changePercent": 0,
+      "volume": 12,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": -9.67,
+      "ytd": -9.67,
+      "oneYear": -9.67,
+      "threeYear": -9.67,
+      "fiveYear": -9.67,
       "tenYear": null,
       "news": [
         {
@@ -2304,36 +2395,73 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
       "fiveYear": null,
       "tenYear": null,
-      "news": []
+      "news": [
+        {
+          "title": "Operating cash flow per share of Laptrust Imara I-Reit – NSEKE:LAPR",
+          "source": "TradingView",
+          "date": "2026-09-21T18:42:54.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQUpBVERBMFZSdHRjTVRtMUh5bW0wWDBaanN1Ymo4VDBBVXF5R0hpVndjTkh4QlBYekxoVUFuSE9zbGYwMHRjeXhma1RpaFRwbkRpQnFBS0w3SmQxQ1NEblpXMjBGV184cWRZMHFVQXdsWjE3UE83TF9BZEhjRFYtNXNBdlB4M3BKVnIxbG16czJzYlZqMlR0U2lDY0pmeVpiay1wdWMxV2hzLS1CWDJZ?oc=5"
+        },
+        {
+          "title": "Laptrust Imara I-Reit Revenue Breakdown – NSEKE:LAPR",
+          "source": "TradingView",
+          "date": "2026-09-21T01:12:48.000Z",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5CZ0Y5R2ZzckpuSDBWWGo3Q0JRTGdDb1QwMnVLTlFpWVZJNVRpS0ctT0FjSDNmTGl2WmYxZktfdi0zdlRQc3VOaktZaEZrLVpCbFEwelBEZzNTNk9wM1hnclRNU2hIV2FRdFFuLUpuRk9kdGhTbUE?oc=5"
+        },
+        {
+          "title": "TRIFIC Green USD I-REIT: Kenya’s First USD-Denominated Green REIT Lists on the Nairobi Securities Exchange",
+          "source": "african markets",
+          "date": "2026-07-03T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdGpZS0dSTW1kMk1NdXFzcDJNcGpKeHZjU2xzVmpLdktnb2xWMHB3QnVueEVhYzhVTThrN3VJZExranlQNmp1eW9Ba0dQRzczeHplcDNvS2hma3B4OUgtemZqVzJrNmhnNV9lN1dzQmxBaVlERkY0UDdEWmxYaGNjS1FfZVFPdmdaYzRKWXFaWk1JcWFDYlgxZU12VjhfR2toWjlmajhkOTdsTEt1ZWxkMTZqNmlsRHB6Y1lfbVRfOUdaMlhRUTRFblpXcTFwVTFWdWRpNVNMT0VybXFVVnctUnRmb3lPSGpPOHhsajZ3?oc=5"
+        },
+        {
+          "title": "TRIFIC’s Green Dollar I-REIT to Begin Trading on NSE on June 23",
+          "source": "Khusoko",
+          "date": "2026-05-28T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9leTRvRHRQTUhVdUNMMjdqZUlrd0JLUDI4Q1hVWkhPLXB2c21sUm9nRERuTXV5a3NFb0ZfbTBnSVVHemsyTUNIMkd4SXFuZ0xFbjNST1RoUVNIZHZKZFVSNlM3SUVBazhQOS1DTjJ2Ml9XVnQ5T1E?oc=5"
+        },
+        {
+          "title": "LAPTRUST Imara I-REIT posts KSh 280Mn loss in FY2025",
+          "source": "The Kenyan Wallstreet",
+          "date": "2026-04-16T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4zNlBnakRIRHNXZ1VkSERodWtKWUwyanEyRTAwTzQteVloR0t2MVdoU1FpNG5neXJHdGtic21UZjFhUWVxTkxDV29MMW9Wa09XZ2FwZWF5SS1HeF9GTW1ial9KaWR0VmlGcHNMLUdnUnN3c1E0TFdpYQ?oc=5"
+        },
+        {
+          "title": "LAPTRUST Imara I-REIT Flags Earnings Hit from Rentals",
+          "source": "The Kenyan Wallstreet",
+          "date": "2026-01-09T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUUVIbV9OVXdpbGdKTnN3N1VGX3dsZlFCTHFwaG91eWE0aFFBRDd0VjAzZjlGTE1hRk15cWhIMEN3VnRobGQ1Y0pvckRBSlRNZC1xbHNOcU9Ea21rWjczUVBIZ2czTDZqRF9jYkJabUZab004M0VfWWtkY2xXTVFyTm1ZU2VBQTZWaG0tMHRZWnV1QlNUWnVTV0N0djVWUW5FS2lyMQ?oc=5"
+        }
+      ]
     },
     "LBTY": {
       "symbol": "LBTY",
       "name": "Liberty Kenya Holdings Ltd",
       "sector": "Insurance",
-      "price": 9.36,
-      "change": 0.22,
-      "changePercent": 2.41,
-      "volume": 19078,
+      "price": 9.3,
+      "change": -0.06,
+      "changePercent": -0.64,
+      "volume": 19548,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 2.41,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.64,
+      "fiveDay": 1.97,
+      "oneMonth": -1.06,
+      "sixMonth": -7.92,
+      "ytd": -7.46,
+      "oneYear": -11.85,
+      "threeYear": 147.34,
+      "fiveYear": 14.25,
       "tenYear": null,
       "news": [
         {
@@ -2368,7 +2496,7 @@
         },
         {
           "title": "Most Profitable NSE Stocks by Dividend Payments in 2025",
-          "source": "Money254",
+          "source": "money254.co.ke",
           "date": "2026-01-30T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVDBKRlBaNEFaQS00eGUzS3hYRWxrUm9Yd3llQzBMZDNWQnVaY2Y5d0EwWnBGV1BmdVhpaXRlcEgxdFlfajlaNEpTZ19EOWxQSlotNWdkRWduWWtKTE1lUFd1ZUF4cEZOQjYzUGdKU0R3OFpJeVNEcHVyblZsRVdIdVFKTkU5MWN1TVRsSE1TX3ZjT0lhYUE?oc=5"
         }
@@ -2381,22 +2509,22 @@
       "price": 510,
       "change": 0,
       "changePercent": 0,
-      "volume": 7,
+      "volume": 12,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": -4.67,
+      "oneMonth": -2.86,
+      "sixMonth": 2,
+      "ytd": 10.87,
+      "oneYear": 36.09,
+      "threeYear": 34.21,
+      "fiveYear": 59.38,
       "tenYear": null,
       "news": [
         {
           "title": "Limuru Tea stock holds steady as investors await fresh financial updates",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-20T19:51:33.000Z",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOFhSU2JTR1NaOEwyX2ZkUG5DSFpaUTkxSHpTb3JtVnIzYnYyMVFUZUpEbm1fdDRjV0gtVklnbWsyOXZ3TVVEMFVOLVRtYTg3bVp1LW9CRm1lVEpoOGhoWEotTkQtNUp6X2k5NXpqYy1MaVo2czYyZV9wRWdMb1VLTDhJLU1xenJxMVNMXzZ2RG5vVlo0RXJabEg0OW16ZWl1cUd1ODM2TTNxeS1WemtCSU5feWF2VEFEUERUTUs5OE0tLTJEN0l6dlY2WQ?oc=5"
         },
@@ -2413,6 +2541,12 @@
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOV1k5dzJSMEV4ZmlzZzJwbnczY1Bxd3lybmlYM2Fya0o3YXBKZjhWQTdHSG4wdWZPOUdrdVZXc3hOVzV5T1o4WHN4MEtpVk1PRm5iNGVjLUg1SG5HaHNpLUhmdVBuQ09KV0xhaENKaElqbVRXYUR4T1VIUjNFZ0xxa3lDTFhuS0tqX3JPNkc2b1JqUnM?oc=5"
         },
         {
+          "title": "Limuru Tea Plc Warns of Lower Profits for 2023 Due to Cost Pressures",
+          "source": "Khusoko",
+          "date": "2024-01-11T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNnFmdVJYYmRCWHlSQ2VIU1F3cDRyM1o3bTEyZFhhVkRDRTBmRlRtN2FwYlBqUHF3RU5Ec2hCaGthWm83dWdhMG9uZEtnZU9TSjBaWlhYdUFEclpkUmEzbUo4ZS1GLXNUR2huQlNpNUpwekQzQXZSQkZKbkVqd19vUE1wVXhxVk51UVlRWU0wTDhtU1J2blpfbWJMTDRReGVWTXc?oc=5"
+        },
+        {
           "title": "Best-performing stocks in the Nairobi Securities Exchange (NSE) in 2022",
           "source": "The Kenyan Wallstreet",
           "date": "2022-12-01T08:00:00.000Z",
@@ -2423,12 +2557,6 @@
           "source": "Khusoko",
           "date": "2022-08-10T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa2s1RlBnSXVwZ04xS2RNdk11czNiRzRwU0Jkb2xOWkpmSE10SUZPX0dUejUtOEVHNGYtLVR6b2s4SnJQamdWZTZNLTRHMjRCQ2R1cVpSYWhVWTBaR1ltY2FrbEU5ZzdjZUlfLXNVcmZoTy1TbWNNZTlQbHVSdDJ3MWhIZXVpSkc4UjNNaktFUmxIZWpPczhHcXRMYw?oc=5"
-        },
-        {
-          "title": "Principles on trial for Unilever Tea buyer",
-          "source": "Daily Nation",
-          "date": "2022-07-12T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWEp2X3NhTW1wMWhlLU1uMmcwVS01YVRsZDZGRHN3RjFrYUR1TkdIQkpHN19mYUFGNWVnUVJEVW05WnNEMU1TQWgyQl8tQlA2UHpfSVlvSi1pek53bGlxQUdpX3otd09OdGxUX2tONlRMWkdWYUozanFkaExVWHN0UG1LYXRyUUVsVDAteHBUUFRVQQ?oc=5"
         }
       ]
     },
@@ -2436,20 +2564,20 @@
       "symbol": "LKL",
       "name": "Longhorn Publishers Ltd",
       "sector": "Commercial & Services",
-      "price": 2.74,
-      "change": 0.01,
-      "changePercent": 0.37,
-      "volume": 8745,
+      "price": 2.78,
+      "change": 0.04,
+      "changePercent": 1.46,
+      "volume": 4213,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0.37,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.46,
+      "fiveDay": -4.79,
+      "oneMonth": -3.47,
+      "sixMonth": -12.03,
+      "ytd": -3.47,
+      "oneYear": -7.95,
+      "threeYear": 38.31,
+      "fiveYear": -31.36,
       "tenYear": null,
       "news": [
         {
@@ -2499,17 +2627,23 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 0,
+      "fiveYear": 0,
       "tenYear": null,
       "news": [
+        {
+          "title": "Mumias shareholder challenges CMA over access to information",
+          "source": "Capital FM Africa",
+          "date": "2026-09-24T09:40:29.000Z",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUU42M203emM2ZWtqOGoyN0FjWlFJR0dfWDJieEZEaG85bExSaVlkTzRLVHRGbE5OV3NKTk5EQWVadkF0MkwzdjhENTEtTmhEQUNpQ2M0by0xRl9pT0ZZR1BlMm9nbkRpdTlIQTF0Q0tqMTZLbk1zSm9PWTRJQmwtVEJDS0YzQkFaLUIyQkNDcw?oc=5"
+        },
         {
           "title": "Mambo ni matatu: Tata's woes following a familiar script",
           "source": "standardmedia.co.ke",
@@ -2539,12 +2673,6 @@
           "source": "TradingView",
           "date": "2026-07-27T12:22:21.000Z",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QRzdlWFVtVFlDLXV2WFprZWdSUWFXalkxR21Rb0Q4cDBhNmZBWGZaMHJRZWtPdlRVdzhuLTlGOUxLYlFOaDhOZ0lRVXc0NktoeUlLazdWMmg4UkxVMnVhMzh0aGFNLWVZQk5GdVVjQlpqaEx3?oc=5"
-        },
-        {
-          "title": "Twist as court admits farmers in battle over sugar zoning",
-          "source": "Daily Nation",
-          "date": "2026-06-27T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVWFzcUk3UU9YMVBHa2s2M09MXy1LbTdQQndta2Vfal9PNDJRQUhtWkF4bEhaTVJ3YldUTE15Wkk3NFJEZDljdEllQ1BCZlF6NFpaUnJDZTNGdDdKS0tmTXZNY2lTUXNFdE9pMFZreUY5U204bHhuVFhUYTlDX1pSdzk0RTVZSWJaSWtxS1czMWFlQlBzMjcyQXlKdHM1Nk1PWHZubTFn?oc=5"
         }
       ]
     },
@@ -2553,19 +2681,19 @@
       "name": "Nairobi Business Ventures Ltd",
       "sector": "Commercial & Services",
       "price": 1.29,
-      "change": 0.02,
-      "changePercent": 1.57,
-      "volume": 94867,
+      "change": 0,
+      "changePercent": 0,
+      "volume": 42262,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.57,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0,
+      "fiveDay": 1.57,
+      "oneMonth": -4.44,
+      "sixMonth": -12.24,
+      "ytd": -11.64,
+      "oneYear": -24.56,
+      "threeYear": -57.43,
+      "fiveYear": -81.98,
       "tenYear": null,
       "news": [
         {
@@ -2582,7 +2710,7 @@
         },
         {
           "title": "Nairobi Business Ventures Plc Issues Profit Drop Alert",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-04-07T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTcHl1YVVNOTRaY29VVWNUSGM3T25fSFlkeFRMZVNDX1Z1NUR2eVlMXzBqZlJOVlhEQkZxZDJ0SXBsTDZfbUoycTFzQWFPbHZNS3QzQXY2Yml6UEZxbVF6WGdpdE1wWUEyaFN3NkpLcHBIckJKSFhxbUIyTEQ5VzA?oc=5"
         },
@@ -2613,25 +2741,19 @@
       "price": 90,
       "change": 0,
       "changePercent": 0,
-      "volume": 1167538,
+      "volume": 89315,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 6.82,
+      "oneMonth": -1.64,
+      "sixMonth": 0.84,
+      "ytd": 7.14,
+      "oneYear": 28.57,
+      "threeYear": 141.61,
+      "fiveYear": 232.72,
       "tenYear": null,
       "news": [
-        {
-          "title": "Standard Bank reveals Sh167bn war chest for regional buyouts",
-          "source": "ntvkenya.co.ke",
-          "date": "2026-09-22T10:24:02.000Z",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWHl2UHA0Nk1zOTNCRzBTS1N5UWVIanAzZnRLZGw4MVNPcDg4VkIycV9TY2hzUmlWY21XSmNwNXFqcHVaUWVoMnhTMTR4UVBqT1RJVUpucHQwU01nLTVYSHlSd0RoalRFczVJX0tLU0YwU0dpYUJvU2NfbzA0SDJBM1BYZFVUeUQtRW1TTUJZaGdJaVE?oc=5"
-        },
         {
           "title": "NCBA partners with PIPSSA to boost school sports",
           "source": "the-star.co.ke",
@@ -2639,10 +2761,10 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUmh5U0Zmc1VrY3o5azlVZ1dFZzNaSU9mdEYzakh2Y1psSmp5WGwtTndHSUlsNFcwTXUyeXpGVGhiYVprUXBHQzluQnVXb1pZRl9ZNHJEZ1JDT3FzY3gtOWhQTGNSS3JHUXp0MVJJYzd6UDkxczlMS2llX2huNVJJQl9mcTB3RUpsUVloVGdlbEtMWUMwMG9kNg?oc=5"
         },
         {
-          "title": "You can now buy car insurance from the NCBA LOOP app",
-          "source": "HapaKenya -",
-          "date": "2026-09-17T08:05:23.000Z",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYWItRW50cmJ6SzlWd1VRNnpZUVlrQXQ4UEVETWJYYjdsclZkNGZCY0tKZC03Y1A5WGR2ZV9manFBdTV5Y0hzOF9IMXRKYlBwb3hWQ2YxQXBFZlRQU2tmckxEUzJMX2FUZXhXR3djSjZvR19sNGRYNVJ5Mmd1MUhaYzNoVmdMa25MSVFNTnYyRQ?oc=5"
+          "title": "R13.9bn Nedbank-NCBA Deal: What Shareholders Should Expect",
+          "source": "The Kenyan Wallstreet",
+          "date": "2026-09-02T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tcFhlTG5jeTVxR0RVYkt0ejBCY0NycU5jOE5OR0JsU0hzVEZaMjhOY2lEUllRb2VDTUU0S000UWFHenRld01qUmF4MDYzY2l1TnJ5bDJMeUJjOVdaZW9GbS1Zbnh4SEU?oc=5"
         },
         {
           "title": "CBK Approves Nedbank’s 66% NCBA Group Acquisition",
@@ -2661,6 +2783,12 @@
           "source": "Citizen Digital",
           "date": "2026-08-31T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVUhyVlNOWWFzVFlHZ0taSHg3SFl3R0JXUEotY2VhbVV2TVNXRmVyZVlQTFRrN292YVFWTjFLV2Y4MWNkREhobTZFM0haQ1p6a0YzZ2dqckVzUVFKN2p2VnRubDJQLWZXZldublFGV2RSUG00N2pWQWZEUDdFNGNYMUdzWk0tUDJSQ2VMWQ?oc=5"
+        },
+        {
+          "title": "CBK approves Nedbank’s acquisition of 66 per cent stake in NCBA Group",
+          "source": "The Eastleigh Voice",
+          "date": "2026-08-31T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNjVjZVdZZkdUZzltY2pRUzRaR2xQRFpVZFdVNjczZmRlVkE3Q01ET0JWTHZkaDg1N3hnMVFpNzR0WGMyaDZJZ3g3UVdLUk16NmgzSU5tNTNKcHk0ZGtnQ29ubjJQX3BtZXluRVhxSU9xdWVVZXczbk83MmlELWNITEgyV1ZvZDBNS0xPdzZmSXRaVWJ2cUhFT3BkdXREN0VQQmwxSWxjVFpZZVA0UjUtT25XYw?oc=5"
         }
       ]
     },
@@ -2668,57 +2796,57 @@
       "symbol": "NMG",
       "name": "Nation Media Group",
       "sector": "Commercial & Services",
-      "price": 15.1,
-      "change": 0.15,
-      "changePercent": 1,
-      "volume": 25998,
+      "price": 14.75,
+      "change": -0.35,
+      "changePercent": -2.32,
+      "volume": 14332,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -2.32,
+      "fiveDay": -3.28,
+      "oneMonth": 12.17,
+      "sixMonth": -7.52,
+      "ytd": 27.71,
+      "oneYear": 13.46,
+      "threeYear": -26.25,
+      "fiveYear": -41,
       "tenYear": null,
       "news": [
         {
-          "title": "Kindiki urges Mountain to rally behind him and Ruto",
+          "title": "Kenya, Tanzania team up on El Niño preparedness",
           "source": "Daily Nation",
-          "date": "2026-09-23T18:00:17.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPai1TWHBQQTUxREhCak1TQVpzcm1TVjJiREJhT0haaHFLTVo4RXBySmVZcF9oc29DZkpwdEpLcWFaTGg4WklIQ0RkWktoRk1GVHZYNXA0UXJaTFM4SHJqTjNtMXFWMHZlTTFHOXFiazlWZHljTHJwTmtUb25hRXEzZlg5NmpId3RiQlZIdEU5QTZlcC01d205NzdEZFJHZWdaWnZR?oc=5"
+          "date": "2026-09-24T12:15:15.000Z",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVVlBR25fSldWaTZUZDRvNk8tU0xHUHFqNERGNDFKTmJ3Q1I0U0dkWElQV0ZUT2NxRDk2U3RHaUtNY1FOQjYzeVhWZzl0N2twUktvUXV1X2NIaEg5ZGY1M3NXQ1Y5QjQxVEs3cGpKX2ZuZElRWlVuYUJFdmoxQVVOXzlfQXhrdy13bWloN1kwVmMzdWxmMFhLcmp1T2g?oc=5"
         },
         {
-          "title": "UHC medics question salary cuts as counties take over payroll",
+          "title": "Court affirms private schools’ power to hike fees, but must follow the law",
           "source": "Daily Nation",
-          "date": "2026-09-23T16:28:05.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTmk0NDV6amFDX0oxT05sc0VhVElsdFRpOHd4SkVVNWR5VUhzVWxuZjZxbnNwLU4wZnVjZzh6M19sbU9hMFl6aHVhYm9WbV93QjZEQW83ZnNzdU1faTBZOEhzN3NFblBfNDMxV0V6UHRYQUdLdC1QZ1Bmek1yZHJkM3BmTnNvQWlocjYybVpOQlNKMlBDOUMyZTFUdnVoRElMVDZIZ2ZUYw?oc=5"
+          "date": "2026-09-24T12:04:13.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaFlqemo4SWNMQkZxS2NHZGQ4dWhXNDdJc1FIbE1LbXVuOHpLTE9nbHJJOUpkdjQ2Q2ZXQ2drclp2Q01WaWROdjVza3lQVzN2N1JNNndpaFdiYUNWZG9vSFEwYjJwdUlqRjhDN1pYWHpTQkpSQWtqN1paZEZ6ZVNzR0hURE56QjlIYzFWOXgxTlJuZXFaQnpGTmpDUUE5TkZTTE5qY1VvX1NSR3BqOEFB?oc=5"
+        },
+        {
+          "title": "Teachers social media conduct: Why TSC seeks lifting of order suspending circular",
+          "source": "Daily Nation",
+          "date": "2026-09-24T10:10:46.000Z",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNRHVpVURuV2E5dFNYRnhDLUZIVkhRa1Eza25XVDdIdWhUQzJTZUpYZTYwV2RyX0NhT05LMklmMkgxeUl6dlp5TkU4ZEdDZmRNLTRfVFJoS0tZT0c2eVV3cUgzMmtTOXNSMDlzUW5lUC0yeFJrRmRWZzRLc3N3N1hWYV8zTnJTNEdjWWhvaEhCOVNWdW9oYldTY1RMR3M1a1VkZkFqTi1GZ0ZZNE9yS1VjNGxVVVJpcVloV01US2w0eklBX1d1cUYwQklWeXo?oc=5"
+        },
+        {
+          "title": "How two Kakuma women turned their love for cars into careers",
+          "source": "Daily Nation",
+          "date": "2026-09-24T10:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZkhUa1dqcE9MTFhMdFFzNTNib0ZvZkNsMmFMQmlaRXZPMDdYcW5qRkdfbjhiTWV2Sld5ZmlZUFJWTHZ4MnRkQVRXaTdoVWNfSUs2ZUJoaHpxMVZDMnl4UEwwcDh6ZWRaWkRXOHk5Z25GVzBDZV9UbmNKQ2JLdlNFNy1mTXRyX1VmSm9oSnBwQjRrR2k0eUd6dWcyNlRXYjVSUWxqVjdBOG9pOHVw?oc=5"
+        },
+        {
+          "title": "Kenya faces Sh4.5bn TB funding gap as donors scale back, threatening thousands of lives",
+          "source": "Daily Nation",
+          "date": "2026-09-24T10:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZFlkc2xJZnNuMW5EYWVTb3RzQnJJbEhySjV1Q3lBbWhvOE5oaU5MR25vYmoteDJaN2xKeG52RW1qMnFiRU5XM1ByUW9tYTVkcnBhUUNUc0RjZ3JNQTVneU1pLVdlblFaU2ZpNExxMzVvVVBoMGdTWFJhbEN1U2R3anU5SElTa1FfWWdyenJINEo2QVZvY1g5aDNsZFdJdk1KcEU2di1CcndtZEhjd2JfQnJpMERnYzA2NmZObVgyMnBPMnRmRDc5RQ?oc=5"
         },
         {
           "title": "County employee and teacher charged over popular QVSE ‘investment scheme’",
           "source": "Daily Nation",
           "date": "2026-09-23T14:46:12.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM2JsckEtWlp4Wk5zWENyaGxjRGdlZUZzZzFudFdQRWxJSWVrQnpmMnRDeGxjWnhidjBoc1MxWVUyUWRzaThhclRhSG5nNDFTOExXNVBTRDRfRndiUy1FbDc4Yk94THp2Y3lNUjdLUHI2ZVltQVhNWEVMdE8zRGZMUVJkOWc4QTRZcHZvbkJ6NEtqLXpGeVBSQmdaWDlSMEtxNnhxOThRNE5ab1l0Q004WG9Fc2FXZEh6WUhMSUk4empuZ2c?oc=5"
-        },
-        {
-          "title": "Basic Education Bill 2026: Stakeholders demand major changes",
-          "source": "Daily Nation",
-          "date": "2026-09-23T14:07:47.000Z",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOczVrcWNBNkNrck50UG81eloyQUhPWk56a0VuMDBGZ1UzMDFJM3dPZERqQmZZQzktZkxpNlJla2doNElWaHVNOXVDTml5UUFvNmg5WEU0YVo1Yk9VLWloRXB2bGlfNjluejYwWkxLaWhLRmloa2RkQ2RYa1I2ZzRZNmZYd3dUb0oxNUtGU0VJWHBXcXBTaFhHUGZ5VnlQSTFFX1RkR25IVFBrLTEwZXNV?oc=5"
-        },
-        {
-          "title": "Retailer Quickmart eyes NSE listing in September",
-          "source": "Daily Nation",
-          "date": "2026-09-23T13:13:04.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbUNfcTFpRUJzX203UWpBd25OcTJiNWdlZmtmM3VJbG9mQm1IXy1HOWFxVWctUzBYb3FlMU5TcXFpZFRJY0M2V2pLNTNMT1FUZmZVYnViTFlOcWRxRkVadlNEaHVPbmRfcUozUFo5SkVLeUV2VGl0Y0p3cktGZWl4YmFqUDdxbi01cjB1cEx2VWxyV212a0VCRV9zak1nWmRULW10WGx3?oc=5"
-        },
-        {
-          "title": "MPs expose plight of Kenyans stranded in Egypt",
-          "source": "Daily Nation",
-          "date": "2026-09-23T08:33:22.000Z",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUHUzTWlVUDF3RXVRbW9mN2x4V0hPdDhXN1FmX0dMWExjNFRFQzdvM3dPWEZ2VmlJdjRTdmk3bDNLSFgxRUtpXzFfa3NhR0p2Z3NJbU9wLVpzMHpSZTZYUW13S1pad2pWU1UyeGFIWTR0TmpMdE9uWXlTVXB4SXlZZGtIYXk3SWdCbU10bUwtT3NxeElOUGk4dTJhb2M?oc=5"
         }
       ]
     },
@@ -2726,20 +2854,20 @@
       "symbol": "NSE",
       "name": "Nairobi Securities Exchange Ltd",
       "sector": "Investment Services",
-      "price": 29.6,
-      "change": 0.45,
-      "changePercent": 1.54,
-      "volume": 383672,
+      "price": 29.85,
+      "change": 0.25,
+      "changePercent": 0.84,
+      "volume": 4465047,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.54,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.84,
+      "fiveDay": 13.71,
+      "oneMonth": 14.59,
+      "sixMonth": 42.48,
+      "ytd": 48.51,
+      "oneYear": 113.98,
+      "threeYear": 399.16,
+      "fiveYear": 228.02,
       "tenYear": null,
       "news": [
         {
@@ -2756,7 +2884,7 @@
         },
         {
           "title": "Kenya's second-largest supermarket chain, Quickmart, plans listing on Nairobi stock exchange",
-          "source": "businessfront.com",
+          "source": "Businessfront",
           "date": "2026-09-23T13:57:50.000Z",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMnF3Z21jV2I0d2Q1WDhpN2xBeER1YTJBOUlrREQyUkJkNV9keUU4OGZNSmhWeXhkazFRWElWU1p6ay1NWUUtQlJMSEcwejVUdDQtX0RYTTZyekl3SDNTcW0ybXd4dks1S1BzM09ueHpyYWZTTmtNcVJhZHJreVh6Ynhwdw?oc=5"
         },
@@ -2767,16 +2895,16 @@
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNXzdkMVV3VGd3RzltVGcwRGRqU2NoVjk4U0xBZlAxcW8yb1dWbzk3TFhNOWZwN2dqbF9YRzZ5OUJldlV3ekdDZU9udlVSNFFobkZXY1JwcTZiN2pCVWJsOFB0OE5qSFlYeExwbVFGRWx5djdyelcwRDhwekNpYlUxdnlCRVoxbC0tc0VXeXFqZ2gtYWxJVUpmcm1POHlHQUJWR0xUSTNSTlg5NWtEeENiVA?oc=5"
         },
         {
+          "title": "Quickmart Plans NSE IPO as Owners Offer 50% Stake",
+          "source": "The Kenyan Wallstreet",
+          "date": "2026-09-23T13:04:10.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tUGhjUDdkd3FhS1ZNbWs3OXhxWDBYbW93UnhyaEdab044eE8yT2dYNDBxeWNRaVVYcThnQVNfWXdqc2lLc2d1dDZVSWF6ODFKdmpkOGd3UE8wQQ?oc=5"
+        },
+        {
           "title": "Quickmart announces plan to list on Nairobi Securities Exchange",
           "source": "Capital FM Africa",
           "date": "2026-09-23T13:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeXVCS01IUXZlLVY0YklUN2wwVGcwbmpvY2sxampOaHlPYnl6RThEMnFSeGtYaWd0Q3BSbFZTS0lXX2Npbld1UnFnQU1nRWNQbFk0ZDd3QjdoTkRUakN1cS1Wbl9tSnVwS2NqWjFiWnNuaWt3SVgydUdCeUl3TS10RFhCRFNmejEtR0dDbXA5d2pwaFE?oc=5"
-        },
-        {
-          "title": "Hard-sell: Why stockbrokers oppose Kenya’s bond market reforms",
-          "source": "The EastAfrican",
-          "date": "2026-09-23T12:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVENXY3NhUDB2aTd4LW9ZS09pTldycXdLX2RYaWNUVmJLZ1RUN2F2bnBtelZDNm5fLWZFVUJQZlN6VnZySEY1S1NuaHBHY19zaFVMdXAza09UTDFlXzFVVVZ5VlVrdjlHcnFVaXEyV3hmMms0ZlVCcmtyUXhLYmVqY1VaSzRYM21WNW5CQjNjcmFSU09uZ0g5RkVqVWpGcHNXU245TjRzYnlHeDdyU2lmN0N6SXdTdnpuWTNsRA?oc=5"
         }
       ]
     },
@@ -2784,31 +2912,31 @@
       "symbol": "OCH",
       "name": "Olympia Capital Holdings Ltd",
       "sector": "Investment",
-      "price": 7.18,
-      "change": 0.1,
-      "changePercent": 1.41,
-      "volume": 1408,
+      "price": 7.36,
+      "change": 0.18,
+      "changePercent": 2.51,
+      "volume": 9720,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.41,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 2.51,
+      "fiveDay": -4.91,
+      "oneMonth": -7.77,
+      "sixMonth": -4.42,
+      "ytd": -7.3,
+      "oneYear": 34.8,
+      "threeYear": 110.29,
+      "fiveYear": 268,
       "tenYear": null,
       "news": [
         {
           "title": "Olympia Capital Holdings stock falls over 10 percent as Kenyan market sells off",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-18T09:14:05.000Z",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbnJMS0dNYlA3aVpydEJjcVpmeGxFZXQ2c204RERYRU85RUJ0ZXNoeXQyLTFuVVl0V2lrSmp3b2hsM3lub2phSlNXUDN2Ny1ScEVSWEZZX1lnS2NETW1HTjhxOGw0bEx1QWZPVXp4VmJCX0VfZEEtOFdUb2ZGY012bmd2VFRwVjB6dG44bkM0TGtfRzY0ZkMwWGFwT3FwUGtJclBOOFh5WDh1bnNEdXQ0enZOUGVtcUQtUGdKVmVEQmdKLUpSaHpn?oc=5"
         },
         {
           "title": "Olympia Capital Holdings stock trades quietly as Nairobi listing stays niche",
-          "source": "ad-hoc-news.de",
+          "source": "AD HOC NEWS",
           "date": "2026-09-03T10:51:52.000Z",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeER2ZFhGamgzYmNHa2NteWNGWGUzSTJlby1UcmNxTXVVRVplTldvU0tvOG1ZY19lSzFzN1Y2RnV0QllNNHpXSE16bUVuWE10anFWc3d5QVdhUW1fblQ0TTNFXy00N1FiNHZoMThZS1NNbzNCdjZ3SG5TdEN5alJ4V1p6dEw3YUxQcU1vc095T3drcGFleU1UR04tMWp2R2QxV1JtX0FXTHluVlFtQzVGN0l5LXlGZWQ3cEIwbUFJOGM3a0ltQ01PTQ?oc=5"
         },
@@ -2820,7 +2948,7 @@
         },
         {
           "title": "Markets: Events to Watch Out for this Week",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-29T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5BNzd3TkFscWFiSE9wWnZSa3ptV0V2ZnEzVDh6X1ctdHFJcmNTRTJDVjRjTS12ZWwtZzlTR3N1NzJTOXpkUGs3VEdWZE10NUs4ZVpJcmE5d2h4N0p6Wkk5Y3c5bHNyVjc0WkUzVUVUSThWV0o0WEF5bXJ3?oc=5"
         },
@@ -2832,7 +2960,7 @@
         },
         {
           "title": "Olympia Capital Issues Profit Drop Alert",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1DakUyTVVkSGtTbVg2eHhmczR3eThfbU4wVUZjWEVRWjlydkdQclRlM2xrRURRUExSQmMtR1VKRDF4MURXbW5LUUJGdGRhb2xVX0RUakdubFJWZF8wZGJsVFIydDVPSEhmN294UW9DaFNnSXlDWkZJ?oc=5"
         }
@@ -2842,25 +2970,25 @@
       "symbol": "PORT",
       "name": "East African Portland Cement",
       "sector": "Construction & Allied",
-      "price": 118,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 1945,
+      "price": 117.5,
+      "change": -0.5,
+      "changePercent": -0.42,
+      "volume": 110,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.42,
+      "fiveDay": 0.86,
+      "oneMonth": 0.21,
+      "sixMonth": 46.42,
+      "ytd": 67.26,
+      "oneYear": 106.14,
+      "threeYear": 1487.84,
+      "fiveYear": 1387.34,
       "tenYear": null,
       "news": [
         {
           "title": "East African Portland Cement issues land ultimatum",
-          "source": "cemnet.com",
+          "source": "CemNet.com",
           "date": "2026-07-16T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVk9GMnEwOHM1UlBQTUpiM0ZwMzQtb1JmYXBITmZ4VXJWRHhqYlItX3dNUlBuWmZMNXlTaFFlb0c5SHJZS3AxeUkyd1RRNmdURmtKRkJaa1dvUUlEUXU5U3NjSTgyVHFPUDFlelBqLXdDOHA5Vi1rYlJBNXhOSWdyM1MxU0ZuTERNOHlzWGpzU0NWVWlheVdJTkxiMU8?oc=5"
         },
@@ -2878,7 +3006,7 @@
         },
         {
           "title": "EAPCC Net Earnings Up 377% to KSh 5.5Billion in 2025",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-20T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLSlpFV1ZSdWhPYkpRaVI1eTZ3ckxBakp4Smthdl9OY2EwOVdMam1BZUZ0c1BJME1jbm0xUUVmSUs0MHR0ams4eDh6WHBjMlhoV3M0UkxOTlNHOWhMZkFDSW8zaExVU1VLTEVOMmFVcXgzRE9faGJB?oc=5"
         },
@@ -2900,20 +3028,20 @@
       "symbol": "SASN",
       "name": "Sasini Tea and Coffee Ltd",
       "sector": "Agricultural",
-      "price": 23.75,
-      "change": 0.4,
-      "changePercent": 1.71,
-      "volume": 2792,
+      "price": 24.75,
+      "change": 1,
+      "changePercent": 4.21,
+      "volume": 2383,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.71,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 4.21,
+      "fiveDay": 0.81,
+      "oneMonth": 1.02,
+      "sixMonth": -3.88,
+      "ytd": 35.99,
+      "oneYear": 32.71,
+      "threeYear": -4.81,
+      "fiveYear": 23.13,
       "tenYear": null,
       "news": [
         {
@@ -2958,20 +3086,20 @@
       "symbol": "SBIC",
       "name": "Stanbic Holdings Ltd",
       "sector": "Banking",
-      "price": 285.5,
-      "change": 6.5,
-      "changePercent": 2.33,
-      "volume": 849,
+      "price": 283.5,
+      "change": -2,
+      "changePercent": -0.7,
+      "volume": 32978,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 2.33,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.7,
+      "fiveDay": 1.34,
+      "oneMonth": 3.09,
+      "sixMonth": 9.04,
+      "ytd": 43.73,
+      "oneYear": 57.06,
+      "threeYear": 155.41,
+      "fiveYear": 208.15,
       "tenYear": null,
       "news": [
         {
@@ -2982,7 +3110,7 @@
         },
         {
           "title": "Standard Bank wants a bigger Stanbic Kenya, with Sh167bn giving it more room to pursue deals",
-          "source": "techtrendske.co.ke",
+          "source": "TechTrendsKE",
           "date": "2026-09-22T05:46:07.000Z",
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdW91Q0V0WXBYaDYxRTBES2l2enRRcEh0X05MSWptczNyXzc3TFg2VEp6YVEzT0FsV1lYT0xURG95TXU2UVF4UVNvZGIxSEZQbG0wZmdJemZaVFE5eDBVQmhEUVljckxRYVRndmZUX2lVcm1BVWhyeWo1Z2hzdHZ5cHJB?oc=5"
         },
@@ -2991,12 +3119,6 @@
           "source": "The Kenyan Wallstreet",
           "date": "2026-09-15T05:11:32.000Z",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPb0JpQmcxTmFOZUZHbS1OOTQzdTE2Q1A0cHd3amdfcW50ZlM1ZGlrWnoyWVhjaWlkbXV4N0ZDT0Q0TEhKZ3VzNmNSNzJRSEE1emxPVG9pNllJeGVVWFBLMnlhYkRlQlU5bXlZRjJZczgtc0M5VGNxM2NMaGpBRHFHOE1sdFROQQ?oc=5"
-        },
-        {
-          "title": "Net income from continuing operations of Stanbic Holdings Plc – NSEKE:SBIC",
-          "source": "TradingView",
-          "date": "2026-09-13T15:38:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWnF4X3hCMUhKdzYwbzFfclZBeHZLbmFGRUhDS2lVTEVoelBSWWxkVlZJTGI1NlJ5TGNnSlhucVRmaFRtM2ZiT21keFBMVUZwcjlzQ01CVnpJWC1rNEtsQnVCR3RrZkUtMWJQRWlFS3ZvRkkwQ3ZJdWFPSnV6ZUtvdUlTV2hhSkw4NTN5YlJTRC1FY2xkTEZMcHM5WHo?oc=5"
         },
         {
           "title": "Equity, KCB, Co-op and Stanbic named among world's top-performing banks by Forbes",
@@ -3009,6 +3131,12 @@
           "source": "The Kenyan Wallstreet",
           "date": "2026-08-06T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHajZKeTdrNVZCQnltakFaRVN3cTZhSFV4X3hnVjhiRVNfRHN5Vjl4VXg0ZUFDVlZjV19mRk1mNk9JQmVoLXlRNW8tampIaEkzUlNPQklMYlZod1By?oc=5"
+        },
+        {
+          "title": "Stanbic Holdings pays Sh1.1bn franchise fee to SA parent firm",
+          "source": "Business Daily",
+          "date": "2026-07-19T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVEdxYXVRS1lFV0tmYmFEUFI2Tm9nZGxBbXk4MUFiZzdsR3dTRl9Gb2pUUzc1dEdEaEh1WktoQlpsNWtlQnVWUmFXd1pKLUM1UlJPMVpsNE1JcGhTZzlWNUgxSmh3cVZORXBsLUFmSWpsMmlUWHRFOERlOW1oc3EyQjdIbjhZSG1YOUd3UnpYVW1yV2pmRjdsODUzMGVUZnRzU01taER3azU5bndDOFhEQnd1TFhESXFHdzFJM2owNnNhMlhReGVB?oc=5"
         }
       ]
     },
@@ -3016,20 +3144,20 @@
       "symbol": "SCAN",
       "name": "ScanGroup Ltd",
       "sector": "Commercial & Services",
-      "price": 1.98,
-      "change": -0.01,
-      "changePercent": -0.5,
-      "volume": 8972,
+      "price": 2.01,
+      "change": 0.03,
+      "changePercent": 1.52,
+      "volume": 115786,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.5,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.52,
+      "fiveDay": -0.99,
+      "oneMonth": -4.74,
+      "sixMonth": -12.99,
+      "ytd": -18.95,
+      "oneYear": -31.86,
+      "threeYear": -25,
+      "fiveYear": -62.78,
       "tenYear": null,
       "news": [
         {
@@ -3045,28 +3173,28 @@
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvZlNkZXdyVDd5dHpXcExwOVRKcmNvX21VQ0VNRjNHUzRrSnkwVEpSbVhzaU1BSEZydTVxclIzZ3lCQTRNLUQ1bkFkNzdyRFloRTlCemx0WVhtU0VPM0tYYUpVbi16WjlRUmphV21Uaw?oc=5"
         },
         {
-          "title": "Bharat Thakrar Lost The Vote, But The Bigger Story Is Governance",
-          "source": "techtrendske.co.ke",
-          "date": "2026-06-16T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMGw0SWktNW91NldkalcwUEhqWGNSMl9OeUNwN1lBV1JKbTQ2NW8wNXRZbTlvSGMzd3VINUYzNXZoLUk3U0xzaTZiS0FSendfTFNvNVk2TjJwem5PTU9Xd3FNSEJuWHlZVGswNWQzSDZhb001eUREcExiaVU2clByekpld28?oc=5"
-        },
-        {
-          "title": "Scangroup commits Sh1.4bn long-term loan to parent firm",
-          "source": "Business Daily",
-          "date": "2026-06-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb3FVYVhXQXdhZXZ2cE5LOFI5SkFXa2U0WlRWd3Fod05KSi1HcHE3WlYyTXlLZFZLeGl0eXQ3LW1jRzlzZ1lRajdUUnBXd1R5MHhwMlNyWFhGVzU0NE9NcFBzb0dIVFdmeTF2RC1hdU5MeHBsYXBJMXJKZ3ZLZmVTWXdGdTJZckxoNXdHOTVQSWo3MUdDUEczb3d2WEJ4ZmRYVHQxanN6V1ZpYWRJOUJEM05Wc2EyWTBwSFRVZ3N4QQ?oc=5"
-        },
-        {
-          "title": "The founder who lost his company: Bharat Thakrar's long fight for Scangroup",
-          "source": "Business Daily",
-          "date": "2026-06-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbDFUd0EtN1VOYXp4clJjakZjRnB6NG5NWmxIRlhoREV1NTZwdDBNTUJqamRlZkRaSi1wR05vd1doZTVLUDZ3ZzA4QlJsd1BLNUxLb3pyeThCSFhpR2QxYThUZmg3R3gyRXFLWlRwZlc4Q3k5MzdhY0REeEdRYUVVTVBzWTdxZGFoV0VTX3o4bVFxREczUXp6YmswWjloYWk5QnN3YUxJcTRXWE1TTEc2bFY2bExzWW8yR2hyLTZhc1V5aFZlamF3dEJhZDlveHRMcXV3X09ZZw?oc=5"
-        },
-        {
           "title": "WPP blocks Bharat Thakrar's Scangroup boardroom revolt",
           "source": "Billionaires.Africa",
           "date": "2026-06-10T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYVV0TG1ESzZ1clMxS2l3b2VyRWpXSGNWTnVqaGp0Yno4d0htenJISWlzWEtpWU9ZM1J3UmlrZ0x4WFQxaTd0a1QxYnBtaTgzU1JWVHljaVhobGhla05yODc1MXM4UHhJbFY1UnE0bDlkQmNzaHJHZTlJWXNxTWpJMm1udXdKU1NmOE1uVTdiUE9WSjVzTDVTWXdMeHQ1dkdoTXVRcXhENFp1XzdwRjNsMHNXLWpuZHZFdHBEYk9qc3c?oc=5"
+        },
+        {
+          "title": "WPP Scangroup Shareholders Decide Fate of Chairman and Eight Directors in Heated AGM Vote",
+          "source": "The Kenya Times",
+          "date": "2026-06-09T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMEdYUXdWSU93RUNiZGUweGdOZUZpTVVGUGFEaWpsUXF1elpqRnVZTlY4ZmZsZVFEWHVTTEhxRzhCa1pSX0xaTVgtM2E5eXQ2VEVya3BSYm9iZERNRm82VHQydDdPYkpQTVJaSmVmZkVrNkZaRXM2c1JHcEdPZFFZeEhfNXQyd2ZlWlRTdWNQOGlJcHZmWC1xUnFLSGREdDI5eHdFNnMwVG14ZzJWNlVuc2UwMU1zaGFZVkxGSGQ1RFY5Qk0?oc=5"
+        },
+        {
+          "title": "WPP Defeats Every Resolution as 99% of Independent Shareholders Vote for Board Change",
+          "source": "Khusoko",
+          "date": "2026-06-09T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FdjljdG0tM1Q0QkNlWjJWdGw3YW9BUldhSW5jY3ExWm1sZWlvNHFITy1IRmNhNzdVM3Zuc0h6bkpadDFFNTM3YVY4dGhOTk85d0Q5NjIwRWpyVmVnQWk0SUkxLTZ3eXVJTHI5SHJLRWVQbjA?oc=5"
+        },
+        {
+          "title": "WPP Scangroup COO Miriam Kaggwa Exits as Shareholder Revolt and Four-Year Losses Mount",
+          "source": "Khusoko",
+          "date": "2026-05-28T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGRpU2d0cmliQmJqV0NfeXpNZWJGRWNtYk9XN1pneERkcnQ4SDJnVjM2c1N5NzdYcVFCRWRLRV85Q1M0RGFJRG5naFgwVF9aSVVvbG1ETUZRUTB3RnloS0tMZldfMlIyMGVyR0VRbW8zYmxfT2E1TG5EYmpZalhLX1hFdW84QQ?oc=5"
         }
       ]
     },
@@ -3074,31 +3202,43 @@
       "symbol": "SCBK",
       "name": "Standard Chartered Bank Ltd",
       "sector": "Banking",
-      "price": 330.5,
-      "change": -1.5,
-      "changePercent": -0.45,
-      "volume": 25219,
+      "price": 333.75,
+      "change": 3.25,
+      "changePercent": 0.98,
+      "volume": 78369,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.45,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.98,
+      "fiveDay": 0.75,
+      "oneMonth": 0,
+      "sixMonth": 1.44,
+      "ytd": 11.25,
+      "oneYear": 17.11,
+      "threeYear": 104.75,
+      "fiveYear": 156.73,
       "tenYear": null,
       "news": [
         {
+          "title": "Ho Chi Minh City, Standard Chartered Bank sign US$325 million education financing MoU",
+          "source": "VOV World",
+          "date": "2026-09-24T12:17:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQR2RmVGk5dm9MSWZfWEJ5WUw4Tk16cXJkS0xneC1Va0Z0LXpLRFZjWjBGRVV1VE1ubTQ2UzBXZlhfWWRzb2hhZS1pLVlPVGVVcFJ0Tl9iSlNUSlBIMEk0WlFxR1hjdWpFc3M3aFdKMEdYNkU2QVhEQm5pX1lNdzBZQWJnNGVHMUZTQ1hCOXdDVlFRNjVjaFA1RTVmXzBTRElZREVGTHRwLWZQVHFPNFB4di1HSUZOWTZadXZDWmRB?oc=5"
+        },
+        {
+          "title": "Standard Chartered and QNB Türkiye Structure Landmark $25M Gender-Focused Repo",
+          "source": "The Fintech Times",
+          "date": "2026-09-24T07:00:13.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMTdkZUUzcXUweEwyVWlXdUkxUEtsbkFya2hTSklzX1BXWE0wSXh4Q3hLMm5rbE4zZTlTbVVkLVMyWUtNTEhUX2h1RFUxN2ZHM2RJSVhob0RhRnY1OGoxVDlOaXUyQ20zTzFTSmozYU9XbUNzdUdNdGVjWFZFM3ZNTC1pWFFyQlBsdkJCOHh0cnphWVVwQ0VERUlsdjdvLU5Eb1pCekJmR2wzUQ?oc=5"
+        },
+        {
           "title": "Kenya slashes electricity debt, repays $62 million Standard Chartered loan after nine years",
-          "source": "businessfront.com",
+          "source": "Businessfront",
           "date": "2026-09-23T12:53:24.000Z",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Tam1NdkNxTzdydTV0Yks4RnVLdzk0em5rODFKQ3Q0eTl4RVV4UTZiTzRVaFdkTWFXa3hRcFFmZlZsVzU1bUpRR1pQempnR2diQ1l3NkZIZVZVOG9PWktYN3ZxOU96ek1CVHZXaG9PRENqZVE?oc=5"
         },
         {
           "title": "Standard Chartered Bank Kenya(SCBK) Downgrades to Medium Tier",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-09-22T19:23:04.000Z",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oaDgyamJEVXl5NnRBOXZpenphR2JIZHhjb05hODFJZzVIVHM5elN3WDE1dzUwSk5OWUVlRl8yQ3I0Yjh1aXVRbkh1NHJjbDVGbzdvYUQxanJkNU1QWHRoZWEwcU44Q0tTeFNYbUlob2VXcnJO?oc=5"
         },
@@ -3113,18 +3253,6 @@
           "source": "Capital FM Africa",
           "date": "2026-09-22T12:11:59.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pOHI2Nms2MW55WURYY3lBRm1BUmtUalo2QlhHUVZkRWVUVUZIbDRhdEY3cHhRZFZQRWdZSFpwREw2c29WWjQ1dmlISFVnRVRzdTJtMWVIQ0JjWEpwcUdvMGRsVG9nZmwtazc4c0pJSHpvWUotQmdpNHNhNks3Zw?oc=5"
-        },
-        {
-          "title": "Standard Chartered to Auction Five Nakumatt Linked Properties Over Sh1.9 Billion Debt",
-          "source": "Khusoko",
-          "date": "2026-09-21T17:30:24.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPanVqUDFDWms3V0c5ZEFkNnBHOEJ0UDV6M1V6QTJnU1lwcmYzTEdPb3JjR3RaLXRBMjQ0TzNZN2hiN3BlejFwMVJNUmlFVkdYUUhCUFZNYzlycDlTYW5adXd2V2hERDM5Mlg3bEh6b0wxS2FNU2ctMGE2NmU5emFXR0dENUc?oc=5"
-        },
-        {
-          "title": "Standard Chartered's New Investment Platform Crosses US$20mn in Four Months",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-09-16T05:26:51.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE55Znl0U2hMWDdRdjhWMVNlZzJWSS1XRm5tTVdyNGo2NlNZZ1FFb2JPYTNoS01lTkRORkFJdTZFWjcwVlJjb3RxS3E5SXBGenlaa1hyeFNNdkhnZ18wbGhjbm5HMHY4RXA1eEE?oc=5"
         }
       ]
     },
@@ -3132,57 +3260,57 @@
       "symbol": "SCOM",
       "name": "Safaricom Plc",
       "sector": "Telecommunication",
-      "price": 36.2,
-      "change": -0.4,
-      "changePercent": -1.09,
-      "volume": 2501236,
+      "price": 36.35,
+      "change": 0.15,
+      "changePercent": 0.41,
+      "volume": 4843210,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -1.09,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.41,
+      "fiveDay": 3.27,
+      "oneMonth": -0.68,
+      "sixMonth": 26,
+      "ytd": 28.22,
+      "oneYear": 23.85,
+      "threeYear": 142.33,
+      "fiveYear": -13.04,
       "tenYear": null,
       "news": [
         {
+          "title": "Safaricom explains why your Fuliza debt keeps going up every day",
+          "source": "People Daily",
+          "date": "2026-09-24T12:21:54.000Z",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeExmZXJFX3pKdjM0YlRpcnZzTGdxSTQ1RVVLeXdSZ09qc0xUSHkzWElxcGNqUGxQZTk5QnQ3Y0MtNmVlNnBiX01NenVNMnd2dmVhSXNGb0k3eExPY3ExOVE5WkFqLUFCaXhzc0ltNFVLcHBGRmdjb25EaHV1SDlxem5aeFhfUkFZWHVqRWMyN3VqdGVCOF9EbFhaVkZoUQ?oc=5"
+        },
+        {
+          "title": "Government tells the Court of Appeal the KES 204.3 billion from the Safaricom sale is non-refundable",
+          "source": "tech-ish.com",
+          "date": "2026-09-24T09:10:25.000Z",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYUg1RHJoNmdfVnVHVk5ZRE5hSDJIV3pJcS1iWktHR2kyRVVHNlVCa20zMllCZjZJRUFLVGpEWmlmSV9PenRpdEtQUC1sTWZBeWJPWjhGejFNU2ZhVmVBM3J0QTJsM3A0Q1pBVGt5Sk02cjd3NzVHeVRpTjZCa0hJQTkxbkxHRnNsMWt2b1cyMUNkNjF6em5ZWkNKZzRHWk1STFprOC0xZlBtTDl6M2hsOWV6LXd1TDlFQVZrWGpwMTRKcGswcmxpRzZPRk1zdw?oc=5"
+        },
+        {
+          "title": "Airtel Money IPO Puts Safaricom And MTN Stock In Focus",
+          "source": "simplywall.st",
+          "date": "2026-09-24T08:12:40.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTkprTnpZUmVyM3ZDSzdqZ0Qza1lWaUc5TXJGRndwbmR1bVV3S0xmeE9TQnhzRGZtUGJxV1lEN2dQbmNqeEFKQWhMYzA5N2ZEVF92LTR6X1FjSXA4TlFIRk1jUVllVHdUOVNjSVZ6blJwcEQ0amZQWFhoMlRCMVJOdTRKTzhwRlNIV3Jub1JnaHVRdlBOcFRXUzYzNTk4RlpDdFZZS3RCMlgtUGhpa0UtckVoQklBLVJvN0FPUnpUdEtyQ3VZ0gHKAUFVX3lxTE5LQ2RSMHkxWkl3NnVwdjVYRGhxYnMyZVVndnowOElra0tKNUNVN2pqa3Q1ZDZLOW5VM1o5ZjdlRXlpZm0yYVI0THpScG9LZEJYeHNwREplX3ZjM2NweE1EYVpJdXBoU3drZlIxOXZWSHdQTndoNS1VdU42THY5dE50YlhMM2JWZ2JndGV2US1zQnJ5TE5ybUdWa1lSZ3Z3VTV1Z21TbzA5a0Z2MkJzcndYWmoxdmFQYWlpOFdHdlU0bG90SmNKSUZzMUE?oc=5"
+        },
+        {
+          "title": "Safaricom Foundation transforms Nauyapong school with modern facilities at Kenya-Uganda border",
+          "source": "Education News",
+          "date": "2026-09-24T06:09:27.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOM2JWald6S1ZabWYyZHRRS1NWTjl5WVRYY0c4TVNWZ2NOdV8xdWRfd2o4X1lKTU1jRy1kRHBlNnh6UFBXMDhnYzFpZUJpczJ5RjVJMEdxSWQxOHc1cHZFa3VXU09kMHNWSGhEdlExSHFfZ1lXQjRsX1REcmsta2xLQU5zbENxVmFtcTFQZjhOenRxeHc5TmV3czBaMHczaWdQWWZ5SmxjWVkxcGN1MGJtOExMcGQzQ3ZFTFJBc29VWUE?oc=5"
+        },
+        {
           "title": "How Safaricom built Kenya’s biggest home internet business",
-          "source": "techcabal.com",
-          "date": "2026-09-23T15:33:38.000Z",
+          "source": "TechCabal",
+          "date": "2026-09-23T14:37:53.000Z",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUmtTUGEtV3hfdkhsRklqX09LeWstUEU5aFNiZ0QwUV9pSmlQVWZUQ19BN3pGdHNNUmFSTVFHdHhPTlo1V1pKZG5IUExfenE5QzdLSnBhdmdha2ZJSjFiVy1JaW0xSmV0ZzdwUTRfMHhta21MVWlnY0VGZXpDOXdfSHF5VXBad05xOFVoS2tiYnBweExrUUpaaWhub3kydVAtLU5INw?oc=5"
         },
         {
-          "title": "Safaricom now has more fixed internet subscriptions than Faiba and Zuku combined",
-          "source": "tech-ish.com",
-          "date": "2026-09-23T15:19:55.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTjY2ZXNaVW5sMHNBcG03QnJKVmg5aDh6RGpUSFY4V0pxOWZjOEwxM05VN3Y3T3ViY3hXV1htaEk3SFQtb3diaWU3dkd1S2hlMEpUOUhxVHhldEhrTXlSbHVkVVBDUEpFNkdRcjc1VmQtNHI2U2REYjRlOENfUUNxa2tHOGlTTFA2MjlsRzdTVmlaTWZFcXF1RWtaZ1dsUjlrZEVNdDhKbm1xZmxQUzhqNTJoWQ?oc=5"
-        },
-        {
           "title": "Safaricom Crosses 1 Million Fixed Internet Subscriptions in Kenya",
-          "source": "techafricanews.com",
+          "source": "TechAfrica News",
           "date": "2026-09-23T08:23:50.000Z",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZlhKOUtaUUFtSHk1NUJBSnAwUWQwb3VMWjBuWWFvNHdaTlZtc0poTUtqbDVOWXR1dE8talViOW9GbktadlBSZUY5YUJ1UDFENEZLZUtnMlhSeWN5eTdTeW1uWW9jTDV5X0dPbmR4Z284SS0tRngtMk4yTExGR2FtNHNpMGxDVzVfUnZZeERmQnhEY3Z1UlBRb3BfWkd6V2VBbWhR?oc=5"
-        },
-        {
-          "title": "Safaricom’s M-Pesa grip tightens: 9 in 10 mobile money users now on one platform",
-          "source": "People Daily",
-          "date": "2026-09-23T07:10:10.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM1B0dnRzeGFpQ01nSU5zSlpvaFpnSzFfQWxONVBqQ1dTb0ZmR2lkRlpRMkgyNHhudHFxMWhNdVE3UUF5QUUwbzZ1MDVmbmVyOWRuNGdnUndYUW03YkpzbUpqMFpJNUV6cExBbzduQWlaUzdTNTRsay1wRzJWVWhrZmx2RTFEU1IxaFdneHEycjAyakVCNF9UWEZ5QjRkR3ZWVnJPVG04Z1I4eDQxWm8yRi1ETUMxQQ?oc=5"
-        },
-        {
-          "title": "Why We Are Unable to Return Money from Safaricom Sale - AG to Judges",
-          "source": "Money254",
-          "date": "2026-09-23T07:00:46.000Z",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMUdfTlhyRTJzakJrVU40RDBGakFoTFhYVm52ZFhXMllQRDVOT1FEQ3pmcjVycG9PYk9CdkR3eGV2MmlGaGpXYzBIa0dUci1hTmU3NGpHejFoUS1XLXNwSzRtRGVCc1JkY1NhVEcxR1BRZUZkdk5OT01LVEpQcHVHLVZiMzYtNlB4cUpCVW1fTQ?oc=5"
-        },
-        {
-          "title": "Gov't appeals High Court ruling nullifying Ksh.204.3B Safaricom shares sale",
-          "source": "Citizen Digital",
-          "date": "2026-09-22T17:28:33.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYm1wdDlfUjUtVmt0REt5aGN4eTZBNlh1U2drM0t0QkdVRk1UZ2kteEpoX01Gb1c2ZXYwaWU1UFdhZ21zcEFWbmVTN1hGYjRTcEpFOUs0eFFvcHZPNE1jblNhclZtU3ZXOWg5WDI4S2VxUUhQdmNKYXRwWmtxa2U0UXpqbF80TENSbjBJbDRQQTBIWXNUX1l3ZVNVbTUtMWZhakNvaWZjWHQyeEVOa1JIZWJR?oc=5"
         }
       ]
     },
@@ -3190,20 +3318,20 @@
       "symbol": "SGL",
       "name": "Standard Group Ltd",
       "sector": "Commercial & Services",
-      "price": 6.16,
-      "change": -0.04,
-      "changePercent": -0.65,
-      "volume": 3357,
+      "price": 6.34,
+      "change": 0.18,
+      "changePercent": 2.92,
+      "volume": 8671,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -0.65,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 2.92,
+      "fiveDay": 0.96,
+      "oneMonth": 0.96,
+      "sixMonth": 4.62,
+      "ytd": 13.62,
+      "oneYear": 6.02,
+      "threeYear": -13.15,
+      "fiveYear": -63.67,
       "tenYear": null,
       "news": [
         {
@@ -3225,12 +3353,6 @@
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQNzJzZnl5eWRCaVNxUkw5VTg4LXJBQ2hiNldWSmJ6OVFEc1NlTVdvMFVUY21RMnhPdmdQSjVabkxrU2N4QmNSVmhXZlppOHptc28yelJYRERFVEdWRmQ2eUZwMXoxd3FlU2loSEVwc3FzcWFxTTZtTlN3V2JhVWFjQVlXU3NpaFFOa1RkQ2tJUG96bG4zOXNJSjR4SFg2bUFscVdWT2RqTHlBXzgwZDJIalNMc3lIY19UWXE2b2w2UXAyNk9yVmZBUl9YbEE?oc=5"
         },
         {
-          "title": "Court Issues Orders Against Standard After Linking Police Uniform Tender to Charlene Ruto",
-          "source": "Kenyans.co.ke",
-          "date": "2026-09-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOWRnV2NwcmJ6MnQzdVhBbkpiZ3ZBVjk1ckdjaWhINlBwMlF1STlBeFpfYldHMjVyTWVNR0xpb0NrNV9XdjVSYTNNTlNXYUhMVzBLbkhwenZWcWQ2ZGNuTkxrTzU5ZGVqZVRwUHN6RHd6MVdSYlBzUElBdUJyMjJaRWd1RzEzdVoyNk92UkEySDBUVk9EQnM5d3N2bU9XWDZ6d0IzUg?oc=5"
-        },
-        {
           "title": "Kenya: Standard Group editor found safe following abduction / FIP",
           "source": "International Federation of Journalists - IFJ",
           "date": "2026-09-10T14:37:08.000Z",
@@ -3241,6 +3363,12 @@
           "source": "standardmedia.co.ke",
           "date": "2026-09-02T21:00:56.000Z",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbGcyLXpMUTZ1M25tTmZQQWt0UnhCVEV0S2hIUnhfM3lydm9VTUNfU3ZQaVREUzg3QXhQcFZTMzlMSEd4M3o1UTVJZXlyS0tyemw0Z2NiUS1PSzNuOWJpN2hOY2piOVNNUm51Q3dhR3Y3RExqSnFIYmR5Mk1RTHg5UkM1Rlc2MGozOVFOdHU0UU0zR3cxU1VkaGFONVpQTnVoaVM3a3FjUHh3bmtTR1pWbko1ME1IcGNjby00UVBuczRSRGhRd1BUZmRiRTNCbTlNMUE?oc=5"
+        },
+        {
+          "title": "Abducted Standard Group editor found safe near Masinga Dam in Machakos",
+          "source": "Daily Nation",
+          "date": "2026-09-02T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMThrUmhibGJ1OWFLOE53cUpyWnJ2RFNENXl1Z3VkTnlaM1dDS05GNGYzM283UUFrc3c3b0xCUm5OYXlrOG4zLVE1YkQ5X2ViVmxfRmpFN1ktZW1TdXpVLUdUcWZobGlqVHU4RjB0ZGMteW0tTmZMbXZoTVpDZkZBZmFQZ3VGWXNfajdBTHdmN2lkVzAxRUtDQ0RZUG80Mnc0VUZtN0ZyMFYxTmdFT2xYUg?oc=5"
         }
       ]
     },
@@ -3248,25 +3376,25 @@
       "symbol": "SKL",
       "name": "Shri Krishana Overseas Ltd",
       "sector": "Manufacturing & Allied",
-      "price": 16.75,
-      "change": -0.6,
-      "changePercent": -3.46,
-      "volume": 16604,
+      "price": 16.45,
+      "change": -0.3,
+      "changePercent": -1.79,
+      "volume": 22629,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -3.46,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -1.79,
+      "fiveDay": -6,
+      "oneMonth": -5.73,
+      "sixMonth": 69.24,
+      "ytd": 100.61,
+      "oneYear": 106.14,
       "threeYear": null,
       "fiveYear": null,
       "tenYear": null,
       "news": [
         {
           "title": "NSE: Shri Krishana Overseas Limited is Top Price Gainer in August",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-09-04T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SNDlYeXl0MW1PWE1EdWFlMGZXM1hZazY0UVNPWmJyLUNEVUlOSGlVRmJmN2QxT2V1TXkxM1dXLWVZaENRWDdjVTUzWDUxa1ZhcjF0aFRreV9wM2daYW81Z2FVZVBVcFdlckgxS2x0Q1hPUzVkTlUtTWQzcjA1dw?oc=5"
         },
@@ -3290,7 +3418,7 @@
         },
         {
           "title": "Shri Krishana Overseas Lists on the NSE: What it Means for Investors",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2025-07-25T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQN251NDYwUDVQb21vZWNjR1pNQXNmczJRZ1EzejJ5Q2pKYnJFX2ZEa2hYZDhyLWozcFlKcmZMVF9ZbUUzcW84Zl9DbU5wZGdva2dNQTMxaUV5eldGVjFvRnR4NllhOHdFOXBkU3ZuQXRVZ3BRejVOQ1Vyand1VkFpNjJFaG91V3FVVXdrdXNFV2kxb1RtYzNlNlFOazg?oc=5"
         },
@@ -3306,20 +3434,20 @@
       "symbol": "SLAM",
       "name": "Sanlam Allianz Holdings",
       "sector": "Insurance",
-      "price": 10.55,
-      "change": 0.63,
-      "changePercent": 6.35,
-      "volume": 12507,
+      "price": 10.75,
+      "change": 0.2,
+      "changePercent": 1.9,
+      "volume": 25760,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 6.35,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.9,
+      "fiveDay": 3.37,
+      "oneMonth": 0.94,
+      "sixMonth": 3.86,
+      "ytd": 26.77,
+      "oneYear": 19.98,
+      "threeYear": 49.72,
+      "fiveYear": -9.66,
       "tenYear": null,
       "news": [
         {
@@ -3354,7 +3482,7 @@
         },
         {
           "title": "SanlamAllianz Holdings Kenya Appoints Dr Martin Oduor Otieno as New Board Chairman",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-05T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxY0ZaRTlySV9PRmtIUExmMFpFUTdWQlYxUE4wZDVVWlhnbE9kc08tUVJ1UEtWc2pnaXo5dGhLUkJPc0wteklKbU9hRFRLTG42OEMtVnphZ3FualRDQVV3bnpHX1RUSWM3b3EwcGVRNFVaV2EzdkRFV1NCR0RwMm8?oc=5"
         }
@@ -3364,25 +3492,25 @@
       "symbol": "SMER",
       "name": "Sameer Africa Plc",
       "sector": "Commercial & Services",
-      "price": 16.2,
-      "change": -0.7,
-      "changePercent": -4.14,
-      "volume": 16477,
+      "price": 17.5,
+      "change": 1.3,
+      "changePercent": 8.02,
+      "volume": 1589,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": -4.14,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 8.02,
+      "fiveDay": 0.57,
+      "oneMonth": -3.31,
+      "sixMonth": 5.11,
+      "ytd": 20.27,
+      "oneYear": 12.9,
+      "threeYear": 529.5,
+      "fiveYear": 400,
       "tenYear": null,
       "news": [
         {
           "title": "Sameer Africa 2026 Half-Year Net Profit Jumps 19.9% to KSh103.89 Million",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-08-25T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ERnZvUHRGT1F4M280VjU5aXRESk1sS0U3ZzZlZmI2WFplTVI3SE82aGJxUk1pYkJxSG5pVTFKU09EUXlWcTNjdi1nNnFtMkt6V1JRaUtMUWladmRWT2o1YzlpODRiNGQtTUtvamlkNGh3WWdpczdXbDE0ek8wdw?oc=5"
         },
@@ -3400,7 +3528,7 @@
         },
         {
           "title": "Equator Energy commissions 1 MW solar plant for Sameer Africa in Nairobi",
-          "source": "Green Building Africa",
+          "source": "greenbuildingafrica.co.za",
           "date": "2026-06-04T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNY2R4dHFLd3lIenB0a05BOGRkdHB1VEhZc1lHOTBfbDNBeWZfZ0dVY3J5bUJUejRaTWdubjR2NzdsN2dmck40MVpSUVZIMzlhXzIxNGtGNW81a2F4UWJyYnlGRDFYOW9wMGcydV94T1ZNTVpJSXFuYTR4Q0RMdXc5RTVNQnBvQWJUenFPXzdJZDRzYXk3QXJWbXIwY0pUbW8xN2UxQlE1MndaZWoxdDFqMA?oc=5"
         },
@@ -3422,57 +3550,57 @@
       "symbol": "SMWF",
       "name": "Satrix MSCI World Feeder ETF",
       "sector": "Exchange Traded Funds",
-      "price": 971,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 135,
+      "price": 965,
+      "change": -6,
+      "changePercent": -0.62,
+      "volume": 118,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.62,
+      "fiveDay": 0.63,
+      "oneMonth": 3.65,
+      "sixMonth": 17.25,
+      "ytd": 10.79,
+      "oneYear": 7.22,
       "threeYear": null,
       "fiveYear": null,
       "tenYear": null,
       "news": [
         {
           "title": "SATRIX MSCI World Feeder ETF Net Assets Rise 16.5% to KSh 196.7 Billion",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-08-31T19:10:24.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LLWxfdWo4QXliSE5BS1A4MDZkWk1YU18yWFBnQUZZalFLSnhqZnhiT3JnSDlTNk1ZcF91Z0xBZzlhV0xFaVAyYlBrSlFrNl9tQXpESXFrODItUG1vQTA1bW96dlpDbWpmWDVlcXFHRkZyTU9wdG16Y25udlM4N2M?oc=5"
         },
         {
-          "title": "Exchange-Traded Funds (ETFs) in Kenya 2026 Master Guide",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-08-26T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE43bVRHYnYtNko0SkhtNElVQkhHVkpsSVJMM3RsMEZiX2swTFdXMlhodExmaWpEcTJmLTZMNndZSXhkakZZbzctR0Y5aHFGTDJNQ2IzT0F5RFg?oc=5"
+          "title": "SMWF ETF Profile: Dividends, Returns (NSEKE:SMWF)",
+          "source": "TradingView",
+          "date": "2026-07-13T17:05:17.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4QWZiRTdwdDh2a1RzSm5SbkMwbUZSaTREeS1tdGhvOURQVHRzWnhQUWxETjJZZWx1NEtFR2I5Mkd5NUh0TGpUVmJSSllTUW9xZndkT2tSbUJiVE9uSVluNHFoejF3Zw?oc=5"
         },
         {
-          "title": "Kenya Capital Markets Authority Clears First Domestic Banking ETF",
-          "source": "Birr Metrics",
-          "date": "2026-08-20T05:07:23.000Z",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbEdYRTl3ek8yU25MSXdZRFA5MDk1aWZUOV95d2gya0JsMUtpc251bE0xR3BoNW5DN1FDeGUzbmcwVlNDMmowNFpxU3VtTnBzeW5qbEhnRUxuSE5WUWw2Vm5JRjlxUnN3aTQ1NzhSeWZXR3pValNxZ3RaM1N6UWhTNWUxYWpSN2JsVFVKaHFlNV9iaFpt?oc=5"
+          "title": "STXWDM ETF Profile: Dividends, Returns (JSE:STXWDM)",
+          "source": "TradingView",
+          "date": "2026-07-13T16:47:20.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1sLVJiU2ZBS2FTZTlQd2NNelotZjRNeWk0d3NLa1JyN2RYRnN4bHpwS3FpZjNOSzFIRkM2WElBenJTdERzaGh6Q0RfZmlPWTJoTVdvWERNWl95emVjcmxYQkNsbjRodw?oc=5"
         },
         {
-          "title": "Why Wall Street Africa is Becoming an ETF Issuer",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-08-17T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2bUpJeEVIUVUwdnFxcl9McHE4QzNqVXUzMC03TkFmMmFNeE9DRnhhSEt4TnFjNU9lYWJ6a3JwQ2JhaWtlX2dMTDl6MHg2NHppMEFvTzRib0NJRWdDUDNhaFN5SUc3a1g2TjUxSFFmeWl0VVpxWDN5SA?oc=5"
+          "title": "Satrix expands African footprint with Botswana ETF listings",
+          "source": "moonstone.co.za",
+          "date": "2026-07-13T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUXhVaGNzNWF1MWhVTmdmOFB6SnNaNmVHX0diSGNORTNXVHdWeUJ0bzF1eWEzVnRQUTFKYnhqcy1ISFYydkhTMHJRNHVsLWNkNlBHb3dxbzM2RllFTktobmtjbEVCMTd3Um1TVUtOeFZxT2N2TUdSRGQ4YVpoV0gtRmlJclpITmhRRlpsUEdYY0xnQQ?oc=5"
+        },
+        {
+          "title": "Top 10 best ETFs to invest in South Africa: Satrix 40 ETF, SYG500, STXDIV and more",
+          "source": "Markets.com",
+          "date": "2026-05-24T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNb0pwaE45TFRwZEd1bFB1WU9pMnVBMjkxb0RRVmR6Nk1lYldkX09DcWR1bXlHWXVpejdTcUdjTXlZdFljNEQzMDJvd1BIWUx3RHY0VEF1UFFRZEpfMXhpRWdqblJWcENkWWZnekZMRm5wcVNOb0EyMDZuRy1fZVV4U1hR?oc=5"
         },
         {
           "title": "Satrix MSCI World ETF Full Year 2025 Results.",
           "source": "The Kenyan Wallstreet",
           "date": "2026-05-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PU1JUcm1Ta2Y2R1pJTGliNmNzZmJVRGNwaE8yWWxRSVYwb3hwck1taXVPS1VVMnk5UjlocmdUcXVpTy1Ram41bE1Ic2NCTm1VNVg0eDA4UlNOeHcxdjU0Q3REeEt1dw?oc=5"
-        },
-        {
-          "title": "Satrix leads 2026 SALTA as ETP market tops R300bn",
-          "source": "Moonstone Information Refinery",
-          "date": "2026-03-30T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNekMyWWV4aW1DOTQwMDJSYjJVZzl3dTFQRFQ2MUU4S2xGc3VSeGJiTnRnOVVwX2daV1ZLQkdFQm9ZRzE2SlNjVVFNVERuZXZhN3NNVVJrelhSdFJndWFEN21EOTFkYjI2ODF5UjBVN2Z5SUxlTW1ELWlfdjF4VkxXRF91OGc?oc=5"
         }
       ]
     },
@@ -3485,15 +3613,15 @@
       "changePercent": null,
       "volume": null,
       "suspended": true,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
+      "sixMonth": 0,
+      "ytd": 0,
+      "oneYear": 0,
+      "threeYear": 111.32,
+      "fiveYear": -17.04,
       "tenYear": null,
       "news": [
         {
@@ -3504,7 +3632,7 @@
         },
         {
           "title": "TransCentury to Dispose Two Key Subsidiaries",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-07-02T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5taWxyTXRETk5ZMVdROC1qMHJCRk5GeXlVa0dnLWthbjUyZFNZVjF1cUNST1YxZzNRbVR4UXFfZWUycmxJZThTZElOcXRuWDhaSVQzZXp2aWc2UVpVNi0wQkdGYmlEYlZDX0xJMU9BTGhOMHJNR3RMZzk1eXJKQQ?oc=5"
         },
@@ -3538,57 +3666,57 @@
       "symbol": "TOTL",
       "name": "Total Kenya Ltd",
       "sector": "Energy & Petroleum",
-      "price": 47.75,
-      "change": 0.6,
-      "changePercent": 1.27,
-      "volume": 8503,
+      "price": 47.85,
+      "change": 0.1,
+      "changePercent": 0.21,
+      "volume": 8681,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.27,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 0.21,
+      "fiveDay": 9.12,
+      "oneMonth": 8.5,
+      "sixMonth": 13.66,
+      "ytd": 27.77,
+      "oneYear": 36.71,
+      "threeYear": 168.07,
+      "fiveYear": 93.33,
       "tenYear": null,
       "news": [
         {
-          "title": "Cricket Photos - KENYA vs SL, 8th Match, Group C Pictures",
-          "source": "cricinfo.com",
-          "date": "2026-06-20T02:44:16.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNXBsRU9md0xwdThPZmhSNDgxMEhrZkxmXzMxbG5WQS1aUWJVdmNCcExwelJMTEFYTmNvc05XMEY3bi1BMFp0aWhteGdGTWVPZmJKRzQwV1paOFAzSVdvRDV4eXJsTlBQUnJLVkN1bFVaaDV0UWVNOXMzOHRraHNHTjdUWWVTcE9kcUlWVHpFSkN3LTJJWkp5dGFlb1RjUDZYbmxodVZUaklFdmQ3ZFNvRDZKS3daSW1maUswSVpR?oc=5"
+          "title": "TotalEnergies Kenya unveils new fuel card to power fleet & consumer payments",
+          "source": "HapaKenya -",
+          "date": "2026-09-10T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTzZtRnpGYWN5eURkajNoR3NvNUlJamp5S1lyX3E3ZVV0bENDUUptNWJhb1ZpcndOd283T1JXREdhaXdUOXdNTXdwV2JQdjk5eHZ5NV81c0gwd3RkcjZMTXNvV2Q2UDM5ZUlFMy1WMUcwV3NhTnJEMGJrNmdRYXlWZDlNclhlc1hfajRSVVJJRDIyUVI3bTlpYVpGdnBRMlRQNzhEQ2NRMkoxZkVy?oc=5"
         },
         {
-          "title": "The Kenya Transporters Association Opens its Doors to the Private Sector",
-          "source": "Automotive Fleet",
-          "date": "2026-05-08T00:08:33.000Z",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWEhySFZfSUJ5cnBOUUE5TGZVdEV3NTlLQTNNZjFfQzlxVHpmbHRiRWs0aEFqV1dpTFJqdlhjVzhZSjl0R2NvcGpDR0FObGpyYzhnVzlxY1VHY1YxdEFsNTAtLUhEMFpUbmZMNy1KMUJja2JGaXpxWlQ0VlFEbXd5dWZNa1RTSndBaE1lcFNtb1czOTc2NTBRU09RSk96V3FKNUFVY2VZM1B0RHFRWkNV?oc=5"
+          "title": "TotalEnergies Kenya launches new generation card to transform fleet payments",
+          "source": "the-star.co.ke",
+          "date": "2026-09-08T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMEZweWJUX04xYnhYTFhmMHh1U0dScERIMUFNdkJBTkR2bDZITzYwYmdpbVdCczhrWXRFUTBZNmtVbFJyeVF1Z2Vndlo2QjRFSVV0d1hjdDloZExaa1B0QzVEVWg1ZFh1V0NtZkhwWjhDdzdkNTF1WE9waUwxQTZ1Nk9GZWRWakhNX01sN0U5Z3RhZGU5OFlUblVEeHJpeXhYb2E2ekdRdmlzUEhObmRONTVIRjdTZnRRM0R6Nk9MWnRaRmRVckV0X0FUTQ?oc=5"
         },
         {
-          "title": "Kenya reverts to lower-quality fuel owing to a conflict on another continent",
-          "source": "Business Insider Africa",
-          "date": "2026-05-02T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObzM3SENIeXJ6R0pucG9XX3lqSWVkbm55UnVOdnpXbUVXLWNvbXZucFV0RWJRZ0d1ZnkxcFFNX1pCZmVNMy1ORE1UQmNWSmZObVlBWTZiWmlUbzd0NFdfOEVSci1oTTZBcUZ4eG9haW1rY04zYVZsS1oxa0dfdVFnZUt0U3V4bEtub3NHdXhSME90N1FBVUlfNUkyX2pXNFYwZG9hckJXR001dFg2Tl9EaU5CUjlrTnkxQUdMdmhxdVR4Vms2WktQX2k5WGhPUnYy?oc=5"
+          "title": "TotalEnergies Kenya H1 Pretax Profit Jumps 53% to KSh2.17B",
+          "source": "Serrari Group",
+          "date": "2026-08-31T10:12:50.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeEhOVnlGdXRjRFlpbF9kSWpUYlg3SnMtSUd0bkhTM0hBS3d4RkNJbDlZRjV1UW1kSThxMjUyU3RaN0JuSDJZYXNkRTFEalB4TnVfRHlIejMtamQyQWdMZXlJakdSNzkyZmVDVC1qcGFBNVRpWUxVUHBhNDZXQXFMb19mc1o4TDYxLTJn?oc=5"
         },
         {
-          "title": "Rubis Kenya market share falls to 13.8%, locals gain ground",
+          "title": "TotalEnergies Kenya's Half-Year Pretax Profit Jumps 53% on Higher Sales Volumes",
           "source": "The Kenyan Wallstreet",
-          "date": "2026-04-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96dzJFeGFBd0prNWhHVFBhSWtjeTlzb2VKU3BKeHVPbnVUNTJURmhueXVackFYTkxQMXVrNGFxYThqUXQwdTJyMWNyN2ZtMmRJUmNZUkdXNVZrRTNnQmpJU2pyUlh2b3ZRZ3hjS2xyaHpxUXFUY1J2ag?oc=5"
+          "date": "2026-08-30T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43WGlxM04wMWE2UzEzb2lBYVdTLUNHdTAycWdZUTBUOUVJdUhhWWxMY0J3TnJuQmxGWDQtN01JYjNnT2Y4SFVNZnA1SVJVMGcyRFlUbkZhUzlGQzV1V3N0OXAzQzVjdnQ4?oc=5"
         },
         {
-          "title": "Top 10 Top Power Producers In Kenya By Market Share",
-          "source": "The Kenya Times",
-          "date": "2026-03-24T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMFltTHAtc2hYZDlCWnprSDJEb1pFMDNGUHROaWJhYlRaS3FjLVRBeGFBY3p6c0lwSVhBNUVGbDhtRXlpTVZDSHFqdTNFajE2SXNEMDA3TGlrZjliWkpFeThsTUpYMXE4MEQ4N2pCOEdmWUprVWV3aTRIbGF3SlVNUHdUWURtdk9DaG8yXzZGQXUyQjgweEFFdWpCNXlWbW9sM2R3bA?oc=5"
+          "title": "Total half-year earnings up 21pc on higher fuel demand",
+          "source": "Business Daily",
+          "date": "2026-08-27T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYjdyQkdtcXFmekNteFRVRkxqNHR0dUgwTkQ1ZktfZXNjUDJrQ0NnS3o3THc2em9zeVBfR2haTWY2UGU3RWhkdXFnX2pBVW9YenI1bThtck4wX3pQdVhmQUcyUHhSa0s4NXFDSkdRcHNXMEtFTlBNY3paNEJMSnV4VHpuNC0tdElzUEI1czMwbmQzWWVtZHB5bS1lbE51SXAxZW1ucFFtSm56ZnR4VjRFcldqWjZ6SEZDdHJwTWpn?oc=5"
         },
         {
-          "title": "Total Kenya Ordered to Return Rival's LPG Cylinders in 7-Year Debt Row",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-02-18T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVRpRmNpelp1c1UyN01mQmgzcHVhMFd0Z1FDWDFBTnlyalNBcV9RVjFlTWdkcmdWWVZGODJaSkRkd3VGMzRhUkl0d0hEM29HQkhBdll6NURmTzQtOXE4Y3JZNlBhcHBmaEF0bDBjVzVtbm9MWU5JQ1FwQV80ZFcycWVJdTZESGdhVEJpdlVn?oc=5"
+          "title": "PS Kello calls for enhanced compliance in fuel logistics",
+          "source": "kbc.co.ke",
+          "date": "2026-06-23T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcFJLUFpTWnN0MEFHVFV3ZE00cU9Fc3lSb3JVaTczdGxIUnlvdnJveWtJMDI4SmdwMEZqMERYUFBaaDlMUDFsVXUzVnFjWk16Ny1UMjcyQ0p3SE9OZFNab0luQlp1TXJ4VHVEU3kyZjdWRmliUktMblVGcHBlb2l1VXNJaWlVUQ?oc=5"
         }
       ]
     },
@@ -3596,20 +3724,20 @@
       "symbol": "TPSE",
       "name": "TPS Eastern Africa Serena Ltd",
       "sector": "Commercial & Services",
-      "price": 17.35,
-      "change": 0.25,
-      "changePercent": 1.46,
-      "volume": 593,
+      "price": 17.8,
+      "change": 0.45,
+      "changePercent": 2.59,
+      "volume": 5763,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.46,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 2.59,
+      "fiveDay": 3.19,
+      "oneMonth": 11.95,
+      "sixMonth": 7.88,
+      "ytd": 18.67,
+      "oneYear": 15.21,
+      "threeYear": 25.35,
+      "fiveYear": 15.96,
       "tenYear": null,
       "news": [
         {
@@ -3626,7 +3754,7 @@
         },
         {
           "title": "CIC Insurance Group Plc Issues Profit Warning",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-02-24T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5rVFlJcnREUWpkdHNibWZjZENvS21kRmRZLXIwLUdtSWdINnJXZU5VQlhHQm5TNWIxWEFHQUpHZzFfY2F6Sm1XbFVhTGNZN2REN3YzeGwtekxjN3BVX1RHQUF0Zno4VDM5dXBKSkhoLWhIcW0wMzAycmRYVFA?oc=5"
         },
@@ -3659,10 +3787,10 @@
       "changePercent": null,
       "volume": null,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": null,
-      "fiveDay": null,
-      "oneMonth": null,
+      "fiveDay": 0,
+      "oneMonth": 0,
       "sixMonth": null,
       "ytd": null,
       "oneYear": null,
@@ -3671,40 +3799,16 @@
       "tenYear": null,
       "news": [
         {
-          "title": "Kenya’s REIT market reaches a regulatory crossroads as investors look beyond conventional property",
-          "source": "techtrendske.co.ke",
-          "date": "2026-09-13T12:22:32.000Z",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNekRTaVNVYkhZc000bXJYUjJKWG5HSWYwWGJZdTk3cDQ0VUVOY3JPbExQUElLcWVuWTVtMUxmVm1tNEwtVjR0NjlfNTFPa2hvZmNNc1dqTWRpbnNwTnozVE03bXhXaTh5c0MtdGdneDBINmtHRXVVbGVXandpdUNHcg?oc=5"
+          "title": "Warehouse developer gets Sh228m boost on Finance Act relief",
+          "source": "Business Daily",
+          "date": "2026-08-09T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQktxV3NuVGltXzczSVRhbHBWYW8tRV9jYlhIMEdZTmtwSlBHQlhBLWVFMHI5S1VEYWtzVFFJM3loeHVCODNXNHZqelE2em12LUVCMHlPa0x5b2lJZG5wMmpZby1aNWFuZlZhZ3IzYmhnVFIzbnJIYU1qUFlaVzl5OW1nV0NXeWlyZmgxb1FBSWwwbWl0R3ptZng5UlJNN0dfS0xld2Y5Rkl1OHpXMHhYMFBoeExaMl9KMmpER202MmtDeG1N?oc=5"
         },
         {
-          "title": "Nairobi Securities Exchange (NSE)",
-          "source": "african markets",
-          "date": "2026-09-11T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tdGo1Skk3ckVHTnZjUzY1OEk5eERuT3k5cVVNSmVXRG5SMklYRzc0bzF6cXNkMkVicXNmY0Y0RlIxZjM5dDZPTW9ORzBramJsZTlXUVNJakdLMXZlbDhmbU5B?oc=5"
-        },
-        {
-          "title": "TRIFIC Green USD I-REIT: Kenya’s First USD-Denominated Green REIT Lists on the Nairobi Securities Exchange",
-          "source": "african markets",
-          "date": "2026-07-03T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdGpZS0dSTW1kMk1NdXFzcDJNcGpKeHZjU2xzVmpLdktnb2xWMHB3QnVueEVhYzhVTThrN3VJZExranlQNmp1eW9Ba0dQRzczeHplcDNvS2hma3B4OUgtemZqVzJrNmhnNV9lN1dzQmxBaVlERkY0UDdEWmxYaGNjS1FfZVFPdmdaYzRKWXFaWk1JcWFDYlgxZU12VjhfR2toWjlmajhkOTdsTEt1ZWxkMTZqNmlsRHB6Y1lfbVRfOUdaMlhRUTRFblpXcTFwVTFWdWRpNVNMT0VybXFVVnctUnRmb3lPSGpPOHhsajZ3?oc=5"
-        },
-        {
-          "title": "TRIFIC Green property fund lists on Nairobi exchange after strong demand",
-          "source": "standardmedia.co.ke",
-          "date": "2026-06-30T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPN2E1bGtmOGFlU3VwNllhNnZYTGZrWTJyenpEa0xNcDRMSlpTeEVYdzV4V2tJRnBpRk1mSzdnalFVRVFKcUp2dkVhNTZ6SmQ4NmNRYkdFX3JaUzNZM05BQm1ZbUk2VzEyNDhFdkxmdHdKbUpkNTEydnVSY3RJWE5OWjVBYUJ1TVpDQXlCcjVTYThkOUxJVUNoMjRpODJLTUpKQlpoNlowS3pPMTl0TlllekNuMDRXcDF3dUdBd1RLeWVmOW1VdFBsdlU5dm4?oc=5"
-        },
-        {
-          "title": "Trific Green USD I-REIT lists on NSE",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-06-30T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ndmhfZ014eDVQd2k3VFhfN21WSU1JR1FOZzVFN1MzbndnZ2lNMEpGY05idUg5QnFTc2xMT09kNnN0Z1VUUUhCVEktd1RhdXJtaG1DYUNfb01tcHEwZHd2bnd1MG01SFF0R0JmR2FkNnhKMTQ?oc=5"
-        },
-        {
-          "title": "Two Rivers: Kenya's First Dollar Real Estate Investment Trust Closes 103% Oversubscribed",
-          "source": "Mjengo Hub",
-          "date": "2026-06-22T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeE9CaHNVSGVuUUdyS2xxUG9zSjhzTWU1RXpYbng2VG55dmluQnExOXR1SlZ1UG1VeXd2U1NxLW1VSDlvVGlpUnh5SW5FSzRpbkRqNTIxNWQwQmJHTGRUdUNGbEtlUGk5N1pzbkk0ZUxLdVFLbTUzWTB4ODlSWFVFeHB0bEp4QTR5WmJOWGhldHRCa0NadG43eW14ZzNDV3ZfYk1HcDdqWVFFWWdCOG1GTkFDRUZzT2sySFM0aFhLWjRIV1FK?oc=5"
+          "title": "Centum property dollar fund hits Sh3.9bn target",
+          "source": "Business Daily",
+          "date": "2026-06-18T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbmxwVE5WQlVsd1JtTFd6QXZzaXJCQ1ZMSk4wUDZMRDVOWVJOR0xlS1B1Q3N5RmpBLVpPLW9fekJUUW1sVEpLVW80ci0xS3FBUE9jZm1UY254U0hFRHV3X0FleGxtTzZDU2ljX0xicC1UM29lZF94bGFfajVoTnhEVGtaT19GRDl0d1Z2anQ5bkxaczlQMEM4eFVqVVpYaFlnbGtRY2oxeVpGdDds?oc=5"
         }
       ]
     },
@@ -3712,20 +3816,20 @@
       "symbol": "UCHM",
       "name": "Uchumi Supermarket Ltd",
       "sector": "Commercial & Services",
-      "price": 1.35,
-      "change": 0.12,
-      "changePercent": 9.76,
-      "volume": 540283,
+      "price": 1.62,
+      "change": 0.27,
+      "changePercent": 20,
+      "volume": 381486,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 9.76,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 20,
+      "fiveDay": 32.79,
+      "oneMonth": 9.46,
+      "sixMonth": -21.36,
+      "ytd": 72.34,
+      "oneYear": 362.86,
+      "threeYear": 604.35,
+      "fiveYear": 636.36,
       "tenYear": null,
       "news": [
         {
@@ -3754,7 +3858,7 @@
         },
         {
           "title": "Uchumi Supermarkets Limited to hold first AGM in 8 years",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-04-09T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FWnhtR2x4V2JJMUp6eHY5Uy1STmY2eVViNVY4WDNRcnlLcW01TENBV3Jzd1hSTzZCWHZaSUlqcVZiSDVrU1E0Qk1FVlpQZl9YTkE4SUM4ZjdtVVltUWZ5djZZOWdSZkNyWk11d1lRMV9zZw?oc=5"
         },
@@ -3770,25 +3874,25 @@
       "symbol": "UMME",
       "name": "Umeme Ltd",
       "sector": "Energy & Petroleum",
-      "price": 6.1,
-      "change": 0.18,
-      "changePercent": 3.04,
-      "volume": 139525,
+      "price": 6.38,
+      "change": 0.28,
+      "changePercent": 4.59,
+      "volume": 30157,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 3.04,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 4.59,
+      "fiveDay": 15.58,
+      "oneMonth": 0.95,
+      "sixMonth": -24.94,
+      "ytd": -19.85,
+      "oneYear": -8.6,
+      "threeYear": -51.67,
+      "fiveYear": -5.9,
       "tenYear": null,
       "news": [
         {
           "title": "Govt seeks sh2 trillion for Umeme concession takeover",
-          "source": "NewVision.co.ug",
+          "source": "newvision.co.ug",
           "date": "2026-09-08T09:04:53.000Z",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUW9SN29XQkhCVkNYMkU0RWpoUlZhSFdJYkdtTFR0NmNtZnd4Z040Q1ZsV1hlcUpqTjAyZTFOZk8welhVR1daVmpfclVuQnc3VURxOEFGWHFMRGVCWGNmX0lNNnVwLV83QzVRZ3pIc091bFo0RkVPZUZpdkR3WVBndTF6MTJpXzB3REFteWx1eVRtUEZUenZEdU1XcHBvT2JNeG1TbTh3?oc=5"
         },
@@ -3800,7 +3904,7 @@
         },
         {
           "title": "Umeme nears 15-year Sierra Leone power distribution deal",
-          "source": "Daily Monitor",
+          "source": "monitor.co.ug",
           "date": "2026-08-31T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNazZTWU5ERUJFZG5TLVoxU2ljQ3JsYVBTUjNtclJRS1NscmdKcE1tN01ULXRWNEQxRjBsRmdRaVhtWUctV1RZampFeEJQVmdaNkN4RGpfNGk3LXc5ckdjczYxYmNhZlhwR2RCdFo0WWUxM095aHprakp2WXg2ZlZnZGJ5N3ZtVzFaMUhqVkxPNkc3TVZhcXBVNXJ0MXB2SkhCaGVadHVyaFRjbUZvVTJBUHlCNHMzdw?oc=5"
         },
@@ -3828,20 +3932,20 @@
       "symbol": "UNGA",
       "name": "Unga Group Ltd",
       "sector": "Manufacturing & Allied",
-      "price": 41.05,
-      "change": 0.6,
-      "changePercent": 1.48,
-      "volume": 2379,
+      "price": 41.55,
+      "change": 0.5,
+      "changePercent": 1.22,
+      "volume": 3768,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 1.48,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": 1.22,
+      "fiveDay": 1.59,
+      "oneMonth": 22.57,
+      "sixMonth": 42.54,
+      "ytd": 75.32,
+      "oneYear": 93.26,
+      "threeYear": 128.93,
+      "fiveYear": 38.5,
       "tenYear": null,
       "news": [
         {
@@ -3857,14 +3961,8 @@
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ2VlMmJzbVlIeWFuOHpTOXBLWmxEcGxjVV9nUlVqREVFUTlDVlpBRWg0TGd6MXJjV08tcTdKUFVKVF9LQ3I2RUdzVC15amdEbU1QTEUxRmxzbGRlVFhvN0FESldiZXVudXhLMFcwbzdyNjBXRUYwVzFXOWVxV2lLUkw0bkNrbnBlM1hLd0NQeGt5ZVRw?oc=5"
         },
         {
-          "title": "Unga Group Number of Employees 2026 | Employee Count & Headcount Data",
-          "source": "Revelio Labs",
-          "date": "2026-07-29T05:37:40.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJdk8xWGJodVpoMTlhQlF1Wkhoc3pXMUVvOEVMb3ZDMmVPMHQ3U2ljY3AxbDE3V2xIYlB2dXFsY0FxWnJyRk5vRHNxTDZSc05GdjBJaU5ENXhVb1JSelVJTnhYb3NhVzE0Snc?oc=5"
-        },
-        {
           "title": "Unga Group launches Amana Instant Lemon Rice as demand for quick meals grows",
-          "source": "Milling Middle East & Africa",
+          "source": "millingmea.com",
           "date": "2026-04-01T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeFBVMGxhbGxTckFxV3RpSEFqV0d2dHZ2MTJfdkpNYThrdUllQmhZV1pYZ0pJSVFuZ0RkR1NKXzVwYmlWZkJpUE9uOHpPZXd4emVhMmhQem9LanNmOE9DbkNvZ2hUYzJyUWJrNk9xeUJLd0xfblZncndZTk13TTNzMW1JaFNMckl5cjJ3X2tpVTE5ZVNvS0VqSGFsOFo0cllibmc?oc=5"
         },
@@ -3879,6 +3977,12 @@
           "source": "africanfinancials.com",
           "date": "2026-02-26T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnQVhsSW4xN29OXy1xYXlJemVDaFRvb2tVWFFYWUM4UnJ1VFZuTDZsNWpTZVVEOVNoWXhoMEprMjBfakpKRXdqNG10Zmw1ajB6OHFLYU43S2ZZSlZSZld2bG42RmZmVXFZbHc?oc=5"
+        },
+        {
+          "title": "Unga maintains dividend freeze despite half-year profit surge",
+          "source": "Business Daily",
+          "date": "2026-02-26T08:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcmllT1ZlZXdPeXdvMlZ6d2NPMVFhS0FFTUJYSVhDNDhHX09UTW9nSGVUZGtHMUF4cTJEUEdxMU15UEV4U0s4Ymw3cmYwazV1WG95alJ2OXRaMlpBQWExdnMwTk1aODFUczJweWRyRmJ5TXBHV1BEaFlIUlE4WUtGWERYMjYyejRoM2UtV25PZE1qc3htWVk2dDBuQ1BRYUlXaTdSdGxCMDYxUzJfWXljWHNoalBtcHcxOUJBUlRnTjFXRkZBSDUw?oc=5"
         }
       ]
     },
@@ -3889,17 +3993,17 @@
       "price": 160,
       "change": 0,
       "changePercent": 0,
-      "volume": 1812,
+      "volume": 2992,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
       "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "fiveDay": -0.16,
+      "oneMonth": 2.24,
+      "sixMonth": 14.29,
+      "ytd": 7.02,
+      "oneYear": -33.33,
+      "threeYear": -21.76,
+      "fiveYear": 15.94,
       "tenYear": null,
       "news": [
         {
@@ -3916,7 +4020,7 @@
         },
         {
           "title": "Williamson Tea Kenya Rebounds to KSh 120.8m Net Profit",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-06-26T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBkWXNna2U1cUtWV1kyM25ra21HQWczaGpZVDBUSVlIRWNIOFVITy1fRnJ4Wm8wZE40SDVPRXFQSjd6SWxoWGtQMzY3WnJkS1dweE45SEhHQWJoME5NUzZqR1FBcXNmYXN2MS1kb2xPYXlPUWt1SUlfQzRoRjA?oc=5"
         },
@@ -3944,20 +4048,20 @@
       "symbol": "XPRS",
       "name": "Express Kenya Ltd",
       "sector": "Commercial & Services",
-      "price": 7.02,
-      "change": 0,
-      "changePercent": 0,
-      "volume": 8550,
+      "price": 7,
+      "change": -0.02,
+      "changePercent": -0.28,
+      "volume": 1773,
       "suspended": false,
-      "pricesAsOf": "2026-09-23T15:13:12+00:00",
-      "oneDay": 0,
-      "fiveDay": null,
-      "oneMonth": null,
-      "sixMonth": null,
-      "ytd": null,
-      "oneYear": null,
-      "threeYear": null,
-      "fiveYear": null,
+      "pricesAsOf": "2026-09-24T12:32:13+00:00",
+      "oneDay": -0.28,
+      "fiveDay": -3.31,
+      "oneMonth": -0.57,
+      "sixMonth": -6.91,
+      "ytd": -8.85,
+      "oneYear": -12.5,
+      "threeYear": 44.33,
+      "fiveYear": 55.56,
       "tenYear": null,
       "news": [
         {
@@ -3968,7 +4072,7 @@
         },
         {
           "title": "Express Kenya Seeks KSh 250Mn in Rights Issue",
-          "source": "Business Today Kenya",
+          "source": "businesstoday.co.ke",
           "date": "2026-05-30T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4ySTZXcHNBZXdZSlVuY1BvWnBPMTItOGtaYlJaeDBwNURTemF4NTAwZl9TRXZYQ1NBYkZnSzlJcWp1N1N3TGR4ZGQzbHhHbF9FTHA4R2w1RE41LTRHOWxEX1VHaVh5TW03Q05ldTJJUmppMF9pZkN4Zzc1UWxvZw?oc=5"
         },

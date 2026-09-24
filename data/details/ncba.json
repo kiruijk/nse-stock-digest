@@ -14,15 +14,15 @@
   "dividendYield": 7.89,
   "sharesOutstanding": 1650000000,
   "marketCap": 148000000000,
-  "dayLow": 89.5,
+  "dayLow": 89.75,
   "dayHigh": 90,
-  "deals": 203,
-  "turnover": 105000000,
-  "liquidityRank": 20,
+  "deals": 156,
+  "turnover": 8039999.999999999,
+  "liquidityRank": 19,
   "volume3m": 19600000,
-  "deals3m": 13825,
+  "deals3m": 13778,
   "turnover3m": 1750000000,
-  "avgDailyVolume": 310487,
+  "avgDailyVolume": 310664,
   "avgDailyTurnover": 27800000,
-  "fetchedAt": "2026-09-24T02:31:13.198Z"
+  "fetchedAt": "2026-09-24T13:04:37.349Z"
 }
