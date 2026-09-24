@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -824,7 +847,7 @@
   <header>
     <div>
       <h1>Mumias Sugar Company Ltd (NSE: MSC)</h1>
-      <div><a class="theme-tag" href="../sectors/manufacturing-and-allied.html">Manufacturing &amp; Allied</a><span class="theme-tag">Suspended</span></div>
+      <div><a class="theme-tag" href="../sectors/manufacturing-and-allied.html">Manufacturing &amp; Allied</a><span class="tip sus-tag" tabindex="0" data-tip="Suspended: trading in this stock has been halted by the NSE or the Capital Markets Authority, usually pending overdue results, a restructuring or insolvency. The price shown is the last traded price; shares can't be bought or sold until trading resumes.">SUS</span></div>
     </div>
     <div class="header-price">
       <div class="header-price-value">KES 0.28</div>

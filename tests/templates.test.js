@@ -90,3 +90,12 @@ test('tip wraps a label with its glossary explanation', () => {
   const html = renderProfile(stock, { site: SITE });
   assert.ok((html.match(/data-tip=/g) || []).length >= 10);
 });
+
+test('suspended stocks get a SUS badge that explains itself', () => {
+  const { susTag } = require('../templates/glossary');
+  assert.match(susTag('up'), /class="tip tip-up sus-tag"[^>]*data-tip="Suspended: trading in this stock has been halted[^"]*">SUS<\/span>/);
+  const html = renderProfile({ ...stock, suspended: true }, { site: SITE });
+  assert.match(html, /<header>[\s\S]*sus-tag[\s\S]*<\/header>/);
+  const sector = renderSector('Telecommunication', null, [{ ...stock, suspended: true }], { site: SITE });
+  assert.match(sector, /scom\.html">SCOM<\/a><span class="tip tip-up sus-tag"/);
+});

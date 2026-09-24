@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -848,7 +871,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../stocks/kpc.html">KPC</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kpc.html">KPC</a></td>
             <td>Kenya Pipeline Company</td>
             <td class="num">9.00</td>
             <td class="num" style="color: #059669">+0.00%</td>
@@ -859,7 +882,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/kegn.html">KEGN</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kegn.html">KEGN</a></td>
             <td>KenGen Plc</td>
             <td class="num">10.80</td>
             <td class="num" style="color: #059669">+0.47%</td>
@@ -870,7 +893,7 @@
             <td class="num">8.3%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/kplc.html">KPLC</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kplc.html">KPLC</a></td>
             <td>Kenya Power &amp; Lighting Company</td>
             <td class="num">23.40</td>
             <td class="num" style="color: #059669">+0.21%</td>
@@ -881,7 +904,7 @@
             <td class="num">4.7%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/kplc-p4.html">KPLC-P4</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kplc-p4.html">KPLC-P4</a></td>
             <td>Kenya Power 4% Preference Shares</td>
             <td class="num">5.26</td>
             <td class="num" style="color: #6b7280">—</td>
@@ -892,7 +915,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/kplc-p7.html">KPLC-P7</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kplc-p7.html">KPLC-P7</a></td>
             <td>Kenya Power 7% Preference Shares</td>
             <td class="num">6.00</td>
             <td class="num" style="color: #6b7280">—</td>
@@ -903,7 +926,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/totl.html">TOTL</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/totl.html">TOTL</a></td>
             <td>Total Kenya Ltd</td>
             <td class="num">47.75</td>
             <td class="num" style="color: #059669">+1.27%</td>
@@ -914,7 +937,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/umme.html">UMME</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/umme.html">UMME</a></td>
             <td>Umeme Ltd</td>
             <td class="num">6.10</td>
             <td class="num" style="color: #059669">+3.04%</td>

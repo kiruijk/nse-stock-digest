@@ -17,7 +17,8 @@ const GLOSSARY = {
   volatility: 'How much the price typically swings in a year (annualized standard deviation of daily moves). Higher means a bumpier ride.',
   maxDrawdown: 'The largest fall from a peak to a later low over the last 5 years.',
   volume: 'Number of shares traded in the latest session.',
-  nasi: 'NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange.'
+  nasi: 'NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange.',
+  suspended: 'Suspended: trading in this stock has been halted by the NSE or the Capital Markets Authority, usually pending overdue results, a restructuring or insolvency. The price shown is the last traded price; shares can\'t be bought or sold until trading resumes.'
 };
 
 // Tooltip styles, shared by every page (appended to the nav CSS). `.tip-right` anchors the
@@ -60,6 +61,29 @@ const TIP_CSS = `
   right: 0;
 }
 
+/* Opens upwards, for labels near the bottom of a scrolling table */
+.tip-up:hover::after,
+.tip-up:focus::after {
+  top: auto;
+  bottom: calc(100% + 6px);
+}
+
+/* SUS badge for suspended stocks */
+.sus-tag {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
 .tip:focus {
   outline: none;
 }
@@ -84,11 +108,16 @@ const TIP_CSS = `
 
 const escapeAttr = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
-// Label with its explanation as a tooltip; plain label when there's no definition
-function tip(label, key, align = 'left') {
+// Label with its explanation as a tooltip; plain label when there's no definition.
+// `variant`: '' (opens below, left-aligned), 'right', 'up' or 'right up'.
+function tip(label, key, variant = '', extraClass = '') {
   const text = GLOSSARY[key];
   if (!text) return label;
-  return `<span class="tip${align === 'right' ? ' tip-right' : ''}" tabindex="0" data-tip="${escapeAttr(text)}">${label}</span>`;
+  const classes = ['tip', ...variant.split(' ').filter(Boolean).map(v => `tip-${v}`), extraClass].filter(Boolean).join(' ');
+  return `<span class="${classes}" tabindex="0" data-tip="${escapeAttr(text)}">${label}</span>`;
 }
 
-module.exports = { GLOSSARY, TIP_CSS, tip };
+// "SUS" badge for a suspended stock, explained on hover
+const susTag = (variant = '') => tip('SUS', 'suspended', variant, 'sus-tag');
+
+module.exports = { GLOSSARY, TIP_CSS, tip, susTag };

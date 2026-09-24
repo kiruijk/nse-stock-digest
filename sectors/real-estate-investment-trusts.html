@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -848,7 +871,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../stocks/lapr.html">LAPR</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/lapr.html">LAPR</a></td>
             <td>Laptrust Imara Income-REIT</td>
             <td class="num">20.00</td>
             <td class="num" style="color: #6b7280">—</td>
@@ -859,7 +882,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/alp.html">ALP</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/alp.html">ALP</a></td>
             <td>ALP Real Estate Investment Trust</td>
             <td class="num">1.02</td>
             <td class="num" style="color: #6b7280">—</td>
@@ -870,7 +893,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/trfc.html">TRFC</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/trfc.html">TRFC</a></td>
             <td>TRIFIC Green USD I-REIT</td>
             <td class="num">1.23</td>
             <td class="num" style="color: #6b7280">—</td>

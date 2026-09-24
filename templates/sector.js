@@ -7,7 +7,7 @@ const {
   formatKes, formatPrice, formatPct, pctColor, formatRatio, formatYield, formatDate, escapeHtml, CSS, DISCLAIMER
 } = require('./profile');
 const { NAV_CSS, renderNav, renderFooterLinks, seoTags } = require('./site');
-const { tip } = require('./glossary');
+const { tip, susTag } = require('./glossary');
 
 const median = (values) => {
   const v = values.filter(x => x != null).sort((a, b) => a - b);
@@ -46,8 +46,8 @@ ${(content.sections || []).map(sec => `      <h3>${sec.heading}</h3>\n      ${se
     : '';
 
   const rows = byCap.map(s => `          <tr>
-            <td><a href="../stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a></td>
-            <td>${escapeHtml(s.name)}${s.suspended ? ' <span class="item-meta">(suspended)</span>' : ''}</td>
+            <td style="white-space: nowrap;"><a href="../stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.suspended ? susTag('up') : ''}</td>
+            <td>${escapeHtml(s.name)}</td>
             <td class="num">${formatPrice(s.price)}</td>
             <td class="num" style="color: ${pctColor(s.oneDay)}">${formatPct(s.oneDay)}</td>
             <td class="num" style="color: ${pctColor(s.ytd)}">${formatPct(s.ytd)}</td>

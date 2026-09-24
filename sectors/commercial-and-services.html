@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -833,8 +856,8 @@
       <h2>Sector at a Glance</h2>
       <div class="summary-stats">
         <div class="card"><div class="card-subtitle">Listed</div><div class="card-value">13</div></div>
-        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Combined Market Cap</span></div><div class="card-value">KES 33.7B</div></div>
-        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">Median P/E</span></div><div class="card-value">—</div></div>
+        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Combined Market Cap</span></div><div class="card-value">KES 35.4B</div></div>
+        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">Median P/E</span></div><div class="card-value">106.6×</div></div>
         <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Median Yield (payers)</span></div><div class="card-value">—</div></div>
       </div>
     </div>
@@ -848,7 +871,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../stocks/kq.html">KQ</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/kq.html">KQ</a></td>
             <td>Kenya Airways Ltd</td>
             <td class="num">5.70</td>
             <td class="num" style="color: #059669">+0.35%</td>
@@ -859,7 +882,18 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/lkl.html">LKL</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/nbv.html">NBV</a></td>
+            <td>Nairobi Business Ventures Ltd</td>
+            <td class="num">1.29</td>
+            <td class="num" style="color: #059669">+1.57%</td>
+            <td class="num" style="color: #dc2626">-11.64%</td>
+            <td class="num" style="color: #dc2626">-24.56%</td>
+            <td class="num">KES 1.7B</td>
+            <td class="num">106.6×</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap;"><a href="../stocks/lkl.html">LKL</a></td>
             <td>Longhorn Publishers Ltd</td>
             <td class="num">2.74</td>
             <td class="num" style="color: #059669">+0.37%</td>
@@ -870,7 +904,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/hbe.html">HBE</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/hbe.html">HBE</a></td>
             <td>Homeboyz Entertainment</td>
             <td class="num">4.66</td>
             <td class="num" style="color: #6b7280">—</td>
@@ -881,7 +915,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/evrd.html">EVRD</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/evrd.html">EVRD</a></td>
             <td>Eveready East Africa Ltd</td>
             <td class="num">1.00</td>
             <td class="num" style="color: #059669">+0.00%</td>
@@ -892,18 +926,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/nbv.html">NBV</a></td>
-            <td>Nairobi Business Ventures Ltd</td>
-            <td class="num">1.29</td>
-            <td class="num" style="color: #059669">+1.57%</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
-          <tr>
-            <td><a href="../stocks/nmg.html">NMG</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/nmg.html">NMG</a></td>
             <td>Nation Media Group</td>
             <td class="num">15.10</td>
             <td class="num" style="color: #059669">+1.00%</td>
@@ -914,7 +937,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/scan.html">SCAN</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/scan.html">SCAN</a></td>
             <td>ScanGroup Ltd</td>
             <td class="num">1.98</td>
             <td class="num" style="color: #dc2626">-0.50%</td>
@@ -925,7 +948,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/sgl.html">SGL</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/sgl.html">SGL</a></td>
             <td>Standard Group Ltd</td>
             <td class="num">6.16</td>
             <td class="num" style="color: #dc2626">-0.65%</td>
@@ -936,7 +959,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/smer.html">SMER</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/smer.html">SMER</a></td>
             <td>Sameer Africa Plc</td>
             <td class="num">16.20</td>
             <td class="num" style="color: #dc2626">-4.14%</td>
@@ -947,7 +970,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/tpse.html">TPSE</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/tpse.html">TPSE</a></td>
             <td>TPS Eastern Africa Serena Ltd</td>
             <td class="num">17.35</td>
             <td class="num" style="color: #059669">+1.46%</td>
@@ -958,7 +981,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/uchm.html">UCHM</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/uchm.html">UCHM</a></td>
             <td>Uchumi Supermarket Ltd</td>
             <td class="num">1.35</td>
             <td class="num" style="color: #059669">+9.76%</td>
@@ -969,7 +992,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/xprs.html">XPRS</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/xprs.html">XPRS</a></td>
             <td>Express Kenya Ltd</td>
             <td class="num">7.02</td>
             <td class="num" style="color: #059669">+0.00%</td>
@@ -980,8 +1003,8 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/dcon.html">DCON</a></td>
-            <td>Deacons East Africa <span class="item-meta">(suspended)</span></td>
+            <td style="white-space: nowrap;"><a href="../stocks/dcon.html">DCON</a><span class="tip tip-up sus-tag" tabindex="0" data-tip="Suspended: trading in this stock has been halted by the NSE or the Capital Markets Authority, usually pending overdue results, a restructuring or insolvency. The price shown is the last traded price; shares can't be bought or sold until trading resumes.">SUS</span></td>
+            <td>Deacons East Africa</td>
             <td class="num">0.45</td>
             <td class="num" style="color: #6b7280">—</td>
             <td class="num" style="color: #059669">+0.00%</td>

@@ -196,9 +196,20 @@
       color: #6b7280;
     }
 
-    .stock-card.suspended,
+    .stock-card.suspended .stock-name,
+    .stock-card.suspended .spark,
+    .stock-card.suspended .stock-price,
+    .stock-card.suspended .stock-change,
+    .stock-card.suspended .fundamentals,
+    .stock-card.suspended .metrics,
     .screener tr.suspended-row td:not(.pin) {
       opacity: 0.6;
+    }
+
+    /* Lift a pinned cell whose tooltip is open above the neighbouring pinned cells */
+    .screener td.pin:hover,
+    .screener td.pin:focus-within {
+      z-index: 4;
     }
 
     .theme-count {
@@ -1061,6 +1072,29 @@
       right: 0;
     }
     
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+    
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+    
     .tip:focus {
       outline: none;
     }
@@ -1280,7 +1314,7 @@
   <script>
     // Filled in by update-stocks.js from data/universe.json
     const SECTORS = ["Agricultural","Automobiles & Accessories","Banking","Commercial & Services","Construction & Allied","Energy & Petroleum","Insurance","Investment","Investment Services","Manufacturing & Allied","Telecommunication","Real Estate Investment Trusts","Exchange Traded Funds"];
-    const GLOSSARY = {"marketCap":"Market capitalization: the total value of all shares, share price × shares outstanding.","pe":"Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.","pb":"Price-to-book: market cap ÷ shareholders' equity. Below 1× means the market values the company at less than its net assets.","dividendYield":"Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.","eps":"Earnings per share: net profit ÷ number of shares, from the latest reported results.","dps":"Dividend per share: cash paid out per share, from the latest reported dividends.","range52w":"52-week range: the lowest and highest closing price over the past year.","payoutRatio":"Payout ratio: dividend per share ÷ earnings per share. Above 100% means paying out more than it earns, which may not last.","roe":"Return on equity: net profit ÷ shareholders' equity. How much profit the company makes on shareholders' money.","turnover":"Average value of shares traded per session over the last 3 months. Under KES 1M is thinly traded: prices can be stale and positions hard to buy or sell.","fromHigh52w":"How far the price is below its highest close of the past year.","volatility":"How much the price typically swings in a year (annualized standard deviation of daily moves). Higher means a bumpier ride.","maxDrawdown":"The largest fall from a peak to a later low over the last 5 years.","volume":"Number of shares traded in the latest session.","nasi":"NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange."}; // end GLOSSARY
+    const GLOSSARY = {"marketCap":"Market capitalization: the total value of all shares, share price × shares outstanding.","pe":"Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.","pb":"Price-to-book: market cap ÷ shareholders' equity. Below 1× means the market values the company at less than its net assets.","dividendYield":"Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.","eps":"Earnings per share: net profit ÷ number of shares, from the latest reported results.","dps":"Dividend per share: cash paid out per share, from the latest reported dividends.","range52w":"52-week range: the lowest and highest closing price over the past year.","payoutRatio":"Payout ratio: dividend per share ÷ earnings per share. Above 100% means paying out more than it earns, which may not last.","roe":"Return on equity: net profit ÷ shareholders' equity. How much profit the company makes on shareholders' money.","turnover":"Average value of shares traded per session over the last 3 months. Under KES 1M is thinly traded: prices can be stale and positions hard to buy or sell.","fromHigh52w":"How far the price is below its highest close of the past year.","volatility":"How much the price typically swings in a year (annualized standard deviation of daily moves). Higher means a bumpier ride.","maxDrawdown":"The largest fall from a peak to a later low over the last 5 years.","volume":"Number of shares traded in the latest session.","nasi":"NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange.","suspended":"Suspended: trading in this stock has been halted by the NSE or the Capital Markets Authority, usually pending overdue results, a restructuring or insolvency. The price shown is the last traded price; shares can't be bought or sold until trading resumes."}; // end GLOSSARY
     const SECTOR_INFO = {"Agricultural":{"summary":null,"url":"sectors/agricultural.html"},"Automobiles & Accessories":{"summary":null,"url":"sectors/automobiles-and-accessories.html"},"Banking":{"summary":null,"url":"sectors/banking.html"},"Commercial & Services":{"summary":null,"url":"sectors/commercial-and-services.html"},"Construction & Allied":{"summary":null,"url":"sectors/construction-and-allied.html"},"Energy & Petroleum":{"summary":null,"url":"sectors/energy-and-petroleum.html"},"Insurance":{"summary":null,"url":"sectors/insurance.html"},"Investment":{"summary":null,"url":"sectors/investment.html"},"Investment Services":{"summary":null,"url":"sectors/investment-services.html"},"Manufacturing & Allied":{"summary":null,"url":"sectors/manufacturing-and-allied.html"},"Telecommunication":{"summary":null,"url":"sectors/telecommunication.html"},"Real Estate Investment Trusts":{"summary":null,"url":"sectors/real-estate-investment-trusts.html"},"Exchange Traded Funds":{"summary":null,"url":"sectors/exchange-traded-funds.html"}}; // end SECTOR_INFO
 
     // Stock data, rewritten by update-stocks.js on every run
@@ -4253,28 +4287,31 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 1.57,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 1.57,
+          "oneMonth": -4.44,
+          "sixMonth": -12.24,
+          "ytd": -11.64,
+          "oneYear": -24.56,
+          "threeYear": -57.43,
+          "fiveYear": -81.98,
           "tenYear": null,
-          "pe": null,
+          "pe": 106.61,
           "pb": null,
           "roe": null,
           "payoutRatio": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
-          "avgDailyTurnover": null,
-          "liquidityRank": null,
-          "volatility1y": null,
-          "maxDrawdown5y": null,
-          "maxDrawdownSince": null,
+          "marketCap": 1741500000,
+          "range52w": {
+            "low": 1.2,
+            "high": 1.71
+          },
+          "fromHigh52w": -24.56,
+          "fromLow52w": 7.5,
+          "avgDailyTurnover": 63207,
+          "liquidityRank": 30,
+          "volatility1y": 34.77,
+          "maxDrawdown5y": -83.24,
+          "maxDrawdownSince": "2021-09-24",
           "news": [
             {
               "title": "Where investors at NSE lost billions amid share price boom",
@@ -4295,7 +4332,15 @@
               "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBTcHl1YVVNOTRaY29VVWNUSGM3T25fSFlkeFRMZVNDX1Z1NUR2eVlMXzBqZlJOVlhEQkZxZDJ0SXBsTDZfbUoycTFzQWFPbHZNS3QzQXY2Yml6UEZxbVF6WGdpdE1wWUEyaFN3NkpLcHBIckJKSFhxbUIyTEQ5VzA?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [1.27,1.23,1.26,1.27,1.29,1.29],
+            "oneMonth": [1.35,1.32,1.32,1.35,1.38,1.35,1.38,1.38,1.38,1.35,1.34,1.35,1.35,1.33,1.25,1.25,1.26,1.28,1.27,1.23,1.26,1.27,1.29,1.29],
+            "sixMonth": [1.47,1.49,1.48,1.45,1.44,1.44,1.41,1.41,1.4,1.38,1.32,1.31,1.27,1.27,1.29,1.23,1.26,1.26,1.3,1.25,1.3,1.44,1.41,1.41,1.39,1.37,1.34,1.32,1.34,1.38,1.39,1.37,1.34,1.35,1.38,1.35,1.35,1.26,1.23,1.29,1.29],
+            "ytd": [1.46,1.44,1.39,1.4,1.45,1.42,1.41,1.57,1.55,1.54,1.5,1.51,1.49,1.47,1.44,1.44,1.41,1.41,1.4,1.32,1.28,1.27,1.31,1.25,1.26,1.28,1.3,1.43,1.41,1.39,1.34,1.34,1.37,1.37,1.34,1.35,1.38,1.33,1.28,1.29,1.29],
+            "oneYear": [1.71,1.61,1.63,1.57,1.51,1.5,1.54,1.47,1.51,1.4,1.39,1.4,1.44,1.47,1.42,1.47,1.55,1.56,1.51,1.49,1.48,1.44,1.41,1.42,1.34,1.28,1.28,1.2,1.26,1.28,1.42,1.35,1.32,1.34,1.38,1.38,1.35,1.35,1.26,1.29,1.29],
+            "threeYear": [2.97,2.8,2.59,2.5,2.59,2.45,2.37,2.25,2.38,2.4,2.28,2.12,1.98,1.95,2.01,2.13,2.01,2.1,2.13,2.09,1.9,1.86,1.83,1.85,1.83,1.66,1.68,1.6,1.54,1.41,1.44,1.47,1.51,1.44,1.34,1.2,1.42,1.34,1.35,1.29,1.29],
+            "fiveYear": [7.16,5.14,5.56,4.95,4.75,3.2,3.12,3.67,3.25,3.57,4.76,3.5,3.13,2.56,3.27,3.25,2.8,2.55,2.59,2.18,2.19,2.4,2.26,2.21,2,2.27,2.2,2.09,1.92,1.94,1.83,1.65,1.51,1.41,1.42,1.49,1.34,1.28,1.38,1.29,1.29]
+          }
         },
         "NCBA": {
           "symbol": "NCBA",
@@ -4308,28 +4353,31 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 6.82,
+          "oneMonth": -1.64,
+          "sixMonth": 0.84,
+          "ytd": 7.14,
+          "oneYear": 28.57,
+          "threeYear": 141.61,
+          "fiveYear": 232.72,
           "tenYear": null,
-          "pe": null,
+          "pe": 6.21,
           "pb": null,
           "roe": null,
-          "payoutRatio": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
-          "avgDailyTurnover": null,
-          "liquidityRank": null,
-          "volatility1y": null,
-          "maxDrawdown5y": null,
-          "maxDrawdownSince": null,
+          "payoutRatio": 48.98,
+          "dividendYield": 7.89,
+          "marketCap": 148500000000,
+          "range52w": {
+            "low": 69,
+            "high": 98.25
+          },
+          "fromHigh52w": -8.4,
+          "fromLow52w": 30.43,
+          "avgDailyTurnover": 27800000,
+          "liquidityRank": 20,
+          "volatility1y": 30.39,
+          "maxDrawdown5y": -24.94,
+          "maxDrawdownSince": "2021-09-24",
           "news": [
             {
               "title": "Standard Bank reveals Sh167bn war chest for regional buyouts",
@@ -4350,7 +4398,15 @@
               "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYWItRW50cmJ6SzlWd1VRNnpZUVlrQXQ4UEVETWJYYjdsclZkNGZCY0tKZC03Y1A5WGR2ZV9manFBdTV5Y0hzOF9IMXRKYlBwb3hWQ2YxQXBFZlRQU2tmckxEUzJMX2FUZXhXR3djSjZvR19sNGRYNVJ5Mmd1MUhaYzNoVmdMa25MSVFNTnYyRQ?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [84.25,86.25,89.75,90,90,90],
+            "oneMonth": [91.5,91.25,91,90.75,90.5,89.25,89.75,91,91.75,92.5,92.25,91,90.75,90.25,90.25,90.25,90,87.5,84.25,86.25,89.75,90,90,90],
+            "sixMonth": [89.25,88.75,90.25,90.5,89.75,89.75,89,88.75,87.75,88.5,87.5,88,88.25,88.75,88,88.25,89,88,90,92.5,89.5,88.25,87,88.25,88.75,89.5,89.75,90,90,90.5,91.75,91.25,90.5,90.75,89.75,92.5,90.75,90,86.25,90,90],
+            "ytd": [84,88.25,90,90.5,94.75,91,91.75,88.75,90,91.5,87.75,91.25,89.75,89.25,90.25,89.75,89.5,88.75,86.75,87.5,85.25,88.75,88,88.5,88.25,92.5,89.5,88,88.25,88.75,89.75,90,92,91.5,90.5,90.75,91.75,90.25,87.5,90,90],
+            "oneYear": [70,70,75.25,91,87.5,84.5,83.25,83,76.5,84.75,83.25,89.5,90,90,92,89.75,88.25,88.25,88,89.75,90.25,90.25,89.5,89,87.5,85.25,87.25,88.75,88.25,91.75,88.5,88,89,90,90.5,91.25,90.75,92.5,90,90,90],
+            "threeYear": [37.35,39.7,36.05,39,37.65,37.65,40,44.4,38.2,41.3,41.1,39.85,42.45,41.3,43.95,44,45.7,47.65,49.8,50.25,51.5,49,54,62.75,66.25,63.75,70,91.75,83.5,79.75,90,89.75,88,90.25,87.5,88.75,88.5,90,90.75,90,90],
+            "fiveYear": [27.05,24,25.3,25.35,26,26.6,23.9,26.65,31.75,30.4,39.8,36.95,36.65,35,39.85,38.8,38.9,38.85,37.65,39.1,44.9,41.3,40.85,43.1,43.3,44.6,49.75,50.25,54,56,66.25,73,87.5,79.75,91.75,89.75,87.5,91.75,90.5,90,90]
+          }
         },
         "NMG": {
           "symbol": "NMG",
@@ -5728,11 +5784,16 @@
     const isThin = (s) => s.avgDailyTurnover != null && s.avgDailyTurnover < 1e6;
 
     // Label with its explanation as a hover/tap tooltip (definitions from templates/glossary.js)
-    function tip(label, key, align) {
+    // `variant`: '' (opens below), 'right', 'up' or 'right up'
+    function tip(label, key, variant = '', extraClass = '') {
       const text = GLOSSARY[key];
       if (!text) return label;
-      return `<span class="tip${align === 'right' ? ' tip-right' : ''}" tabindex="0" data-tip="${text.replace(/"/g, '&quot;')}">${label}</span>`;
+      const classes = ['tip', ...variant.split(' ').filter(Boolean).map(v => `tip-${v}`), extraClass].filter(Boolean).join(' ');
+      return `<span class="${classes}" tabindex="0" data-tip="${text.replace(/"/g, '&quot;')}">${label}</span>`;
     }
+
+    // "SUS" badge for a suspended stock, explained on hover
+    const susTag = (variant = '') => tip('SUS', 'suspended', variant, 'sus-tag');
 
     // Market cap and ratios shown on every card
     function fundamentals(s) {
@@ -5789,8 +5850,8 @@
       const rows = sorted.map((s, i) => `
         <tr${s.suspended ? ' class="suspended-row"' : ''}>
           <td class="left pin pin-rank" style="color: #9ca3af;">${s.suspended ? '' : i + 1}</td>
-          <td class="left pin pin-ticker"><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.stale ? ' <span class="stale-badge" title="Prices not refreshed on the latest update">!</span>' : ''}</td>
-          <td class="left pin pin-name" title="${s.name}">${s.name}${s.suspended ? ' <span class="data-only-tag">Suspended</span>' : ''}</td>
+          <td class="left pin pin-ticker"><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.suspended ? susTag('up') : ''}${s.stale ? ' <span class="stale-badge" title="Prices not refreshed on the latest update">!</span>' : ''}</td>
+          <td class="left pin pin-name" title="${s.name}">${s.name}</td>
           <td>${formatPrice(s.price)}</td>
           ${PERIODS.map(p => `<td class="${p === period ? 'active' : ''}" style="color: ${pctColor(s[p.field])};">${formatPct(s[p.field])}</td>`).join('')}
           <td>${formatCap(s.marketCap)}</td>
@@ -6006,8 +6067,8 @@
       <a class="stock-card${stock.suspended ? ' suspended' : ''}" data-symbol="${symbol}" href="${profileUrl}">
           <div class="stock-header">
           <div>
-            <div class="stock-symbol">${stock.suspended ? '' : `<span class="stock-rank">#${i + 1}</span>`}${stock.symbol}${staleBadge}${rankMove}</div>
-            <div class="stock-name">${stock.name}${stock.suspended ? ' <span class="data-only-tag" title="Trading suspended on the NSE; last traded price shown">Suspended</span>' : isThin(stock) ? ` <span class="data-only-tag thin-tag" title="Averages under KES 1M traded per session over 3 months; prices can be stale">Thinly traded</span>` : ''}</div>
+            <div class="stock-symbol">${stock.suspended ? '' : `<span class="stock-rank">#${i + 1}</span>`}${stock.symbol}${stock.suspended ? susTag() : ''}${staleBadge}${rankMove}</div>
+            <div class="stock-name">${stock.name}${!stock.suspended && isThin(stock) ? ` <span class="data-only-tag thin-tag" title="Averages under KES 1M traded per session over 3 months; prices can be stale">Thinly traded</span>` : ''}</div>
           </div>
           ${sparkline(stock)}
           <div style="text-align: right;">

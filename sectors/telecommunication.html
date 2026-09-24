@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -848,7 +871,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../stocks/scom.html">SCOM</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/scom.html">SCOM</a></td>
             <td>Safaricom Plc</td>
             <td class="num">36.20</td>
             <td class="num" style="color: #dc2626">-1.09%</td>

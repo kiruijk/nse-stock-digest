@@ -769,6 +769,29 @@
       right: 0;
     }
 
+    /* Opens upwards, for labels near the bottom of a scrolling table */
+    .tip-up:hover::after,
+    .tip-up:focus::after {
+      top: auto;
+      bottom: calc(100% + 6px);
+    }
+
+    /* SUS badge for suspended stocks */
+    .sus-tag {
+      display: inline-block;
+      margin-left: 0.35rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 4px;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
     .tip:focus {
       outline: none;
     }
@@ -848,7 +871,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="../stocks/eabl.html">EABL</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/eabl.html">EABL</a></td>
             <td>East African Breweries Ltd</td>
             <td class="num">281.75</td>
             <td class="num" style="color: #dc2626">-0.09%</td>
@@ -859,7 +882,7 @@
             <td class="num">3.4%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/bat.html">BAT</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/bat.html">BAT</a></td>
             <td>British American Tobacco Kenya</td>
             <td class="num">561.00</td>
             <td class="num" style="color: #059669">+0.00%</td>
@@ -870,7 +893,7 @@
             <td class="num">12.5%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/carb.html">CARB</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/carb.html">CARB</a></td>
             <td>Carbacid Investments</td>
             <td class="num">43.15</td>
             <td class="num" style="color: #dc2626">-3.25%</td>
@@ -881,7 +904,7 @@
             <td class="num">4.6%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/boc.html">BOC</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/boc.html">BOC</a></td>
             <td>BOC Kenya Ltd</td>
             <td class="num">192.75</td>
             <td class="num" style="color: #dc2626">-1.78%</td>
@@ -892,7 +915,7 @@
             <td class="num">6.7%</td>
           </tr>
           <tr>
-            <td><a href="../stocks/ftgh.html">FTGH</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/ftgh.html">FTGH</a></td>
             <td>Flame Tree Group Holdings</td>
             <td class="num">2.11</td>
             <td class="num" style="color: #059669">+4.98%</td>
@@ -903,7 +926,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/skl.html">SKL</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/skl.html">SKL</a></td>
             <td>Shri Krishana Overseas Ltd</td>
             <td class="num">16.75</td>
             <td class="num" style="color: #dc2626">-3.46%</td>
@@ -914,7 +937,7 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/unga.html">UNGA</a></td>
+            <td style="white-space: nowrap;"><a href="../stocks/unga.html">UNGA</a></td>
             <td>Unga Group Ltd</td>
             <td class="num">41.05</td>
             <td class="num" style="color: #059669">+1.48%</td>
@@ -925,8 +948,8 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="../stocks/msc.html">MSC</a></td>
-            <td>Mumias Sugar Company Ltd <span class="item-meta">(suspended)</span></td>
+            <td style="white-space: nowrap;"><a href="../stocks/msc.html">MSC</a><span class="tip tip-up sus-tag" tabindex="0" data-tip="Suspended: trading in this stock has been halted by the NSE or the Capital Markets Authority, usually pending overdue results, a restructuring or insolvency. The price shown is the last traded price; shares can't be bought or sold until trading resumes.">SUS</span></td>
+            <td>Mumias Sugar Company Ltd</td>
             <td class="num">0.28</td>
             <td class="num" style="color: #6b7280">—</td>
             <td class="num" style="color: #059669">+0.00%</td>

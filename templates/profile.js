@@ -7,7 +7,7 @@ const path = require('path');
 
 const { sectorSlug } = require('../lib/sectors');
 const { NAV_CSS, renderNav, renderFooterLinks, seoTags } = require('./site');
-const { tip } = require('./glossary');
+const { tip, susTag } = require('./glossary');
 
 const CSS = fs.readFileSync(path.join(__dirname, 'profile.css'), 'utf8');
 
@@ -366,7 +366,7 @@ ${renderNav('../', sectors, escapeHtml(site.name))}
   <header>
     <div>
       <h1>${escapeHtml(title)}</h1>
-      <div><a class="theme-tag" href="../sectors/${sectorSlug(stock.sector)}.html">${escapeHtml(stock.sector)}</a>${stock.suspended ? '<span class="theme-tag">Suspended</span>' : ''}</div>
+      <div><a class="theme-tag" href="../sectors/${sectorSlug(stock.sector)}.html">${escapeHtml(stock.sector)}</a>${stock.suspended ? susTag() : ''}</div>
     </div>
     <div class="header-price">
       <div class="header-price-value">KES ${formatPrice(stock.price)}</div>
