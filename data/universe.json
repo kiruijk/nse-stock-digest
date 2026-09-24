@@ -1,5 +1,5 @@
 {
-  "_comment": "Every tracked NSE security, with its NSE sector. Adding a listing: add an entry here (symbol as used on afx.kwayisi.org) and run npm run update. Optional \"news\": the phrase to search Google News for, when the listed name is not what the press uses.",
+  "_comment": "Every tracked NSE security, with its NSE sector. Adding a listing: add an entry here (symbol as used on afx.kwayisi.org) and run npm run update. Optional \"news\": the phrase to search Google News for, when the listed name is not what the press uses. Optional \"reportingCurrency\" (e.g. \"RWF\") for cross-listed companies that report in another currency: P/E, P/B, yield and ROE are then not shown.",
   "sectors": [
     "Agricultural",
     "Automobiles & Accessories",
@@ -51,7 +51,8 @@
     {
       "symbol": "BKG",
       "name": "BK Group Plc",
-      "sector": "Banking"
+      "sector": "Banking",
+      "reportingCurrency": "RWF"
     },
     {
       "symbol": "BOC",
@@ -367,7 +368,8 @@
       "symbol": "UMME",
       "name": "Umeme Ltd",
       "sector": "Energy & Petroleum",
-      "news": "Umeme"
+      "news": "Umeme",
+      "reportingCurrency": "UGX"
     },
     {
       "symbol": "UNGA",

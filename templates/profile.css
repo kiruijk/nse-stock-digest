@@ -570,3 +570,8 @@ header {
     white-space: normal;
   }
 }
+
+.warn {
+  color: #b45309;
+  font-weight: 600;
+}

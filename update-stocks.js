@@ -231,10 +231,17 @@ function pickDetailTickers(symbols, fetchedAt, n) {
     .slice(0, n);
 }
 
-async function refreshDetails(symbol, isFirst) {
+// pageOnly: refetch just the company page (e.g. to pick up a newly parsed field) and keep
+// the existing history
+async function refreshDetails(symbol, isFirst, pageOnly = false) {
   if (!isFirst) await sleep(CRAWL_DELAY_MS);
   const page = await withRetry(() => fetchRaw(afx.companyUrl(symbol)));
   const details = { ...afx.parseCompany(page), fetchedAt: new Date().toISOString() };
+  if (pageOnly) {
+    fs.writeFileSync(`${DETAILS_DIR}/${symbol.toLowerCase()}.json`, JSON.stringify(details, null, 2) + '\n');
+    console.log(`    ✓ ${symbol}: details (page only)`);
+    return;
+  }
   await sleep(CRAWL_DELAY_MS);
   const chart = afx.parseChart(await withRetry(() => fetchRaw(afx.chartUrl(symbol))));
   if (chart.length) writeHistory(symbol, mergeHistory(readHistory(symbol), chart));
@@ -259,12 +266,22 @@ async function refreshSomeDetails(symbols, n) {
 // Valuation from the latest price: EPS/DPS/shares/equity change only with results, but
 // P/E, P/B, yield and market cap move with the price every day. `book` is the company's
 // entry in data/book-values.json (shareholders' equity, hand-entered from its results).
-function valuation(details, price, book = null) {
-  if (!details || price == null) return { pe: null, pb: null, dividendYield: null, marketCap: null };
+// `currency` is the reporting currency when it isn't KES (cross-listed companies such as BK
+// Group report in RWF): EPS, DPS and equity are then in a different currency from the KES
+// price, so P/E, P/B, yield and ROE are left out. Payout (DPS ÷ EPS) is unaffected.
+function valuation(details, price, book = null, currency = 'KES') {
+  if (!details || price == null) return { pe: null, pb: null, roe: null, payoutRatio: null, dividendYield: null, marketCap: null };
   const marketCap = details.sharesOutstanding ? Math.round(details.sharesOutstanding * price) : null;
+  const payoutRatio = details.eps > 0 && details.dps != null ? round2((details.dps / details.eps) * 100) : null;
+  if (currency && currency !== 'KES') return { pe: null, pb: null, roe: null, payoutRatio, dividendYield: null, marketCap };
+  const equity = book?.equity > 0 ? book.equity : null;
   return {
     pe: details.eps > 0 ? round2(price / details.eps) : null,
-    pb: marketCap && book?.equity > 0 ? round2(marketCap / book.equity) : null,
+    pb: marketCap && equity ? round2(marketCap / equity) : null,
+    // Net income ≈ EPS × shares; can be negative (loss-makers)
+    roe: equity && details.eps != null && details.sharesOutstanding ? round2((details.eps * details.sharesOutstanding / equity) * 100) : null,
+    // Share of earnings paid out as dividends; only meaningful with positive earnings
+    payoutRatio,
     dividendYield: details.dps != null ? round2((details.dps / price) * 100) : null,
     marketCap
   };
@@ -302,10 +319,10 @@ function buildStock(symbol, row, previous, pricesAsOf) {
   if (!row || row.price == null) {
     return previous ? { ...previous, ...base, stale: true, staleSince: previous.staleSince || previous.pricesAsOf || null } : null;
   }
-  // Add today's close to the history when the stock traded (the source's history only has
-  // traded days)
+  // Add today's close to the history. The source's history has a row for every session,
+  // repeating the last price on days a stock didn't trade, so this does the same.
   let history = readHistory(symbol);
-  if (pricesAsOf && row.volume) {
+  if (pricesAsOf) {
     history = mergeHistory(history, [[nairobiDate(pricesAsOf), row.price]]);
     writeHistory(symbol, history);
   }
@@ -366,7 +383,63 @@ function withDetails(stock, bookValues = {}) {
   const details = readDetails(stock.symbol);
   const history = readHistory(stock.symbol);
   const returns = history.length ? returnsFromHistory(history, stock.price) : {};
-  return { ...stock, ...returns, details, ...valuation(details, stock.price, bookValues[stock.symbol]), range52w: range52w(history, stock.price) };
+  const range = range52w(history, stock.price);
+  return {
+    ...stock,
+    ...returns,
+    details,
+    ...valuation(details, stock.price, bookValues[stock.symbol], STOCK_INFO[stock.symbol]?.reportingCurrency),
+    range52w: range,
+    ...rangePosition(range, stock.price),
+    // 3-month trading summary from the company page (liquidity)
+    avgDailyTurnover: details?.avgDailyTurnover ?? null,
+    liquidityRank: details?.liquidityRank ?? null,
+    ...riskStats(history, stock.price)
+  };
+}
+
+// % below the 52-week high (≤ 0) and above the 52-week low (≥ 0)
+function rangePosition(range, price) {
+  if (!range || price == null) return { fromHigh52w: null, fromLow52w: null };
+  return {
+    fromHigh52w: round2((price / range.high - 1) * 100),
+    fromLow52w: round2((price / range.low - 1) * 100)
+  };
+}
+
+// Annualized volatility of daily returns over the last year, and the worst peak-to-trough
+// fall over the last 5 years (or all history if shorter, flagged by maxDrawdownSince).
+// Both null with under a year of history.
+function riskStats(history, price, now = new Date()) {
+  const yearAgo = monthsAgo(now, 12).toISOString().slice(0, 10);
+  const none = { volatility1y: null, maxDrawdown5y: null, maxDrawdownSince: null };
+  if (!history.length || history[0][0] > yearAgo) return none;
+
+  const closes1y = history.filter(r => r[0] >= yearAgo).map(r => r[1]);
+  if (price != null) closes1y.push(price);
+  const rets = [];
+  for (let i = 1; i < closes1y.length; i++) if (closes1y[i - 1] > 0) rets.push(Math.log(closes1y[i] / closes1y[i - 1]));
+  let volatility1y = null;
+  if (rets.length >= 20) {
+    const mean = rets.reduce((a, b) => a + b, 0) / rets.length;
+    const variance = rets.reduce((a, r) => a + (r - mean) ** 2, 0) / (rets.length - 1);
+    // Scale by the stock's own trading days per year, so thinly traded stocks aren't overstated
+    volatility1y = round2(Math.sqrt(variance * rets.length) * 100);
+  }
+
+  const start5y = monthsAgo(now, 60).toISOString().slice(0, 10);
+  const rows = history.filter(r => r[0] >= start5y);
+  // No trades in 5 years (long-suspended counters): nothing to measure
+  if (!rows.length) return { volatility1y, maxDrawdown5y: null, maxDrawdownSince: null };
+  const closes = rows.map(r => r[1]);
+  if (price != null) closes.push(price);
+  let peak = -Infinity;
+  let worst = 0;
+  for (const c of closes) {
+    peak = Math.max(peak, c);
+    if (peak > 0) worst = Math.min(worst, c / peak - 1);
+  }
+  return { volatility1y, maxDrawdown5y: round2(worst * 100), maxDrawdownSince: rows[0][0] };
 }
 
 // Lowest and highest close over the last 52 weeks, including the current price. Null
@@ -464,10 +537,19 @@ function readSectorContent(sector) {
 async function main() {
   const args = process.argv.slice(2);
   if (args.includes('--backfill')) {
-    // Only tickers without details yet, so an interrupted backfill resumes where it stopped
+    // Only tickers without details yet, so an interrupted backfill resumes where it stopped.
+    // Tickers whose details predate a newly parsed field get their company page refetched.
     const todo = STOCKS.filter(s => !readDetails(s));
-    console.log(`Backfilling ${todo.length} ticker(s) (~${Math.ceil(todo.length * 2 * CRAWL_DELAY_MS / 60000)} min)`);
+    const outdated = STOCKS.filter(s => readDetails(s) && !('avgDailyTurnover' in readDetails(s)));
+    console.log(`Backfilling ${todo.length} ticker(s), refreshing ${outdated.length} outdated page(s) (~${Math.ceil((todo.length * 2 + outdated.length) * CRAWL_DELAY_MS / 60000)} min)`);
     await refreshSomeDetails(todo, todo.length);
+    for (const symbol of outdated) {
+      try {
+        await refreshDetails(symbol, false, true);
+      } catch (err) {
+        console.warn(`    ⚠️  Details failed for ${symbol}: ${err.message}`);
+      }
+    }
     return;
   }
   const previous = readPreviousData();
@@ -495,7 +577,7 @@ if (require.main === module) {
 
 // Exported for tests
 module.exports = {
-  returnsFromHistory, mergeHistory, range52w, sparklines, chartSeries, downsample, valuation,
+  returnsFromHistory, mergeHistory, range52w, rangePosition, riskStats, sparklines, chartSeries, downsample, valuation,
   pickDetailTickers, parseGoogleNews, cleanNewsTitle, isLowValueNews, newsQuery,
   nairobiDate, dataTimeLabel, compactNumberArrays, RETURN_PERIODS
 };

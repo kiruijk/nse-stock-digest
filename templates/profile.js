@@ -202,6 +202,43 @@ ${stats.map(([label, value]) => `      <div><dt>${label}</dt><dd>${value}</dd></
     </dl>`;
 }
 
+const pctPlain = (v) => (v == null ? '—' : `${v.toFixed(0)}%`);
+
+// Under KES 1M traded per session on average over 3 months: prices can be stale and
+// positions hard to build or exit
+const THIN_TURNOVER = 1e6;
+const isThinlyTraded = (s) => s.avgDailyTurnover != null && s.avgDailyTurnover < THIN_TURNOVER;
+
+// Payout, ROE, liquidity and risk figures, each with a one-line explanation
+function renderKeyRatios(stock) {
+  const payoutNote = stock.payoutRatio == null
+    ? 'Needs positive earnings and a dividend'
+    : stock.payoutRatio > 100
+      ? '<span class="warn">Paying out more than it earns</span>'
+      : 'Share of earnings paid as dividends (approx.)';
+  const turnoverNote = stock.avgDailyTurnover == null
+    ? 'Not available yet'
+    : isThinlyTraded(stock)
+      ? '<span class="warn">Thinly traded: prices can be stale</span>'
+      : `Per session, last 3 months${stock.liquidityRank ? ` · #${stock.liquidityRank} most traded` : ''}`;
+  const since = stock.maxDrawdownSince && stock.maxDrawdownSince > new Date(Date.now() - 4.9 * 365.25 * 864e5).toISOString().slice(0, 10)
+    ? `Worst fall since ${formatDate(stock.maxDrawdownSince)}`
+    : 'Worst peak-to-trough fall, 5 years';
+  return `    <!-- Key Ratios -->
+    <div class="section">
+      <h2>Key Ratios</h2>
+      <div class="grid-3">
+${statCard('Payout Ratio', pctPlain(stock.payoutRatio), payoutNote)}
+${statCard('Return on Equity', stock.roe == null ? '—' : `${stock.roe.toFixed(1)}%`, stock.roe == null ? 'Needs book value (not yet entered)' : 'Net income ÷ shareholders\' equity')}
+${statCard('Avg Daily Turnover', formatKes(stock.avgDailyTurnover), turnoverNote)}
+${statCard('From 52W High', stock.fromHigh52w == null ? '—' : formatPct(stock.fromHigh52w), stock.fromLow52w == null ? 'Needs a year of history' : `${formatPct(stock.fromLow52w)} from 52W low`)}
+${statCard('Volatility (1Y)', pctPlain(stock.volatility1y), 'Annualized; higher means bigger swings')}
+${statCard('Max Drawdown', stock.maxDrawdown5y == null ? '—' : `${stock.maxDrawdown5y.toFixed(0)}%`, since)}
+      </div>
+      <div class="meta-line">Payout uses the latest reported EPS and dividend per share, which may be for different periods. Volatility and drawdown come from daily closing prices.</div>
+    </div>`;
+}
+
 // Same-sector comparison table
 function renderPeers(stock, peers) {
   if (!peers.length) return '';
@@ -260,6 +297,8 @@ ${RETURN_LABELS.map(([label, field]) => `        <div class="return"><div class=
       </div>
       <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share${d.fetchedAt ? ` (checked ${formatDate(d.fetchedAt)})` : ''} against today's price.</div>
     </div>`);
+
+  sections.push(renderKeyRatios(stock));
 
   // About the company
   const facts = [
@@ -353,6 +392,6 @@ ${renderFooterLinks('../', sectors, escapeHtml(site.name))}
 }
 
 module.exports = {
-  renderProfile, renderPeers, formatKes, formatPrice, formatCount, formatPct, pctColor, formatRatio,
+  renderProfile, renderPeers, renderKeyRatios, isThinlyTraded, formatKes, formatPrice, formatCount, formatPct, pctColor, formatRatio,
   formatYield, formatDate, escapeHtml, CSS, DISCLAIMER
 };

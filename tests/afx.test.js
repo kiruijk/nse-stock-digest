@@ -62,3 +62,14 @@ test('parseNumber and parseSuffixed', () => {
   assert.strictEqual(afx.parseSuffixed('850K'), 850e3);
   assert.strictEqual(afx.parseSuffixed('n/a'), null);
 });
+
+test('parseLiquidity reads the 3-month trading summary, liquid and thin', () => {
+  assert.deepStrictEqual(afx.parseLiquidity(fixture('scom.html')), {
+    liquidityRank: 1, volume3m: 449e6, deals3m: 78824, turnover3m: 16.2e9, avgDailyVolume: 7.13e6, avgDailyTurnover: 257e6
+  });
+  const limt = afx.parseLiquidity(fixture('limt.html'));
+  assert.strictEqual(limt.liquidityRank, 59);
+  assert.strictEqual(limt.avgDailyTurnover, 21676);
+  assert.strictEqual(afx.parseLiquidity('<p>No trades</p>').avgDailyTurnover, null);
+  assert.strictEqual(afx.parseCompany(fixture('scom.html')).avgDailyTurnover, 257e6);
+});

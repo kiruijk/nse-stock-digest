@@ -53,3 +53,19 @@ test('formatKes and renderMarketStrip', () => {
   assert.match(renderMarketStrip({ nasi: 247.21, nasiChangePercent: -0.22, nasiYtdPercent: 32.5, marketCap: 4.19e12 }, [stock]), /247\.21/);
   assert.strictEqual(escapeHtml('a & b'), 'a &amp; b');
 });
+
+test('renderKeyRatios explains missing values and flags risks', () => {
+  const { renderKeyRatios, isThinlyTraded } = require('../templates/profile');
+  const html = renderKeyRatios({ ...stock, payoutRatio: 120, roe: null, avgDailyTurnover: 21676, liquidityRank: 59, fromHigh52w: -12.5, fromLow52w: 30, volatility1y: 28, maxDrawdown5y: -45, maxDrawdownSince: '2021-09-24' });
+  assert.match(html, /Paying out more than it earns/);
+  assert.match(html, /Needs book value/);
+  assert.match(html, /KES 21,676/);
+  assert.match(html, /Thinly traded/);
+  assert.match(html, /-12\.50%/);
+  assert.match(html, /-45%/);
+  const liquid = renderKeyRatios({ ...stock, avgDailyTurnover: 257e6, liquidityRank: 1 });
+  assert.match(liquid, /KES 257\.0M/);
+  assert.match(liquid, /#1 most traded/);
+  assert.strictEqual(isThinlyTraded({ avgDailyTurnover: 5e6 }), false);
+  assert.strictEqual(isThinlyTraded({ avgDailyTurnover: null }), false);
+});
