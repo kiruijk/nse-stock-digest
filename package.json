@@ -1,0 +1,15 @@
+{
+  "name": "nse-stock-digest",
+  "version": "1.0.0",
+  "description": "Daily Nairobi Securities Exchange stock prices, returns, dividends and news",
+  "main": "update-stocks.js",
+  "scripts": {
+    "update": "node update-stocks.js",
+    "render": "node update-stocks.js --render-only",
+    "backfill": "node update-stocks.js --backfill",
+    "test": "node --test 'tests/*.test.js'"
+  },
+  "keywords": ["nse", "nairobi", "kenya", "stocks"],
+  "author": "James",
+  "license": "MIT"
+}

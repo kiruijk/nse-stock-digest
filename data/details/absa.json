@@ -1,0 +1,22 @@
+{
+  "description": "Absa Bank Kenya Plc, formerly Barclays Bank of Kenya Ltd, is a Kenya-based provider of financial services. The bank operates in two segments: Consumer Banking and Corporate Banking. The Consumer Banking segments is engaged in incorporating private customer current accounts, savings, deposits, credit and debit cards, consumer loans and mortgages. The Corporate Banking segment is engaged in incorporating direct debit facilities, current accounts, deposits, overdrafts, loan and other credit facilities, foreign currency dealings and derivative products. Its loans includes Barclayloan, scheme Loan, payroll Loan, salary advance, expatriate loan, secured loan, auto loan and mortgages. Its credit cards include Barclaycard Visa Classic, Barclaycard Visa Gold, Barclays Premier, League card, Company card and Secured Gold. Its business banking includes accounts, loans and business club. Its electronic banking includes Internet banking, mobile banking, cash send and Barclays Pingit.",
+  "sector": "Financials",
+  "industry": "Banking",
+  "address": "The West End Building, Waiyaki Way, P.O. Box 30120, code 00100, Nairobi, Kenya",
+  "website": "www.barclays.co.ke",
+  "employees": null,
+  "incorporated": null,
+  "listedSince": null,
+  "isin": "KE0000000067",
+  "eps": 4.0597,
+  "pe": 8.13,
+  "dps": 2.05,
+  "dividendYield": 6.21,
+  "sharesOutstanding": 5430000000,
+  "marketCap": 179000000000,
+  "dayLow": 32.5,
+  "dayHigh": 33.3,
+  "deals": 758,
+  "turnover": 7040000,
+  "fetchedAt": "2026-09-24T00:55:36.602Z"
+}

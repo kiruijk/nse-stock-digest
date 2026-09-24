@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakuzi Ltd (KUKZ) Share Price, Dividends &amp; News | Nairobi Stock Digest</title>
+  <meta name="description" content="Kakuzi Ltd (NSE: KUKZ) share price, returns, dividend yield, P/E and news.">
+  <meta property="og:title" content="Kakuzi Ltd (NSE: KUKZ) — Share Price &amp; Profile">
+  <meta property="og:description" content="Kakuzi Ltd (NSE: KUKZ) share price, returns, dividend yield, P/E and news.">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://kiruijk.github.io/nse-stock-digest/stocks/kukz.html">
+  <meta property="og:url" content="https://kiruijk.github.io/nse-stock-digest/stocks/kukz.html">
+  <meta property="og:site_name" content="Nairobi Stock Digest">
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0052cc 0%, #0066ff 100%);
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    .back-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    /* Section Styling */
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+      border-bottom: 2px solid #0052cc;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Grid layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    /* Card styling */
+    .card {
+      padding: 1rem;
+      background: #f9fafb;
+      border-radius: 6px;
+      border-left: 3px solid #0052cc;
+    }
+
+    .card-title {
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .card-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0052cc;
+      margin-top: 0.3rem;
+    }
+
+    /* Badge styling */
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-green {
+      background: #d1fae5;
+      color: #059669;
+    }
+
+    .badge-red {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+
+    .badge-yellow {
+      background: #fef3c7;
+      color: #d97706;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    th {
+      background: #f9fafb;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Price chart */
+    .chart {
+      position: relative;
+      margin-bottom: 1.25rem;
+    }
+
+    .chart-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .chart-change {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .chart-periods {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .chart-periods button {
+      border: 1px solid #d1d5db;
+      background: white;
+      border-radius: 5px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #374151;
+      cursor: pointer;
+    }
+
+    .chart-periods button:disabled {
+      color: #d1d5db;
+      border-color: #eef0f3;
+      cursor: default;
+    }
+
+    .chart-periods button.active {
+      background: #0052cc;
+      border-color: #0052cc;
+      color: white;
+    }
+
+    #chart-svg {
+      width: 100%;
+      height: 200px;
+      display: block;
+      cursor: crosshair;
+    }
+
+    .chart-tip {
+      position: absolute;
+      top: 2.4rem;
+      width: 150px;
+      text-align: center;
+      background: #1a1a1a;
+      color: white;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .chart-range {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-top: 0.3rem;
+    }
+
+    /* Text */
+    .para {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #374151;
+      margin-bottom: 1.2rem;
+    }
+
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    /* Returns row */
+    .returns {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 0.3rem;
+      margin-top: 1rem;
+    }
+
+    .return {
+      text-align: center;
+      padding: 0.45rem 0.1rem;
+      background: #f9fafb;
+      border-radius: 6px;
+    }
+
+    .return-label {
+      color: #6b7280;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+    }
+
+    .return-value {
+      font-weight: 700;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    /* Notices */
+    .notice {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .notice-stale {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .notice-tracked {
+      background: #e0ebff;
+      color: #1e3a8a;
+    }
+
+    .meta-line {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 0.75rem;
+    }
+
+    .theme-tag {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.1rem 0.5rem;
+      margin-right: 0.3rem;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* News & leadership lists */
+    .item-list {
+      list-style: none;
+    }
+
+    .item-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .item-list li:last-child {
+      border-bottom: none;
+    }
+
+    .item-list a {
+      color: #0052cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .item-list a:hover {
+      text-decoration: underline;
+    }
+
+    .item-meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .disclaimer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .returns {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .returns {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .theme-tag:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Theme pages */
+    .science h3 {
+      font-size: 1.05rem;
+      margin: 1.25rem 0 0.5rem;
+      color: #1a1a1a;
+    }
+
+    .science h3:first-child {
+      margin-top: 0;
+    }
+
+    .science p,
+    .science li {
+      color: #374151;
+      line-height: 1.75;
+    }
+
+    .science ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .num {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    td a {
+      color: #0052cc;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* Phones: tighter spacing, two-column stats, compact header */
+    @media (max-width: 600px) {
+      header {
+        padding: 1rem;
+        align-items: flex-start;
+        gap: 0.6rem;
+      }
+
+      header h1 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+      }
+
+      .back-btn {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+      }
+
+      .container {
+        padding: 1rem 0.75rem 2rem;
+      }
+
+      .section {
+        padding: 1.1rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+      }
+
+      .section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+      }
+
+      .grid-2 {
+        gap: 0.75rem;
+      }
+
+      .card {
+        padding: 0.75rem;
+      }
+
+      .card-value {
+        font-size: 1rem;
+      }
+
+      .para {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin-bottom: 1rem;
+      }
+
+      th,
+      td {
+        padding: 0.55rem 0.5rem;
+        font-size: 0.85rem;
+      }
+    }
+
+    /* Header price */
+    .header-price {
+      text-align: right;
+    }
+
+    .header-price-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .header-price-change {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Company factsheet */
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem 1.5rem;
+    }
+
+    .facts dt {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #6b7280;
+      letter-spacing: 0.02em;
+    }
+
+    .facts dd {
+      color: #1a1a1a;
+      overflow-wrap: anywhere;
+    }
+
+    .facts a {
+      color: #0052cc;
+    }
+
+    tr.current-row td {
+      background: #eef4ff;
+    }
+
+    /* Sector summary stats */
+    .summary-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .header-price {
+        text-align: left;
+      }
+
+      .summary-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+      }
+    }
+
+    .site-nav {
+      background: #0d3b2e;
+      color: white;
+      font-size: 0.88rem;
+    }
+
+    .site-nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0.55rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .site-nav a {
+      color: #bfe8d4;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .site-nav a:hover,
+    .site-nav a.current {
+      color: white;
+    }
+
+    .site-nav .brand {
+      color: white;
+      font-weight: 800;
+      margin-right: auto;
+      letter-spacing: -0.01em;
+    }
+
+    .site-nav details {
+      position: relative;
+    }
+
+    .site-nav summary {
+      white-space: nowrap;
+      cursor: pointer;
+      color: #bfe8d4;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    .site-nav summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .site-nav summary::after {
+      content: ' ▾';
+      font-size: 0.75rem;
+    }
+
+    .site-nav details[open] summary,
+    .site-nav summary:hover {
+      color: white;
+    }
+
+    .site-nav .menu {
+      position: absolute;
+      right: 0;
+      top: 1.9rem;
+      z-index: 20;
+      min-width: 230px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+      padding: 0.4rem 0;
+    }
+
+    .site-nav .menu a {
+      display: block;
+      padding: 0.45rem 1rem;
+      color: #1a1a1a;
+      font-weight: 500;
+    }
+
+    .site-nav .menu a:hover {
+      background: #f3f4f6;
+      color: #0052cc;
+    }
+
+    .site-footer {
+      border-top: 1px solid #e5e7eb;
+      margin-top: 1rem;
+      padding: 1.25rem 1rem 0.5rem;
+      font-size: 0.82rem;
+      line-height: 1.9;
+    }
+
+    .site-footer a {
+      color: #4b5563;
+      text-decoration: none;
+      margin-right: 1rem;
+      white-space: nowrap;
+    }
+
+    .site-footer a:hover {
+      color: #0052cc;
+    }
+
+    .site-footer .source-note {
+      color: #6b7280;
+      margin-top: 0.4rem;
+    }
+
+    .site-footer .source-note a {
+      margin-right: 0;
+      text-decoration: underline;
+    }
+
+    .site-footer strong {
+      color: #374151;
+      margin-right: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .site-nav-inner {
+        gap: 0.9rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .site-nav .brand {
+        font-size: 0.85rem;
+      }
+
+      /* The brand already links home */
+      .site-nav .nav-home {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Generated by update-stocks.js from data/ and live market data. Do not edit by hand. -->
+  <!-- Prices as of: 2026-09-23T15:13:12+00:00 -->
+  <nav class="site-nav" aria-label="Site">
+    <div class="site-nav-inner">
+      <a class="brand" href="../index.html">Nairobi Stock Digest</a>
+      <a class="nav-home" href="../index.html">Dashboard</a>
+      <details>
+        <summary>Sectors</summary>
+        <div class="menu">
+          <a href="../sectors/agricultural.html">Agricultural</a>
+          <a href="../sectors/automobiles-and-accessories.html">Automobiles &amp; Accessories</a>
+          <a href="../sectors/banking.html">Banking</a>
+          <a href="../sectors/commercial-and-services.html">Commercial &amp; Services</a>
+          <a href="../sectors/construction-and-allied.html">Construction &amp; Allied</a>
+          <a href="../sectors/energy-and-petroleum.html">Energy &amp; Petroleum</a>
+          <a href="../sectors/insurance.html">Insurance</a>
+          <a href="../sectors/investment.html">Investment</a>
+          <a href="../sectors/investment-services.html">Investment Services</a>
+          <a href="../sectors/manufacturing-and-allied.html">Manufacturing &amp; Allied</a>
+          <a href="../sectors/telecommunication.html">Telecommunication</a>
+          <a href="../sectors/real-estate-investment-trusts.html">Real Estate Investment Trusts</a>
+          <a href="../sectors/exchange-traded-funds.html">Exchange Traded Funds</a>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Kakuzi Ltd (NSE: KUKZ)</h1>
+      <div><a class="theme-tag" href="../sectors/agricultural.html">Agricultural</a></div>
+    </div>
+    <div class="header-price">
+      <div class="header-price-value">KES 435.00</div>
+      <div class="header-price-change">-0.57%</div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Price & Valuation -->
+    <div class="section">
+      <h2>Price &amp; Valuation</h2>
+      <div class="chart" id="price-chart">
+        <div class="chart-head">
+          <div class="chart-change" id="chart-change"></div>
+          <div class="chart-periods" role="group" aria-label="Chart period">
+            <button type="button" data-period="1M">1M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="YTD">YTD</button><button type="button" data-period="1Y">1Y</button><button type="button" data-period="3Y">3Y</button><button type="button" data-period="5Y">5Y</button><button type="button" data-period="10Y">10Y</button><button type="button" data-period="Max">Max</button>
+          </div>
+        </div>
+        <svg id="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" role="img" aria-label="KUKZ price chart"></svg>
+        <div class="chart-tip" id="chart-tip" hidden></div>
+        <div class="chart-range" id="chart-range"></div>
+      </div>
+      <script>
+      (function () {
+        var DATA = {"daily":[["2026-09-23",435]],"weekly":[],"price":435,"returns":{"1M":null,"6M":null,"YTD":null,"1Y":null,"3Y":null,"5Y":null,"10Y":null}};
+        var all = DATA.weekly.concat(DATA.daily);
+        var svg = document.getElementById('chart-svg');
+        var tip = document.getElementById('chart-tip');
+        var W = 600, H = 200, PAD = 8;
+        var points = [];
+
+        function startDate(period) {
+          var d = new Date();
+          if (period === 'Max') return all[0][0];
+          if (period === 'YTD') return (d.getFullYear() - 1) + '-12-31';
+          var months = { '1M': 1, '6M': 6, '1Y': 12, '3Y': 36, '5Y': 60, '10Y': 120 }[period];
+          d.setMonth(d.getMonth() - months);
+          return d.toISOString().slice(0, 10);
+        }
+
+        function fmtDate(iso) {
+          return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function fmtPrice(v) {
+          return 'KES ' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function draw(period) {
+          var start = startDate(period);
+          var src = ['1M', '6M', 'YTD', '1Y'].indexOf(period) >= 0 || (period === 'Max' && !DATA.weekly.length) ? DATA.daily : all;
+          // Start from the last close on or before the start date, like the returns calculation
+          var first = 0;
+          for (var i = 0; i < src.length; i++) { if (src[i][0] <= start) first = i; else break; }
+          var rows = src.slice(first);
+          if (DATA.price != null && rows.length && rows[rows.length - 1][1] !== DATA.price) rows = rows.concat([[new Date().toISOString().slice(0, 10), DATA.price]]);
+          var change = document.getElementById('chart-change');
+          if (rows.length < 2 || all[0][0] > start) {
+            svg.innerHTML = '';
+            change.textContent = 'Not enough price history for ' + period;
+            change.style.color = '#6b7280';
+            document.getElementById('chart-range').textContent = '';
+            points = [];
+            return;
+          }
+          var vals = rows.map(function (r) { return r[1]; });
+          var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+          var span = max - min || 1;
+          points = rows.map(function (r, i) {
+            return { x: PAD + (i / (rows.length - 1)) * (W - 2 * PAD), y: PAD + (1 - (r[1] - min) / span) * (H - 2 * PAD), d: r[0], v: r[1] };
+          });
+          var up = (DATA.returns[period] != null ? DATA.returns[period] : vals[vals.length - 1] - vals[0]) >= 0;
+          var color = up ? '#059669' : '#dc2626';
+          var line = points.map(function (p, i) { return (i ? 'L' : 'M') + p.x.toFixed(1) + ' ' + p.y.toFixed(1); }).join(' ');
+          var area = line + ' L' + points[points.length - 1].x.toFixed(1) + ' ' + H + ' L' + points[0].x.toFixed(1) + ' ' + H + ' Z';
+          svg.innerHTML =
+            '<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + color + '" stop-opacity="0.18"/><stop offset="1" stop-color="' + color + '" stop-opacity="0"/></linearGradient></defs>' +
+            '<path d="' + area + '" fill="url(#fill)"/>' +
+            '<path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="2" vector-effect="non-scaling-stroke"/>' +
+            '<line id="chart-cursor" y1="0" y2="' + H + '" stroke="#9ca3af" stroke-width="1" vector-effect="non-scaling-stroke" visibility="hidden"/>';
+          var official = DATA.returns[period];
+          var pct = official != null ? official : (vals[vals.length - 1] / vals[0] - 1) * 100;
+          change.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '% ' + (period === 'Max' ? 'since ' + fmtDate(rows[0][0]) : 'over ' + period);
+          change.style.color = color;
+          document.getElementById('chart-range').textContent =
+            fmtDate(rows[0][0]) + ' – today · Low ' + fmtPrice(min) + ' · High ' + fmtPrice(max);
+        }
+
+        svg.addEventListener('mousemove', function (e) {
+          if (!points.length) return;
+          var box = svg.getBoundingClientRect();
+          var x = (e.clientX - box.left) / box.width * W;
+          var p = points.reduce(function (best, q) { return Math.abs(q.x - x) < Math.abs(best.x - x) ? q : best; });
+          var cursor = document.getElementById('chart-cursor');
+          cursor.setAttribute('x1', p.x); cursor.setAttribute('x2', p.x); cursor.setAttribute('visibility', 'visible');
+          tip.hidden = false;
+          tip.textContent = fmtDate(p.d) + ' · ' + fmtPrice(p.v);
+          tip.style.left = Math.min(Math.max(p.x / W * box.width - 75, 0), box.width - 150) + 'px';
+        });
+        svg.addEventListener('mouseleave', function () {
+          tip.hidden = true;
+          var cursor = document.getElementById('chart-cursor');
+          if (cursor) cursor.setAttribute('visibility', 'hidden');
+        });
+        var buttons = document.querySelectorAll('#price-chart .chart-periods button');
+        function select(period) {
+          buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.period === period); });
+          draw(period);
+        }
+        // Grey out periods the stock's history doesn't cover (e.g. recent listings)
+        buttons.forEach(function (b) {
+          if (b.dataset.period !== 'Max' && all[0][0] > startDate(b.dataset.period)) b.disabled = true;
+        });
+        document.querySelector('#price-chart .chart-periods').addEventListener('click', function (e) {
+          var btn = e.target.closest('button');
+          if (btn && !btn.disabled) select(btn.dataset.period);
+        });
+        // Open on 1Y, or Max when the stock hasn't traded that long
+        select(document.querySelector('#price-chart button[data-period="1Y"]').disabled ? 'Max' : '1Y');
+      })();
+      </script>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-subtitle">Share Price</div>
+          <div class="card-value">KES 435.00</div>
+          <div class="card-subtitle"><span style="color: #dc2626">-2.50 (-0.57%) today</span></div>
+        </div>
+        <div class="card">
+          <div class="card-subtitle">Market Cap</div>
+          <div class="card-value">—</div>
+        </div>
+        <div class="card">
+          <div class="card-subtitle">Volume</div>
+          <div class="card-value">499</div>
+          <div class="card-subtitle">Shares traded, latest session</div>
+        </div>
+        <div class="card">
+          <div class="card-subtitle">P/E Ratio</div>
+          <div class="card-value">—</div>
+          <div class="card-subtitle">No EPS reported</div>
+        </div>
+        <div class="card">
+          <div class="card-subtitle">Dividend Yield</div>
+          <div class="card-value">—</div>
+          <div class="card-subtitle">No dividend reported</div>
+        </div>
+        <div class="card">
+          <div class="card-subtitle">YTD Return</div>
+          <div class="card-value"><span style="color: #6b7280">—</span></div>
+        </div>
+      </div>
+      <div class="returns">
+        <div class="return"><div class="return-label">1D</div><div class="return-value" style="color: #dc2626">-0.57%</div></div>
+        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">3Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">10Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+      </div>
+      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share against today's price.</div>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+      <h2>About Kakuzi Ltd</h2>
+      <p class="para">No company description available yet.</p>
+      <dl class="facts">
+        <div><dt>Sector</dt><dd>Agricultural</dd></div>
+      </dl>
+    </div>
+
+    <!-- Sector Peers -->
+    <div class="section">
+      <h2>Agricultural Peers</h2>
+      <div style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="amac.html">AMAC</a></td>
+            <td>Africa Mega Agricorp</td>
+            <td class="num">329.50</td>
+            <td class="num" style="color: #059669">+406.92%</td>
+            <td class="num">KES 4.3B</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr class="current-row">
+            <td><strong>KUKZ</strong></td>
+            <td>Kakuzi Ltd</td>
+            <td class="num">435.00</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="egad.html">EGAD</a></td>
+            <td>Eaagads Ltd</td>
+            <td class="num">28.30</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="kapc.html">KAPC</a></td>
+            <td>Kapchorua Tea Company Ltd</td>
+            <td class="num">342.00</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="limt.html">LIMT</a></td>
+            <td>Limuru Tea Company Ltd</td>
+            <td class="num">510.00</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="sasn.html">SASN</a></td>
+            <td>Sasini Tea and Coffee Ltd</td>
+            <td class="num">23.75</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="wtk.html">WTK</a></td>
+            <td>Williamson Tea Kenya Ltd</td>
+            <td class="num">160.00</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note"><a href="../sectors/agricultural.html">All Agricultural stocks →</a></p>
+    </div>
+
+    <!-- Latest News -->
+    <div class="section">
+      <h2>Latest News</h2>
+      <ul class="item-list">
+        <li><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPX292dEVfYV9rRkhjT1VabG9jeDdTU1h3V01hOGZ6MGVqRzNsY2ZEUWhBVEZVYTFMZmFMOXphanhvSWlSak5Zc3ZkR3pERTRrd0FUT0Jid29ZQ3JHdUtNR3NPYVhJbjBrNHAyTnhrajFXZG9sNzVObXRtT3FETVA5VEJBVkl6SWJpYURVRWhONW1RX2tQSXBOUmZNWmN4UGh3Z3ZuakxZUUpZZEJJMUpxZjRnQWI?oc=5" target="_blank" rel="noopener">Kakuzi birdwatching tour ends in triumph as Japanese royalty sights rare migratory birds</a><div class="item-meta">Capital FM Africa · Sep 23, 2026</div></li>
+        <li><a href="https://news.google.com/rss/articles/CBMixglBVV95cUxQem1FTkx2R0NWOGhHTExQdEdHOGJsSjl0bTJUVlhrWVdNM01IVVRFbU5sQnB0LVFTYXJqc0ZlLTl6SWllakE4eEFweENmRHFxekc0MjNCdldsRXBJU1RBOTVvRUVuRVJBak92UzVRUk9FSEQxVWNLbGkzYm9iYTRoLWhkSDVzN3hQenhBRUxhNHluT0E1U0l4bk10THFCaElFdkFwQkg0UDZiczJUelF1dmE1TUZINHl5c1VwQUNsUGdBWWoxd0NibzNEeTA2NFlIajVBdDItbVZ1VkNUSmMyQnk5azFxdUdKOWtRRlJBU2FBM2tIcDctekctNkJfS21XTW9aTkF4TFpwdGVacEFNeUlYNllSdGNBOGRpZC1acFdjaFRoWDNIQ3dQQnloOV9KRXBYTzdRbVRTeHg0ZkVLNjJjUm1HR0tobmxCeDRNZllkOFQzZGV1elczNXNUVWF3MVh5N0p6bjlTNHd0ZkxhVmx2WnZIR3RCSFBzdHRyUlh3OHNCMnJOcnhlblVzNzdDa3dEUGdESXQ2MW1MWFIyWXBpWXIzOUNzWjZnak1ETnZRTnNJdkJEVW5hY3dETXlsdTRTYUpocHJGZUgtakpLWVpIQUNXWU1RWXNaMl95SXdUaDJUd3U5cFFFSHh4ZGtuMUNZcjFlTW9SRFA2UXotbDZjbU41bEZPN1ZNQ2ctSF9VWEdkWWlOaXNaM3VSeUVmOHFaXzRjVUI3Snk5dF9rNlBqUDlFRWJHSW9BbFNfRWtDY1MyaGZvSm92UWJqMFpDaHZuWC12RmJXTXBOTC1GVzRxczlNcGQ2YTRDV3dvbnp5eWl0WWY2VHBRY2JhcmhlVXlFODN4a2dPSmpXb1NGQ1F5UTZiMzYzcHhMQk5ZcWU3YWlaNjRDOVNGdWxHR3dZbkZacXN5QmkwTzViaHBuU3BXYU5seHNMUW8yQjJBaV9pa3VEc0Q0U3l5clBsUFN1ZnFPYmZDMTM5RUhFNmlzX3ZmS2docmVVdl9YUWVCYXZ5X2ZVbXF5dlhKN1JsanlDLTBqSTRWRFg0RklSLURYMmNTTDdTeURLdnczOGo5WUVlOWpWbG1KR3puZ0Foc3N2TzVBeExNM1N1OGFyWDk5T2szSWF6Y0kzODRoc1lIWUdrWEd0d0hzQ25lNW1WZkV5OU1tQjV4RlpxTVZ2V3B6Nzc0NmpXSWw5Q1RicGpmS3dRV08xQzNtSTlIdElhd2Jyd1hZeWNGNEVnbl9kb3R6Q0hQMVJma09TOHpFRDJBLU50Q21FQ1pJTXM2bFZFNGIxTEJ4YV9TNlNMUVdsQkJ6Q1IyUE9NeG1Md3VwTWxoSkloUlJ5ZjdyeW9NbGNOZld6cENHQTIzTk1TMVY3NklZVHIwZjBaUHpvbGFMdmtWcFF1RDBIZ3JIWlZoQzBEWW5VVUl0M2xIU3ZwcGVPU2FyRERzbk15Tjd4RjV4cWFrRHRuQkpaeGJNNDhrMW45MDQ4blNiUEs4QU42bHljMjg4Y2dCX3UwRjZxOVlLUXFCV3c5cEswMjlyMjlEckFzYmw0ZTJsWEh6MmhQczV0bElKdEloUUxvdTJrcFhTbkpxOEUzVFAwbXJETzV5Y0RFWXZON1hhSzRn?oc=5" target="_blank" rel="noopener">𝗖𝗵𝗿𝗶𝘀𝘁𝗼𝗽𝗵𝗲𝗿 𝗙𝗹𝗼𝘄𝗲𝗿𝘀- 𝗠𝗗 𝗞𝗮𝗸𝘂𝘇𝗶 𝗣𝗟𝗖 𝗼𝗻 𝘀𝗵𝗮𝗿𝗶𝗻𝗴 𝗶𝗱𝗲𝗮𝘀 𝗼𝗻 𝘁𝗵𝗲 𝗰𝗼𝘂𝗻𝘁𝘆'𝘀 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗮𝗴𝗲𝗻𝗱𝗮. Members of the Murang’a Budget and Economic Council (MBEC) have evaluated the state of the county’s economy ahead of the s</a><div class="item-meta">facebook.com · Sep 6, 2026</div></li>
+        <li><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc19keXB2VzVkX3JPUUJBRnBHejhhNDdibm9UTExpT0NubXFMWFZveUZoR0YxdmNNUjFMNndDbFN4cXVIYUk0dGxKODY4SWxjRHdmR0pjMzJCaGtCc2lGeUN2QnNMMVJPUzVGdmQ3Q2ltcU0xZmtyMTJUYWJQQ3hUNEVIam1uQTJ2aXJpZjJGbzE2ZnY3U2NuSVpIS2xCZTU3NV9FSVltZjNBd0ZyRjdPWktpVVpJTU9H?oc=5" target="_blank" rel="noopener">Kakuzi turns to blueberries after dramatic fall in half-year profit</a><div class="item-meta">Fruitnet · Sep 3, 2026</div></li>
+        <li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxObU15SFNNSzNmamdwRnNhV1FSOWR0LVJWWmVuRkJiTFZsOUthdmZPQmhuTWhDa0Njc1lwMEtwbmFnSDc2eFF4c3dCM3ctWEhIeEJaXy1ZODA3b0lfMF8ybmFsQXlqMF9NU0dZZkkxMHg4ZHdEMEhCcl9hVHg4N3I2alBpUFhTWVJE?oc=5" target="_blank" rel="noopener">Kakuzi breaks ground for new blueberry production orchards</a><div class="item-meta">KBC Digital · Sep 1, 2026</div></li>
+        <li><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQcEUxQU1rQ1E0VlRGM0l5TzNzYkR2QmlqRGZEWUpURllRUDlIY0F4OVhtQlhPOTk3ckVtX2o1czBfaDVmVm1rT0xKTkN3M2JqR21RRlc3LTJDRFZpX2FqeFZSUHlmSTZEUS1tZUJaQWxqbkNJX19HZjUzM1hManJpSjFmdTlGMndBMm9PYUtuNmJVMlYxV0JIRVdSWHlqLTc2aTcwR2ZVZUN2dmxkaEVCSW80OTdxc19LbTVIVEZod2x6aWMx?oc=5" target="_blank" rel="noopener">Kakuzi profits plunge amid Midle East war</a><div class="item-meta">standardmedia.co.ke · Aug 27, 2026</div></li>
+        <li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE50TGhhd0Z0aHVERHZGaHlEdUVTOTRMaUNVTWc4R2pnNThTMU5XaktRQ2FwUW1WUlF1b1JKcndZZG9KMmJPSkI4YnktcXYxSG5ldllEdFV3?oc=5" target="_blank" rel="noopener">Kakuzi H1 Profit Plunges 98% as Export Crops Falter</a><div class="item-meta">The Kenyan Wallstreet · Aug 26, 2026</div></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="disclaimer">
+    <nav class="site-footer" aria-label="Site links">
+      <div><strong>Nairobi Stock Digest</strong><a href="../index.html">Dashboard</a></div>
+      <div><strong>Sectors</strong><a href="../sectors/agricultural.html">Agricultural</a><a href="../sectors/automobiles-and-accessories.html">Automobiles &amp; Accessories</a><a href="../sectors/banking.html">Banking</a><a href="../sectors/commercial-and-services.html">Commercial &amp; Services</a><a href="../sectors/construction-and-allied.html">Construction &amp; Allied</a><a href="../sectors/energy-and-petroleum.html">Energy &amp; Petroleum</a><a href="../sectors/insurance.html">Insurance</a><a href="../sectors/investment.html">Investment</a><a href="../sectors/investment-services.html">Investment Services</a><a href="../sectors/manufacturing-and-allied.html">Manufacturing &amp; Allied</a><a href="../sectors/telecommunication.html">Telecommunication</a><a href="../sectors/real-estate-investment-trusts.html">Real Estate Investment Trusts</a><a href="../sectors/exchange-traded-funds.html">Exchange Traded Funds</a></div>
+      <div class="source-note">Prices from <a href="https://afx.kwayisi.org/nse/" rel="noopener">AFX (afx.kwayisi.org)</a>. Not affiliated with the Nairobi Securities Exchange. Not investment advice.</div>
+    </nav>
+    <p>For informational purposes only — not investment advice. Prices come from AFX (afx.kwayisi.org), are published after the NSE close and may be delayed, incomplete or inaccurate. P/E and dividend yield use the latest reported EPS and dividend per share against the current price. Not affiliated with the Nairobi Securities Exchange. Do your own research and consult a licensed investment adviser before making investment decisions.</p>
+  </footer>
+
+</body>
+
+</html>

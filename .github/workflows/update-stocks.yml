@@ -1,0 +1,52 @@
+name: Update NSE Data Daily
+
+# No push trigger: code/content pushes already include locally rendered pages, and a
+# push-triggered run would race with them. Use "Run workflow" for an immediate refresh.
+on:
+  schedule:
+    # 7:00 PM EAT (16:00 UTC) on weekdays; the NSE closes at 3:00 PM EAT and the price
+    # source publishes the day's figures in the afternoon
+    - cron: "0 16 * * MON-FRI"
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stocks:
+    runs-on: ubuntu-latest
+    # Detail refreshes wait 60s between requests (the source's crawl delay): ~12 min at 6/run
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      # Tests first: a failing test stops the run before anything is fetched or published
+      - name: Run tests
+        run: npm test
+
+      - name: Run stock update script
+        run: node update-stocks.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "Stock Bot"
+          git config --local user.email "bot@github.com"
+          git add index.html sitemap.xml robots.txt stocks/ sectors/ data/market.json data/history/ data/details/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Update NSE prices and news - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
+
+      # Runs after the commit so good data is still saved; a failure here turns the run
+      # red and triggers GitHub's failed-workflow email
+      - name: Check data freshness
+        run: node check-freshness.js

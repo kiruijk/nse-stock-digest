@@ -1,0 +1,6 @@
+{
+  "_comment": "Public site settings. Change url when moving to a custom domain (keep the trailing slash); it's used for canonical links, Open Graph tags, sitemap.xml and robots.txt.",
+  "name": "Nairobi Stock Digest",
+  "url": "https://kiruijk.github.io/nse-stock-digest/",
+  "description": "Daily tracker for every stock on the Nairobi Securities Exchange: prices and returns, dividend yields, P/E ratios, price history and news, organized by sector."
+}
