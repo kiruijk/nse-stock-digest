@@ -18,5 +18,11 @@
   "dayHigh": 5450,
   "deals": 27,
   "turnover": 948065,
-  "fetchedAt": "2026-09-24T01:44:06.611Z"
+  "liquidityRank": 57,
+  "volume3m": 26541,
+  "deals3m": 2095,
+  "turnover3m": 137000000,
+  "avgDailyVolume": 421,
+  "avgDailyTurnover": 2180000,
+  "fetchedAt": "2026-09-24T03:43:49.077Z"
 }

@@ -18,5 +18,11 @@
   "dayHigh": null,
   "deals": 0,
   "turnover": 0,
-  "fetchedAt": "2026-09-24T02:10:27.632Z"
+  "liquidityRank": null,
+  "volume3m": null,
+  "deals3m": null,
+  "turnover3m": null,
+  "avgDailyVolume": null,
+  "avgDailyTurnover": null,
+  "fetchedAt": "2026-09-24T03:56:57.698Z"
 }

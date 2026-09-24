@@ -854,7 +854,7 @@
       <div class="header-price-change">unchanged</div>
     </div>
     <dl class="header-stats">
-      <div><dt><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Market Cap</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Market Cap</span></dt><dd>KES 45.9M</dd></div>
       <div><dt><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">P/E</span></dt><dd>—</dd></div>
       <div><dt><span class="tip" tabindex="0" data-tip="Price-to-book: market cap ÷ shareholders' equity. Below 1× means the market values the company at less than its net assets.">P/B</span></dt><dd>—</dd></div>
       <div><dt><span class="tip" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Div Yield</span></dt><dd>—</dd></div>
@@ -869,7 +869,116 @@
     <!-- Price & Valuation -->
     <div class="section">
       <h2>Price &amp; Valuation</h2>
+      <div class="chart" id="price-chart">
+        <div class="chart-head">
+          <div class="chart-change" id="chart-change"></div>
+          <div class="chart-periods" role="group" aria-label="Chart period">
+            <button type="button" data-period="1M">1M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="YTD">YTD</button><button type="button" data-period="1Y">1Y</button><button type="button" data-period="3Y">3Y</button><button type="button" data-period="5Y">5Y</button><button type="button" data-period="10Y">10Y</button><button type="button" data-period="Max">Max</button>
+          </div>
+        </div>
+        <svg id="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" role="img" aria-label="TRFC price chart"></svg>
+        <div class="chart-tip" id="chart-tip" hidden></div>
+        <div class="chart-range" id="chart-range"></div>
+      </div>
+      <script>
+      (function () {
+        var DATA = {"daily":[["2026-06-29",1.23],["2026-06-30",1.23],["2026-07-01",1.23],["2026-07-02",1.23],["2026-07-03",1.23],["2026-07-06",1.23],["2026-07-07",1.23],["2026-07-08",1.23],["2026-07-09",1.23],["2026-07-10",1.23],["2026-07-13",1.23],["2026-07-14",1.23],["2026-07-15",1.23],["2026-07-16",1.23],["2026-07-17",1.23],["2026-07-20",1.23],["2026-07-21",1.23],["2026-07-22",1.23],["2026-07-23",1.23],["2026-07-24",1.23],["2026-07-27",1.23],["2026-07-28",1.23],["2026-07-29",1.23],["2026-07-30",1.23],["2026-07-31",1.23],["2026-08-03",1.23],["2026-08-04",1.23],["2026-08-05",1.23],["2026-08-06",1.23],["2026-08-07",1.23],["2026-08-10",1.23],["2026-08-11",1.23],["2026-08-12",1.23],["2026-08-13",1.23],["2026-08-14",1.23],["2026-08-17",1.23],["2026-08-18",1.23],["2026-08-19",1.23],["2026-08-20",1.23],["2026-08-21",1.23],["2026-08-24",1.23],["2026-08-25",1.23],["2026-08-26",1.23],["2026-08-27",1.23],["2026-08-28",1.23],["2026-08-31",1.23],["2026-09-01",1.23],["2026-09-02",1.23],["2026-09-03",1.23],["2026-09-04",1.23],["2026-09-07",1.23],["2026-09-08",1.23],["2026-09-09",1.23],["2026-09-10",1.23],["2026-09-11",1.23],["2026-09-14",1.23],["2026-09-15",1.23],["2026-09-16",1.23],["2026-09-17",1.23],["2026-09-18",1.23],["2026-09-21",1.23],["2026-09-22",1.23],["2026-09-23",1.23]],"weekly":[],"price":1.23,"returns":{"1M":0,"6M":null,"YTD":null,"1Y":null,"3Y":null,"5Y":null,"10Y":null}};
+        var all = DATA.weekly.concat(DATA.daily);
+        var svg = document.getElementById('chart-svg');
+        var tip = document.getElementById('chart-tip');
+        var W = 600, H = 200, PAD = 8;
+        var points = [];
 
+        function startDate(period) {
+          var d = new Date();
+          if (period === 'Max') return all[0][0];
+          if (period === 'YTD') return (d.getFullYear() - 1) + '-12-31';
+          var months = { '1M': 1, '6M': 6, '1Y': 12, '3Y': 36, '5Y': 60, '10Y': 120 }[period];
+          d.setMonth(d.getMonth() - months);
+          return d.toISOString().slice(0, 10);
+        }
+
+        function fmtDate(iso) {
+          return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function fmtPrice(v) {
+          return 'KES ' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function draw(period) {
+          var start = startDate(period);
+          var src = ['1M', '6M', 'YTD', '1Y'].indexOf(period) >= 0 || (period === 'Max' && !DATA.weekly.length) ? DATA.daily : all;
+          // Start from the last close on or before the start date, like the returns calculation
+          var first = 0;
+          for (var i = 0; i < src.length; i++) { if (src[i][0] <= start) first = i; else break; }
+          var rows = src.slice(first);
+          if (DATA.price != null && rows.length && rows[rows.length - 1][1] !== DATA.price) rows = rows.concat([[new Date().toISOString().slice(0, 10), DATA.price]]);
+          var change = document.getElementById('chart-change');
+          if (rows.length < 2 || all[0][0] > start) {
+            svg.innerHTML = '';
+            change.textContent = 'Not enough price history for ' + period;
+            change.style.color = '#6b7280';
+            document.getElementById('chart-range').textContent = '';
+            points = [];
+            return;
+          }
+          var vals = rows.map(function (r) { return r[1]; });
+          var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+          var span = max - min || 1;
+          points = rows.map(function (r, i) {
+            return { x: PAD + (i / (rows.length - 1)) * (W - 2 * PAD), y: PAD + (1 - (r[1] - min) / span) * (H - 2 * PAD), d: r[0], v: r[1] };
+          });
+          var up = (DATA.returns[period] != null ? DATA.returns[period] : vals[vals.length - 1] - vals[0]) >= 0;
+          var color = up ? '#059669' : '#dc2626';
+          var line = points.map(function (p, i) { return (i ? 'L' : 'M') + p.x.toFixed(1) + ' ' + p.y.toFixed(1); }).join(' ');
+          var area = line + ' L' + points[points.length - 1].x.toFixed(1) + ' ' + H + ' L' + points[0].x.toFixed(1) + ' ' + H + ' Z';
+          svg.innerHTML =
+            '<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + color + '" stop-opacity="0.18"/><stop offset="1" stop-color="' + color + '" stop-opacity="0"/></linearGradient></defs>' +
+            '<path d="' + area + '" fill="url(#fill)"/>' +
+            '<path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="2" vector-effect="non-scaling-stroke"/>' +
+            '<line id="chart-cursor" y1="0" y2="' + H + '" stroke="#9ca3af" stroke-width="1" vector-effect="non-scaling-stroke" visibility="hidden"/>';
+          var official = DATA.returns[period];
+          var pct = official != null ? official : (vals[vals.length - 1] / vals[0] - 1) * 100;
+          change.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '% ' + (period === 'Max' ? 'since ' + fmtDate(rows[0][0]) : 'over ' + period);
+          change.style.color = color;
+          document.getElementById('chart-range').textContent =
+            fmtDate(rows[0][0]) + ' – today · Low ' + fmtPrice(min) + ' · High ' + fmtPrice(max);
+        }
+
+        svg.addEventListener('mousemove', function (e) {
+          if (!points.length) return;
+          var box = svg.getBoundingClientRect();
+          var x = (e.clientX - box.left) / box.width * W;
+          var p = points.reduce(function (best, q) { return Math.abs(q.x - x) < Math.abs(best.x - x) ? q : best; });
+          var cursor = document.getElementById('chart-cursor');
+          cursor.setAttribute('x1', p.x); cursor.setAttribute('x2', p.x); cursor.setAttribute('visibility', 'visible');
+          tip.hidden = false;
+          tip.textContent = fmtDate(p.d) + ' · ' + fmtPrice(p.v);
+          tip.style.left = Math.min(Math.max(p.x / W * box.width - 75, 0), box.width - 150) + 'px';
+        });
+        svg.addEventListener('mouseleave', function () {
+          tip.hidden = true;
+          var cursor = document.getElementById('chart-cursor');
+          if (cursor) cursor.setAttribute('visibility', 'hidden');
+        });
+        var buttons = document.querySelectorAll('#price-chart .chart-periods button');
+        function select(period) {
+          buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.period === period); });
+          draw(period);
+        }
+        // Grey out periods the stock's history doesn't cover (e.g. recent listings)
+        buttons.forEach(function (b) {
+          if (b.dataset.period !== 'Max' && all[0][0] > startDate(b.dataset.period)) b.disabled = true;
+        });
+        document.querySelector('#price-chart .chart-periods').addEventListener('click', function (e) {
+          var btn = e.target.closest('button');
+          if (btn && !btn.disabled) select(btn.dataset.period);
+        });
+        // Open on 1Y, or Max when the stock hasn't traded that long
+        select(document.querySelector('#price-chart button[data-period="1Y"]').disabled ? 'Max' : '1Y');
+      })();
+      </script>
       <div class="grid-3">
         <div class="card">
           <div class="card-subtitle">Share Price</div>
@@ -878,7 +987,8 @@
         </div>
         <div class="card">
           <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Market Cap</span></div>
-          <div class="card-value">—</div>
+          <div class="card-value">KES 45.9M</div>
+          <div class="card-subtitle">37.30M shares</div>
         </div>
         <div class="card">
           <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Number of shares traded in the latest session.">Volume</span></div>
@@ -902,8 +1012,8 @@
       </div>
       <div class="returns">
         <div class="return"><div class="return-label">1D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #059669">+0.00%</div></div>
         <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #6b7280">—</div></div>
         <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #6b7280">—</div></div>
         <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #6b7280">—</div></div>
@@ -911,7 +1021,7 @@
         <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #6b7280">—</div></div>
         <div class="return"><div class="return-label">10Y</div><div class="return-value" style="color: #6b7280">—</div></div>
       </div>
-      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share against today's price.</div>
+      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share (checked Sep 24, 2026) against today's price.</div>
     </div>
 
     <!-- Key Ratios -->
@@ -930,8 +1040,8 @@
         </div>
         <div class="card">
           <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Average value of shares traded per session over the last 3 months. Under KES 1M is thinly traded: prices can be stale and positions hard to buy or sell.">Avg Daily Turnover</span></div>
-          <div class="card-value">—</div>
-          <div class="card-subtitle">Not available yet</div>
+          <div class="card-value">KES 7,584</div>
+          <div class="card-subtitle"><span class="warn">Thinly traded: prices can be stale</span></div>
         </div>
         <div class="card">
           <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="How far the price is below its highest close of the past year.">From 52W High</span></div>
@@ -958,6 +1068,12 @@
       <p class="para">No company description available yet.</p>
       <dl class="facts">
         <div><dt>Sector</dt><dd>Real Estate Investment Trusts</dd></div>
+        <div><dt>Industry</dt><dd>Real Estate Investment Trust</dd></div>
+        <div><dt>Listed on NSE</dt><dd>June 29, 2026</dd></div>
+        <div><dt>Incorporated</dt><dd>April 18, 2016</dd></div>
+        <div><dt>ISIN</dt><dd>KE9930007092</dd></div>
+        <div><dt>Website</dt><dd><a href="https://trific.co.ke" target="_blank" rel="noopener">trific.co.ke</a></dd></div>
+        <div><dt>Address</dt><dd>4th Floor, North Tower Two Rivers Mall, P.O. Box 10518-00100, Nairobi, Kenya</dd></div>
       </dl>
     </div>
 
@@ -979,21 +1095,21 @@
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
+          <tr class="current-row">
+            <td><strong>TRFC</strong></td>
+            <td>TRIFIC Green USD I-REIT</td>
+            <td class="num">1.23</td>
+            <td class="num" style="color: #6b7280">—</td>
+            <td class="num">KES 45.9M</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
           <tr>
             <td><a href="alp.html">ALP</a></td>
             <td>ALP Real Estate Investment Trust</td>
             <td class="num">1.02</td>
             <td class="num" style="color: #6b7280">—</td>
             <td class="num">KES 40.8M</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
-          <tr class="current-row">
-            <td><strong>TRFC</strong></td>
-            <td>TRIFIC Green USD I-REIT</td>
-            <td class="num">1.23</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
