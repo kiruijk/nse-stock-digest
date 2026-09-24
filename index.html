@@ -321,6 +321,30 @@
       background: #f3f4f6;
     }
 
+    /* Valuation row: market cap and ratios, always visible (also on phones) */
+    .fundamentals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2rem 1.1rem;
+      border-top: 1px solid #f3f4f6;
+      padding: 0.4rem 0;
+      font-size: 0.78rem;
+      color: #374151;
+    }
+
+    .fundamentals span {
+      white-space: nowrap;
+    }
+
+    .fundamentals b {
+      color: #9ca3af;
+      font-size: 0.66rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-right: 0.25rem;
+    }
+
     /* Slim single-row strip of all periods; the selected one is highlighted */
     .metrics {
       display: grid;
@@ -733,7 +757,12 @@
       }
 
       .stock-header {
-        margin-bottom: 0;
+        margin-bottom: 0.4rem;
+      }
+
+      .fundamentals {
+        gap: 0.15rem 0.8rem;
+        padding-bottom: 0;
       }
 
       .stock-symbol {
@@ -1116,6 +1145,7 @@
           "fiveYear": 212.8,
           "tenYear": null,
           "pe": 8.13,
+          "pb": null,
           "dividendYield": 6.21,
           "marketCap": 179190000000,
           "range52w": {
@@ -1172,6 +1202,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 40800000,
           "range52w": null,
@@ -1209,6 +1240,7 @@
           "fiveYear": 3068.27,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 4250550000,
           "range52w": {
@@ -1265,6 +1297,7 @@
           "fiveYear": 0,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 5280000000,
           "range52w": {
@@ -1321,6 +1354,7 @@
           "fiveYear": 42.11,
           "tenYear": null,
           "pe": 15.21,
+          "pb": null,
           "dividendYield": 10.13,
           "marketCap": 19602000000,
           "range52w": {
@@ -1377,6 +1411,7 @@
           "fiveYear": 25.78,
           "tenYear": null,
           "pe": 10.69,
+          "pb": null,
           "dividendYield": 12.48,
           "marketCap": 56100000000,
           "range52w": {
@@ -1433,6 +1468,7 @@
           "fiveYear": 110.57,
           "tenYear": null,
           "pe": 0.49,
+          "pb": null,
           "dividendYield": 90.28,
           "marketCap": 54637500000,
           "range52w": {
@@ -1489,6 +1525,7 @@
           "fiveYear": 171.48,
           "tenYear": null,
           "pe": 11.98,
+          "pb": null,
           "dividendYield": 6.67,
           "marketCap": 3758625000,
           "range52w": {
@@ -1545,6 +1582,7 @@
           "fiveYear": 135.15,
           "tenYear": null,
           "pe": 8.66,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 47880000000,
           "range52w": {
@@ -1601,6 +1639,7 @@
           "fiveYear": 9.62,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 432630000,
           "range52w": {
@@ -1657,6 +1696,7 @@
           "fiveYear": 259.58,
           "tenYear": null,
           "pe": 10.65,
+          "pb": null,
           "dividendYield": 4.63,
           "marketCap": 11003250000,
           "range52w": {
@@ -1713,6 +1753,7 @@
           "fiveYear": 864.52,
           "tenYear": null,
           "pe": 9.8,
+          "pb": null,
           "dividendYield": 1.14,
           "marketCap": 23979800000,
           "range52w": {
@@ -1769,6 +1810,7 @@
           "fiveYear": 77.66,
           "tenYear": null,
           "pe": 23.7,
+          "pb": null,
           "dividendYield": 2.44,
           "marketCap": 13968000000,
           "range52w": {
@@ -1825,6 +1867,7 @@
           "fiveYear": 181.06,
           "tenYear": null,
           "pe": 7.01,
+          "pb": null,
           "dividendYield": 8.09,
           "marketCap": 217777000000,
           "range52w": {
@@ -1881,6 +1924,7 @@
           "fiveYear": 119.22,
           "tenYear": null,
           "pe": 8.82,
+          "pb": null,
           "dividendYield": 5.11,
           "marketCap": 8342500000,
           "range52w": {
@@ -1937,6 +1981,7 @@
           "fiveYear": 7.04,
           "tenYear": null,
           "pe": 8.78,
+          "pb": null,
           "dividendYield": 1.75,
           "marketCap": 11953750000,
           "range52w": {
@@ -1993,6 +2038,7 @@
           "fiveYear": 0,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 55800000,
           "range52w": {
@@ -2049,6 +2095,7 @@
           "fiveYear": 196.06,
           "tenYear": null,
           "pe": 5.12,
+          "pb": null,
           "dividendYield": 4.79,
           "marketCap": 52640000000,
           "range52w": {
@@ -2105,6 +2152,7 @@
           "fiveYear": 62.39,
           "tenYear": null,
           "pe": 17.71,
+          "pb": null,
           "dividendYield": 3.37,
           "marketCap": 221737250000,
           "range52w": {
@@ -2161,6 +2209,7 @@
           "fiveYear": 121.09,
           "tenYear": null,
           "pe": 76.84,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 911260000,
           "range52w": {
@@ -2217,6 +2266,7 @@
           "fiveYear": 111.88,
           "tenYear": null,
           "pe": 5.35,
+          "pb": null,
           "dividendYield": 5.37,
           "marketCap": 403390000000,
           "range52w": {
@@ -2273,6 +2323,7 @@
           "fiveYear": -4.76,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 210000000,
           "range52w": {
@@ -2329,6 +2380,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 48555000000,
           "range52w": null,
@@ -2377,6 +2429,7 @@
           "fiveYear": 58.65,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": 375580000,
           "range52w": {
@@ -2424,18 +2477,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": -0.74,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 2.88,
+          "oneMonth": -3.25,
+          "sixMonth": -1.2,
+          "ytd": -0.83,
+          "oneYear": 19.69,
+          "threeYear": 107.36,
+          "fiveYear": 188.41,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "marketCap": 2140000000,
+          "range52w": {
+            "low": 3260,
+            "high": 6600
+          },
           "news": [
             {
               "title": "Absa NewGold ETF Investors Win Big as Global Gold Prices Surge",
@@ -2456,7 +2513,15 @@
               "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTll5U2EwcUo1UFoyX2Y1MlUyNnBwNl9DbDdYaVpBSnctcWpzZ3hYR2lWaTNsdTBkcW4xcC1GcjdxRVBTcTRsRmFfd1lxQzBHLVdfNVlFM0ZiMU5ZaFhOVUpUdzUzVWV0ZGZQZ0F2OUs1QzFnR0R5VVNaSjJjTHcydU93UzdEenpKQzVwd1AyVFgxY2NlZXVQWVRlc0JrXzUyZVJvdDRGNE5kLWdnelMzX1Q0SDIxQjNHaVFfRkhn?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [5200,5200,5390,5390,5350,5350],
+            "oneMonth": [5530,5420,5420,5500,5540,5515,5525,5315,5370,5370,5370,5370,5415,5415,5415,5290,5290,5290,5200,5200,5390,5390,5350,5350],
+            "sixMonth": [5415,5695,5700,5880,5735,5845,5930,5695,5660,5580,5745,5745,5465,5550,5470,5315,5220,5015,5360,5055,4925,5050,5045,5090,4910,4940,4940,4945,4950,5065,5270,5155,5240,5500,5525,5370,5415,5290,5200,5350,5350],
+            "ytd": [5395,5375,5380,5685,5985,5845,5880,5995,6175,6230,6230,6370,5435,5485,5790,5735,5840,5695,5660,5745,5625,5550,5500,5350,5015,5155,4925,5050,5090,4875,4940,4945,5035,5155,5240,5500,5370,5415,5290,5350,5350],
+            "oneYear": [4470,4680,5050,4950,5090,5190,5105,5240,5360,5255,5395,5420,3260,6095,6105,5960,6000,6225,6270,5435,5700,5830,5840,5660,5580,5625,5470,5275,5015,5015,5050,4965,4985,4945,5065,5155,5500,5370,5290,5350,5350],
+            "threeYear": [2580,2840,2915,2915,2990,2850,2875,2625,2920,2920,2920,2860,2940,3050,3330,3220,3260,3260,3455,3455,3555,3925,3910,4040,4080,4090,4470,5120,5180,5255,3260,5960,6270,5830,5580,5275,5050,4945,5500,5350,5350],
+            "fiveYear": [1855,1815,1880,1880,2035,2135,2015,2015,1975,2000,2165,2325,2560,2530,2530,2525,2530,2915,2990,2875,2920,2920,2860,2940,3330,3220,3260,3455,3925,3910,4080,4390,5090,5255,5915,5435,5580,5015,5065,5350,5350]
+          }
         },
         "HAFR": {
           "symbol": "HAFR",
@@ -2469,18 +2534,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 4.67,
+          "oneMonth": 0,
+          "sixMonth": -30.43,
+          "ytd": -16.42,
+          "oneYear": 10.89,
+          "threeYear": 261.29,
+          "fiveYear": 187.18,
           "tenYear": null,
-          "pe": null,
+          "pe": 13.27,
+          "pb": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "marketCap": 453600000,
+          "range52w": {
+            "low": 1.01,
+            "high": 1.85
+          },
           "news": [
             {
               "title": "Home Afrika Ltd. Revenue Breakdown – NSEKE:HAFR",
@@ -2501,7 +2570,15 @@
               "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zN0FlV2c1b20yOHg0RDFvTjY3UHhrbHpIVVpQSEZyS0dXOGNYc0ZlM09MOXFuclNQR0NSVWhWcFBpb2pTVWxMeHVkaTNBX29IX1NEcHpwbkI0bFJodjdJN005bWRmR2x0UkkyajhNTzJ0UThnZ1BfNlJpMUhLYjQ?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [1.07,1.08,1.1,1.12,1.12,1.12],
+            "oneMonth": [1.12,1.13,1.14,1.15,1.11,1.1,1.07,1.06,1.13,1.16,1.1,1.13,1.11,1.12,1.12,1.13,1.13,1.11,1.07,1.08,1.1,1.12,1.12,1.12],
+            "sixMonth": [1.61,1.47,1.43,1.42,1.47,1.42,1.42,1.46,1.37,1.35,1.35,1.32,1.3,1.24,1.2,1.25,1.3,1.37,1.35,1.32,1.32,1.28,1.21,1.22,1.17,1.08,1.04,1.04,1.02,1.17,1.09,1.16,1.15,1.15,1.07,1.16,1.11,1.13,1.08,1.12,1.12],
+            "ytd": [1.34,1.33,1.29,1.28,1.27,1.23,1.28,1.49,1.46,1.76,1.58,1.64,1.69,1.5,1.49,1.47,1.42,1.46,1.36,1.35,1.32,1.24,1.22,1.31,1.37,1.32,1.32,1.21,1.22,1.19,1.04,1.05,1.19,1.13,1.15,1.15,1.13,1.12,1.11,1.12,1.12],
+            "oneYear": [1.01,1.31,1.2,1.16,1.14,1.12,1.1,1.06,1.07,1.11,1.27,1.32,1.3,1.26,1.24,1.38,1.39,1.7,1.66,1.69,1.43,1.48,1.42,1.42,1.34,1.32,1.27,1.31,1.37,1.32,1.21,1.2,1.07,1.05,1.17,1.15,1.15,1.16,1.13,1.12,1.12],
+            "threeYear": [0.31,0.33,0.33,0.31,0.36,0.31,0.32,0.35,0.34,0.33,0.31,0.33,0.31,0.33,0.33,0.36,0.35,0.39,0.86,0.82,0.7,0.66,0.67,0.67,0.63,0.88,0.94,1.18,1.13,1.12,1.3,1.38,1.66,1.48,1.34,1.31,1.21,1.05,1.15,1.12,1.12],
+            "fiveYear": [0.39,0.37,0.37,0.38,0.36,0.34,0.35,0.34,0.38,0.39,0.33,0.3,0.31,0.31,0.34,0.34,0.32,0.28,0.36,0.32,0.35,0.33,0.33,0.32,0.31,0.34,0.49,0.82,0.73,0.71,0.63,1.66,1.14,1.12,1.23,1.69,1.34,1.33,1.17,1.12,1.12]
+          }
         },
         "HBE": {
           "symbol": "HBE",
@@ -2514,18 +2591,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": null,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 0,
+          "oneMonth": 0,
+          "sixMonth": 0,
+          "ytd": 0,
+          "oneYear": 0,
+          "threeYear": 0,
+          "fiveYear": 0,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "marketCap": 294512000,
+          "range52w": {
+            "low": 4.66,
+            "high": 4.66
+          },
           "news": [
             {
               "title": "Why Homeboyz Share Price is Stuck",
@@ -2546,7 +2627,15 @@
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUnh2SlhyOTM5NmRjOHVzNTh6c1pzUUd0eG4weWE0UFd0VDFNbXdRZjJBdk5JZm9zTzlZYkllb0Rab3VwT2M2eUFjcy11ZFhTTExIU1dMaFFzblZ6ZXlaNzJGZ0FxaV9DX0gwbF9KTGFMSUh5YmRqV2d3TGZzQ1NGdzltRFhpMDVYYkZ6aDJaeWFHS3QwXzNfTXRMMnItM0lYVEQwVnhGMzJEVnduQy1RZ0JUNmY?oc=5"
             }
           ],
-          "spark": null
+          "spark": {
+            "fiveDay": [4.66,4.66,4.66,4.66,4.66,4.66],
+            "oneMonth": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66],
+            "sixMonth": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66],
+            "ytd": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66],
+            "oneYear": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66],
+            "threeYear": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66],
+            "fiveYear": [4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66,4.66]
+          }
         },
         "HFCB": {
           "symbol": "HFCB",
@@ -2568,6 +2657,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2613,6 +2703,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2658,6 +2749,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2703,6 +2795,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2748,6 +2841,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2793,6 +2887,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2838,6 +2933,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2883,6 +2979,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2928,6 +3025,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2973,6 +3071,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -2999,6 +3098,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3038,6 +3138,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3083,6 +3184,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3128,6 +3230,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3173,6 +3276,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3199,6 +3303,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3244,6 +3349,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3289,6 +3395,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3334,6 +3441,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3379,6 +3487,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3424,6 +3533,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3469,6 +3579,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3514,6 +3625,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3559,6 +3671,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3604,6 +3717,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3649,6 +3763,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3694,6 +3809,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3739,6 +3855,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3784,6 +3901,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3829,6 +3947,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3874,6 +3993,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3919,6 +4039,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -3964,6 +4085,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4009,6 +4131,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4054,6 +4177,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4099,6 +4223,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4144,6 +4269,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4189,6 +4315,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4234,6 +4361,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4279,6 +4407,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4324,6 +4453,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4369,6 +4499,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4414,6 +4545,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4459,6 +4591,7 @@
           "fiveYear": null,
           "tenYear": null,
           "pe": null,
+          "pb": null,
           "dividendYield": null,
           "marketCap": null,
           "range52w": null,
@@ -4586,11 +4719,23 @@
     const dash = '<span style="color: #9ca3af;">—</span>';
     const formatPe = (s) => (s.pe == null ? dash : `${s.pe.toFixed(1)}×`);
     const formatYield = (s) => (s.dividendYield == null ? dash : `${s.dividendYield.toFixed(1)}%`);
+    const formatPb = (s) => (s.pb == null ? dash : `${s.pb.toFixed(2)}×`);
+
+    // Market cap and ratios shown on every card
+    function fundamentals(s) {
+      return `<div class="fundamentals">
+          <span><b>Mkt Cap</b>${s.marketCap == null ? dash : 'KES ' + formatCap(s.marketCap)}</span>
+          <span><b>P/E</b>${formatPe(s)}</span>
+          <span><b>P/B</b>${formatPb(s)}</span>
+          <span><b>Yield</b>${formatYield(s)}</span>
+        </div>`;
+    }
 
     const TABLE_SORTS = {
       price: s => s.price,
       marketCap: s => s.marketCap,
       pe: s => s.pe,
+      pb: s => s.pb,
       dividendYield: s => s.dividendYield
     };
 
@@ -4619,6 +4764,7 @@
           ${PERIODS.map(p => th(p.label, `data-period="${p.label}"`, !tableSort && p === period ? 'desc' : null)).join('')}
           ${th('Mkt Cap', 'data-sort="marketCap"', sortState('marketCap'))}
           ${th('P/E', 'data-sort="pe"', sortState('pe'))}
+          ${th('P/B', 'data-sort="pb"', sortState('pb'))}
           ${th('Yield', 'data-sort="dividendYield"', sortState('dividendYield'))}
         </tr>`;
       const rows = sorted.map((s, i) => `
@@ -4630,10 +4776,11 @@
           ${PERIODS.map(p => `<td class="${p === period ? 'active' : ''}" style="color: ${pctColor(s[p.field])};">${formatPct(s[p.field])}</td>`).join('')}
           <td>${formatCap(s.marketCap)}</td>
           <td>${formatPe(s)}</td>
+          <td>${formatPb(s)}</td>
           <td>${formatYield(s)}</td>
         </tr>`).join('');
       container.innerHTML = `<div class="table-wrap"><table class="screener"><thead>${head}</thead><tbody>${rows}</tbody></table></div>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #9ca3af;">Click a column to sort. Prices and market cap in KES. P/E and yield use the latest reported EPS and dividend per share.</p>`;
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #9ca3af;">Click a column to sort. Prices and market cap in KES. P/E, P/B and yield use the latest reported EPS, book value and dividend per share.</p>`;
 
       container.querySelector('thead').onclick = (e) => {
         const cell = e.target.closest('th.sortable');
@@ -4741,7 +4888,7 @@
       renderPeriodPicker();
       if (viewMode === 'table') {
         document.getElementById('rank-subtitle').textContent = tableSort
-          ? `sorted by ${{ price: 'price', marketCap: 'market cap', pe: 'P/E', dividendYield: 'dividend yield' }[tableSort.key]}`
+          ? `sorted by ${{ price: 'price', marketCap: 'market cap', pe: 'P/E', pb: 'P/B', dividendYield: 'dividend yield' }[tableSort.key]}`
           : `ranked by ${period.name} return`;
         renderTable(sortForTable(listedStocks()));
         return;
@@ -4837,6 +4984,7 @@
             <div class="stock-change ${changeClass}">${changeText}</div>
           </div>
         </div>
+        ${fundamentals(stock)}
         <div class="metrics">
           ${PERIODS.map(({ label, field }) => [label, stock[field], field === period.field]).map(([label, value, active]) => `
           <div class="metric${active ? ' metric-active' : ''}">

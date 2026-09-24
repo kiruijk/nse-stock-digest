@@ -21,11 +21,13 @@ test('mergeHistory unions by date with the newer series winning', () => {
 });
 
 test('valuation uses the current price', () => {
-  const v = u.valuation({ eps: 2.5, dps: 1.5, sharesOutstanding: 1e9 }, 30);
-  assert.deepStrictEqual(v, { pe: 12, dividendYield: 5, marketCap: 30e9 });
+  const v = u.valuation({ eps: 2.5, dps: 1.5, sharesOutstanding: 1e9 }, 30, { equity: 20e9 });
+  assert.deepStrictEqual(v, { pe: 12, pb: 1.5, dividendYield: 5, marketCap: 30e9 });
+  // No book value entered → no P/B
+  assert.strictEqual(u.valuation({ eps: 2.5, dps: 1.5, sharesOutstanding: 1e9 }, 30).pb, null);
   // Loss-makers have no meaningful P/E
   assert.strictEqual(u.valuation({ eps: -1, dps: null, sharesOutstanding: null }, 10).pe, null);
-  assert.deepStrictEqual(u.valuation(null, 10), { pe: null, dividendYield: null, marketCap: null });
+  assert.deepStrictEqual(u.valuation(null, 10), { pe: null, pb: null, dividendYield: null, marketCap: null });
 });
 
 test('pickDetailTickers refreshes missing then oldest first', () => {

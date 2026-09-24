@@ -30,6 +30,7 @@ To preview, open `index.html` in a browser.
 | `data/market.json` | Last run's prices, returns and news (written by the bot) |
 | `data/details/<t>.json` | Company description, EPS, DPS, shares outstanding, factsheet |
 | `data/history/<t>.json` | Daily closes, one `[date, close]` row per line |
+| `data/book-values.json` | Hand-entered shareholders' equity per company (from results), used for P/B |
 | `data/sectors/<slug>.json` | Optional hand-written sector background (`summary`, `sections`, `reviewed`) |
 | `lib/afx.js` | Parsers for the AFX pages |
 | `templates/` | Page templates (stock, sector, shared nav, homepage pieces) |

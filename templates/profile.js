@@ -191,6 +191,7 @@ function renderHeaderStats(stock) {
   const stats = [
     ['Market Cap', formatKes(stock.marketCap)],
     ['P/E', formatRatio(stock.pe)],
+    ['P/B', stock.pb == null ? '—' : `${stock.pb.toFixed(2)}×`],
     ['Div Yield', formatYield(stock.dividendYield)],
     ['EPS', d.eps == null ? '—' : `KES ${formatPrice(d.eps)}`],
     ['DPS', d.dps == null ? '—' : `KES ${formatPrice(d.dps)}`],
