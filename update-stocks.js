@@ -358,7 +358,17 @@ function withDetails(stock) {
   const details = readDetails(stock.symbol);
   const history = readHistory(stock.symbol);
   const returns = history.length ? returnsFromHistory(history, stock.price) : {};
-  return { ...stock, ...returns, details, ...valuation(details, stock.price) };
+  return { ...stock, ...returns, details, ...valuation(details, stock.price), range52w: range52w(history, stock.price) };
+}
+
+// Lowest and highest close over the last 52 weeks, including the current price. Null
+// when the history doesn't cover the full year (recent listings, missing backfill).
+function range52w(history, price, now = new Date()) {
+  const start = monthsAgo(now, 12).toISOString().slice(0, 10);
+  if (!history.length || history[0][0] > start) return null;
+  const closes = history.filter(r => r[0] >= start).map(r => r[1]);
+  if (price != null) closes.push(price);
+  return { low: Math.min(...closes), high: Math.max(...closes) };
 }
 
 function render(data) {
@@ -475,7 +485,7 @@ if (require.main === module) {
 
 // Exported for tests
 module.exports = {
-  returnsFromHistory, mergeHistory, sparklines, chartSeries, downsample, valuation,
+  returnsFromHistory, mergeHistory, range52w, sparklines, chartSeries, downsample, valuation,
   pickDetailTickers, parseGoogleNews, cleanNewsTitle, isLowValueNews, newsQuery,
   nairobiDate, dataTimeLabel, compactNumberArrays, RETURN_PERIODS
 };

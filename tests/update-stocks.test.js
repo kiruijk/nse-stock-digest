@@ -60,3 +60,9 @@ test('sparklines skip periods the history does not cover and end at the price', 
   assert.deepStrictEqual(s.oneMonth, [12, 11, 13]);
   assert.strictEqual(s.oneYear, undefined);
 });
+
+test('range52w covers the last year plus the current price, null when history is short', () => {
+  const history = [['2025-09-01', 5], ['2025-10-01', 8], ['2026-03-01', 12], ['2026-09-20', 10]];
+  assert.deepStrictEqual(u.range52w(history, 7, NOW), { low: 7, high: 12 });
+  assert.strictEqual(u.range52w([['2026-01-05', 10]], 11, NOW), null);
+});

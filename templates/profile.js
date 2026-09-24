@@ -184,6 +184,23 @@ function renderChart(stock, chart) {
       </script>`;
 }
 
+// Key figures under the name and price in the page header
+function renderHeaderStats(stock) {
+  const d = stock.details || {};
+  const range = stock.range52w;
+  const stats = [
+    ['Market Cap', formatKes(stock.marketCap)],
+    ['P/E', formatRatio(stock.pe)],
+    ['Div Yield', formatYield(stock.dividendYield)],
+    ['EPS', d.eps == null ? '—' : `KES ${formatPrice(d.eps)}`],
+    ['DPS', d.dps == null ? '—' : `KES ${formatPrice(d.dps)}`],
+    ['52W Range', range ? `${formatPrice(range.low)} – ${formatPrice(range.high)}` : '—']
+  ];
+  return `    <dl class="header-stats">
+${stats.map(([label, value]) => `      <div><dt>${label}</dt><dd>${value}</dd></div>`).join('\n')}
+    </dl>`;
+}
+
 // Same-sector comparison table
 function renderPeers(stock, peers) {
   if (!peers.length) return '';
@@ -314,6 +331,7 @@ ${renderNav('../', sectors, escapeHtml(site.name))}
       <div class="header-price-value">KES ${formatPrice(stock.price)}</div>
       <div class="header-price-change">${stock.change == null ? 'unchanged' : formatPct(stock.changePercent)}</div>
     </div>
+${renderHeaderStats(stock)}
   </header>
 
   <div class="container">
