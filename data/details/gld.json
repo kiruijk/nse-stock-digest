@@ -1,0 +1,22 @@
+{
+  "description": "Barclays NewGold ETF is a cross-listing of the $1.4bn NewGold ETF that listed on the Johannesburg Stock Exchange in 2004 and is also listed in five other African markets.",
+  "sector": "Financials",
+  "industry": "Investment Services",
+  "address": "15 Allice Lane, Sandton 2196, South Africa",
+  "website": "www.absacapital.com",
+  "employees": null,
+  "incorporated": null,
+  "listedSince": null,
+  "isin": "ZAE000060067",
+  "eps": null,
+  "pe": null,
+  "dps": null,
+  "dividendYield": null,
+  "sharesOutstanding": 400000,
+  "marketCap": 2140000000.0000002,
+  "dayLow": 5230,
+  "dayHigh": 5450,
+  "deals": 27,
+  "turnover": 948065,
+  "fetchedAt": "2026-09-24T01:44:06.611Z"
+}

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homeboyz Entertainment (HBE) Share Price, Dividends &amp; News | Nairobi Stock Digest</title>
-  <meta name="description" content="Homeboyz Entertainment (NSE: HBE) share price, returns, dividend yield, P/E and news.">
+  <meta name="description" content="Homeboyz Entertainment Limited is an entertainment company offering bespoke services in event production. Established in 1992 as a small DJ agency catering for weddings and house parties, the company has since grown to become the biggest and most influential entertainment company in the region. Home">
   <meta property="og:title" content="Homeboyz Entertainment (NSE: HBE) — Share Price &amp; Profile">
-  <meta property="og:description" content="Homeboyz Entertainment (NSE: HBE) share price, returns, dividend yield, P/E and news.">
+  <meta property="og:description" content="Homeboyz Entertainment Limited is an entertainment company offering bespoke services in event production. Established in 1992 as a small DJ agency catering for weddings and house parties, the company has since grown to become the biggest and most influential entertainment company in the region. Home">
   <meta property="og:type" content="article">
   <link rel="canonical" href="https://kiruijk.github.io/nse-stock-digest/stocks/hbe.html">
   <meta property="og:url" content="https://kiruijk.github.io/nse-stock-digest/stocks/hbe.html">
@@ -545,9 +545,9 @@
     .header-stats {
       flex-basis: 100%;
       display: grid;
-      grid-template-columns: repeat(6, auto);
+      grid-template-columns: repeat(7, auto);
       justify-content: start;
-      gap: 0.5rem 2.25rem;
+      gap: 0.5rem 2rem;
       margin-top: 1rem;
       padding-top: 0.9rem;
       border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -759,12 +759,13 @@
       <div class="header-price-change">unchanged</div>
     </div>
     <dl class="header-stats">
-      <div><dt>Market Cap</dt><dd>—</dd></div>
+      <div><dt>Market Cap</dt><dd>KES 294.5M</dd></div>
       <div><dt>P/E</dt><dd>—</dd></div>
+      <div><dt>P/B</dt><dd>—</dd></div>
       <div><dt>Div Yield</dt><dd>—</dd></div>
       <div><dt>EPS</dt><dd>—</dd></div>
       <div><dt>DPS</dt><dd>—</dd></div>
-      <div><dt>52W Range</dt><dd>—</dd></div>
+      <div><dt>52W Range</dt><dd>4.66 – 4.66</dd></div>
     </dl>
   </header>
 
@@ -773,7 +774,116 @@
     <!-- Price & Valuation -->
     <div class="section">
       <h2>Price &amp; Valuation</h2>
+      <div class="chart" id="price-chart">
+        <div class="chart-head">
+          <div class="chart-change" id="chart-change"></div>
+          <div class="chart-periods" role="group" aria-label="Chart period">
+            <button type="button" data-period="1M">1M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="YTD">YTD</button><button type="button" data-period="1Y">1Y</button><button type="button" data-period="3Y">3Y</button><button type="button" data-period="5Y">5Y</button><button type="button" data-period="10Y">10Y</button><button type="button" data-period="Max">Max</button>
+          </div>
+        </div>
+        <svg id="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" role="img" aria-label="HBE price chart"></svg>
+        <div class="chart-tip" id="chart-tip" hidden></div>
+        <div class="chart-range" id="chart-range"></div>
+      </div>
+      <script>
+      (function () {
+        var DATA = {"daily":[["2025-09-24",4.66],["2025-09-25",4.66],["2025-09-26",4.66],["2025-09-29",4.66],["2025-09-30",4.66],["2025-10-01",4.66],["2025-10-02",4.66],["2025-10-03",4.66],["2025-10-06",4.66],["2025-10-07",4.66],["2025-10-08",4.66],["2025-10-09",4.66],["2025-10-13",4.66],["2025-10-14",4.66],["2025-10-15",4.66],["2025-10-16",4.66],["2025-10-21",4.66],["2025-10-22",4.66],["2025-10-23",4.66],["2025-10-24",4.66],["2025-10-27",4.66],["2025-10-28",4.66],["2025-10-29",4.66],["2025-10-30",4.66],["2025-10-31",4.66],["2025-11-03",4.66],["2025-11-04",4.66],["2025-11-05",4.66],["2025-11-06",4.66],["2025-11-07",4.66],["2025-11-10",4.66],["2025-11-11",4.66],["2025-11-12",4.66],["2025-11-13",4.66],["2025-11-14",4.66],["2025-11-17",4.66],["2025-11-18",4.66],["2025-11-19",4.66],["2025-11-20",4.66],["2025-11-21",4.66],["2025-11-24",4.66],["2025-11-25",4.66],["2025-11-26",4.66],["2025-11-27",4.66],["2025-11-28",4.66],["2025-12-01",4.66],["2025-12-02",4.66],["2025-12-03",4.66],["2025-12-04",4.66],["2025-12-05",4.66],["2025-12-08",4.66],["2025-12-09",4.66],["2025-12-10",4.66],["2025-12-11",4.66],["2025-12-15",4.66],["2025-12-16",4.66],["2025-12-17",4.66],["2025-12-18",4.66],["2025-12-19",4.66],["2025-12-22",4.66],["2025-12-23",4.66],["2025-12-24",4.66],["2025-12-29",4.66],["2025-12-30",4.66],["2025-12-31",4.66],["2026-01-02",4.66],["2026-01-05",4.66],["2026-01-06",4.66],["2026-01-07",4.66],["2026-01-08",4.66],["2026-01-09",4.66],["2026-01-12",4.66],["2026-01-13",4.66],["2026-01-14",4.66],["2026-01-15",4.66],["2026-01-16",4.66],["2026-01-19",4.66],["2026-01-20",4.66],["2026-01-21",4.66],["2026-01-22",4.66],["2026-01-23",4.66],["2026-01-26",4.66],["2026-01-27",4.66],["2026-01-28",4.66],["2026-01-29",4.66],["2026-01-30",4.66],["2026-02-02",4.66],["2026-02-03",4.66],["2026-02-04",4.66],["2026-02-05",4.66],["2026-02-06",4.66],["2026-02-09",4.66],["2026-02-10",4.66],["2026-02-11",4.66],["2026-02-12",4.66],["2026-02-13",4.66],["2026-02-16",4.66],["2026-02-17",4.66],["2026-02-18",4.66],["2026-02-19",4.66],["2026-02-20",4.66],["2026-02-23",4.66],["2026-02-24",4.66],["2026-02-25",4.66],["2026-02-26",4.66],["2026-02-27",4.66],["2026-03-02",4.66],["2026-03-03",4.66],["2026-03-04",4.66],["2026-03-05",4.66],["2026-03-06",4.66],["2026-03-09",4.66],["2026-03-10",4.66],["2026-03-11",4.66],["2026-03-12",4.66],["2026-03-13",4.66],["2026-03-16",4.66],["2026-03-17",4.66],["2026-03-18",4.66],["2026-03-19",4.66],["2026-03-23",4.66],["2026-03-24",4.66],["2026-03-25",4.66],["2026-03-26",4.66],["2026-03-27",4.66],["2026-03-30",4.66],["2026-03-31",4.66],["2026-04-01",4.66],["2026-04-02",4.66],["2026-04-07",4.66],["2026-04-08",4.66],["2026-04-09",4.66],["2026-04-10",4.66],["2026-04-13",4.66],["2026-04-14",4.66],["2026-04-15",4.66],["2026-04-16",4.66],["2026-04-17",4.66],["2026-04-20",4.66],["2026-04-21",4.66],["2026-04-22",4.66],["2026-04-23",4.66],["2026-04-24",4.66],["2026-04-27",4.66],["2026-04-28",4.66],["2026-04-29",4.66],["2026-04-30",4.66],["2026-05-04",4.66],["2026-05-05",4.66],["2026-05-06",4.66],["2026-05-07",4.66],["2026-05-08",4.66],["2026-05-11",4.66],["2026-05-12",4.66],["2026-05-13",4.66],["2026-05-14",4.66],["2026-05-15",4.66],["2026-05-18",4.66],["2026-05-19",4.66],["2026-05-20",4.66],["2026-05-21",4.66],["2026-05-22",4.66],["2026-05-25",4.66],["2026-05-26",4.66],["2026-05-28",4.66],["2026-05-29",4.66],["2026-06-02",4.66],["2026-06-03",4.66],["2026-06-04",4.66],["2026-06-05",4.66],["2026-06-08",4.66],["2026-06-09",4.66],["2026-06-10",4.66],["2026-06-11",4.66],["2026-06-12",4.66],["2026-06-15",4.66],["2026-06-16",4.66],["2026-06-17",4.66],["2026-06-18",4.66],["2026-06-19",4.66],["2026-06-22",4.66],["2026-06-23",4.66],["2026-06-24",4.66],["2026-06-25",4.66],["2026-06-26",4.66],["2026-06-29",4.66],["2026-06-30",4.66],["2026-07-01",4.66],["2026-07-02",4.66],["2026-07-03",4.66],["2026-07-06",4.66],["2026-07-07",4.66],["2026-07-08",4.66],["2026-07-09",4.66],["2026-07-10",4.66],["2026-07-13",4.66],["2026-07-14",4.66],["2026-07-15",4.66],["2026-07-16",4.66],["2026-07-17",4.66],["2026-07-20",4.66],["2026-07-21",4.66],["2026-07-22",4.66],["2026-07-23",4.66],["2026-07-24",4.66],["2026-07-27",4.66],["2026-07-28",4.66],["2026-07-29",4.66],["2026-07-30",4.66],["2026-07-31",4.66],["2026-08-03",4.66],["2026-08-04",4.66],["2026-08-05",4.66],["2026-08-06",4.66],["2026-08-07",4.66],["2026-08-10",4.66],["2026-08-11",4.66],["2026-08-12",4.66],["2026-08-13",4.66],["2026-08-14",4.66],["2026-08-17",4.66],["2026-08-18",4.66],["2026-08-19",4.66],["2026-08-20",4.66],["2026-08-21",4.66],["2026-08-24",4.66],["2026-08-25",4.66],["2026-08-26",4.66],["2026-08-27",4.66],["2026-08-28",4.66],["2026-08-31",4.66],["2026-09-01",4.66],["2026-09-02",4.66],["2026-09-03",4.66],["2026-09-04",4.66],["2026-09-07",4.66],["2026-09-08",4.66],["2026-09-09",4.66],["2026-09-10",4.66],["2026-09-11",4.66],["2026-09-14",4.66],["2026-09-15",4.66],["2026-09-16",4.66],["2026-09-17",4.66],["2026-09-18",4.66],["2026-09-21",4.66],["2026-09-22",4.66],["2026-09-23",4.66]],"weekly":[["2020-12-22",4.66],["2020-12-30",4.66],["2021-01-07",4.66],["2021-01-14",4.66],["2021-01-21",4.66],["2021-01-28",4.66],["2021-02-04",4.66],["2021-02-11",4.66],["2021-02-18",4.66],["2021-02-25",4.66],["2021-03-04",4.66],["2021-03-11",4.66],["2021-03-18",4.66],["2021-03-25",4.66],["2021-04-01",4.66],["2021-04-12",4.66],["2021-04-19",4.66],["2021-04-26",4.66],["2021-05-03",4.66],["2021-05-10",4.66],["2021-05-18",4.66],["2021-05-25",4.66],["2021-06-02",4.66],["2021-06-09",4.66],["2021-06-16",4.66],["2021-06-23",4.66],["2021-06-30",4.66],["2021-07-07",4.66],["2021-07-14",4.66],["2021-07-22",4.66],["2021-07-29",4.66],["2021-08-05",4.66],["2021-08-12",4.66],["2021-08-19",4.66],["2021-08-26",4.66],["2021-09-02",4.66],["2021-09-09",4.66],["2021-09-16",4.66],["2021-09-23",4.66],["2021-09-30",4.66],["2021-10-07",4.66],["2021-10-15",4.66],["2021-10-25",4.66],["2021-11-01",4.66],["2021-11-08",4.66],["2021-11-15",4.66],["2021-11-22",4.66],["2021-11-29",4.66],["2021-12-06",4.66],["2021-12-14",4.66],["2021-12-21",4.66],["2021-12-29",4.66],["2022-01-05",4.66],["2022-01-12",4.66],["2022-01-19",4.66],["2022-01-26",4.66],["2022-02-02",4.66],["2022-02-09",4.66],["2022-02-16",4.66],["2022-02-23",4.66],["2022-03-02",4.66],["2022-03-09",4.66],["2022-03-16",4.66],["2022-03-23",4.66],["2022-03-30",4.66],["2022-04-06",4.66],["2022-04-13",4.66],["2022-04-22",4.66],["2022-05-04",4.66],["2022-05-11",4.66],["2022-05-18",4.66],["2022-05-25",4.66],["2022-06-02",4.66],["2022-06-09",4.66],["2022-06-16",4.66],["2022-06-23",4.66],["2022-06-30",4.66],["2022-07-07",4.66],["2022-07-15",4.66],["2022-07-22",4.66],["2022-07-29",4.66],["2022-08-05",4.66],["2022-08-15",4.66],["2022-08-22",4.66],["2022-08-29",4.66],["2022-09-05",4.66],["2022-09-12",4.66],["2022-09-20",4.66],["2022-09-27",4.66],["2022-10-04",4.66],["2022-10-12",4.66],["2022-10-19",4.66],["2022-10-27",4.66],["2022-11-03",4.66],["2022-11-10",4.66],["2022-11-17",4.66],["2022-11-24",4.66],["2022-12-01",4.66],["2022-12-08",4.66],["2022-12-16",4.66],["2022-12-23",4.66],["2023-01-04",4.66],["2023-01-11",4.66],["2023-01-18",4.66],["2023-01-25",4.66],["2023-02-01",4.66],["2023-02-08",4.66],["2023-02-15",4.66],["2023-02-22",4.66],["2023-03-01",4.66],["2023-03-09",4.66],["2023-03-16",4.66],["2023-03-23",4.66],["2023-03-30",4.66],["2023-04-06",4.66],["2023-04-17",4.66],["2023-04-25",4.66],["2023-05-03",4.66],["2023-05-10",4.66],["2023-05-17",4.66],["2023-05-24",4.66],["2023-05-31",4.66],["2023-06-08",4.66],["2023-06-15",4.66],["2023-06-22",4.66],["2023-06-30",4.66],["2023-07-07",4.66],["2023-07-14",4.66],["2023-07-21",4.66],["2023-07-28",4.66],["2023-08-04",4.66],["2023-08-11",4.66],["2023-08-18",4.66],["2023-08-25",4.66],["2023-09-01",4.66],["2023-09-08",4.66],["2023-09-15",4.66],["2023-09-22",4.66],["2023-09-29",4.66],["2023-10-06",4.66],["2023-10-16",4.66],["2023-10-24",4.66],["2023-10-31",4.66],["2023-11-07",4.66],["2023-11-15",4.66],["2023-11-22",4.66],["2023-11-29",4.66],["2023-12-06",4.66],["2023-12-14",4.66],["2023-12-21",4.66],["2024-01-02",4.66],["2024-01-09",4.66],["2024-01-16",4.66],["2024-01-23",4.66],["2024-01-30",4.66],["2024-02-06",4.66],["2024-02-13",4.66],["2024-02-20",4.66],["2024-02-27",4.66],["2024-03-05",4.66],["2024-03-12",4.66],["2024-03-19",4.66],["2024-03-26",4.66],["2024-04-04",4.66],["2024-04-12",4.66],["2024-04-19",4.66],["2024-04-26",4.66],["2024-05-06",4.66],["2024-05-14",4.66],["2024-05-21",4.66],["2024-05-28",4.66],["2024-06-04",4.66],["2024-06-11",4.66],["2024-06-19",4.66],["2024-06-26",4.66],["2024-07-03",4.66],["2024-07-10",4.66],["2024-07-17",4.66],["2024-07-24",4.66],["2024-07-31",4.66],["2024-08-07",4.66],["2024-08-14",4.66],["2024-08-21",4.66],["2024-08-28",4.66],["2024-09-04",4.66],["2024-09-11",4.66],["2024-09-18",4.66],["2024-09-25",4.66],["2024-10-02",4.66],["2024-10-09",4.66],["2024-10-17",4.66],["2024-10-25",4.66],["2024-11-04",4.66],["2024-11-11",4.66],["2024-11-18",4.66],["2024-11-25",4.66],["2024-12-02",4.66],["2024-12-09",4.66],["2024-12-17",4.66],["2024-12-24",4.66],["2025-01-03",4.66],["2025-01-10",4.66],["2025-01-17",4.66],["2025-01-24",4.66],["2025-01-31",4.66],["2025-02-07",4.66],["2025-02-14",4.66],["2025-02-21",4.66],["2025-02-28",4.66],["2025-03-07",4.66],["2025-03-14",4.66],["2025-03-21",4.66],["2025-03-28",4.66],["2025-04-07",4.66],["2025-04-14",4.66],["2025-04-23",4.66],["2025-04-30",4.66],["2025-05-08",4.66],["2025-05-15",4.66],["2025-05-22",4.66],["2025-05-29",4.66],["2025-06-09",4.66],["2025-06-16",4.66],["2025-06-23",4.66],["2025-06-30",4.66],["2025-07-07",4.66],["2025-07-14",4.66],["2025-07-21",4.66],["2025-07-28",4.66],["2025-08-04",4.66],["2025-08-11",4.66],["2025-08-18",4.66],["2025-08-25",4.66],["2025-09-01",4.66],["2025-09-08",4.66],["2025-09-15",4.66],["2025-09-22",4.66]],"price":4.66,"returns":{"1M":0,"6M":0,"YTD":0,"1Y":0,"3Y":0,"5Y":0,"10Y":null}};
+        var all = DATA.weekly.concat(DATA.daily);
+        var svg = document.getElementById('chart-svg');
+        var tip = document.getElementById('chart-tip');
+        var W = 600, H = 200, PAD = 8;
+        var points = [];
 
+        function startDate(period) {
+          var d = new Date();
+          if (period === 'Max') return all[0][0];
+          if (period === 'YTD') return (d.getFullYear() - 1) + '-12-31';
+          var months = { '1M': 1, '6M': 6, '1Y': 12, '3Y': 36, '5Y': 60, '10Y': 120 }[period];
+          d.setMonth(d.getMonth() - months);
+          return d.toISOString().slice(0, 10);
+        }
+
+        function fmtDate(iso) {
+          return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function fmtPrice(v) {
+          return 'KES ' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function draw(period) {
+          var start = startDate(period);
+          var src = ['1M', '6M', 'YTD', '1Y'].indexOf(period) >= 0 || (period === 'Max' && !DATA.weekly.length) ? DATA.daily : all;
+          // Start from the last close on or before the start date, like the returns calculation
+          var first = 0;
+          for (var i = 0; i < src.length; i++) { if (src[i][0] <= start) first = i; else break; }
+          var rows = src.slice(first);
+          if (DATA.price != null && rows.length && rows[rows.length - 1][1] !== DATA.price) rows = rows.concat([[new Date().toISOString().slice(0, 10), DATA.price]]);
+          var change = document.getElementById('chart-change');
+          if (rows.length < 2 || all[0][0] > start) {
+            svg.innerHTML = '';
+            change.textContent = 'Not enough price history for ' + period;
+            change.style.color = '#6b7280';
+            document.getElementById('chart-range').textContent = '';
+            points = [];
+            return;
+          }
+          var vals = rows.map(function (r) { return r[1]; });
+          var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+          var span = max - min || 1;
+          points = rows.map(function (r, i) {
+            return { x: PAD + (i / (rows.length - 1)) * (W - 2 * PAD), y: PAD + (1 - (r[1] - min) / span) * (H - 2 * PAD), d: r[0], v: r[1] };
+          });
+          var up = (DATA.returns[period] != null ? DATA.returns[period] : vals[vals.length - 1] - vals[0]) >= 0;
+          var color = up ? '#059669' : '#dc2626';
+          var line = points.map(function (p, i) { return (i ? 'L' : 'M') + p.x.toFixed(1) + ' ' + p.y.toFixed(1); }).join(' ');
+          var area = line + ' L' + points[points.length - 1].x.toFixed(1) + ' ' + H + ' L' + points[0].x.toFixed(1) + ' ' + H + ' Z';
+          svg.innerHTML =
+            '<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + color + '" stop-opacity="0.18"/><stop offset="1" stop-color="' + color + '" stop-opacity="0"/></linearGradient></defs>' +
+            '<path d="' + area + '" fill="url(#fill)"/>' +
+            '<path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="2" vector-effect="non-scaling-stroke"/>' +
+            '<line id="chart-cursor" y1="0" y2="' + H + '" stroke="#9ca3af" stroke-width="1" vector-effect="non-scaling-stroke" visibility="hidden"/>';
+          var official = DATA.returns[period];
+          var pct = official != null ? official : (vals[vals.length - 1] / vals[0] - 1) * 100;
+          change.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '% ' + (period === 'Max' ? 'since ' + fmtDate(rows[0][0]) : 'over ' + period);
+          change.style.color = color;
+          document.getElementById('chart-range').textContent =
+            fmtDate(rows[0][0]) + ' – today · Low ' + fmtPrice(min) + ' · High ' + fmtPrice(max);
+        }
+
+        svg.addEventListener('mousemove', function (e) {
+          if (!points.length) return;
+          var box = svg.getBoundingClientRect();
+          var x = (e.clientX - box.left) / box.width * W;
+          var p = points.reduce(function (best, q) { return Math.abs(q.x - x) < Math.abs(best.x - x) ? q : best; });
+          var cursor = document.getElementById('chart-cursor');
+          cursor.setAttribute('x1', p.x); cursor.setAttribute('x2', p.x); cursor.setAttribute('visibility', 'visible');
+          tip.hidden = false;
+          tip.textContent = fmtDate(p.d) + ' · ' + fmtPrice(p.v);
+          tip.style.left = Math.min(Math.max(p.x / W * box.width - 75, 0), box.width - 150) + 'px';
+        });
+        svg.addEventListener('mouseleave', function () {
+          tip.hidden = true;
+          var cursor = document.getElementById('chart-cursor');
+          if (cursor) cursor.setAttribute('visibility', 'hidden');
+        });
+        var buttons = document.querySelectorAll('#price-chart .chart-periods button');
+        function select(period) {
+          buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.period === period); });
+          draw(period);
+        }
+        // Grey out periods the stock's history doesn't cover (e.g. recent listings)
+        buttons.forEach(function (b) {
+          if (b.dataset.period !== 'Max' && all[0][0] > startDate(b.dataset.period)) b.disabled = true;
+        });
+        document.querySelector('#price-chart .chart-periods').addEventListener('click', function (e) {
+          var btn = e.target.closest('button');
+          if (btn && !btn.disabled) select(btn.dataset.period);
+        });
+        // Open on 1Y, or Max when the stock hasn't traded that long
+        select(document.querySelector('#price-chart button[data-period="1Y"]').disabled ? 'Max' : '1Y');
+      })();
+      </script>
       <div class="grid-3">
         <div class="card">
           <div class="card-subtitle">Share Price</div>
@@ -782,7 +892,8 @@
         </div>
         <div class="card">
           <div class="card-subtitle">Market Cap</div>
-          <div class="card-value">—</div>
+          <div class="card-value">KES 294.5M</div>
+          <div class="card-subtitle">63.20M shares</div>
         </div>
         <div class="card">
           <div class="card-subtitle">Volume</div>
@@ -801,29 +912,36 @@
         </div>
         <div class="card">
           <div class="card-subtitle">YTD Return</div>
-          <div class="card-value"><span style="color: #6b7280">—</span></div>
+          <div class="card-value"><span style="color: #059669">+0.00%</span></div>
         </div>
       </div>
       <div class="returns">
         <div class="return"><div class="return-label">1D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">3Y</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">3Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
         <div class="return"><div class="return-label">10Y</div><div class="return-value" style="color: #6b7280">—</div></div>
       </div>
-      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share against today's price.</div>
+      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share (checked Sep 24, 2026) against today's price.</div>
     </div>
 
     <!-- About -->
     <div class="section">
       <h2>About Homeboyz Entertainment</h2>
-      <p class="para">No company description available yet.</p>
+      <p class="para">Homeboyz Entertainment Limited is an entertainment company offering bespoke services in event production. Established in 1992 as a small DJ agency catering for weddings and house parties, the company has since grown to become the biggest and most influential entertainment company in the region. Homeboyz is listed as one of the top 10 event production companies in Africa and has attracted a wide spectrum of clients locally and around the region, with a vision to provide unique, no-compromise approach to event production. Homeboyz Entertainment’s clients include Warner Bros, Disney, Rockefeller Foundation, United Nations, Microsoft, Google, BBC, Tiger Aspect (UK), Endemol, American Embassy, British Embassy, Samsung, and LG.</p>
       <dl class="facts">
         <div><dt>Sector</dt><dd>Commercial &amp; Services</dd></div>
+        <div><dt>Industry</dt><dd>Media</dd></div>
+        <div><dt>Listed on NSE</dt><dd>December 21, 2020</dd></div>
+        <div><dt>Incorporated</dt><dd>March 18, 1992</dd></div>
+        <div><dt>Employees</dt><dd>~200</dd></div>
+        <div><dt>ISIN</dt><dd>KE7000001433</dd></div>
+        <div><dt>Website</dt><dd><a href="https://www.homeboyz.co.ke" target="_blank" rel="noopener">www.homeboyz.co.ke</a></dd></div>
+        <div><dt>Address</dt><dd>—</dd></div>
       </dl>
     </div>
 
@@ -836,6 +954,15 @@
           <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
         </thead>
         <tbody>
+          <tr class="current-row">
+            <td><strong>HBE</strong></td>
+            <td>Homeboyz Entertainment</td>
+            <td class="num">4.66</td>
+            <td class="num" style="color: #059669">+0.00%</td>
+            <td class="num">KES 294.5M</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
           <tr>
             <td><a href="evrd.html">EVRD</a></td>
             <td>Eveready East Africa Ltd</td>
@@ -851,15 +978,6 @@
             <td class="num">0.45</td>
             <td class="num" style="color: #059669">+0.00%</td>
             <td class="num">KES 55.8M</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
-          <tr class="current-row">
-            <td><strong>HBE</strong></td>
-            <td>Homeboyz Entertainment</td>
-            <td class="num">4.66</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
