@@ -79,3 +79,14 @@ test('suspended stocks come last on sector pages and in the static homepage list
   assert.ok(list.indexOf('SCOM') < list.indexOf('BIG'));
   assert.match(list, /BIG — .*\(suspended\)/);
 });
+
+test('tip wraps a label with its glossary explanation', () => {
+  const { tip, GLOSSARY } = require('../templates/glossary');
+  assert.match(tip('P/E', 'pe'), /^<span class="tip" tabindex="0" data-tip="Price-to-earnings[^"]*">P\/E<\/span>$/);
+  assert.match(tip('P/B', 'pb', 'right'), /class="tip tip-right"/);
+  assert.strictEqual(tip('Price', 'unknown'), 'Price');
+  // Apostrophes are fine inside the double-quoted attribute; quotes would break it
+  for (const text of Object.values(GLOSSARY)) assert.ok(!text.includes('"'), text);
+  const html = renderProfile(stock, { site: SITE });
+  assert.ok((html.match(/data-tip=/g) || []).length >= 10);
+});

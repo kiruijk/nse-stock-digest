@@ -557,7 +557,8 @@
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      opacity: 0.75;
+      /* colour rather than opacity, which would also fade the label's tooltip */
+      color: rgba(255, 255, 255, 0.75);
     }
 
     .header-stats dd {
@@ -731,6 +732,64 @@
       }
     }
 
+    .tip {
+      position: relative;
+      cursor: help;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    .tip:hover::after,
+    .tip:focus::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 0;
+      top: calc(100% + 6px);
+      z-index: 30;
+      width: max-content;
+      max-width: 240px;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      background: #1f2937;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      text-transform: none;
+      white-space: normal;
+    }
+
+    .tip-right:hover::after,
+    .tip-right:focus::after {
+      left: auto;
+      right: 0;
+    }
+
+    .tip:focus {
+      outline: none;
+    }
+
+    /* Phones: the explanation shows as a bar along the bottom of the screen, so it never runs
+       off the edge whichever column the label is in */
+    @media (max-width: 600px) {
+      .tip:hover::after,
+      .tip:focus::after {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-width: none;
+        font-size: 0.85rem;
+        padding: 0.7rem 0.85rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -772,13 +831,13 @@
       <div class="header-price-change">+1.57%</div>
     </div>
     <dl class="header-stats">
-      <div><dt>Market Cap</dt><dd>—</dd></div>
-      <div><dt>P/E</dt><dd>—</dd></div>
-      <div><dt>P/B</dt><dd>—</dd></div>
-      <div><dt>Div Yield</dt><dd>—</dd></div>
-      <div><dt>EPS</dt><dd>—</dd></div>
-      <div><dt>DPS</dt><dd>—</dd></div>
-      <div><dt>52W Range</dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Market Cap</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">P/E</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Price-to-book: market cap ÷ shareholders' equity. Below 1× means the market values the company at less than its net assets.">P/B</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Div Yield</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Earnings per share: net profit ÷ number of shares, from the latest reported results.">EPS</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="Dividend per share: cash paid out per share, from the latest reported dividends.">DPS</span></dt><dd>—</dd></div>
+      <div><dt><span class="tip" tabindex="0" data-tip="52-week range: the lowest and highest closing price over the past year.">52W Range</span></dt><dd>—</dd></div>
     </dl>
   </header>
 
@@ -904,21 +963,21 @@
           <div class="card-subtitle"><span style="color: #059669">+0.02 (+1.57%) today</span></div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Market Cap</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Market Cap</span></div>
           <div class="card-value">—</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Volume</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Number of shares traded in the latest session.">Volume</span></div>
           <div class="card-value">94,867</div>
           <div class="card-subtitle">Shares traded, latest session</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">P/E Ratio</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">P/E Ratio</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">No EPS reported</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Dividend Yield</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Dividend Yield</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">No dividend reported</div>
         </div>
@@ -946,32 +1005,32 @@
       <h2>Key Ratios</h2>
       <div class="grid-3">
         <div class="card">
-          <div class="card-subtitle">Payout Ratio</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Payout ratio: dividend per share ÷ earnings per share. Above 100% means paying out more than it earns, which may not last.">Payout Ratio</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Needs positive earnings and a dividend</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Return on Equity</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Return on equity: net profit ÷ shareholders' equity. How much profit the company makes on shareholders' money.">Return on Equity</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Needs book value (not yet entered)</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Avg Daily Turnover</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Average value of shares traded per session over the last 3 months. Under KES 1M is thinly traded: prices can be stale and positions hard to buy or sell.">Avg Daily Turnover</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Not available yet</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">From 52W High</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="How far the price is below its highest close of the past year.">From 52W High</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Needs a year of history</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Volatility (1Y)</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="How much the price typically swings in a year (annualized standard deviation of daily moves). Higher means a bumpier ride.">Volatility (1Y)</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Annualized; higher means bigger swings</div>
         </div>
         <div class="card">
-          <div class="card-subtitle">Max Drawdown</div>
+          <div class="card-subtitle"><span class="tip" tabindex="0" data-tip="The largest fall from a peak to a later low over the last 5 years.">Max Drawdown</span></div>
           <div class="card-value">—</div>
           <div class="card-subtitle">Worst peak-to-trough fall, 5 years</div>
         </div>
@@ -994,7 +1053,7 @@
       <div style="overflow-x: auto;">
       <table>
         <thead>
-          <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
+          <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Mkt Cap</span></th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">P/E</span></th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Yield</span></th></tr>
         </thead>
         <tbody>
           <tr>
@@ -1003,6 +1062,15 @@
             <td class="num">5.70</td>
             <td class="num" style="color: #059669">+42.14%</td>
             <td class="num">KES 32.4B</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="lkl.html">LKL</a></td>
+            <td>Longhorn Publishers Ltd</td>
+            <td class="num">2.74</td>
+            <td class="num" style="color: #dc2626">-9.27%</td>
+            <td class="num">KES 745.3M</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
@@ -1037,15 +1105,6 @@
             <td><strong>NBV</strong></td>
             <td>Nairobi Business Ventures Ltd</td>
             <td class="num">1.29</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
-          <tr>
-            <td><a href="lkl.html">LKL</a></td>
-            <td>Longhorn Publishers Ltd</td>
-            <td class="num">2.74</td>
             <td class="num" style="color: #6b7280">—</td>
             <td class="num">—</td>
             <td class="num">—</td>

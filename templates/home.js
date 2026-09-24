@@ -4,6 +4,7 @@
 // search engines and no-JS visitors see.
 
 const { escapeHtml, formatPct, formatPrice, formatKes, pctColor } = require('./profile');
+const { tip } = require('./glossary');
 
 function renderHomeHead(site) {
   return `  <meta name="description" content="${escapeHtml(site.description)}">
@@ -23,7 +24,7 @@ function renderMarketStrip(market, stocks) {
   const flat = stocks.filter(s => s.change === 0).length;
   const item = (label, value) => `<div class="market-item"><div class="market-label">${label}</div><div class="market-value">${value}</div></div>`;
   return `<div class="market-strip">
-          ${item('NASI', `${market.nasi.toFixed(2)} <span style="color: ${pctColor(market.nasiChangePercent)}">${formatPct(market.nasiChangePercent)}</span>`)}
+          ${item(tip('NASI', 'nasi'), `${market.nasi.toFixed(2)} <span style="color: ${pctColor(market.nasiChangePercent)}">${formatPct(market.nasiChangePercent)}</span>`)}
           ${item('NASI YTD', `<span style="color: ${pctColor(market.nasiYtdPercent)}">${formatPct(market.nasiYtdPercent)}</span>`)}
           ${item('Market Cap', formatKes(market.marketCap))}
           ${item('Gainers / Losers', `<span style="color: #059669">${up}</span> / <span style="color: #dc2626">${down}</span> <span class="market-flat">(${flat} flat)</span>`)}

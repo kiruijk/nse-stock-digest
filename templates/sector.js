@@ -7,6 +7,7 @@ const {
   formatKes, formatPrice, formatPct, pctColor, formatRatio, formatYield, formatDate, escapeHtml, CSS, DISCLAIMER
 } = require('./profile');
 const { NAV_CSS, renderNav, renderFooterLinks, seoTags } = require('./site');
+const { tip } = require('./glossary');
 
 const median = (values) => {
   const v = values.filter(x => x != null).sort((a, b) => a - b);
@@ -100,9 +101,9 @@ ${content?.summary ? `    <div class="section">\n      <p class="para">${content
       <h2>Sector at a Glance</h2>
       <div class="summary-stats">
         <div class="card"><div class="card-subtitle">Listed</div><div class="card-value">${stats.count}</div></div>
-        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">${formatKes(stats.marketCap)}</div></div>
-        <div class="card"><div class="card-subtitle">Median P/E</div><div class="card-value">${formatRatio(stats.medianPe)}</div></div>
-        <div class="card"><div class="card-subtitle">Median Yield (payers)</div><div class="card-value">${formatYield(stats.medianYield)}</div></div>
+        <div class="card"><div class="card-subtitle">${tip('Combined Market Cap', 'marketCap')}</div><div class="card-value">${formatKes(stats.marketCap)}</div></div>
+        <div class="card"><div class="card-subtitle">${tip('Median P/E', 'pe')}</div><div class="card-value">${formatRatio(stats.medianPe)}</div></div>
+        <div class="card"><div class="card-subtitle">${tip('Median Yield (payers)', 'dividendYield')}</div><div class="card-value">${formatYield(stats.medianYield)}</div></div>
       </div>
     </div>
 
@@ -111,7 +112,7 @@ ${content?.summary ? `    <div class="section">\n      <p class="para">${content
       <div style="overflow-x: auto;">
       <table>
         <thead>
-          <tr><th>Ticker</th><th>Company</th><th class="num">Price (KES)</th><th class="num">1D</th><th class="num">YTD</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
+          <tr><th>Ticker</th><th>Company</th><th class="num">Price (KES)</th><th class="num">1D</th><th class="num">YTD</th><th class="num">1Y</th><th class="num">${tip('Mkt Cap', 'marketCap', 'right')}</th><th class="num">${tip('P/E', 'pe', 'right')}</th><th class="num">${tip('Yield', 'dividendYield', 'right')}</th></tr>
         </thead>
         <tbody>
 ${rows}

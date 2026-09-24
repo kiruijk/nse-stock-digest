@@ -506,6 +506,12 @@
       top: 0;
     }
 
+    /* Lift a hovered header above the pinned columns so its tooltip isn't covered */
+    .screener th:hover,
+    .screener th:focus-within {
+      z-index: 3;
+    }
+
     .screener th.sortable {
       cursor: pointer;
     }
@@ -1017,6 +1023,64 @@
         display: none;
       }
     }
+    
+    .tip {
+      position: relative;
+      cursor: help;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+    
+    .tip:hover::after,
+    .tip:focus::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 0;
+      top: calc(100% + 6px);
+      z-index: 30;
+      width: max-content;
+      max-width: 240px;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      background: #1f2937;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      text-transform: none;
+      white-space: normal;
+    }
+    
+    .tip-right:hover::after,
+    .tip-right:focus::after {
+      left: auto;
+      right: 0;
+    }
+    
+    .tip:focus {
+      outline: none;
+    }
+    
+    /* Phones: the explanation shows as a bar along the bottom of the screen, so it never runs
+       off the edge whichever column the label is in */
+    @media (max-width: 600px) {
+      .tip:hover::after,
+      .tip:focus::after {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-width: none;
+        font-size: 0.85rem;
+        padding: 0.7rem 0.85rem;
+      }
+    }
         /* /SITE_NAV_CSS */
   </style>
 </head>
@@ -1057,7 +1121,7 @@
   <div class="container">
 
     <!-- MARKET_STRIP --><div class="market-strip">
-          <div class="market-item"><div class="market-label">NASI</div><div class="market-value">247.21 <span style="color: #dc2626">-0.22%</span></div></div>
+          <div class="market-item"><div class="market-label"><span class="tip" tabindex="0" data-tip="NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange.">NASI</span></div><div class="market-value">247.21 <span style="color: #dc2626">-0.22%</span></div></div>
           <div class="market-item"><div class="market-label">NASI YTD</div><div class="market-value"><span style="color: #059669">+32.50%</span></div></div>
           <div class="market-item"><div class="market-label">Market Cap</div><div class="market-value">KES 4.19T</div></div>
           <div class="market-item"><div class="market-label">Gainers / Losers</div><div class="market-value"><span style="color: #059669">28</span> / <span style="color: #dc2626">19</span> <span class="market-flat">(11 flat)</span></div></div>
@@ -1216,6 +1280,7 @@
   <script>
     // Filled in by update-stocks.js from data/universe.json
     const SECTORS = ["Agricultural","Automobiles & Accessories","Banking","Commercial & Services","Construction & Allied","Energy & Petroleum","Insurance","Investment","Investment Services","Manufacturing & Allied","Telecommunication","Real Estate Investment Trusts","Exchange Traded Funds"];
+    const GLOSSARY = {"marketCap":"Market capitalization: the total value of all shares, share price × shares outstanding.","pe":"Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.","pb":"Price-to-book: market cap ÷ shareholders' equity. Below 1× means the market values the company at less than its net assets.","dividendYield":"Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.","eps":"Earnings per share: net profit ÷ number of shares, from the latest reported results.","dps":"Dividend per share: cash paid out per share, from the latest reported dividends.","range52w":"52-week range: the lowest and highest closing price over the past year.","payoutRatio":"Payout ratio: dividend per share ÷ earnings per share. Above 100% means paying out more than it earns, which may not last.","roe":"Return on equity: net profit ÷ shareholders' equity. How much profit the company makes on shareholders' money.","turnover":"Average value of shares traded per session over the last 3 months. Under KES 1M is thinly traded: prices can be stale and positions hard to buy or sell.","fromHigh52w":"How far the price is below its highest close of the past year.","volatility":"How much the price typically swings in a year (annualized standard deviation of daily moves). Higher means a bumpier ride.","maxDrawdown":"The largest fall from a peak to a later low over the last 5 years.","volume":"Number of shares traded in the latest session.","nasi":"NSE All Share Index: tracks the value of every stock listed on the Nairobi Securities Exchange."}; // end GLOSSARY
     const SECTOR_INFO = {"Agricultural":{"summary":null,"url":"sectors/agricultural.html"},"Automobiles & Accessories":{"summary":null,"url":"sectors/automobiles-and-accessories.html"},"Banking":{"summary":null,"url":"sectors/banking.html"},"Commercial & Services":{"summary":null,"url":"sectors/commercial-and-services.html"},"Construction & Allied":{"summary":null,"url":"sectors/construction-and-allied.html"},"Energy & Petroleum":{"summary":null,"url":"sectors/energy-and-petroleum.html"},"Insurance":{"summary":null,"url":"sectors/insurance.html"},"Investment":{"summary":null,"url":"sectors/investment.html"},"Investment Services":{"summary":null,"url":"sectors/investment-services.html"},"Manufacturing & Allied":{"summary":null,"url":"sectors/manufacturing-and-allied.html"},"Telecommunication":{"summary":null,"url":"sectors/telecommunication.html"},"Real Estate Investment Trusts":{"summary":null,"url":"sectors/real-estate-investment-trusts.html"},"Exchange Traded Funds":{"summary":null,"url":"sectors/exchange-traded-funds.html"}}; // end SECTOR_INFO
 
     // Stock data, rewritten by update-stocks.js on every run
@@ -4056,28 +4121,31 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0.37,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": -6.16,
+          "oneMonth": -4.86,
+          "sixMonth": -13.29,
+          "ytd": -4.86,
+          "oneYear": -9.27,
+          "threeYear": 36.32,
+          "fiveYear": -32.35,
           "tenYear": null,
           "pe": null,
           "pb": null,
           "roe": null,
           "payoutRatio": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
-          "avgDailyTurnover": null,
-          "liquidityRank": null,
-          "volatility1y": null,
-          "maxDrawdown5y": null,
-          "maxDrawdownSince": null,
+          "marketCap": 745280000,
+          "range52w": {
+            "low": 2.61,
+            "high": 3.36
+          },
+          "fromHigh52w": -18.45,
+          "fromLow52w": 4.98,
+          "avgDailyTurnover": 50500,
+          "liquidityRank": 43,
+          "volatility1y": 58.14,
+          "maxDrawdown5y": -54.32,
+          "maxDrawdownSince": "2021-09-24",
           "news": [
             {
               "title": "Publishers demand payment of Sh9.5 billion owed by State",
@@ -4098,7 +4166,15 @@
               "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5IZUFaN3AwLURaT1VMZksyNWdTaG9rSnRiNFNUcnczYjhoZkpyWVZjQ2dhNUJSQmFDakQ5N3YwOV95eXZUYmhFX2gyVmhpUzB5Uy1CclAyYUQzSkQ3RGxkbnp5bFZ5QVpDZC1rdFZ3ZkFna0FWOHpMdHhLcw?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [2.92,2.82,2.73,2.73,2.74,2.74],
+            "oneMonth": [2.88,2.82,2.74,2.99,2.92,2.88,2.95,2.93,2.68,2.99,2.99,2.79,2.73,2.86,2.7,2.67,2.78,2.92,2.92,2.82,2.73,2.73,2.74,2.74],
+            "sixMonth": [3.16,2.94,2.91,2.8,3.04,2.96,3.1,3.13,2.96,2.91,2.88,3,2.84,2.8,2.66,2.91,2.99,2.86,2.73,2.96,2.89,2.88,2.7,2.77,2.78,2.61,2.72,2.86,2.94,2.94,2.96,2.75,2.69,2.99,2.95,2.99,2.73,2.78,2.82,2.74,2.74],
+            "ytd": [2.88,2.65,2.67,2.89,2.91,2.91,2.99,3.15,3.3,3.33,2.99,3.18,3.18,2.91,3,3.04,3.22,3.13,3.12,2.88,2.8,2.8,2.77,2.98,2.84,2.93,2.89,2.65,2.77,2.71,2.72,2.84,2.76,2.77,2.69,2.99,2.68,2.86,2.92,2.74,2.74],
+            "oneYear": [3.02,3.3,3,2.89,2.94,2.9,2.9,2.89,2.93,2.89,2.89,2.86,2.87,2.9,2.71,3.15,3.28,3.24,3.17,3.18,2.91,2.99,3.22,3.13,2.87,2.8,2.65,2.97,2.84,2.92,2.68,2.79,2.65,2.84,2.94,2.83,2.99,2.99,2.78,2.74,2.74],
+            "threeYear": [2.09,2.36,2.31,2.2,2.24,2.2,2.41,2.3,2.3,2.34,2.34,2.3,2.31,2.37,2.28,2.46,2.3,2.32,3.2,3.05,2.78,2.4,2.42,2.81,2.58,2.8,3.02,2.87,2.88,2.64,2.87,3.15,3.17,2.99,2.87,2.97,2.68,2.84,2.99,2.74,2.74],
+            "fiveYear": [4.05,3.78,4,4,3.59,3.25,3.11,3.66,3.7,3.59,3.02,2.82,2.5,2.31,2.65,2.93,2.55,2.4,2.24,2.2,2.4,2.34,2.3,2.3,2.28,2.33,2.7,3.05,2.53,2.7,2.58,2.94,2.94,2.64,2.9,3.18,2.87,2.9,2.94,2.74,2.74]
+          }
         },
         "MSC": {
           "symbol": "MSC",
@@ -4111,23 +4187,26 @@
           "suspended": true,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": null,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 0,
+          "oneMonth": 0,
+          "sixMonth": 0,
+          "ytd": 0,
+          "oneYear": 0,
+          "threeYear": 0,
+          "fiveYear": 0,
           "tenYear": null,
           "pe": null,
           "pb": null,
           "roe": null,
           "payoutRatio": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
-          "fromHigh52w": null,
-          "fromLow52w": null,
+          "marketCap": 428400000,
+          "range52w": {
+            "low": 0.28,
+            "high": 0.28
+          },
+          "fromHigh52w": 0,
+          "fromLow52w": 0,
           "avgDailyTurnover": null,
           "liquidityRank": null,
           "volatility1y": null,
@@ -4153,7 +4232,15 @@
               "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcjJ1T1RmandvY0Z3U2NxQmZHWFd6Nlg5OXFnektIMEVDX0lrYXVUY2hBWDBLRDhDVGVmZ1VMb3oxZElmNmlZbndGd0V2MkN5X2NVRHJlX1dkbkRlRGtFZVpGSF9Id0M2SWNGV3Y1VDl5Wm05eE5GZDJPeUFKUEFzNnU1UEJmUDRjLVBzWjdOR1Fwa29MRUxGUVBBY0Q1Vm90TWhuSlpHc2ZWTWtkMklJdmdFVzYyd1hX?oc=5"
             }
           ],
-          "spark": null
+          "spark": {
+            "fiveDay": [0.28],
+            "oneMonth": [0.28],
+            "sixMonth": [0.28],
+            "ytd": [0.28],
+            "oneYear": [0.28],
+            "threeYear": [0.28],
+            "fiveYear": [0.28]
+          }
         },
         "NBV": {
           "symbol": "NBV",
@@ -5640,13 +5727,20 @@
     const formatTurnover = (s) => (s.avgDailyTurnover == null ? dash : formatCap(s.avgDailyTurnover));
     const isThin = (s) => s.avgDailyTurnover != null && s.avgDailyTurnover < 1e6;
 
+    // Label with its explanation as a hover/tap tooltip (definitions from templates/glossary.js)
+    function tip(label, key, align) {
+      const text = GLOSSARY[key];
+      if (!text) return label;
+      return `<span class="tip${align === 'right' ? ' tip-right' : ''}" tabindex="0" data-tip="${text.replace(/"/g, '&quot;')}">${label}</span>`;
+    }
+
     // Market cap and ratios shown on every card
     function fundamentals(s) {
       return `<div class="fundamentals">
-          <span><b>Mkt Cap</b>${s.marketCap == null ? dash : 'KES ' + formatCap(s.marketCap)}</span>
-          <span><b>P/E</b>${formatPe(s)}</span>
-          <span><b>P/B</b>${formatPb(s)}</span>
-          <span><b>Yield</b>${formatYield(s)}</span>
+          <span><b>${tip('Mkt Cap', 'marketCap')}</b>${s.marketCap == null ? dash : 'KES ' + formatCap(s.marketCap)}</span>
+          <span><b>${tip('P/E', 'pe')}</b>${formatPe(s)}</span>
+          <span><b>${tip('P/B', 'pb')}</b>${formatPb(s)}</span>
+          <span><b>${tip('Yield', 'dividendYield')}</b>${formatYield(s)}</span>
         </div>`;
     }
 
@@ -5684,13 +5778,13 @@
           <th class="left pin pin-name">Company</th>
           ${th('Price (KES)', 'data-sort="price"', sortState('price'))}
           ${PERIODS.map(p => th(p.label, `data-period="${p.label}"`, !tableSort && p === period ? 'desc' : null)).join('')}
-          ${th('Mkt Cap', 'data-sort="marketCap"', sortState('marketCap'))}
-          ${th('P/E', 'data-sort="pe"', sortState('pe'))}
-          ${th('P/B', 'data-sort="pb"', sortState('pb'))}
-          ${th('Yield', 'data-sort="dividendYield"', sortState('dividendYield'))}
-          ${th('Payout', 'data-sort="payoutRatio"', sortState('payoutRatio'))}
-          ${th('ROE', 'data-sort="roe"', sortState('roe'))}
-          ${th('Turnover/day', 'data-sort="turnover"', sortState('turnover'))}
+          ${th(tip('Mkt Cap', 'marketCap', 'right'), 'data-sort="marketCap"', sortState('marketCap'))}
+          ${th(tip('P/E', 'pe', 'right'), 'data-sort="pe"', sortState('pe'))}
+          ${th(tip('P/B', 'pb', 'right'), 'data-sort="pb"', sortState('pb'))}
+          ${th(tip('Yield', 'dividendYield', 'right'), 'data-sort="dividendYield"', sortState('dividendYield'))}
+          ${th(tip('Payout', 'payoutRatio', 'right'), 'data-sort="payoutRatio"', sortState('payoutRatio'))}
+          ${th(tip('ROE', 'roe', 'right'), 'data-sort="roe"', sortState('roe'))}
+          ${th(tip('Turnover/day', 'turnover', 'right'), 'data-sort="turnover"', sortState('turnover'))}
         </tr>`;
       const rows = sorted.map((s, i) => `
         <tr${s.suspended ? ' class="suspended-row"' : ''}>

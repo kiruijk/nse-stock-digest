@@ -3,6 +3,7 @@
 // root: '' for pages at the root, '../' for pages in stocks/ and sectors/.
 
 const { sectorSlug } = require('../lib/sectors');
+const { TIP_CSS } = require('./glossary');
 
 const NAV_CSS = `
 .site-nav {
@@ -182,4 +183,7 @@ function seoTags(site, path) {
   <meta property="og:site_name" content="${site.name}">`;
 }
 
-module.exports = { NAV_CSS, renderNav, renderFooterLinks, seoTags };
+// Shared by every page (and injected into index.html): nav, footer and tooltip styles
+const SHARED_CSS = NAV_CSS + TIP_CSS;
+
+module.exports = { NAV_CSS: SHARED_CSS, renderNav, renderFooterLinks, seoTags };

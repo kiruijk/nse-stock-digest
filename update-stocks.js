@@ -455,6 +455,7 @@ function range52w(history, price, now = new Date()) {
 function render(data) {
   const { renderProfile, DISCLAIMER } = require('./templates/profile');
   const { renderSector } = require('./templates/sector');
+  const { GLOSSARY } = require('./templates/glossary');
   const { NAV_CSS, renderNav, renderFooterLinks } = require('./templates/site');
   const { renderHomeHead, renderStaticStocks, renderStaticNews, renderMarketStrip } = require('./templates/home');
 
@@ -477,6 +478,7 @@ function render(data) {
   indexHTML = indexHTML
     .replace(/const demoData = \{[\s\S]*?^\s*\};/m, () => `const demoData = ${indent(compactNumberArrays(JSON.stringify(homepageData, null, 2)))};`)
     .replace(/const SECTORS = \[[^\]]*\];/, () => `const SECTORS = ${JSON.stringify(sectors)};`)
+    .replace(/const GLOSSARY = [\s\S]*?; \/\/ end GLOSSARY/, () => `const GLOSSARY = ${JSON.stringify(GLOSSARY)}; // end GLOSSARY`)
     .replace(/const SECTOR_INFO = [\s\S]*?; \/\/ end SECTOR_INFO/, () => `const SECTOR_INFO = ${JSON.stringify(sectorInfo)}; // end SECTOR_INFO`)
     .replace(/<!-- SITE_NAV -->[\s\S]*?<!-- \/SITE_NAV -->/, () => `<!-- SITE_NAV -->\n${renderNav('', sectors, SITE.name, 'dashboard')}\n  <!-- /SITE_NAV -->`)
     .replace(/<!-- SITE_FOOTER -->[\s\S]*?<!-- \/SITE_FOOTER -->/, () => `<!-- SITE_FOOTER -->\n${renderFooterLinks('', sectors, SITE.name)}\n    <!-- /SITE_FOOTER -->`)

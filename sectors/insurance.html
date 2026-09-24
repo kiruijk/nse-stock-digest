@@ -557,7 +557,8 @@
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      opacity: 0.75;
+      /* colour rather than opacity, which would also fade the label's tooltip */
+      color: rgba(255, 255, 255, 0.75);
     }
 
     .header-stats dd {
@@ -731,6 +732,64 @@
       }
     }
 
+    .tip {
+      position: relative;
+      cursor: help;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    .tip:hover::after,
+    .tip:focus::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 0;
+      top: calc(100% + 6px);
+      z-index: 30;
+      width: max-content;
+      max-width: 240px;
+      padding: 0.45rem 0.6rem;
+      border-radius: 6px;
+      background: #1f2937;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      text-transform: none;
+      white-space: normal;
+    }
+
+    .tip-right:hover::after,
+    .tip-right:focus::after {
+      left: auto;
+      right: 0;
+    }
+
+    .tip:focus {
+      outline: none;
+    }
+
+    /* Phones: the explanation shows as a bar along the bottom of the screen, so it never runs
+       off the edge whichever column the label is in */
+    @media (max-width: 600px) {
+      .tip:hover::after,
+      .tip:focus::after {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-width: none;
+        font-size: 0.85rem;
+        padding: 0.7rem 0.85rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -774,9 +833,9 @@
       <h2>Sector at a Glance</h2>
       <div class="summary-stats">
         <div class="card"><div class="card-subtitle">Listed</div><div class="card-value">6</div></div>
-        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">KES 120.8B</div></div>
-        <div class="card"><div class="card-subtitle">Median P/E</div><div class="card-value">8.0×</div></div>
-        <div class="card"><div class="card-subtitle">Median Yield (payers)</div><div class="card-value">3.6%</div></div>
+        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Combined Market Cap</span></div><div class="card-value">KES 120.8B</div></div>
+        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">Median P/E</span></div><div class="card-value">8.0×</div></div>
+        <div class="card"><div class="card-subtitle"><span class="tip" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Median Yield (payers)</span></div><div class="card-value">3.6%</div></div>
       </div>
     </div>
 
@@ -785,7 +844,7 @@
       <div style="overflow-x: auto;">
       <table>
         <thead>
-          <tr><th>Ticker</th><th>Company</th><th class="num">Price (KES)</th><th class="num">1D</th><th class="num">YTD</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
+          <tr><th>Ticker</th><th>Company</th><th class="num">Price (KES)</th><th class="num">1D</th><th class="num">YTD</th><th class="num">1Y</th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Market capitalization: the total value of all shares, share price × shares outstanding.">Mkt Cap</span></th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Price-to-earnings: share price ÷ earnings per share. Roughly how many years of current profits the price pays for; lower can mean cheaper.">P/E</span></th><th class="num"><span class="tip tip-right" tabindex="0" data-tip="Dividend yield: dividend per share ÷ share price. The yearly cash return from dividends at today's price.">Yield</span></th></tr>
         </thead>
         <tbody>
           <tr>

@@ -7,6 +7,7 @@ const path = require('path');
 
 const { sectorSlug } = require('../lib/sectors');
 const { NAV_CSS, renderNav, renderFooterLinks, seoTags } = require('./site');
+const { tip } = require('./glossary');
 
 const CSS = fs.readFileSync(path.join(__dirname, 'profile.css'), 'utf8');
 
@@ -189,13 +190,13 @@ function renderHeaderStats(stock) {
   const d = stock.details || {};
   const range = stock.range52w;
   const stats = [
-    ['Market Cap', formatKes(stock.marketCap)],
-    ['P/E', formatRatio(stock.pe)],
-    ['P/B', stock.pb == null ? '—' : `${stock.pb.toFixed(2)}×`],
-    ['Div Yield', formatYield(stock.dividendYield)],
-    ['EPS', d.eps == null ? '—' : `KES ${formatPrice(d.eps)}`],
-    ['DPS', d.dps == null ? '—' : `KES ${formatPrice(d.dps)}`],
-    ['52W Range', range ? `${formatPrice(range.low)} – ${formatPrice(range.high)}` : '—']
+    [tip('Market Cap', 'marketCap'), formatKes(stock.marketCap)],
+    [tip('P/E', 'pe'), formatRatio(stock.pe)],
+    [tip('P/B', 'pb'), stock.pb == null ? '—' : `${stock.pb.toFixed(2)}×`],
+    [tip('Div Yield', 'dividendYield'), formatYield(stock.dividendYield)],
+    [tip('EPS', 'eps'), d.eps == null ? '—' : `KES ${formatPrice(d.eps)}`],
+    [tip('DPS', 'dps'), d.dps == null ? '—' : `KES ${formatPrice(d.dps)}`],
+    [tip('52W Range', 'range52w'), range ? `${formatPrice(range.low)} – ${formatPrice(range.high)}` : '—']
   ];
   return `    <dl class="header-stats">
 ${stats.map(([label, value]) => `      <div><dt>${label}</dt><dd>${value}</dd></div>`).join('\n')}
@@ -228,12 +229,12 @@ function renderKeyRatios(stock) {
     <div class="section">
       <h2>Key Ratios</h2>
       <div class="grid-3">
-${statCard('Payout Ratio', pctPlain(stock.payoutRatio), payoutNote)}
-${statCard('Return on Equity', stock.roe == null ? '—' : `${stock.roe.toFixed(1)}%`, stock.roe == null ? 'Needs book value (not yet entered)' : 'Net income ÷ shareholders\' equity')}
-${statCard('Avg Daily Turnover', formatKes(stock.avgDailyTurnover), turnoverNote)}
-${statCard('From 52W High', stock.fromHigh52w == null ? '—' : formatPct(stock.fromHigh52w), stock.fromLow52w == null ? 'Needs a year of history' : `${formatPct(stock.fromLow52w)} from 52W low`)}
-${statCard('Volatility (1Y)', pctPlain(stock.volatility1y), 'Annualized; higher means bigger swings')}
-${statCard('Max Drawdown', stock.maxDrawdown5y == null ? '—' : `${stock.maxDrawdown5y.toFixed(0)}%`, since)}
+${statCard(tip('Payout Ratio', 'payoutRatio'), pctPlain(stock.payoutRatio), payoutNote)}
+${statCard(tip('Return on Equity', 'roe'), stock.roe == null ? '—' : `${stock.roe.toFixed(1)}%`, stock.roe == null ? 'Needs book value (not yet entered)' : 'Net income ÷ shareholders\' equity')}
+${statCard(tip('Avg Daily Turnover', 'turnover'), formatKes(stock.avgDailyTurnover), turnoverNote)}
+${statCard(tip('From 52W High', 'fromHigh52w'), stock.fromHigh52w == null ? '—' : formatPct(stock.fromHigh52w), stock.fromLow52w == null ? 'Needs a year of history' : `${formatPct(stock.fromLow52w)} from 52W low`)}
+${statCard(tip('Volatility (1Y)', 'volatility'), pctPlain(stock.volatility1y), 'Annualized; higher means bigger swings')}
+${statCard(tip('Max Drawdown', 'maxDrawdown'), stock.maxDrawdown5y == null ? '—' : `${stock.maxDrawdown5y.toFixed(0)}%`, since)}
       </div>
       <div class="meta-line">Payout uses the latest reported EPS and dividend per share, which may be for different periods. Volatility and drawdown come from daily closing prices.</div>
     </div>`;
@@ -257,7 +258,7 @@ function renderPeers(stock, peers) {
       <div style="overflow-x: auto;">
       <table>
         <thead>
-          <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
+          <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">${tip('Mkt Cap', 'marketCap', 'right')}</th><th class="num">${tip('P/E', 'pe', 'right')}</th><th class="num">${tip('Yield', 'dividendYield', 'right')}</th></tr>
         </thead>
         <tbody>
 ${rows}
@@ -286,10 +287,10 @@ function renderProfile(stock, opts = {}) {
 ${renderChart(stock, chart)}
       <div class="grid-3">
 ${statCard('Share Price', `KES ${formatPrice(stock.price)}`, `<span style="color: ${pctColor(stock.change == null ? null : stock.changePercent)}">${dayChange}</span>`)}
-${statCard('Market Cap', formatKes(stock.marketCap), d.sharesOutstanding ? `${formatCount(d.sharesOutstanding)} shares` : '')}
-${statCard('Volume', formatCount(stock.volume), 'Shares traded, latest session')}
-${statCard('P/E Ratio', formatRatio(stock.pe), d.eps != null ? `EPS KES ${d.eps}` : 'No EPS reported')}
-${statCard('Dividend Yield', formatYield(stock.dividendYield), d.dps != null ? `DPS KES ${d.dps}` : 'No dividend reported')}
+${statCard(tip('Market Cap', 'marketCap'), formatKes(stock.marketCap), d.sharesOutstanding ? `${formatCount(d.sharesOutstanding)} shares` : '')}
+${statCard(tip('Volume', 'volume'), formatCount(stock.volume), 'Shares traded, latest session')}
+${statCard(tip('P/E Ratio', 'pe'), formatRatio(stock.pe), d.eps != null ? `EPS KES ${formatPrice(d.eps)}` : 'No EPS reported')}
+${statCard(tip('Dividend Yield', 'dividendYield'), formatYield(stock.dividendYield), d.dps != null ? `DPS KES ${formatPrice(d.dps)}` : 'No dividend reported')}
 ${statCard('YTD Return', `<span style="color: ${pctColor(stock.ytd)}">${formatPct(stock.ytd)}</span>`)}
       </div>
       <div class="returns">
