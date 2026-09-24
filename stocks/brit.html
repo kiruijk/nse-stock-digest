@@ -676,6 +676,14 @@
       line-height: 1.9;
     }
 
+    /* Link rows wrap onto several lines on narrow screens (the links have no whitespace
+       between them, so without flex-wrap a row is one unbreakable line) */
+    .site-footer > div:not(.source-note) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
     .site-footer a {
       color: #4b5563;
       text-decoration: none;

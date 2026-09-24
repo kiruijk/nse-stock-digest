@@ -1,0 +1,22 @@
+{
+  "description": "Kenya Electricity Generating Company Plc, commonly abbreviated as KenGen, is the leading electric power generating company in East Africa. The company is engaged in the business of developing, managing, and operating power generation plants to supply electric power to the Kenyan market. Incorporated in 1954 under the Kenyan Companies Act, the Government sold 30% of its stake following a successful Initial Public Offer. Subsequently, KenGen was listed on the Nairobi Securities Exchange (NSE). Over the years, the company has continued to increase shareholder value through profitability and maintaining a sustainable growth path. KenGen operates in four generation modes: Hydro, Geothermal, Thermal, and Wind. It develops 700 megawatts of geothermal power, two wind farms in Ngong and Meru with a total capacity of 120.4 megawatts, liquefied natural gas (LNG) fired plants and coal fired plants. KenGen owns 14 hydro power plants with a combined capacity of 820 megawatts, five thermal power plants with a capacity of 256 megawatts, four geothermal power plants generating 158 megawatts, and one wind farm generating 5.1 megawatts. Its Horizon I project includes Sondu Miriu hydro project, Olkaria II 3rd Unit, Ngong Wind-Phase I, Kipevu III, and Redevelopment of Tana.",
+  "sector": "Utilities",
+  "industry": "Electricity",
+  "address": "Stima Plaza, Kolobot Road, Parklands, PO Box 47936-00100 GPO, Nairobi, Kenya",
+  "website": "www.kengen.co.ke",
+  "employees": 2500,
+  "incorporated": "February 1, 1954",
+  "listedSince": null,
+  "isin": "KE0000000547",
+  "eps": 1.5894,
+  "pe": 6.8,
+  "dps": 0.9,
+  "dividendYield": 8.33,
+  "sharesOutstanding": 6590000000,
+  "marketCap": 71200000000,
+  "dayLow": 10.7,
+  "dayHigh": 10.9,
+  "deals": 1177,
+  "turnover": 16900000,
+  "fetchedAt": "2026-09-24T02:00:20.742Z"
+}

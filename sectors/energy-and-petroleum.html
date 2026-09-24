@@ -676,6 +676,14 @@
       line-height: 1.9;
     }
 
+    /* Link rows wrap onto several lines on narrow screens (the links have no whitespace
+       between them, so without flex-wrap a row is one unbreakable line) */
+    .site-footer > div:not(.source-note) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
     .site-footer a {
       color: #4b5563;
       text-decoration: none;
@@ -761,9 +769,9 @@
       <h2>Sector at a Glance</h2>
       <div class="summary-stats">
         <div class="card"><div class="card-subtitle">Listed</div><div class="card-value">7</div></div>
-        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">—</div></div>
-        <div class="card"><div class="card-subtitle">Median P/E</div><div class="card-value">—</div></div>
-        <div class="card"><div class="card-subtitle">Median Yield (payers)</div><div class="card-value">—</div></div>
+        <div class="card"><div class="card-subtitle">Combined Market Cap</div><div class="card-value">KES 71.2B</div></div>
+        <div class="card"><div class="card-subtitle">Median P/E</div><div class="card-value">6.8×</div></div>
+        <div class="card"><div class="card-subtitle">Median Yield (payers)</div><div class="card-value">8.3%</div></div>
       </div>
     </div>
 
@@ -780,11 +788,11 @@
             <td>KenGen Plc</td>
             <td class="num">10.80</td>
             <td class="num" style="color: #059669">+0.47%</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
+            <td class="num" style="color: #059669">+17.65%</td>
+            <td class="num" style="color: #059669">+20.00%</td>
+            <td class="num">KES 71.2B</td>
+            <td class="num">6.8×</td>
+            <td class="num">8.3%</td>
           </tr>
           <tr>
             <td><a href="../stocks/kpc.html">KPC</a></td>

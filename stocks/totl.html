@@ -676,6 +676,14 @@
       line-height: 1.9;
     }
 
+    /* Link rows wrap onto several lines on narrow screens (the links have no whitespace
+       between them, so without flex-wrap a row is one unbreakable line) */
+    .site-footer > div:not(.source-note) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
     .site-footer a {
       color: #4b5563;
       text-decoration: none;
@@ -946,19 +954,19 @@
           <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
         </thead>
         <tbody>
-          <tr class="current-row">
-            <td><strong>TOTL</strong></td>
-            <td>Total Kenya Ltd</td>
-            <td class="num">47.75</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
           <tr>
             <td><a href="kegn.html">KEGN</a></td>
             <td>KenGen Plc</td>
             <td class="num">10.80</td>
+            <td class="num" style="color: #059669">+20.00%</td>
+            <td class="num">KES 71.2B</td>
+            <td class="num">6.8×</td>
+            <td class="num">8.3%</td>
+          </tr>
+          <tr class="current-row">
+            <td><strong>TOTL</strong></td>
+            <td>Total Kenya Ltd</td>
+            <td class="num">47.75</td>
             <td class="num" style="color: #6b7280">—</td>
             <td class="num">—</td>
             <td class="num">—</td>
