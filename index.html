@@ -460,7 +460,9 @@
 
     .screener {
       width: 100%;
-      border-collapse: collapse;
+      /* separate (not collapse) so borders stay on sticky cells while scrolling */
+      border-collapse: separate;
+      border-spacing: 0;
       font-size: 0.85rem;
     }
 
@@ -511,6 +513,67 @@
       color: #0052cc;
       font-weight: 700;
       text-decoration: none;
+    }
+
+    /* #, Ticker and Company stay put while the other columns scroll sideways */
+    .screener .pin {
+      position: sticky;
+      z-index: 1;
+      background: white;
+    }
+
+    .screener th.pin {
+      z-index: 2;
+      background: #f9fafb;
+    }
+
+    .screener tbody tr:hover .pin {
+      background: #f9fafb;
+    }
+
+    .screener .pin-rank {
+      left: 0;
+      width: 2.4rem;
+      min-width: 2.4rem;
+    }
+
+    .screener .pin-ticker {
+      left: 2.4rem;
+      width: 5.6rem;
+      min-width: 5.6rem;
+    }
+
+    .screener .pin-name {
+      left: 8rem;
+      width: 13rem;
+      min-width: 13rem;
+      max-width: 13rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 6px 0 6px -4px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: 600px) {
+      .screener .pin-rank {
+        width: 2rem;
+        min-width: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.3rem;
+      }
+
+      .screener .pin-ticker {
+        left: 2rem;
+        width: 5rem;
+        min-width: 5rem;
+        padding-left: 0.3rem;
+      }
+
+      .screener .pin-name {
+        left: 7rem;
+        width: 7.5rem;
+        min-width: 7.5rem;
+        max-width: 7.5rem;
+      }
     }
 
 
@@ -2648,19 +2711,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": -1.62,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 5.65,
+          "oneMonth": -8.3,
+          "sixMonth": 17.39,
+          "ytd": 22.48,
+          "oneYear": 17.39,
+          "threeYear": 172.42,
+          "fiveYear": 197.79,
           "tenYear": null,
-          "pe": null,
+          "pe": 14.59,
           "pb": null,
           "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "marketCap": 22963500000,
+          "range52w": {
+            "low": 8.84,
+            "high": 13.45
+          },
           "news": [
             {
               "title": "CMA probes HFCB over breach of rules on results release",
@@ -2681,7 +2747,15 @@
               "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeTh2RzV6WkxlSjBLQWlpWlRldGx0aVpaNlJVbHViSEhLMEdHbUJXZktIMGl1c3I5QVdBSnFPbXlXN09zVWtrRGJIcW5rdFFrTGNUQ29iVkpyLTRWNGxjWjJINUNIbmlQM0JoU05WMnl6bXRPSUdKX2w5UUdaQzRTTkNUNHhDdzlZR2JhaVJKcFhkclNNRXdzYlFDMHE?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [11.5,11.4,11.95,12.35,12.15,12.15],
+            "oneMonth": [13.25,13.2,13.15,13.15,13.15,12.9,12.65,12.45,12.75,13,13,12.85,12.6,12.65,12.6,12.6,12.6,12.45,11.5,11.4,11.95,12.35,12.15,12.15],
+            "sixMonth": [10.35,9.2,9.12,9.7,9.42,9.26,9.14,9.08,8.86,9.02,9.34,9.24,9.24,9.72,9.74,9.64,9.64,9.54,9.44,9.44,9.78,10.5,10.85,10.95,11.1,11.95,11.8,12.1,12.95,13,13.05,13.2,13.2,13.15,12.65,13,12.6,12.6,11.4,12.15,12.15],
+            "ytd": [9.92,10.2,10.3,10.55,10.4,10.3,10.4,11.05,10.3,11.1,10.8,10.75,10.4,9.26,9.82,9.42,9.24,9.08,8.84,9.34,9.16,9.72,9.7,9.7,9.5,9.38,9.78,10.8,10.95,11.35,11.8,12.7,12.6,13.05,13.2,13.15,12.75,12.65,12.45,12.15,12.15],
+            "oneYear": [10.35,10.65,10.65,10.4,10.95,10,10.35,9.98,9.78,9.66,10.1,10.35,10.55,10.25,10.15,10.75,10.85,10.2,10.95,10.4,9.12,9.36,9.24,9,9.2,9.16,9.8,9.72,9.5,9.5,10.6,11.1,11.95,12.7,13,13.25,13.15,13,12.6,12.15,12.15],
+            "threeYear": [4.49,4.26,3.4,3.36,3.57,3.86,3.79,3.97,4.38,4.43,4.13,4.57,4.29,4.38,4.46,3.97,4.09,8.98,7.96,7.36,6.34,5.6,6.54,7.74,7.78,9.66,10.3,10.75,10.4,9.32,10.55,10.75,10.95,9.36,9.2,9.72,10.6,12.7,13.15,12.15,12.15],
+            "fiveYear": [4.08,4.23,3.88,3.42,3.15,3,3.56,3.5,3.4,2.98,3.1,3.53,3.99,4.21,4.52,4.8,4.24,3.8,3.57,3.75,4.01,4.43,4.74,3.98,4.5,4.04,7.44,7.36,6.06,7.06,7.78,11,10.95,9.32,9.92,10.4,9.2,9.48,13,12.15,12.15]
+          }
         },
         "IMH": {
           "symbol": "IMH",
@@ -2694,19 +2768,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0.31,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 2.84,
+          "oneMonth": 1.88,
+          "sixMonth": 63.33,
+          "ytd": 91.99,
+          "oneYear": 90.42,
+          "threeYear": 365.71,
+          "fiveYear": 254.35,
           "tenYear": null,
-          "pe": null,
+          "pe": 7.24,
           "pb": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "dividendYield": 4.6,
+          "marketCap": 141810000000,
+          "range52w": {
+            "low": 41.95,
+            "high": 82
+          },
           "news": [
             {
               "title": "I&M, founded by Suresh Bhagwanji Shah, raises Tanzania stake to 95 percent",
@@ -2727,7 +2804,15 @@
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNT1RPeXFTampxZjkxWWFVMTBnOEpyc3BXZk5aaGpkMklzY0VqaEtoVndYWDM1SFJKV3k1YlBzeEpFb0J6aFg0ekozZmZTbDI3V0tDVHJlWm8yanp1VlBaQjhtem5LQXB5ZmRHX1BVbmRaSE5JbTlXV2FIdnA1aklPcjdLcXY?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [79.25,80.25,80.5,81.25,81.5,81.5],
+            "oneMonth": [80,79.25,78,78.25,78.25,79.5,80,80.75,81,81.75,82,81.75,80.25,77.75,79.25,79.75,80,79.5,79.25,80.25,80.5,81.25,81.5,81.5],
+            "sixMonth": [49.9,47.2,48.75,50.5,51,48.45,49.8,49.5,49.2,49.7,49.7,49.7,50,50.5,51,52.5,53.25,56,61.75,64.5,69.5,69,66.5,69,68,67.75,68,68,68.25,68,68.75,71,79,78.25,80,81.75,80.25,80,80.25,81.5,81.5],
+            "ytd": [42.45,44,44.9,44.6,45,45,45,49.9,48.95,49.55,49.05,51.5,49.9,48.05,50.5,51,49.15,49.5,49.55,49.7,49.3,50.5,51.5,53.25,58.5,63.75,69.5,67.5,69,69,68,67.75,68.25,69.75,79,78.25,81,77.75,79.5,81.5,81.5],
+            "oneYear": [42.8,42.95,42.25,43.75,44.5,45.85,46.05,43.9,45.2,43.85,42.15,44.95,44.9,45,45,49.85,48.1,49.75,50,49.9,48.75,51.25,49.15,49.5,49.95,49.3,50.75,53,58.5,65.75,68,69.5,67.25,67.75,68,71.75,78.25,81.75,80,81.5,81.5],
+            "threeYear": [17.65,17.7,17.1,17.35,17.5,17.35,18.85,21.85,17.6,22.25,21.65,20.7,20.95,23.85,26.7,28.8,30.3,33.2,35.95,35.95,30.05,30,34,37.4,36.65,38.55,42.8,43.35,45.85,43.2,44.9,49.85,50,51.25,49.95,53,68,67.75,78.25,81.5,81.5],
+            "fiveYear": [23,21.9,21.4,21.45,20.95,17.9,17,17,16.95,16.95,17,17.75,20.35,16.6,18.1,18.25,17.9,17.5,17.5,18.7,19.05,22.25,21.05,22.1,25.95,30.75,35.05,35.95,30.1,34.2,36.65,43.55,44.5,43.2,45,49.9,49.95,60.5,68,81.5,81.5]
+          }
         },
         "JUB": {
           "symbol": "JUB",
@@ -2740,19 +2825,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 1.94,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": -0.97,
+          "oneMonth": -1.03,
+          "sixMonth": 1.88,
+          "ytd": 21.64,
+          "oneYear": 29.37,
+          "threeYear": 125.45,
+          "fiveYear": 10.51,
           "tenYear": null,
-          "pe": null,
+          "pe": 5.11,
           "pb": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "dividendYield": 3.68,
+          "marketCap": 29543750000,
+          "range52w": {
+            "low": 305.25,
+            "high": 423.5
+          },
           "news": [
             {
               "title": "Jubilee Holdings Declares Ksh145 Million Dividend as H1 Net Profit Grows 13%",
@@ -2773,7 +2861,15 @@
               "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZHFRdkJzLUw0TXpjRDE4U3FnQmhoZ3MyQnFEVFBQZUxhUF9CRzlmY2c0ckFCeTEzaFFXUzNodlQtVUFac0hwaEtDZ1UwN3NKNlRpejI4WlJ3RVB3ZmQ5dGlDQXExYk1YOTcwa3VMbFE5M1BrbXVWVzk0MjhzYzl4ODZnei00NGppZEVuMXdEN3FSanRvY0ZzSDRtcXBkTmVwMEhtd0pxUVZjZi1IZmpOQTdJa25OaWFlU25veUFuMWo?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [411.5,393.5,400.25,399.75,407.5,407.5],
+            "oneMonth": [411.75,400,410.5,411.25,405,402.5,409.75,421,413.75,411.75,415,416.5,412.25,412.25,414,412.75,419.75,417.25,411.5,393.5,400.25,399.75,407.5,407.5],
+            "sixMonth": [400,398.5,369.25,380.5,386.25,383.5,380.5,380,380.25,382.25,379,369.75,371.5,366,367.25,397,383,360.25,360.5,363.5,360,380,382.75,381.25,382.75,379.5,375.5,379.5,380.25,405.5,394.25,420.25,415.5,411.25,409.75,411.75,412.25,419.75,393.5,407.5,407.5],
+            "ytd": [335,335,345.5,333,330,325,335,351.5,363.5,374.5,378.75,393.75,398,393.75,391.75,386.25,391,380,360,379,374.5,366,387.25,386,360,359.25,360,382,381.25,380.5,375.5,379.5,402.25,400,415.5,411.25,413.75,412.25,417.25,407.5,407.5],
+            "oneYear": [315,320,320.75,319.5,320.75,323,310,325,305.25,324.75,330,345.75,334.75,330,335.25,337.75,359,378.25,390,398,369.25,390,391,375,385.75,374.5,360,393.5,360,360,382.25,381.75,376.75,379.5,405.5,421.5,411.25,411.75,419.75,407.5,407.5],
+            "threeYear": [190,185.25,181.5,185,181.25,185,190,193,178,186.5,168,165,150,166,162.25,167.75,169.25,194.25,200,219.5,200,205,223,233,244,274.75,320,324.5,322,313.5,334.75,337.75,390,390,385.75,393.5,382.25,379.5,411.25,407.5,407.5],
+            "fiveYear": [368.75,340,316.75,300,274,264,256.25,265,243,200,200,183,154,178,190,172.25,185,183,181.25,185,191,186.5,168,155,165.5,172.5,200.5,219.5,200,220.5,244,320,320.75,313.5,327.75,398,385.75,364.75,405.5,407.5,407.5]
+          }
         },
         "KAPC": {
           "symbol": "KAPC",
@@ -2786,19 +2882,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 1.71,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 1.94,
+          "oneMonth": 1.11,
+          "sixMonth": 36.12,
+          "ytd": 49.18,
+          "oneYear": 4.59,
+          "threeYear": 83.38,
+          "fiveYear": 276.86,
           "tenYear": null,
-          "pe": null,
+          "pe": 20.73,
           "pb": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "dividendYield": 3.65,
+          "marketCap": 5335200000,
+          "range52w": {
+            "low": 201.5,
+            "high": 413.5
+          },
           "news": [
             {
               "title": "African Tea Part 1: Kenya, an Origin & Driver",
@@ -2819,7 +2918,15 @@
               "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZElmdGZnNExqLTFJSnkwQXVtdERJZmlKNkJEWl9Xd01oRm4xc1dPb0RiaUtMd0hKaU9lMk9QSWppVnIwUWpOUzZwNW5JNXFya0VaTVVKQk5HY1dhdWVtVjg4OU1BdmxFWVNleEJsNS0zZWpneVRuV1VsOE83Q2toVzN4bTExZlRUNGtSSnIxRTFPOEJkSVZfS0loQzUwWUowclNlSDkzRlZVRl9oLUd2QURtRHRNdzVSdnFQdWozaw?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [335.5,331.25,334.75,336.25,342,342],
+            "oneMonth": [338.25,341.25,338,324.5,330.25,338,339.25,338.75,328.5,331.75,335,334.25,341,341.5,342.5,342.25,342.25,341.25,335.5,331.25,334.75,336.25,342,342],
+            "sixMonth": [251.25,234.75,239.25,245,243.75,237,241.5,239.5,241.75,250,251.5,259.25,275,274.25,272.5,275.5,277.5,276.75,278.25,296.5,348,322.5,337.75,320.25,334,343.5,365.75,376.5,343.25,339.25,339.25,343.25,335,324.5,339.25,331.75,341,342.25,331.25,342,342],
+            "ytd": [229.25,237,236,234.5,235.75,234.25,232.5,247,249,255.5,244.25,251.25,250.75,237.75,238.75,243.75,241.5,239.5,243,251.5,261.5,274.25,278,276.5,275.25,296.5,348,327.25,320.25,339.75,365.75,375.25,335.25,330.75,335,324.5,328.5,341.5,341.25,342,342],
+            "oneYear": [327,390.75,363.25,234,232,203,215.25,211,209.75,214.5,225.25,237.25,234.5,235.75,231.75,236.75,249.25,256.5,250,250.75,239.25,240.5,241.5,241.75,252,261.5,279.75,277.25,275.25,298.75,322.5,320.25,346.25,375.25,339.25,341.5,324.5,331.75,342.25,342,342],
+            "threeYear": [196,210,219.25,215,234,234,232,210,220,231,260,256.75,224,243,246,226.5,220,232,240,221.5,225,200,220,281,339.5,323.25,326.5,259,212,210.5,234.5,236.75,250,240.5,252,277.25,322.5,375.25,324.5,342,342],
+            "fiveYear": [90.75,81,89,92,99.75,95.5,108.25,100,120.5,105,104.25,137,115,132,220,205,210,239.25,234,219.5,234,231,260,224,246,235,240,221.5,206.75,220,339.5,326.75,232,214.5,233,250.75,252,298.75,339.25,342,342]
+          }
         },
         "KCB": {
           "symbol": "KCB",
@@ -2832,19 +2939,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 10.39,
+          "oneMonth": -0.8,
+          "sixMonth": 29.17,
+          "ytd": 41.44,
+          "oneYear": 61.74,
+          "threeYear": 316.11,
+          "fiveYear": 97.45,
           "tenYear": null,
-          "pe": null,
+          "pe": 4.58,
           "pb": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "dividendYield": 6.45,
+          "marketCap": 298530000000,
+          "range52w": {
+            "low": 56,
+            "high": 99.25
+          },
           "news": [
             {
               "title": "Equity Group’s regional workforce crosses 5,200 mark driven by DRC expansion",
@@ -2865,7 +2975,15 @@
               "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0xWnA1alRQdGlORGpHMFZhYi1LMFdxVlcyc00tSlFJOE9fUnhRd3BLLXVtZzktcEFDYXEtemVaRzBDMTNCd01pQnZwQk1SenJEQzRYS3VCckVPWEZtM2J4S0tfV3lfRHN4SDJhMjlFaGJBb3pSX0w3aQ?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [84.25,87,94,93,93,93],
+            "oneMonth": [93.75,92.25,93,93.5,93.5,94,95.25,99.25,97.75,98,98.5,97.5,94.25,94.25,94,92.25,90,84.25,84.25,87,94,93,93,93],
+            "sixMonth": [72,68,68.75,70.25,69.75,69.25,69.25,68,67.5,67,66.75,66.5,66.75,66.5,67.5,70.75,69.25,70.75,73.25,74,78.75,78.5,81.5,81.5,80.75,82,83.75,85.25,85.75,84.75,86.5,89.75,93.5,93.5,95.25,98,94.25,90,87,93,93],
+            "ytd": [65.75,66.5,67,66.75,66.75,67,70,75,75,77.75,77,78.75,72.5,68.5,69.5,69.75,69.75,68,67.5,66.75,66.75,66.5,68,69.25,71.75,74,78.75,82.75,81.5,80.75,83.75,86,84.75,87.25,93.5,93.5,97.75,94.25,84.25,93,93],
+            "oneYear": [57.5,57,57.5,58.25,61.75,65.75,65,58.75,56,62,65,67,66.75,66.75,67.25,75.25,75,75,78.75,72.5,68.75,70,69.75,67,66.75,66.75,66.75,69.5,71.75,76,80.25,80,82.25,86,84.75,90,93.5,98,90,93,93],
+            "threeYear": [22.25,19.85,20.45,19.65,21.4,19,20.95,30.3,30.05,36.7,32,30.6,31.2,34.85,37.95,39.15,39.6,42.95,45.05,44.1,35.3,38.5,43.2,47,47.4,53.75,55.5,58.25,65.5,62,66.75,75.25,78.75,70,66.75,69.5,80.25,86,93.5,93,93],
+            "fiveYear": [47.1,44.65,45,46,44.45,35,40,43.35,39.45,38,39.05,38.45,36.35,31.85,30.15,23.75,20.9,18.6,21.4,21.5,27.95,36.7,32.8,33.8,39.05,37.95,45.35,44.1,38.45,43.95,47.4,53,61.75,62,67,72.5,66.75,74.5,84.75,93,93]
+          }
         },
         "KEGN": {
           "symbol": "KEGN",
@@ -4757,9 +4875,9 @@
       const sortState = (key) => (tableSort && tableSort.key === key ? tableSort.dir : null);
       const head = `
         <tr>
-          <th class="left">#</th>
-          <th class="left">Ticker</th>
-          <th class="left">Company</th>
+          <th class="left pin pin-rank">#</th>
+          <th class="left pin pin-ticker">Ticker</th>
+          <th class="left pin pin-name">Company</th>
           ${th('Price (KES)', 'data-sort="price"', sortState('price'))}
           ${PERIODS.map(p => th(p.label, `data-period="${p.label}"`, !tableSort && p === period ? 'desc' : null)).join('')}
           ${th('Mkt Cap', 'data-sort="marketCap"', sortState('marketCap'))}
@@ -4769,9 +4887,9 @@
         </tr>`;
       const rows = sorted.map((s, i) => `
         <tr>
-          <td class="left" style="color: #9ca3af;">${i + 1}</td>
-          <td class="left"><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.stale ? ' <span class="stale-badge">STALE</span>' : ''}</td>
-          <td class="left">${s.name}${s.suspended ? ' <span class="data-only-tag">Suspended</span>' : ''}</td>
+          <td class="left pin pin-rank" style="color: #9ca3af;">${i + 1}</td>
+          <td class="left pin pin-ticker"><a href="stocks/${s.symbol.toLowerCase()}.html">${s.symbol}</a>${s.stale ? ' <span class="stale-badge" title="Prices not refreshed on the latest update">!</span>' : ''}</td>
+          <td class="left pin pin-name" title="${s.name}">${s.name}${s.suspended ? ' <span class="data-only-tag">Suspended</span>' : ''}</td>
           <td>${formatPrice(s.price)}</td>
           ${PERIODS.map(p => `<td class="${p === period ? 'active' : ''}" style="color: ${pctColor(s[p.field])};">${formatPct(s[p.field])}</td>`).join('')}
           <td>${formatCap(s.marketCap)}</td>
