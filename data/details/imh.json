@@ -1,0 +1,22 @@
+{
+  "description": "I&M Holdings Limited, formerly City Trust Ltd, is a Kenya-based company. The principal activity of the company is buying and selling of investments.",
+  "sector": "Financials",
+  "industry": "Banking",
+  "address": "I&M Bank House, 2nd Ngong Avenue, P. O. Box 30238-00100, Nairobi GPO, Kenya",
+  "website": "www.imbank.com",
+  "employees": null,
+  "incorporated": null,
+  "listedSince": null,
+  "isin": "KE0000000125",
+  "eps": 11.2502,
+  "pe": 7.24,
+  "dps": 3.75,
+  "dividendYield": 4.6,
+  "sharesOutstanding": 1740000000,
+  "marketCap": 142000000000,
+  "dayLow": 80.5,
+  "dayHigh": 83.5,
+  "deals": 182,
+  "turnover": 106000000,
+  "fetchedAt": "2026-09-24T01:52:13.863Z"
+}
