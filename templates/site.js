@@ -169,6 +169,7 @@ function renderFooterLinks(base, sectors, siteName) {
       <div><strong>${siteName}</strong><a href="${base}index.html">Dashboard</a></div>
       <div><strong>Sectors</strong>${sectors.map(s => `<a href="${base}sectors/${sectorSlug(s)}.html">${s.replace(/&/g, '&amp;')}</a>`).join('')}</div>
       <div class="source-note">Prices from <a href="https://afx.kwayisi.org/nse/" rel="noopener">AFX (afx.kwayisi.org)</a>. Not affiliated with the Nairobi Securities Exchange. Not investment advice.</div>
+      <div class="source-note">Built with <a href="https://claude.com/claude-code" rel="noopener">Claude Code</a>.</div>
     </nav>`;
 }
 

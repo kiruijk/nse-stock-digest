@@ -22,6 +22,7 @@ test('renderProfile escapes scraped text and shows valuation', () => {
   assert.match(html, /6\.4%/);
   assert.match(html, /href="https:\/\/example.com\/stocks\/scom.html"/);
   assert.match(html, /\.\.\/sectors\/telecommunication\.html/);
+  assert.match(html, /Built with <a href="https:\/\/claude.com\/claude-code"/);
   // Header stats row, checked on its own so matches elsewhere on the page don't count
   const stats = html.match(/<dl class="header-stats">[\s\S]*?<\/dl>/)[0];
   for (const text of ['KES 1.45T', '15.2×', '6.4%', 'KES 2.39', 'KES 2.30']) assert.ok(stats.includes(text), text);
