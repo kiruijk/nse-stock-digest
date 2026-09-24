@@ -1,0 +1,22 @@
+{
+  "description": "Bank of Kigali is a Rwanda-based financial services company that operates via three segments: retail banking, corporate banking, and central treasury. The retail banking segment includes banking services such as current and savings accounts, and fixed deposits to individuals, retail lending, which are mainly consumer loans and mortgage-based lending and mortgages. The corporate banking segment encompasses fixed deposits, overdrafts, loans, and other credit facilities, both local and foreign currencies. The central treasury segment includes funding and centralized management activities through borrowings, issues of debt securities and investing in liquid assets such as short-term placements and corporate and government debt securities.",
+  "sector": "Financials",
+  "industry": "Banking",
+  "address": "KN 4 Avenue, No. 12, Plot No. 790, Kigali, Rwanda",
+  "website": "www.bk.rw",
+  "employees": null,
+  "incorporated": null,
+  "listedSince": "November 30, 2018",
+  "isin": "KE5000008986",
+  "eps": 120.2151,
+  "pe": 0.49,
+  "dps": 53.04,
+  "dividendYield": 90.3,
+  "sharesOutstanding": 930000000,
+  "marketCap": 54600000000,
+  "dayLow": 56,
+  "dayHigh": 61.5,
+  "deals": 104,
+  "turnover": 2220000,
+  "fetchedAt": "2026-09-24T01:07:40.262Z"
+}

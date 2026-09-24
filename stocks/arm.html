@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARM Cement Ltd (ARM) Share Price, Dividends &amp; News | Nairobi Stock Digest</title>
-  <meta name="description" content="ARM Cement Ltd (NSE: ARM) share price, returns, dividend yield, P/E and news.">
+  <meta name="description" content="ARM Cement Limited is engaged in the manufacture and sale of cement, mining and processing of industrial minerals and chemicals, trading in other building products and the sale of fertilizers. The Company's segments include Cement and lime, and Other products. Its subsidiaries include ARM (Tanzania)">
   <meta property="og:title" content="ARM Cement Ltd (NSE: ARM) — Share Price &amp; Profile">
-  <meta property="og:description" content="ARM Cement Ltd (NSE: ARM) share price, returns, dividend yield, P/E and news.">
+  <meta property="og:description" content="ARM Cement Limited is engaged in the manufacture and sale of cement, mining and processing of industrial minerals and chemicals, trading in other building products and the sale of fertilizers. The Company's segments include Cement and lime, and Other products. Its subsidiaries include ARM (Tanzania)">
   <meta property="og:type" content="article">
   <link rel="canonical" href="https://kiruijk.github.io/nse-stock-digest/stocks/arm.html">
   <meta property="og:url" content="https://kiruijk.github.io/nse-stock-digest/stocks/arm.html">
@@ -720,7 +720,116 @@
     <!-- Price & Valuation -->
     <div class="section">
       <h2>Price &amp; Valuation</h2>
+      <div class="chart" id="price-chart">
+        <div class="chart-head">
+          <div class="chart-change" id="chart-change"></div>
+          <div class="chart-periods" role="group" aria-label="Chart period">
+            <button type="button" data-period="1M">1M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="YTD">YTD</button><button type="button" data-period="1Y">1Y</button><button type="button" data-period="3Y">3Y</button><button type="button" data-period="5Y">5Y</button><button type="button" data-period="10Y">10Y</button><button type="button" data-period="Max">Max</button>
+          </div>
+        </div>
+        <svg id="chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none" role="img" aria-label="ARM price chart"></svg>
+        <div class="chart-tip" id="chart-tip" hidden></div>
+        <div class="chart-range" id="chart-range"></div>
+      </div>
+      <script>
+      (function () {
+        var DATA = {"daily":[],"weekly":[["2016-09-26",23],["2016-10-03",24.75],["2016-10-10",25],["2016-10-17",26.25],["2016-10-25",26],["2016-11-01",25.75],["2016-11-09",28.5],["2016-11-16",29],["2016-11-23",26],["2016-11-30",24.75],["2016-12-07",25],["2016-12-15",24],["2016-12-22",23],["2017-01-03",23.5],["2017-01-10",23],["2017-01-17",22],["2017-01-24",20],["2017-01-31",19.7],["2017-02-07",19.35],["2017-02-14",19.05],["2017-02-21",19.5],["2017-02-28",19.65],["2017-03-07",19.5],["2017-03-14",19.45],["2017-03-21",19.3],["2017-03-28",19.4],["2017-04-04",20],["2017-04-11",19.9],["2017-04-20",22.75],["2017-04-27",24],["2017-05-08",20],["2017-05-15",19.7],["2017-05-22",20],["2017-05-29",20.5],["2017-06-06",20.75],["2017-06-13",20.75],["2017-06-20",21.75],["2017-06-29",22],["2017-07-07",22],["2017-07-14",21.75],["2017-07-21",21.5],["2017-07-28",21.5],["2017-08-04",21],["2017-08-14",21],["2017-08-21",20],["2017-08-28",19.75],["2017-09-04",17.7],["2017-09-11",15.1],["2017-09-18",13.2],["2017-09-25",11.75],["2017-10-02",14.4],["2017-10-09",13],["2017-10-16",13],["2017-10-24",14.9],["2017-11-02",14.95],["2017-11-09",14.35],["2017-11-16",13.6],["2017-11-23",13.85],["2017-12-01",13.55],["2017-12-08",12.5],["2017-12-18",11.95],["2017-12-27",12.55],["2018-01-04",13.25],["2018-01-11",13.3],["2018-01-18",12.45],["2018-01-25",12.65],["2018-02-01",12.85],["2018-02-08",12.35],["2018-02-15",12.2],["2018-02-22",11.85],["2018-03-01",11.25],["2018-03-08",10.55],["2018-03-15",10.3],["2018-03-22",9.3],["2018-03-29",8.25],["2018-04-09",8.1],["2018-04-16",8.1],["2018-04-23",7.8],["2018-04-30",7.7],["2018-05-08",6.95],["2018-05-15",5.8],["2018-05-22",3.65],["2018-05-29",2.7],["2018-06-06",2.6],["2018-06-13",2.75],["2018-06-21",2.8],["2018-06-28",2.85],["2018-07-05",3.6],["2018-07-12",4.05],["2018-07-19",4.75],["2018-07-26",4.45],["2018-08-02",4.4],["2018-08-09",4.5],["2018-08-16",5.1]],"price":5.5,"returns":{"1M":0,"6M":0,"YTD":0,"1Y":0,"3Y":0,"5Y":0,"10Y":null}};
+        var all = DATA.weekly.concat(DATA.daily);
+        var svg = document.getElementById('chart-svg');
+        var tip = document.getElementById('chart-tip');
+        var W = 600, H = 200, PAD = 8;
+        var points = [];
 
+        function startDate(period) {
+          var d = new Date();
+          if (period === 'Max') return all[0][0];
+          if (period === 'YTD') return (d.getFullYear() - 1) + '-12-31';
+          var months = { '1M': 1, '6M': 6, '1Y': 12, '3Y': 36, '5Y': 60, '10Y': 120 }[period];
+          d.setMonth(d.getMonth() - months);
+          return d.toISOString().slice(0, 10);
+        }
+
+        function fmtDate(iso) {
+          return new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+
+        function fmtPrice(v) {
+          return 'KES ' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function draw(period) {
+          var start = startDate(period);
+          var src = ['1M', '6M', 'YTD', '1Y'].indexOf(period) >= 0 || (period === 'Max' && !DATA.weekly.length) ? DATA.daily : all;
+          // Start from the last close on or before the start date, like the returns calculation
+          var first = 0;
+          for (var i = 0; i < src.length; i++) { if (src[i][0] <= start) first = i; else break; }
+          var rows = src.slice(first);
+          if (DATA.price != null && rows.length && rows[rows.length - 1][1] !== DATA.price) rows = rows.concat([[new Date().toISOString().slice(0, 10), DATA.price]]);
+          var change = document.getElementById('chart-change');
+          if (rows.length < 2 || all[0][0] > start) {
+            svg.innerHTML = '';
+            change.textContent = 'Not enough price history for ' + period;
+            change.style.color = '#6b7280';
+            document.getElementById('chart-range').textContent = '';
+            points = [];
+            return;
+          }
+          var vals = rows.map(function (r) { return r[1]; });
+          var min = Math.min.apply(null, vals), max = Math.max.apply(null, vals);
+          var span = max - min || 1;
+          points = rows.map(function (r, i) {
+            return { x: PAD + (i / (rows.length - 1)) * (W - 2 * PAD), y: PAD + (1 - (r[1] - min) / span) * (H - 2 * PAD), d: r[0], v: r[1] };
+          });
+          var up = (DATA.returns[period] != null ? DATA.returns[period] : vals[vals.length - 1] - vals[0]) >= 0;
+          var color = up ? '#059669' : '#dc2626';
+          var line = points.map(function (p, i) { return (i ? 'L' : 'M') + p.x.toFixed(1) + ' ' + p.y.toFixed(1); }).join(' ');
+          var area = line + ' L' + points[points.length - 1].x.toFixed(1) + ' ' + H + ' L' + points[0].x.toFixed(1) + ' ' + H + ' Z';
+          svg.innerHTML =
+            '<defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + color + '" stop-opacity="0.18"/><stop offset="1" stop-color="' + color + '" stop-opacity="0"/></linearGradient></defs>' +
+            '<path d="' + area + '" fill="url(#fill)"/>' +
+            '<path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="2" vector-effect="non-scaling-stroke"/>' +
+            '<line id="chart-cursor" y1="0" y2="' + H + '" stroke="#9ca3af" stroke-width="1" vector-effect="non-scaling-stroke" visibility="hidden"/>';
+          var official = DATA.returns[period];
+          var pct = official != null ? official : (vals[vals.length - 1] / vals[0] - 1) * 100;
+          change.textContent = (pct >= 0 ? '+' : '') + pct.toFixed(2) + '% ' + (period === 'Max' ? 'since ' + fmtDate(rows[0][0]) : 'over ' + period);
+          change.style.color = color;
+          document.getElementById('chart-range').textContent =
+            fmtDate(rows[0][0]) + ' – today · Low ' + fmtPrice(min) + ' · High ' + fmtPrice(max);
+        }
+
+        svg.addEventListener('mousemove', function (e) {
+          if (!points.length) return;
+          var box = svg.getBoundingClientRect();
+          var x = (e.clientX - box.left) / box.width * W;
+          var p = points.reduce(function (best, q) { return Math.abs(q.x - x) < Math.abs(best.x - x) ? q : best; });
+          var cursor = document.getElementById('chart-cursor');
+          cursor.setAttribute('x1', p.x); cursor.setAttribute('x2', p.x); cursor.setAttribute('visibility', 'visible');
+          tip.hidden = false;
+          tip.textContent = fmtDate(p.d) + ' · ' + fmtPrice(p.v);
+          tip.style.left = Math.min(Math.max(p.x / W * box.width - 75, 0), box.width - 150) + 'px';
+        });
+        svg.addEventListener('mouseleave', function () {
+          tip.hidden = true;
+          var cursor = document.getElementById('chart-cursor');
+          if (cursor) cursor.setAttribute('visibility', 'hidden');
+        });
+        var buttons = document.querySelectorAll('#price-chart .chart-periods button');
+        function select(period) {
+          buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.period === period); });
+          draw(period);
+        }
+        // Grey out periods the stock's history doesn't cover (e.g. recent listings)
+        buttons.forEach(function (b) {
+          if (b.dataset.period !== 'Max' && all[0][0] > startDate(b.dataset.period)) b.disabled = true;
+        });
+        document.querySelector('#price-chart .chart-periods').addEventListener('click', function (e) {
+          var btn = e.target.closest('button');
+          if (btn && !btn.disabled) select(btn.dataset.period);
+        });
+        // Open on 1Y, or Max when the stock hasn't traded that long
+        select(document.querySelector('#price-chart button[data-period="1Y"]').disabled ? 'Max' : '1Y');
+      })();
+      </script>
       <div class="grid-3">
         <div class="card">
           <div class="card-subtitle">Share Price</div>
@@ -729,7 +838,8 @@
         </div>
         <div class="card">
           <div class="card-subtitle">Market Cap</div>
-          <div class="card-value">—</div>
+          <div class="card-value">KES 5.3B</div>
+          <div class="card-subtitle">960.00M shares</div>
         </div>
         <div class="card">
           <div class="card-subtitle">Volume</div>
@@ -748,29 +858,33 @@
         </div>
         <div class="card">
           <div class="card-subtitle">YTD Return</div>
-          <div class="card-value"><span style="color: #6b7280">—</span></div>
+          <div class="card-value"><span style="color: #059669">+0.00%</span></div>
         </div>
       </div>
       <div class="returns">
         <div class="return"><div class="return-label">1D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">3Y</div><div class="return-value" style="color: #6b7280">—</div></div>
-        <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #6b7280">—</div></div>
+        <div class="return"><div class="return-label">5D</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">1M</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">6M</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">YTD</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">1Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">3Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
+        <div class="return"><div class="return-label">5Y</div><div class="return-value" style="color: #059669">+0.00%</div></div>
         <div class="return"><div class="return-label">10Y</div><div class="return-value" style="color: #6b7280">—</div></div>
       </div>
-      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share against today's price.</div>
+      <div class="meta-line">P/E and yield use the latest reported EPS and dividend per share (checked Sep 24, 2026) against today's price.</div>
     </div>
 
     <!-- About -->
     <div class="section">
       <h2>About ARM Cement Ltd</h2>
-      <p class="para">No company description available yet.</p>
+      <p class="para">ARM Cement Limited is engaged in the manufacture and sale of cement, mining and processing of industrial minerals and chemicals, trading in other building products and the sale of fertilizers. The Company's segments include Cement and lime, and Other products. Its subsidiaries include ARM (Tanzania) Limited, which is engaged in extraction and processing of limestone; ARMSA (Pty) Limited, which is engaged in manufacturing of silicate liquid; Maweni Limestone Limited, which is engaged in manufacturing of cement, and Kigali Cement Company Limited. It has operations in Kenya, Tanzania and South Africa and Rwanda. The Company's brands include Rhino Cement and Mavuno Fertilizers. In July 2014, ARM Cement acquired the remaining 65% interest in Rwandese company Kigali Cement.NOTE: Shares of ARM Cement Ltd are currently suspended from trading on the Nairobi Securities Exchange (NSE) since close of trading on Friday, August 17, 2018. ARM Cement is traded on the NSE under the ticker symbol “ARM”. The International Securities Identification Number (ISIN) of NSE:ARM is KE0000000034. ARM Cement Ltd is currently the 40th most valuable stock on the NSE with a market capitalization of KES 5.28 billion, which makes about 0.126% of the Nairobi Securities Exchange equity market. The current share price of ARM Cement Ltd (ARM) is KES 5.50. ARM closed its last trading day (Friday, August 17, 2018) at 5.50 KES per share on the Nairobi Securities Exchange (NSE), recording a 7.8% gain over its previous closing price of 5.10 KES. ARM Cement began the year with a share price of 13.00 KES but has since lost 57.7% off that price valuation. Shareholders’ fears may be allayed by the 22% increase of ARM share price since July 20th. ARM Cement has traded a total volume of 128 million shares over the past three months (May 21 - Aug 17, 2018), averaging a volume of 2.03 million shares per session. A volume high of 17.8 million was achieved on July 2nd, and a low of 5,500 on July 11th, for the same period. The table below details the last 10 trading days of activity of ARM Cement on the Nairobi Securities Exchange. ARM Cement Limited operates in the Industrials sector. ARM Cement Limited, issuers of the ARM stock on the Nairobi Securities Exchange, have four market competitors who are also engaged in the Industrials sector. The table below presents an overview of their market standing.</p>
       <dl class="facts">
         <div><dt>Sector</dt><dd>Construction &amp; Allied</dd></div>
+        <div><dt>Industry</dt><dd>—</dd></div>
+        <div><dt>ISIN</dt><dd>KE0000000034</dd></div>
+        <div><dt>Website</dt><dd><a href="https://www.armafrica.com" target="_blank" rel="noopener">www.armafrica.com</a></dd></div>
+        <div><dt>Address</dt><dd>Rhino House, Chiromo Road, Westlands, P.O. Box 41908, 00100, Nairobi, Kenya</dd></div>
       </dl>
     </div>
 
@@ -783,21 +897,30 @@
           <tr><th>Ticker</th><th>Company</th><th class="num">Price</th><th class="num">1Y</th><th class="num">Mkt Cap</th><th class="num">P/E</th><th class="num">Yield</th></tr>
         </thead>
         <tbody>
-          <tr class="current-row">
-            <td><strong>ARM</strong></td>
-            <td>ARM Cement Ltd</td>
-            <td class="num">5.50</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
           <tr>
             <td><a href="bamb.html">BAMB</a></td>
             <td>Bamburi Cement Ltd</td>
             <td class="num">54.00</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
+            <td class="num" style="color: #059669">+0.00%</td>
+            <td class="num">KES 19.6B</td>
+            <td class="num">15.2×</td>
+            <td class="num">10.1%</td>
+          </tr>
+          <tr>
+            <td><a href="crwn.html">CRWN</a></td>
+            <td>Crown Paints Kenya Ltd</td>
+            <td class="num">58.75</td>
+            <td class="num" style="color: #059669">+9.81%</td>
+            <td class="num">KES 8.3B</td>
+            <td class="num">8.8×</td>
+            <td class="num">5.1%</td>
+          </tr>
+          <tr class="current-row">
+            <td><strong>ARM</strong></td>
+            <td>ARM Cement Ltd</td>
+            <td class="num">5.50</td>
+            <td class="num" style="color: #059669">+0.00%</td>
+            <td class="num">KES 5.3B</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
@@ -805,17 +928,8 @@
             <td><a href="cabl.html">CABL</a></td>
             <td>East African Cables</td>
             <td class="num">1.71</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-            <td class="num">—</td>
-          </tr>
-          <tr>
-            <td><a href="crwn.html">CRWN</a></td>
-            <td>Crown Paints Kenya Ltd</td>
-            <td class="num">58.75</td>
-            <td class="num" style="color: #6b7280">—</td>
-            <td class="num">—</td>
+            <td class="num" style="color: #059669">+0.00%</td>
+            <td class="num">KES 432.6M</td>
             <td class="num">—</td>
             <td class="num">—</td>
           </tr>
