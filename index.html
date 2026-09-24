@@ -945,6 +945,14 @@
       line-height: 1.9;
     }
     
+    /* Link rows wrap onto several lines on narrow screens (the links have no whitespace
+       between them, so without flex-wrap a row is one unbreakable line) */
+    .site-footer > div:not(.source-note) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    
     .site-footer a {
       color: #4b5563;
       text-decoration: none;
@@ -1178,7 +1186,7 @@
       <div class="source-note">Prices from <a href="https://afx.kwayisi.org/nse/" rel="noopener">AFX (afx.kwayisi.org)</a>. Not affiliated with the Nairobi Securities Exchange. Not investment advice.</div>
     </nav>
     <!-- /SITE_FOOTER -->
-    <p class="disclaimer">For informational purposes only — not investment advice. Prices, returns and financials come from Yahoo Finance and company filings and may be delayed, incomplete or inaccurate. Company profiles are editorial summaries and may not reflect the latest developments. Do your own research and consult a licensed financial advisor before making investment decisions.</p>
+    <p class="disclaimer"><!-- DISCLAIMER -->For informational purposes only — not investment advice. Prices come from AFX (afx.kwayisi.org), are published after the NSE close and may be delayed, incomplete or inaccurate. P/E and dividend yield use the latest reported EPS and dividend per share against the current price. Not affiliated with the Nairobi Securities Exchange. Do your own research and consult a licensed investment adviser before making investment decisions.<!-- /DISCLAIMER --></p>
   </div>
 
   <script>
@@ -2996,19 +3004,22 @@
           "suspended": false,
           "pricesAsOf": "2026-09-23T15:13:12+00:00",
           "oneDay": 0.47,
-          "fiveDay": null,
-          "oneMonth": null,
-          "sixMonth": null,
-          "ytd": null,
-          "oneYear": null,
-          "threeYear": null,
-          "fiveYear": null,
+          "fiveDay": 7.46,
+          "oneMonth": -3.14,
+          "sixMonth": 15.63,
+          "ytd": 17.65,
+          "oneYear": 20,
+          "threeYear": 369.57,
+          "fiveYear": 129.79,
           "tenYear": null,
-          "pe": null,
+          "pe": 6.8,
           "pb": null,
-          "dividendYield": null,
-          "marketCap": null,
-          "range52w": null,
+          "dividendYield": 8.33,
+          "marketCap": 71172000000,
+          "range52w": {
+            "low": 8.02,
+            "high": 12.6
+          },
           "news": [
             {
               "title": "Kenya’s peak electricity demand hits a record 2,549MW as KenGen revenue rises 6.4%",
@@ -3029,7 +3040,15 @@
               "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbVl2ejZSOHdtNVBTMjJtcVlrSFlZYnBEbWVvMlNtQVhFVGVYWlZ3aUVCeEZqYW9iSWE0Ukw4RURpOWFLTGd5TllIMTE0aEtEeDFZYXUtbFJHTmhfZ3U1cldWYzA3dGJ2T3UyblBYYXdHS29odjhHc3VrYnNfQ3haWkVla2E?oc=5"
             }
           ],
-          "spark": {}
+          "spark": {
+            "fiveDay": [10.05,10.7,10.8,10.75,10.8,10.8],
+            "oneMonth": [11.15,11,10.95,10.95,10.95,10.95,11.25,11.95,12.6,12.55,11.05,10.65,10.85,10.95,11,11.1,11,10.6,10.05,10.7,10.8,10.75,10.8,10.8],
+            "sixMonth": [9.34,8.88,9.22,9.16,9.3,9.3,9.28,9.3,9.3,9.24,9.24,9.14,9.18,9.1,9.1,9.1,9.1,9.12,9.12,9.62,9.76,9.86,9.84,9.94,10.45,10.35,10.5,10.6,11.5,10.95,11.25,11.2,11.15,10.95,11.25,12.55,10.85,11,10.7,10.8,10.8],
+            "ytd": [9.18,9.5,9.82,9.6,9.6,9.56,9.6,9.62,9.58,9.6,9.18,9.58,9.32,9.02,9.12,9.3,9.28,9.3,9.26,9.24,9.2,9.1,9.08,9.1,9.12,9.48,9.76,9.94,9.94,10.4,10.5,10.75,10.85,11.3,11.15,10.95,12.6,10.95,10.6,10.8,10.8],
+            "oneYear": [9,9.12,9.1,9.98,10.4,10.3,10.3,9.96,8.22,9.22,9.16,9.82,9.62,9.62,9.6,9.58,9.56,9.44,9.56,9.32,9.22,9.26,9.28,9.3,9.24,9.2,9.12,9.1,9.12,9.9,9.92,10.05,10.45,10.75,10.95,11.2,10.95,12.55,11,10.8,10.8],
+            "threeYear": [2.33,2.2,2.32,2,1.99,2,1.99,2.35,2.31,2.4,2.37,2.36,2.5,3.15,3.16,3.99,3.42,4.14,4.5,5.14,4.69,4.88,5,7.16,7.36,8,9.14,9.18,10.25,9.02,9.62,9.58,9.56,9.26,9.24,9.1,9.92,10.75,10.95,10.8,10.8],
+            "fiveYear": [4.7,4.6,4.19,4,3.54,3.51,3.5,3.74,3.49,3.26,3.21,2.62,2.38,2.29,2.4,2.3,2.3,2.3,1.99,1.99,2.21,2.4,2.37,2.5,3.19,3.48,4.12,5.14,4.89,5.42,7.36,9.92,10.4,9.02,9.58,9.32,9.24,9.78,10.95,10.8,10.8]
+          }
         },
         "KNRE": {
           "symbol": "KNRE",

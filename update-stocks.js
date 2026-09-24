@@ -380,7 +380,7 @@ function range52w(history, price, now = new Date()) {
 }
 
 function render(data) {
-  const { renderProfile } = require('./templates/profile');
+  const { renderProfile, DISCLAIMER } = require('./templates/profile');
   const { renderSector } = require('./templates/sector');
   const { NAV_CSS, renderNav, renderFooterLinks } = require('./templates/site');
   const { renderHomeHead, renderStaticStocks, renderStaticNews, renderMarketStrip } = require('./templates/home');
@@ -412,6 +412,7 @@ function render(data) {
     .replace(/<!-- MARKET_STRIP -->[\s\S]*?<!-- \/MARKET_STRIP -->/, () => `<!-- MARKET_STRIP -->${renderMarketStrip(data.market, Object.values(stocks))}<!-- /MARKET_STRIP -->`)
     .replace(/<!-- STATIC_STOCKS -->[\s\S]*?<!-- \/STATIC_STOCKS -->/, () => `<!-- STATIC_STOCKS -->${renderStaticStocks(Object.values(stocks))}<!-- /STATIC_STOCKS -->`)
     .replace(/<!-- STATIC_NEWS -->[\s\S]*?<!-- \/STATIC_NEWS -->/, () => `<!-- STATIC_NEWS -->${renderStaticNews(Object.values(stocks))}<!-- /STATIC_NEWS -->`)
+    .replace(/<!-- DISCLAIMER -->[\s\S]*?<!-- \/DISCLAIMER -->/, () => `<!-- DISCLAIMER -->${DISCLAIMER}<!-- /DISCLAIMER -->`)
     .replace(/<!-- DATA_TIME -->[\s\S]*?<!-- \/DATA_TIME -->/, () => `<!-- DATA_TIME -->${dataTimeLabel(asOf)}<!-- /DATA_TIME -->`);
   fs.writeFileSync('index.html', indexHTML);
   console.log('Updated index.html');
