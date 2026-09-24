@@ -219,7 +219,9 @@ function renderKeyRatios(stock) {
       : 'Share of earnings paid as dividends (approx.)';
   const turnoverNote = stock.avgDailyTurnover == null
     ? 'Not available yet'
-    : isThinlyTraded(stock)
+    : stock.avgDailyTurnover === 0
+      ? '<span class="warn">No trades in the last 3 months</span>'
+      : isThinlyTraded(stock)
       ? '<span class="warn">Thinly traded: prices can be stale</span>'
       : `Per session, last 3 months${stock.liquidityRank ? ` · #${stock.liquidityRank} most traded` : ''}`;
   const since = stock.maxDrawdownSince && stock.maxDrawdownSince > new Date(Date.now() - 4.9 * 365.25 * 864e5).toISOString().slice(0, 10)
@@ -231,7 +233,7 @@ function renderKeyRatios(stock) {
       <div class="grid-3">
 ${statCard(tip('Payout Ratio', 'payoutRatio'), pctPlain(stock.payoutRatio), payoutNote)}
 ${statCard(tip('Return on Equity', 'roe'), stock.roe == null ? '—' : `${stock.roe.toFixed(1)}%`, stock.roe == null ? 'Needs book value (not yet entered)' : 'Net income ÷ shareholders\' equity')}
-${statCard(tip('Avg Daily Turnover', 'turnover'), formatKes(stock.avgDailyTurnover), turnoverNote)}
+${statCard(tip('Avg Daily Turnover', 'turnover'), stock.avgDailyTurnover === 0 ? 'None' : formatKes(stock.avgDailyTurnover), turnoverNote)}
 ${statCard(tip('From 52W High', 'fromHigh52w'), stock.fromHigh52w == null ? '—' : formatPct(stock.fromHigh52w), stock.fromLow52w == null ? 'Needs a year of history' : `${formatPct(stock.fromLow52w)} from 52W low`)}
 ${statCard(tip('Volatility (1Y)', 'volatility'), pctPlain(stock.volatility1y), 'Annualized; higher means bigger swings')}
 ${statCard(tip('Max Drawdown', 'maxDrawdown'), stock.maxDrawdown5y == null ? '—' : `${stock.maxDrawdown5y.toFixed(0)}%`, since)}

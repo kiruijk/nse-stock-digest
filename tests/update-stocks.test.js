@@ -98,3 +98,13 @@ test('riskStats: volatility needs a year of history; drawdown is peak to trough'
   // Suspended for years: no recent trades at all
   assert.deepStrictEqual(u.riskStats([['2018-01-02', 5], ['2019-03-01', 4]], 4, NOW), { volatility1y: null, maxDrawdown5y: null, maxDrawdownSince: null });
 });
+
+test('turnover3m: no trading summary on a parsed page means no trades', () => {
+  assert.strictEqual(u.turnover3m({ description: 'x', avgDailyTurnover: 21676 }), 21676);
+  assert.strictEqual(u.turnover3m({ description: 'x', avgDailyTurnover: null }), 0);
+  // REIT pages have no description but still parse (ISIN, sector)
+  assert.strictEqual(u.turnover3m({ description: null, isin: 'KE9100008870', sector: 'Real Estate', avgDailyTurnover: null }), 0);
+  // Page didn't parse (layout change?) or no details yet: unknown, not zero
+  assert.strictEqual(u.turnover3m({ description: null, avgDailyTurnover: null }), null);
+  assert.strictEqual(u.turnover3m(null), null);
+});

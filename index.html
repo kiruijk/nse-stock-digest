@@ -450,6 +450,88 @@
       border-color: #0052cc;
     }
 
+    .turnover-filter {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.8rem;
+      color: #4b5563;
+    }
+
+    .turnover-filter > .tip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      background: #e5e7eb;
+      color: #4b5563;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .thin-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      border: 0;
+      background: none;
+      padding: 0;
+      font: inherit;
+      font-weight: 600;
+      color: #374151;
+      cursor: pointer;
+    }
+
+    .switch-track {
+      position: relative;
+      width: 2rem;
+      height: 1.1rem;
+      border-radius: 999px;
+      background: #d1d5db;
+      transition: background 0.15s;
+    }
+
+    .switch-knob {
+      position: absolute;
+      top: 0.15rem;
+      left: 0.15rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      transition: transform 0.15s;
+    }
+
+    .thin-switch[aria-checked="true"] .switch-track {
+      background: #0052cc;
+    }
+
+    .thin-switch[aria-checked="true"] .switch-knob {
+      transform: translateX(0.9rem);
+    }
+
+    .hidden-note {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .hidden-note button {
+      border: 0;
+      background: none;
+      padding: 0;
+      color: #0052cc;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
     .mode-toggle {
       display: flex;
       background: #e5e7eb;
@@ -1180,6 +1262,10 @@
             <button type="button" class="mode-btn" data-mode="table">Table</button>
           </div>
         </div>
+        <div class="turnover-filter">
+          <button type="button" class="thin-switch" id="thin-switch" role="switch" aria-checked="false"><span class="switch-track"><span class="switch-knob"></span></span>Hide thinly traded</button>
+          <span class="tip" tabindex="0" data-tip="Thinly traded: averages under KES 1M of trading a day over the last 3 months (or hasn't traded at all). Their prices can be stale, and big moves often come from a handful of small trades.">?</span>
+        </div>
         <div class="period-picker" id="period-picker" role="group" aria-label="Rank stocks by period"></div>
         <div id="stocks-container"><!-- STATIC_STOCKS --><ol class="static-list">
           <li><a href="stocks/uchm.html">UCHM — Uchumi Supermarket Ltd</a> KES 1.62 (+20.00% today)</li>
@@ -1413,7 +1499,7 @@
           "range52w": null,
           "fromHigh52w": null,
           "fromLow52w": null,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": null,
@@ -1541,7 +1627,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": 0,
@@ -1607,7 +1693,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": -42.44,
@@ -1937,7 +2023,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": -53.8,
@@ -2399,7 +2485,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": 0,
@@ -3051,7 +3137,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": 0,
           "maxDrawdown5y": 0,
@@ -3770,7 +3856,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": 0,
           "maxDrawdown5y": 0,
@@ -4034,7 +4120,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": 0,
           "maxDrawdown5y": 0,
@@ -4297,7 +4383,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": 0,
@@ -5415,7 +5501,7 @@
           },
           "fromHigh52w": 0,
           "fromLow52w": 0,
-          "avgDailyTurnover": null,
+          "avgDailyTurnover": 0,
           "liquidityRank": null,
           "volatility1y": null,
           "maxDrawdown5y": -78.23,
@@ -6031,12 +6117,51 @@
     }
 
     // Theme filter plus the search box (ticker or company name)
-    function listedStocks() {
+    // "Hide thinly traded" switch: leaves out the stocks tagged Thinly traded (see isThin)
+    function loadHideThin() {
+      try {
+        return localStorage.getItem('hideThin') === '1';
+      } catch (err) {
+        return false;
+      }
+    }
+
+    let hideThin = loadHideThin();
+
+    // Sector filter plus the search box, before the turnover filter
+    function searchedStocks() {
       const q = searchQuery.trim().toLowerCase();
       const stocks = visibleStocks();
       if (!q) return stocks;
       return Object.fromEntries(Object.entries(stocks).filter(([sym, s]) =>
         sym.toLowerCase().includes(q) || (s.name || '').toLowerCase().includes(q)));
+    }
+
+    function listedStocks() {
+      if (!hideThin) return searchedStocks();
+      return Object.fromEntries(Object.entries(searchedStocks()).filter(([, s]) => !isThin(s)));
+    }
+
+    // "38 thinly traded stocks hidden · Show them", under the list
+    function hiddenNote() {
+      if (!hideThin) return '';
+      const hidden = Object.values(searchedStocks()).filter(isThin).length;
+      if (!hidden) return '';
+      return `<p class="hidden-note">${hidden} thinly traded stock${hidden === 1 ? '' : 's'} hidden · <button type="button" data-show-thin>Show them</button></p>`;
+    }
+
+    function setHideThin(value) {
+      hideThin = value;
+      try { localStorage.setItem('hideThin', value ? '1' : '0'); } catch (err) { /* ignore */ }
+      previousRanks = null;  // rank arrows only make sense within the same set of stocks
+      renderThinSwitch();
+      renderRanking();
+    }
+
+    function renderThinSwitch() {
+      const sw = document.getElementById('thin-switch');
+      sw.setAttribute('aria-checked', String(hideThin));
+      sw.onclick = () => setHideThin(!hideThin);
     }
 
     function loadMode() {
@@ -6271,13 +6396,23 @@
           ? `sorted by ${{ price: 'price', marketCap: 'market cap', pe: 'P/E', pb: 'P/B', dividendYield: 'dividend yield', payoutRatio: 'payout ratio', roe: 'ROE', turnover: 'daily turnover' }[tableSort.key]}`
           : `ranked by ${period.name} return`;
         renderTable(sortForTable(listedStocks()));
+        appendHiddenNote();
         return;
       }
       const ranked = rankBy(listedStocks(), period.field);
       const before = cardPositions();
       renderStocks(ranked, previousRanks);
+      appendHiddenNote();
       animateReorder(before);
       previousRanks = Object.fromEntries(ranked.filter(s => !s.suspended).map((stock, i) => [stock.symbol, i + 1]));
+    }
+
+    function appendHiddenNote() {
+      const note = hiddenNote();
+      if (!note) return;
+      const container = document.getElementById('stocks-container');
+      container.insertAdjacentHTML('beforeend', note);
+      container.querySelector('[data-show-thin]').onclick = () => setHideThin(false);
     }
 
     function cardPositions() {
@@ -6319,7 +6454,7 @@
       let html = '<div class="stock-grid">';
 
       if (!ranked.length) {
-        container.innerHTML = '<div class="empty-state">No stocks match your search.</div>';
+        container.innerHTML = `<div class="empty-state">No ${hideThin ? 'actively traded ' : ''}stocks match your search.</div>`;
         return;
       }
 
@@ -6457,6 +6592,7 @@ function main() {
   document.getElementById('loading').style.display = 'none';
 
   renderThemeFilter();
+  renderThinSwitch();
   renderThemePanel();
   renderRanking();
   renderNews(visibleStocks());

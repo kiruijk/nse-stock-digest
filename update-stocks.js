@@ -392,10 +392,21 @@ function withDetails(stock, bookValues = {}) {
     range52w: range,
     ...rangePosition(range, stock.price),
     // 3-month trading summary from the company page (liquidity)
-    avgDailyTurnover: details?.avgDailyTurnover ?? null,
+    avgDailyTurnover: turnover3m(details),
     liquidityRank: details?.liquidityRank ?? null,
     ...riskStats(history, stock.price)
   };
+}
+
+// Average KES traded per session over 3 months. The company page only has a trading
+// summary when the stock traded in that period, so a page that otherwise parsed (it has a
+// description, ISIN or sector; REIT and ETF pages often lack a description) but has no
+// summary means no trades: 0. Null when the details are missing or the page didn't parse,
+// so a layout change doesn't make every stock look untraded.
+function turnover3m(details) {
+  if (!details) return null;
+  if (details.avgDailyTurnover != null) return details.avgDailyTurnover;
+  return details.description || details.isin || details.sector ? 0 : null;
 }
 
 // % below the 52-week high (≤ 0) and above the 52-week low (≥ 0)
@@ -579,7 +590,7 @@ if (require.main === module) {
 
 // Exported for tests
 module.exports = {
-  returnsFromHistory, mergeHistory, range52w, rangePosition, riskStats, sparklines, chartSeries, downsample, valuation,
+  returnsFromHistory, mergeHistory, range52w, rangePosition, riskStats, turnover3m, sparklines, chartSeries, downsample, valuation,
   pickDetailTickers, parseGoogleNews, cleanNewsTitle, isLowValueNews, newsQuery,
   nairobiDate, dataTimeLabel, compactNumberArrays, RETURN_PERIODS
 };
