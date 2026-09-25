@@ -5,7 +5,9 @@
     "nasiChangePercent": 0.02,
     "nasiYtdPercent": 33.19,
     "marketCap": 4219999999999.9995,
-    "asOf": "2026-09-25T14:28:12+00:00"
+    "asOf": "2026-09-25T14:28:12+00:00",
+    "fetchError": "Timeout fetching https://afx.kwayisi.org/nse/",
+    "fetchErrorAt": "2026-09-25T19:54:51.498Z"
   },
   "stocks": {
     "ABSA": {
@@ -35,6 +37,12 @@
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5YQnB3YWhCd2JOc2pWdWtqS2gwU2dKNFUwc2lmVjJJVHFqOEV4ZlBJTWUyTF9MRG9YeDZxWWswM0lYZHRvZEJDRDVRajdQSEFTOU1sWjRsbloyMUFpbDJndDE2bWlXSVN4OWtWWG9kZw?oc=5"
         },
         {
+          "title": "Absa unveils all-in-one mobile app",
+          "source": "standardmedia.co.ke",
+          "date": "2026-09-25T14:28:31.000Z",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmVkNkZBNnI3Q0hXb0MwUXZtN1JEdTVVT084Z0FXMGE0THpJWE1fM3ItN1ZaOVVuOXlrOHp0dnhDT1FlZkVpc0h0WmdEdU1idXRoMF96TTBhYVN6Mk1CS1UyZnJjNkNHNkNCd2JIbG5QeVNGTEZycnQ4eHJlUXM4MnZtSl9qcW5SVnd0Y0FlRGZpV0kwZGVuTHkxQzc2WWg3VXBmSHd3?oc=5"
+        },
+        {
           "title": "Absa takes banking battle to rival apps with new digital platform",
           "source": "the-star.co.ke",
           "date": "2026-09-25T12:53:00.000Z",
@@ -57,14 +65,10 @@
           "source": "Business Today Kenya",
           "date": "2026-09-24T17:41:51.000Z",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHY2FTTUI4UzdQdlM0SVVaaFdaTlRmS1BCUUhXMmNFSWFKaDZYNER4MVZLd1YwNUdhN2EzNDVrRWRNMTJUQzMxQnJDVDNqeXpZSTJQS1hSaGl6UW5wMF9SS2c0azZHRXZNU3VKamgySmhBTUQwSVJqVDZqVF9rdw?oc=5"
-        },
-        {
-          "title": "Absa, UN Agencies Unlock Financing to Close Kenya’s $2.1 Billion Cold Storage Gap",
-          "source": "Khusoko",
-          "date": "2026-09-24T15:45:01.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONm05UW12cE1VZUFSN1dTdnhYUXBULWdFNEZ5UVc3OGRZV0k5eDF2Vk5PNmc1YzRWQkpvbng2akJKdEJhaDJGSU1fbk5Mekw4cUZHUnpBaU9Eb1p4R0p0bi1acjdiMkcwTndzWDFnMHNQazJ1MUdTVUlfRTZydXRnc05R?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "ALP": {
       "symbol": "ALP",
@@ -122,7 +126,9 @@
           "date": "2026-03-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSjEyOUJDLTQ4RlBHWF9NcmhFVmI4ZWl3SWNJNkxhbHBxVnd5bkR2ZmY3amE5bWY3VEpEdGtYaGtTVFQ1UWNBMlhyVW11a2Q2a1VjWUpidVljSXZzdVdHV1BSa1RaV1RLeHQtWmszdVpaNEFQLXNGMWliMFdpcGpwSFB1cGlwTEdlMW9TVWFKUkFJT2pDYWN6X0hLMzlOaTZOVzF4dTZwOVbSAa4BQVVfeXFMT2RLdmhibVBqQkJFZS1UM013elVOd2Juc0x2cnd4Z0pqMXJoZGJ1Z1JLTWlUMGRETjRRbHFMNWVZenVMMTQzWVVFSVI1a0Zvenh6bG9Sdjg2ZjlIWU9CUllHRGVscUZzMURsRE80QktRSW5pZmpkNmJTQ09BeGFhTmdNdGlBX0E2TTZ0RmdCc0o2ZmZhQjFfMnFfLWctTWlQZ0FDcnFYdHFMSUNfQWt3?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "AMAC": {
       "symbol": "AMAC",
@@ -176,11 +182,13 @@
         },
         {
           "title": "Kenya Orchards rebrands to Africa Mega Agricorp after $5.88M majority stake sale",
-          "source": "freshplaza.com",
+          "source": "FreshPlaza",
           "date": "2025-02-04T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN0pHeHNqd2M3ekRucGdkV3dYTWhyOXZHbkpEUUhwQ3NTMS1VbzFiUGFPSDhkWnV2cWxHRnBERk93eHF5OGUwaGp6SXBUUzlwY3FJUUVLRDZzc3pEZ3RjTlpLZEtZNXA1b1hPSUtZYUZaMWRSTHFsZWFqVEp2WjdENWlmTERiblN4Undmd3RvYjR3RFZqUGExWjdSa08xWEgxWDdSYXhybFY5cTRmdlZjN1B6eUpabzdZdXoxa1loZmYzWU1oZkM5WWlR?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "ARM": {
       "symbol": "ARM",
@@ -238,7 +246,9 @@
           "date": "2024-12-03T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeXRvWVc3M0dhN3ZtZ2NqRlA2ZDdsNzE3QUxocVcxdVN6V3ozcnFHQzQ2MGdQVGtCdW1yNmE5WTQxT3JLQ2VwTEx2N3luZDJuR040YlBYTFpwRFBDaE5wVVdqeXJkZ1ZxSE83V2U2Z0lCM3Nmc3AxVE9PcFNncDUyWEp1Wk5sek8xN2FaSEJMNTdYMnRORlhZeVQtOVJlWmo0MHd3T3FZeC1pdnVmWDRybkszbm1iaTdwNlBMTTFXT250QQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "BAMB": {
       "symbol": "BAMB",
@@ -267,6 +277,18 @@
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOM1pVcmltcGJRNlBMOXVZd0NHeUpaOS11RU1kR2x3T3JGZUlYckRiU2lNOEcwNnFkZ0kwY2ZRWHdDbGVobzdQb2VwRTNXdTBfNTRSbWhQbDNyOTlxMmo5QUVXV2pUcGZjUXBPbEZlM3NGckF6ODVhb0tNb0w5TVVHTVFMVHRMVzVOVmpMQVZ2QTlHZUUxT2c?oc=5"
         },
         {
+          "title": "Kenya destroys $63 million meth haul intercepted at sea",
+          "source": "Benzie County Record Patriot",
+          "date": "2026-09-25T03:32:25.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZFpGUXBmTnNPNFk3cmZKYU5tekRkaUltek93UTVGeE9vRnhJUE5rdy1TRVNaaUljdEpSUHo5NU0zZHdMeDhDT1ktaEt4S1RsZEI3emRjaEtFZ2pDNThpOUtFWGRoNUZlQjM1ekllOF91aS11UC15Uks3SVhxdkdTOXpVb2ZTQ042Y0F4T1E2YmFvUjJORVJIN1VxVXpHRlYxRDNBWUJvNzhsU0pxa0E?oc=5"
+        },
+        {
+          "title": "Mombasa turned into security zone as Sh8.2bn meth haul is destroyed",
+          "source": "Daily Nation",
+          "date": "2026-09-25T03:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUmNWa0s3eld1QmU0RnNIcGlKaXVFVnhobW5ENjE4SUMzNVZ2SUp6Y1g0WnF0Skdoa0txTEl5WlU1eUxrWHU3WnlReUxVaUlQa3hSY2Jzd1RGSzE4RjY3R0dTdGc4Mi1mTXB0X3hqUXUtUzFWZkFxWEVEdkpCVmM4NGI3OEllZVN5X2FES0p6TU91blplVWozRFNzLWxPdjdBd0pLRDk0Z3dUTndG?oc=5"
+        },
+        {
           "title": "Murkomen presides over destruction of Sh8.2b meth",
           "source": "standardmedia.co.ke",
           "date": "2026-09-24T15:17:31.000Z",
@@ -283,20 +305,10 @@
           "source": "Business Daily",
           "date": "2026-09-21T15:45:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTUZudVhlU01BbXl3bTNkQkdwNTFoUjZkNHNmUzlRU054bWxIUWc3Uy1GZzJRMWZvQ1NSaWN3SklkVmVZTHp2bkthSGVPUnEwVE0tNGp2a3U1MktVZTBLcG1RNWloTFRXVjhMZkIzNXh2aWM1TWJHWF9QbmJmWmVXem5ER1FCOWVScGYxbDRINlZOUGVfbmcwbEhzRnpfQXRQd2JXQ05pVmh6Zm9lcVpycXd2LWplNGE2dkIxNXZZdlc?oc=5"
-        },
-        {
-          "title": "Bamburi Cement owner to build 10 hospitals for Sh4.5bn",
-          "source": "Capital FM Africa",
-          "date": "2026-09-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQkdQNXgza2lXXzd5ZU51RUFQejBFYlRScGhFTlhDMk1pRmVrX2thTldNRXZJaGxaT29EbWZfU3o5VkpGSWxfVnJhVXhGMUJrN0JHdERnaTg4WU8yTWY1cHh4Ym1NSlM1akxrWmFTcGNyRG52V2dXMjhfd0V2QTBMa3l1M1d1ZHM?oc=5"
-        },
-        {
-          "title": "HOAX: This video advertising jobs at Bamburi Cement is fraudulent",
-          "source": "PesaCheck",
-          "date": "2026-09-10T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOODJDMU5iMEctQzZ1NnBvRUVNV1FGeUZwTFlnMmZIMWxKUTJmNUNzNUlzbjg3cGtsdC1iQU9pTU9lMERxempkZm5FRHZFZkZsRVpnS18wa3NCcVRBekFBbERZSVdCNWdCNjl0U29UamY4MDRiT0dSSi1UQV9xcDdnc1JxU2xOZEt2d3B4UnF1TlA?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "BAT": {
       "symbol": "BAT",
@@ -325,6 +337,12 @@
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdzVrTldmSVZBbkZnVWRVTmVtdldqMnBSTDZRSXgtY1VBNHFSbkpzWEdrSDZDRkpfRUE0cWR5MjE0QktfclpsSjg2dXZUeHl5NE9nSFppUFU1Z3NGSl91TVc2dkJva2p0ZmpDd0VEU0lKc2hab21hTm1jUEZuV0tGWVNJZlhCalRTSXZYbHVSdUhEQ2tVTWVSVXBRNEQ0ZUFXUmZaYTVR?oc=5"
         },
         {
+          "title": "BAT Kenya Says Illicit Cigarettes Costing $92M in Lost Taxes",
+          "source": "Tobacco Reporter",
+          "date": "2026-07-27T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbDJOUTBLZVUtUFZzNGhOcGZYb1BDRUdIVmpia3E3TkRkZkpiOXpKblNmbFFLSE9ZWW9kb05sOVZJY0N3cnpuWDk3bHlPZnBkY042YXpHc2V3bk1VMV9UQlJPOWM4YnFnZlN3UUptTWVtdWg2QWo5NWxFbnJpaFNhd2prSHF0MkpMQk1yUlYyRV84ZXpvZUQ0UjA2N2hOM3o3?oc=5"
+        },
+        {
           "title": "BAT Kenya sounds alarm over illicit cigarettes as tax losses hit Sh12bn",
           "source": "the-star.co.ke",
           "date": "2026-07-25T07:00:00.000Z",
@@ -347,14 +365,10 @@
           "source": "The Kenyan Wallstreet",
           "date": "2026-07-23T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Fc3N3dmlCZ21wQzhvcXVVVUxFUVNoMzNnUW5KcjRrNmJnSjRxTThTbDBiZXdtbGQ5Z2N0WkZna3ZMMlNoZ0E0c1ZuUFM5bkYzdzNEaGJ2MXRHV2N0UTdhVElBWUk?oc=5"
-        },
-        {
-          "title": "BAT Kenya profit up two per cent as exports cushion hit from illicit cigarette trade",
-          "source": "the-star.co.ke",
-          "date": "2026-07-23T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYmlMX2Z1OWF5SVMyNjdvS0RLMXZlQlVrOVRXdFdFcjV0MV84a25KM0NDTEM3SFdKdkJUMTd5WHFxdTJ1Z3lLbTR4cG5RQmI3a2EwZmVoQzZEdkkxeEpSSHA2OHg0T21oU28yUFN4Q2lobXpoc09wY0hEMTRPZHdUbG90WFBoMlNOV1dfM3NNdWhzcWJXNWxnZDFRYUViTGxMOFp2ak5nZ0lRM0VmWGtLaWZ1ZVVzM1NYc3R3enZWZ21FVVhLMGstOW1GWQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "BKG": {
       "symbol": "BKG",
@@ -378,7 +392,7 @@
       "news": [
         {
           "title": "BK Group PLC: Corporate Refocus Rwanda Narrows to Core Banking",
-          "source": "Wansom AI",
+          "source": "wansom.ai",
           "date": "2026-09-04T09:34:38.000Z",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaENXYmN6emxzekxrQkpzYlhjRG1zeHBzRDhLRmVhZmZIRExSakU4aENNVGJhWmRWOGhJVUxLbEFaVlRUVmdYQmpkVVhITTZVQXczbGNqa192MFdiWlIzeXZ4TTZKQm5GbXlsOFdmWWl6RzRxVVZkNjFkNV9mdExMeGsxa2V1bjNJNzFob2tMaGt6Sks0aUJCOXM0QVg0NEpjUm0zaVJIbGZhTEdTOGVVX2RGak5sNE1p?oc=5"
         },
@@ -402,7 +416,7 @@
         },
         {
           "title": "BK Group sells insurance unit for RWF 31.7 Billion",
-          "source": "africabusinesscommunities.com",
+          "source": "Africa Business Communities",
           "date": "2026-09-02T07:35:13.000Z",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOHNTeC1Fcm9XbVRnd1NhS3RBUGJyTTYxTXpaZjZrMlpTZ0NYcHQxSTV5MlVYQi1Fa0x3VHROUU5TdjBuVjk1M1RGTVlIemZCenVFeUl5RUlHN1pLMDFQRWptdmdXaTZZYjZ0SUxZOEJMc19HMDlHTHp1bmJQbUxCY2pZOVBfZmNsNmdBcjItYWZtVEdXbTJHSmFWcm9fZw?oc=5"
         },
@@ -412,7 +426,9 @@
           "date": "2026-09-01T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fa1ZVUGJmRGowV0FXbjBxaGM0UVNDSG1xajY1QzhQM2lzWXBNQWU4NnMtWG5vVm5ma2dOWkF3aV95OVRLNERHdnNOay1GdjRBaWVBa3BjRVU?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "BOC": {
       "symbol": "BOC",
@@ -470,7 +486,9 @@
           "date": "2026-07-06T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE93WTZ6MEdpczhiNVZINzR0cTBzUFdZb3F2dnRGWGQ3MFUwTFdBbDZ3aUU2TnB0ZnMtX2dZRTdkd3o5ejM2RmltazJ1ZzVKT0FWRUtLc0dyaGFvWjU4TDVtenFfQnZMNEFETExSckNmTDFrWFgxUzRySVZ2Zw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "BRIT": {
       "symbol": "BRIT",
@@ -494,7 +512,7 @@
       "news": [
         {
           "title": "Britam eyes Congo entry with acquisition of financial services firm",
-          "source": "The EastAfrican",
+          "source": "theeastafrican.co.ke",
           "date": "2026-09-09T17:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONVY2Z3d4dWpsdXNUSGR2MlRXZDNkdEhhb29vNXhHQ3NhdXVOcmdQNGd6ZzYxVEo4UWJyVkRRV050YmI5QV9rSkNrU1BwSi1Kc0RhTWNfbHN4Z2c4aGlKWnBNY3lwME5XeF93ZXlUZHNPSlF0UlN6VWlSQTVRTm91bnRlcmViR0ZZU3c?oc=5"
         },
@@ -528,7 +546,9 @@
           "date": "2026-07-01T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUVR3WkVqTjdfR2xoZUJoMXB3ZHJPdHZVeGhicThMM0E3NXlRUWYyYXAtNExUMVg2c0RxbXZFZ3l6ODBaSjh0bWpmVVdmRHBab2RReHRLMVdjbEM1eXBIcXdoTXZIVUprV1E0R0RqV0NrUXZMNkVBaEpHNVZ3NkxVT0l5MzB1UTdCYkpyeGhwWFJ2d1VrVXRUV0pJVnJmWDk3YVloZVhnS1J4R3R3RXpPZzZ3?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CABL": {
       "symbol": "CABL",
@@ -575,18 +595,20 @@
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5CLXRYZ3ZoX1JacHE2WFQxc2ZwQVdDd3BKU3g2WGF5MVg4MnFfbmdFT1dNTk5sU0lzVzBvVTFSX19UbUs1dlN4MTdWMndoS2FVTC1hOENRcU80aVRrRlJfVWZQeWRzUVdtMmoyRDN1eXU5TlloVWpCYTYwUQ?oc=5"
         },
         {
-          "title": "Troubled East African Cables Set For Ownership Shake-Up",
-          "source": "thekenyatimes.com",
-          "date": "2026-05-20T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9rdVQwTllzVGZfODFhc2pDbmZqWmJyNGNoLVVjZUdMNjZoZkFSUTE0aXZzaWxGaTZRU3dHbVJlUEZYMXM5N2hCVVpoZ09mZVViNTR1OVBreGxIS1N0YmhMa2hMMV9sVU84aXpRb0Q5eTJIWmtMQnBvMQ?oc=5"
-        },
-        {
           "title": "East African Cables Plc Acquired by Cable Experts Limited",
           "source": "Business Today Kenya",
           "date": "2026-05-20T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Qd2NBOTMyMlk5QmdJUE80THlfSGdnelVsWXc0ZG1WZ1kxbmo3RWVKZzhaSW5HMGJ2WHNPY1ZmR3dsanpSR1l4MmVETHNpLVlxdF9ESDhTWHdnallLSTBFb09qSW9yLVMxSkJ5V05CbEd6azRDMDljeDBKWnIwaEE?oc=5"
+        },
+        {
+          "title": "Troubled East African Cables Set For Ownership Shake-Up",
+          "source": "thekenyatimes.com",
+          "date": "2026-05-20T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9rdVQwTllzVGZfODFhc2pDbmZqWmJyNGNoLVVjZUdMNjZoZkFSUTE0aXZzaWxGaTZRU3dHbVJlUEZYMXM5N2hCVVpoZ09mZVViNTR1OVBreGxIS1N0YmhMa2hMMV9sVU84aXpRb0Q5eTJIWmtMQnBvMQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CARB": {
       "symbol": "CARB",
@@ -644,7 +666,9 @@
           "date": "2026-02-26T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeVI3MElWS29hRXZnRGM3SjR2WmwtT3AyYVpHVTVrQ2d1TDRqWXpYQUJFQ1NvMkYyb2hKR3lDWGJ0NDctc0daT0EwdFczaUhaUWhKWm4yMFNfY3d3T2NlTHZ6TGQ1WkFaMVdYUFBuU2ZqRmpUVFJYRjdSSU04RDZBakxHQTZ1N1NkMnVyRDBVZHdPbjZlV1VNWlIxY1JSUE5pam9ySE5nWTRNTHphRndVdFJQeWI?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CGEN": {
       "symbol": "CGEN",
@@ -702,7 +726,9 @@
           "date": "2024-08-25T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZDZpQ2JMYkpiYWVCOG1KWkFVMXJHVFpmQVgzTHI5THdFWGNNT0NBV1ItREdiX3R6UHllLWRsdDZ5eHpUdGR1djJwX2FRU2pObXlfNUdrTzlsZHhUME1MZzl6TUxyUXJBQXVuRjhBWjZKNTllZE41YTgyaC1hYkV4MzE3ZzBjbVZDRzlDSnpSMHI2N2w2QVoxOUZ3ZTVSalMtYmJCZ095N1NvT3IzRG9kSWxtRXprcjFySHZUQW1zU0xXZ2V4THA1YXp3?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CIC": {
       "symbol": "CIC",
@@ -760,7 +786,9 @@
           "date": "2026-04-27T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV3hGdGpveTlKUm9jMlFtTGNxYlMwTTUzRFBEOUJkcmFfMzVXOEd3ZUlSRlY0Rm5aRDRUUjNOeHR0TTFGMU1hSVNCaXhqQnFMTUNWTjBlX3lLS3lHdDBUUjhoOFdHRjBndnBTcEt4bU1DMVYtd0NOVUZPZXpuUVF6bFpXTUNJWWtseW5zVEhISXcydzZwM193a0RfX29VZw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "COOP": {
       "symbol": "COOP",
@@ -818,7 +846,9 @@
           "date": "2026-09-20T03:12:09.000Z",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMWpVMURYaFdaUy1acldWdUtvSWp6MDVKNFpFZGNSVkUtRFlvMUtVZVdzOWhhQ3AzYm54SFRDXzZLWVowbk9qWW5ob2J5bHBGRTBOcFJydnpuUmpmbFVnRzFJZE9RaDBzcGNYMnQxX2UwX1pNVUdlcVJiYU85VnVaRmJQZFhtY202S19iODV5M2gxTml2SnRGVlNLX19ZVG1QR1oxa0hpZmQ0QlE?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CRWN": {
       "symbol": "CRWN",
@@ -840,6 +870,12 @@
       "fiveYear": 122.01,
       "tenYear": null,
       "news": [
+        {
+          "title": "Crown Paints Sets Up Shop On Booming Nairobi-Mombasa Highway Construction Corridor",
+          "source": "Business Today Kenya",
+          "date": "2026-09-25T17:10:43.000Z",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nYzluNEw4d19FQzBZVWRxY0Y3alh0NDRJeVh6RHN5X2xfc3l6TTdsckY2Mzh2d2lJbl9ySkVSOTVqUnktOGg1MXZ0RFNXelltZzBpTlQ4Tk43VGRQamF2c1czWjVHa05zbk1GOGt0LTl4c181RUhNSkdFcWh4Zw?oc=5"
+        },
         {
           "title": "Paint manufacturer shows how to crown top-performing dealers",
           "source": "Daily Nation",
@@ -869,14 +905,10 @@
           "source": "Business Daily",
           "date": "2026-08-20T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaWxtQ3VXUjdlWHptdjNHN21rLVZFVVVFZjFMQmV3SGxXeHBjLWpzVTI1dDYzdlQtdVBucEM5UGdvV1ZObGNwWTVMYUNXcXJ0MmgzdDQ5YzJLY3k1MDlRc3pKdFBkUHZqRmZrME9uTG1ESEU5QVVyUFFwZ3RGc1JEbHpIV3RGUWJhOWZQaXRRLURYcmFIbU5CZHgyZkV0NFl0TjZDUG1pWVFRYnlELTcteGh3TTNnb2pNcUszVFpWWkJwTVNKajNqag?oc=5"
-        },
-        {
-          "title": "Crown Paints ‘adds colour’ to loss-making Tanzania unit but shuts Kenya operation",
-          "source": "The EastAfrican",
-          "date": "2026-06-12T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdkc4eFdPU0doSU1fZkxUTHQ3eFpGRlZid1RBY1ZPM0d5Mm9pakItLVd0QWR2MmJSUXFzQTJQSkJIZFpyNjJGcVVpcnZOVU4wX1FoOVF1S1VYbWJDdS1ucVdJMWloNkxqN3hIUnNYQjRQWDh3Q1FFdlpXN28zQlctYkhfREVocnB5enFqeFNFSjUwOXZFeFRWR09RTnltWXFIdmRsTWtrOGpTb0pweVh6MVhB?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "CTUM": {
       "symbol": "CTUM",
@@ -905,12 +937,6 @@
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYUlUemw4Vm5rdElMZ05QWkE1Rm5tWnc2ak5mVHNlN1hKdndXM2MycXp2bFI5TC0tR1d5R1U0QmRRbjNMTFRWU19IRmlnOWthSlNoMzExY1AycU1saWFkUEZfQnVSQnJIN2JXSl9wY2kxcl9TcXdSdUp4LXZfQlpCOHhELXNpbkUyemFGcm1yRUZ6NHNBVjRZODMyLVZMVlBvdHhRV0tjX1lOZTA5MjNnQVpLSjhSUTVfMFN4SnNCeEoyTm5pUWFzQlFZcnlwOVh1R0U0?oc=5"
         },
         {
-          "title": "Kimani raises Centum stake with Sh133m purchase",
-          "source": "Business Daily",
-          "date": "2026-09-15T16:45:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNjZHUXdsSElVQ0RnNlNjNXppM1NiakVsYktVQjZ4SDR5ZlhwbE1mT3p5TGlZY3l2SG0tM3NMWl9GYnNUMnlZVGp1NVE1ZHZPZGdxaFVBaVNJN0J4LU5kTGdIa3l4blVtRC1EdWJ1NWxvV1dxcDgya0hrU2U5cFVOWF8yVzZMWWJlYVJpclJJaUJRN2g1SlZwTm1NT0R6eWtVNU53bV9MR0lGN3JBWWxmNHVZa08?oc=5"
-        },
-        {
           "title": "Centum taps insider as Mworia exits after nearly two decades",
           "source": "standardmedia.co.ke",
           "date": "2026-09-07T14:01:16.000Z",
@@ -929,12 +955,20 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUzlJMjc4b0kyQVJ4YmpnR2I0ZjI2bXIxZ2I5QWl4Z3RUdFU5dlNPNF8zbGxWRC1UTUI3Y2R0WjlRNGVCSkhtYUNULTV3NEpEYkFINUhTZzR3ZHlTVGs5R1NRYkVXVjlHRFZ2TUpLWmtnRnpHOGpLOUNsQnBOVTI4eHZJSmFmM0gtaks4UjJmV2N3SjZzYWRKaE9qUE9LOUdnUVVIejRFTlVQZ2NfTHc?oc=5"
         },
         {
+          "title": "Centum turns debt-free after 5-year restructure",
+          "source": "Business Daily",
+          "date": "2026-08-01T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZTBSWGxjbGJ4WHJVSEtFV0pUV25ZRVE1SEEzb3FXdVViSFVLRlhYQmg1NndxTGYtUk9hNlUxN3dUNExNc3ZQamNIZjJSSkJ3NXQ4VWM3MXFHZUtvQ2lfVDhVdERGNmhlWjZfVnpXRnJwYy1oLWRRM1JZZVd0Si16Z3JVZ3R6cldIY2FwaFNxS0ZvYThHR1d0SG01M0FrM0VTVmZJZy1wMDF1NFdYUGZEYktWYnk?oc=5"
+        },
+        {
           "title": "Special payout lifts Centum’s total dividend to Sh521m",
           "source": "Business Daily",
           "date": "2026-07-31T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQzdrMVlwcndzYWx1elRrU1NFclRaNW1WVnFjOE5HMXBVNE04VG9fbm5KV2RlMmxtajRoY01GVHZpNHhKUXF5RUxrQjNhbXVTUHh4QXdfNkJCWlNLeEZvMjR5MTJxOXhhY3hKMUxYREp2RmlGNjExNWgyMEJZXzMzcnp5RnI1RjJsNzVqeWtoUXdSUXI5VjEwamlFVFlLQmItN29SbTNlT0VHUU1zbGc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "DCON": {
       "symbol": "DCON",
@@ -956,12 +990,6 @@
       "fiveYear": 0,
       "tenYear": null,
       "news": [
-        {
-          "title": "Deacons CEO Blames Late Opening of Two Rivers Mall as the Genesis of its Financial Woes",
-          "source": "The Kenyan Wallstreet",
-          "date": "2025-10-28T05:40:31.000Z",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSHhNN0JmSC04bTJ6dGhBLVEtZ3F5c1pwVXFRR3FrMFZBV2M4YmhvV05fZ1l3YWMzN3FUQWpleWw0QXp0Vkt1LXBWYlRfNEdQNjZQMTdDSlRYTVpnUVRjeHgxOTFULTZ0X1NJWGpIbVU3eEpidlh5U0NCNVV1c29rSV9OeUZCejU0RlNBSk1lS1YxNzZZU0FzWGFQaWZ2RHc?oc=5"
-        },
         {
           "title": "End of The Road for Deacons as Administrator Plans to Liquidate Firm",
           "source": "The Kenyan Wallstreet",
@@ -991,8 +1019,16 @@
           "source": "Business Daily",
           "date": "2020-12-10T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON2prWnZzdDRrXy0yVC15ZmJEVk50b2dITXk0V0ZaUng4Si1EODVlbGhiTl96RDJyVllnaDlRdU10NFh4T2M0eVNZcTNjanl4Rkx5MVF2QlJFTkhTa2R6WXVCNFk0b2t2OXRvNk9nTjhMMnRQUmp4ZXhRRTAtOTlGRmlkSlR0QUQzR0Q3OHgtbVlleFFMQzJJVDhabFFfd2dzaGc?oc=5"
+        },
+        {
+          "title": "Deacons’ creditors struggle to find buyer for collapsed retailer",
+          "source": "Business Daily",
+          "date": "2020-09-20T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb2xtRVdaVzlBS092aXBIN28wdUYtX1FwYUwtdmNHUWt5dnJJazBkbGZHYzVyTFRUeExQSElhVUg5SjV5anhrbjVyd1FiQ2lwTFpESTlkYjI2SXN1Y2cyb19ud2hhQWxwWnhPRFk4ekF4ZUVoRS1weHN6VVJEUHpydjlta2NlYkU1Zlh1Ty1ORVdRVVZNMnE0TTloY3BMX296dnp4dGVJUnc4WTZ1V3BPZkxSS2xFZUp6cW1WTGFqeVc1b2VXQ0FaM0xB?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "DTK": {
       "symbol": "DTK",
@@ -1034,7 +1070,7 @@
         },
         {
           "title": "Kenyan Court Rules Safaricom, DTB Must Pay Customer KES 4.4M After SIM Swap Fraud",
-          "source": "Techweez",
+          "source": "techweez.com",
           "date": "2026-07-13T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE45MXdaNFg0cW1lQVd3MjJEeHNKSDhuaklqaVNvSGwza1FsblA0WFNJU1JmTlFqcUdHdFk5WGJ0Z3A5dUxoQjAyNDVuSlhNYWJKdkJxckJkT1RTUHdPbnJfSk1KaEtKamVzRTdFOXphMlBkenBiRGtmTw?oc=5"
         },
@@ -1050,7 +1086,9 @@
           "date": "2026-06-19T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TQkVuUEh6QUpKQTlSdTNnR1RBWlFxa2lqbTFYTDR1bGpuOV9iV0xQcUFxNG9kbUZjczBlSGR2V3BPVUhxRGV4S3dobHVIMGcyeksxQ0NORHNRZw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "EABL": {
       "symbol": "EABL",
@@ -1098,7 +1136,7 @@
         },
         {
           "title": "Diageo’s £1.7bn East African Breweries sale halted by Kenyan court",
-          "source": "thedrinksbusiness.com",
+          "source": "The Drinks Business",
           "date": "2026-09-07T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWGJkeTM2RUc4ZU03akNuMk1haWp1dVBTUi1UTGlVM0swUzBza3ZPSE1lVUpsSDBnb3hwZ1pqUFUxc1J4amZsYXJTSVFOMFdWbWZoRGFpaW5Rckd4REd0VVdNelhUNDRPNjRtSi12b2QtNWRNM2RXcHlHWXc0SkZ3MjdVWG05Mjd4d3Bmd1pfZHI0Z1Jlak1DNHVUaXVCdWQ5U2o2VDI2dFhwbEU?oc=5"
         },
@@ -1108,7 +1146,9 @@
           "date": "2026-08-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbzdGOUpwRHpnY0E2WkJ6LTNhaU5MVDdmZnljd1RmWVVfcUtFRTFXa1V3X1hBN1lkV21rTGJQRGs4QmJhUzVNNTU0N0FtcjItMlphU08zTlRoOE1VRGxYYkl5VUlQdWRMcUdra3J1dk5nUEFUU0Vuc2FEdFZBQzBsa00xVWdNQzZ3RnUtYWFlV0VoSXB2S0hCTTlQWnpFNzFVUUlYQ1FlejdraVdCcGc3RElKTXo?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "EGAD": {
       "symbol": "EGAD",
@@ -1166,7 +1206,9 @@
           "date": "2024-05-29T02:44:19.000Z",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9iWWlxQUNRazJvMDgwS2J5Q1Z2dC11NmJQMUF4a1JsNlMzX3VRRFF6MGk1MEVJVjZVRzlaclEwdGU2Qy1VNzlLQlJKZ3ZzSEctN0ZIWVZ1OWVwNHpDWXJCelRQNmc3UjJyZzNDczRiNA?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "EQTY": {
       "symbol": "EQTY",
@@ -1220,11 +1262,13 @@
         },
         {
           "title": "Equity Afia: Scaling healthcare access and opportunity in Kenya",
-          "source": "ariseinvest.com",
+          "source": "Arise Investment",
           "date": "2026-09-17T09:19:39.000Z",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeU5uQjJRNnc1VlRGbTk2QUFwRWNCYU5yck5sRnZyNXRZLTBBNUZuSjFMckZ0NktYRVJmb1E4eElsdUphQ1RqWE52Q0dEV1E3VVN0cnlnN3B6eHU5S2N1VzRXbXd0QXZ1eG9ybzloSE1BZEVlMll4bVVyTFZCV2N6Z3NQUzVpOUhHVkhzOUp1OGo?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "EVRD": {
       "symbol": "EVRD",
@@ -1282,7 +1326,9 @@
           "date": "2026-02-10T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5LenlrUnh6eHFpSFZhTmEtc2x2LWRlcThRZ050WllvVjNKMzZnVlJacG1xRjZrU2FrOHQtaldjMFg3cEE0ZEFodnhwZE03VkRFS3V6QUh2WnNFQWNwSjhTTTh0b2VoMU5ydEEtX2hVS3FWR29wNUduNGF1SHBjdjg?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "FMLY": {
       "symbol": "FMLY",
@@ -1323,6 +1369,12 @@
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyWnBQX3p3S3Z0VTlTdldQOVgzdzRJSHI4RjB6S0xnUFVtWEZ5bmhzVjVLbTNMdmIySk5XdWEtOEZwankwd0dPdGFCYUlna3BZSnVtbFNWYXNoZ2VI?oc=5"
         },
         {
+          "title": "Family Bank net profit up 62pc on higher interest income",
+          "source": "Business Daily",
+          "date": "2026-08-18T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYUIzcFNjaGhKUE9OSjZxZ3NYanphMS1jdnV0YVRWX1lLV1NGcjhLVEZUcldPbVBUUTl1SFBLVklxRWtCT0hVcFpCNl9GbFF6NUZUSWw3M1E3MTFqOFRJU1dQTnpmQktkeHdBTVlIX1U0eEp2bF8wTWY5VUlVSExfSHJwSnQtTEVMaElOeFBHY2hHV3plM1NhcWVYR0lxSXVUM2w0d1Z0RlRielBkYmJFUllEUHFFWURPZEg2Z0tKXzg3Zw?oc=5"
+        },
+        {
           "title": "Shaped by adversity, Family Bank founder Titus Muya’s biggest payday lies ahead",
           "source": "The Africa Report",
           "date": "2026-07-29T07:00:00.000Z",
@@ -1333,14 +1385,10 @@
           "source": "The Kenyan Wallstreet",
           "date": "2026-07-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CUVdUVk9tbW4yX1F0R1dDZzJUSzJyczFmTS14YWZ6Ti1Xdll4T3VPZ2JwX1pRcGd0bzFGT3lZRExTRmRJc3BSeHNZM19uQjJ4Q0l4LVdCWUMtSFVsa1czXzRSeHlKZUQ3Njd3?oc=5"
-        },
-        {
-          "title": "Founder resilience: A lesson from Family Bank",
-          "source": "Business Daily",
-          "date": "2026-07-14T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORTMxSFlrNGZDQ3plcm95aEZFZ1pWMWh3UDd0LW5QeHp6bjU2aHhCbzUyZDBYT0o0Vkhfdjl4a0lOX2htdDBlWHBhX1NHUV9RUjd4UXQ1RUx3SVVCUlpPbGFmbnE0YzFjT0NFajBNelpTRWQweWJwTzVWcXNGcXNmQ1BtMFZGR2FlSkhXaFRqWGd0eVcydFRHbmZ6eVNDSWFKRkdVV292LWdCOTg0Nk53b241MlBWOWs?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "FTGH": {
       "symbol": "FTGH",
@@ -1398,7 +1446,9 @@
           "date": "2025-08-28T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbjhJVnkwZE11U1JzSXNmczQzVURRUVBxQkRjUEVBZWNCbE01cHNoMjRJY1JscHRBOXBwWWhScnpleTh5VjctVVZsSU1TMnc3R0JMWGNiOURlYWpXMUptUnFwNzdMaExwMlF1UXBycmcxajBpbC1Sdkdod18xZm04UURNVC1uZXpzU2IzdVZqdWRtVS10bC1WaktKZFFzejVMUVpn?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "GLD": {
       "symbol": "GLD",
@@ -1422,7 +1472,7 @@
       "news": [
         {
           "title": "ETF Momentum Continues as NEWGOLD and SIAMLETF40 Extend Gains",
-          "source": "investorsking.com",
+          "source": "Investors King",
           "date": "2026-09-04T08:48:07.000Z",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWEpIOXZsZTBERWt1MkJ0Q181MktDVTZ5Um9SYzZhZDRlQVcxc0wtUjNsMy1Ya2hhVDBmdGliSDlTN3NybnU5RUxyU2NRbFoxUENlNHZ6ZWhNaGtCcEZXS09WNlZqeF94T2xONGlweDBUVzU0WHdVNUpTTzQzNjlQM3M2Ullpd1JtQm5peDhaU3hNYVpVbVB3eUdoSHlINU9T0gGmAUFVX3lxTE02R0VoMjJ6RXM3MzJIa0FPOGxoTGxiel9mSEp2RlRMMXExaTNSRHB1V1psSXFacUNTeXNZZkxPc2ZZd252X1BWcG5xcWtHNTJzRm1LeHdLYnU3QVhoSmRDalZpcGJOUHdhYmZQNjRKWGhYQ0ZPMEJLcVdfcDYyZVRMeUZXVlpDOS1DaU1uMDF6dWRKdll3cHMxUmt6amdnT09yZDRCRWc?oc=5"
         },
@@ -1456,7 +1506,9 @@
           "date": "2026-01-21T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdUZ6QkdLMkJ2SjBLeWJKVXlMOC1VQ1laTDBuYkl4TmFXNXNVY1NzdWFncUdTMWZnNXZkNHNwdFpFVFoxV3JZaVVpc0VnbzZQLUpZYUFycXJORUFmRUpsLUYyM0FvNkQyZzlycm5Wb3VTTk1MOFlFSHZ1Mm9rLXE3ZHBlc2N1dlV4cjFwd0gxaGpwNGVkZzNLX0tvbm91SV91QXc3bkdXX3E2NWRvYW4xQ3YyaVpISE9FVk5VS1ctZUgxT3pQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "HAFR": {
       "symbol": "HAFR",
@@ -1514,7 +1566,9 @@
           "date": "2025-10-27T04:08:58.000Z",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbEJlRUdDR0JsVHZCUTBBSFFpa0IzdWJfTVdjMl9INzczXzBoUFhuRC1CNEo1aC02RlB1dlRza1NpNlRLVWdjWC14UXh0NkxZQlRwZUNuVjJBbEhXR0JnX2thdldhSzN3OFkzS2dnZE9vQmNhMGhLU29pU0F0dzdYV1YyRHBzOGgtcHdBeWRZRWlsbU0?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "HBE": {
       "symbol": "HBE",
@@ -1568,11 +1622,13 @@
         },
         {
           "title": "Homeboyz Entertainment has reported its first full-year loss of KSh22 million since listing on the NSE in December 2020.",
-          "source": "Frontier Africa Reports",
+          "source": "news.frontierafricareports.com",
           "date": "2025-08-08T12:20:35.000Z",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPal9yalQ2OTdtV1JoNGt0SDAyWmxKenZrZ3NPc0h2T3piOGVJcjM5R3VpekdZbGpHVmR2cDhrR29ERy1qeVdrWGxYb1hFX3JOWGRjZFp3VTY5Q0lLUlhjYzhtRXBDS0kwYldQdXprOVhjM1pXWTFpcU9Da0pNQUFQVGJzYnFTWElMLVNkcDk1NTIwazRPY3NMRm0yamtFb2lOd2d6MTcxZkJJUGxTSmVzT0dPQm9CMWhiZXdXTkptMmpEU25jTmdVM0pUa2ZRMnFZX1ZxR1EyUlowNG1DSlBrQ1Nkd2hEMUxIOS1Od3hHTVJieUN0RUdvMU1n?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "HFCB": {
       "symbol": "HFCB",
@@ -1630,7 +1686,9 @@
           "date": "2026-08-09T15:49:19.000Z",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0WU9mOWJDMWNZSHladEM3UnQyOFBJd0tlUGhYaktlZ0U4a0ZaWl8xRXlJczBZMFRFRkY2S0JfM0ExNlF6NE5falVHSnZwR1VjcXgyVGhWVzctZWdYM0oxOVRCWnM3Qncta1E?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "IMH": {
       "symbol": "IMH",
@@ -1660,7 +1718,7 @@
         },
         {
           "title": "I&M lifts Tanzania unit stake to 95pc after private equity exits",
-          "source": "The EastAfrican",
+          "source": "theeastafrican.co.ke",
           "date": "2026-01-13T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ0tvaUx3TVNXREtKNTdVTXFNcGJHUUZIVWxjLVRUQUxHUXQxLVJCZTdZMTFxQVppb1ZfR3Q3dFZVTWxKSFI3UFNVb19NTkY2RDJWbE95ckcwajVkNjVMd2ZHRjZUcXdzWlBXc2hmU0ZjNk9pYXZMVE1kR1ZjTlFzblR6OEpFekUwdkF6U0VrdUxHS2VFSzhfemdObk5pX1QtUHZtRjFra01YaXcxZl9CZ0ZrN1IyMUV4SVE?oc=5"
         },
@@ -1688,7 +1746,9 @@
           "date": "2025-10-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZVh5QnR5eTkzWEE2ZHpJczM3NWVzSTBfWW5obVF5cm92U0xmWGN4VnBmYnJqekxoTkhKcTkyQjd0bmxnbkRnMndzQnZlOFJkNHRZQWMwUGpGaVBRcUQ5S1dTZnJBYnpQdDNveThYdjB4bnJ4RHJVNlZLRThYc3pZZW1vUTc1QUJEOFo0NnVjcE9KaEFJdXJ6ZjhtVnVkZ3dlNUNBSGFqdG1waHoxRnhYYktTMHVwdw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "JUB": {
       "symbol": "JUB",
@@ -1746,7 +1806,9 @@
           "date": "2026-05-24T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUs2YnNFZUJLYnplM25rbG9ob3NzdmxqNkVYWWFYTWdqSUZsZkFuYlVtc0ZGMmp5UmFybEw1X3Z5NnFPdFVIOER6VVBjbDNXdVAySzF6eHBfaldsZDFzZFJTal9WUV9KcVF3d0NFRzNIalpRZXRzckNhNFpEQ3cyNmRlUi1fVXBOTXZpN0phS1V3VEV3ckZLajRmUjR1U1pFbmo0NjlOd3AwM2g3OGFfREtHRWNFamVNSnRDRHdwMm9mQQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KAPC": {
       "symbol": "KAPC",
@@ -1804,7 +1866,9 @@
           "date": "2019-03-29T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPejNRM2xCRDdrRndDalJWREdkOFlGSFB5clp4VHg1czJFOHg3aU96NmZ0WEgzYmhLdlg1c0Z6VV9saDZKWU1FSHVmdXhRMW4tN05MRkJ0Nzd6emlyTzZGendwempTdmxWUUl4ZEpqMlVhTXB0dnZnMkhLTGEtQi1weGktWG82U3ByMHFoMTJ3WmxYQW9WMWlUcnFXQnZhQ252eXc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KCB": {
       "symbol": "KCB",
@@ -1830,7 +1894,7 @@
           "title": "Lawyer quits investment firm's Sh146bn case against KCB",
           "source": "Daily Nation",
           "date": "2026-09-25T14:46:36.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNamtMYjFuYU5HZktWbmpQdG1kZ3RLZU1hZXRKZzVqemFYdHpMUmw4UExmSUwzazFqR3AyQnpjcURtbi1CWWhnV2xFMTNOczdXVXpJVnZsSEZrTGxiN1NPai1VdDlkbHJfc0RuU1B0ZGJzRGNGU0dxZXdTWGNmeWJvRzBfNDBOMUNiazJPSTVBblI0WVVBODJibnV2LXVsZEhQV1E?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOR3l4WDhKbjBUTDNZRVd4ekFxdG1JX1lqeEVxSGZUXy1MSmwyUFRES1lIZ3M1SklwZjl0QjBYOHJLOFM0VElzLURmdkRDTmFuSEpBb0Mwc1g1Qng5OEVtc3p6d1R3TFJHNUpxNVEzTVl6LW45QmFNMHg5dFR6MG04QnVENzFVcHB5a3gyWThvZmp1M1NaVzNWNkVodTdWeGlQSHBYT3NrUmlrQQ?oc=5"
         },
         {
           "title": "Which Kenyan Bank Earns Most? CBK Names KCB",
@@ -1853,16 +1917,18 @@
         {
           "title": "KCB Bank linked to the collapse of a local firm over delayed multi-million shilling transfers",
           "source": "254news.co.ke",
-          "date": "2026-09-22T19:29:43.000Z",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaTVFaDlkWXRURVpVaGJmVUFBdVJ0elZGeURwRXM1bEl1WG0zdFRITVBXRnJqcTI2TGNaTHIxbWRFc0c3cmRyNmJZWHFpSUIwQktHN0tHZHRpMmVJLVAxcjFHQ0NhRGtrdzNzd0tjYThia3p3bkpJeG1fS3FvOWV4SzdQdW9ZVmFDMG1KMmVkMHV4NlE0ME42NXlPU1FvSFFPRTJ1MGJBMGNvcE11ZUx6WlNVQjdFbGNscU5CQ280VdIBvwFBVV95cUxNaTVFaDlkWXRURVpVaGJmVUFBdVJ0elZGeURwRXM1bEl1WG0zdFRITVBXRnJqcTI2TGNaTHIxbWRFc0c3cmRyNmJZWHFpSUIwQktHN0tHZHRpMmVJLVAxcjFHQ0NhRGtrdzNzd0tjYThia3p3bkpJeG1fS3FvOWV4SzdQdW9ZVmFDMG1KMmVkMHV4NlE0ME42NXlPU1FvSFFPRTJ1MGJBMGNvcE11ZUx6WlNVQjdFbGNscU5CQ280VQ?oc=5"
+          "date": "2026-09-22T16:18:56.000Z",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOc1JTWklaQnV6WUpWQ1RIYVhhakM2bXJhaWE4OHZHZTlnWGRVRUExMjh0dnBlZE5hb193S01xOEhDemlLNU1mUEZsal9LU0tZdHl3aWpKMUlkbWRnRDZtRXhyYldYNDRiTExDZ3Z2dHg5ZGVmOVFraUwtUEx5ai1MMGktZ2diTllSM25sMlppMVNEOTgxc19yQjI2SkNaUlJfazRKUElzajdKZFVpWkpJaVdjeUZTZ0nSAbcBQVVfeXFMTnNSU1pJWkJ1ellKVkNUSGFYYWpDNm1yYWlhODh2R2U5Z1hkVUVBMTI4dHZwZWROYW9fd0tNcThIQ3ppSzVNZlBGbGpfS1NLWXR5d2lqSjFJZG1kZ0Q2bUV4cmJXWDQ0YkxMQ2d2dnR4OWRlZjlRa2lMLVBMeWotTDBpLWdnYk5ZUjNubDJaaTFTRDk4MXNfckIyNkpDWlJSX2s0SlBJc2o3SmRVaVpKSWlXY3lGU2dJ?oc=5"
         },
         {
           "title": "KCB to Take 22.23% Stake in Pesapal, Tanzanian Regulator Reveals",
-          "source": "Techweez",
+          "source": "techweez.com",
           "date": "2026-09-22T12:22:54.000Z",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBPQWZZbkRXWkVYLVJ1Mk1ualFYUG5HVlVDWnc0Tm9LTGM4dUxnczMzVGxpclVaLWhqSmhYRVRCOUFkWFJnRmJHZm9wVDVvbHAwRFdUS1dMN01oSmp4UVk4?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KEGN": {
       "symbol": "KEGN",
@@ -1884,18 +1950,6 @@
       "fiveYear": 130.85,
       "tenYear": null,
       "news": [
-        {
-          "title": "Police Arrest Two Suspects, Recover Stolen Kenya Electric Laptop",
-          "source": "TVC News",
-          "date": "2026-09-25T08:43:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1lteW1sVVFaZUxvSTVkS19mM250OHZ5SVcxY0Z1TGNmYVVRZmRtaktWRFpyX1ZxbGlfQjhfMkM2amxQYWRsX3dac2t4UElSQXdPSzNYTS11a2RHVVNnelgtZnJWWHBRU3owTzd6b3pxY0U1Ti1SUVY5MWd5MHhZM0tmWjNZTDhydmJqdHR4LXJBR1JyQ3ZBSA?oc=5"
-        },
-        {
-          "title": "KenGen stock reports a 16.67 percent dividend cut",
-          "source": "AD HOC NEWS",
-          "date": "2026-09-25T08:24:23.000Z",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEZIWVFqcm9RUFlRNHNSOUdJRUxuMGx6TC1mN0czdmV2RjdWYXJsNnR3bF92R0g5YVl3RmVOeERwak95VWZEMVIxYnVkM3BLUzF6UjBMY2MyTUJ6ejN0Tmx6TGRva3VyVnpOSGliWFBRQjdjMGVSazJ2eklLdWMtZ2F5VzFXbTdUTjRpdFpocTJvWUZ3d1BlUVpfajhZRGlDZXR4RW9LSDhCSVl3?oc=5"
-        },
         {
           "title": "KenGen laptop recovered as detectives arrest 2 linked to theft",
           "source": "People Daily",
@@ -1919,8 +1973,22 @@
           "source": "Energy News Network",
           "date": "2026-09-23T18:49:57.000Z",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOakhtb0V3Um9Cbk9YRjRPSnBsb1lPRWRpTzB3Z2lYREdHMzRxSWFJV201TUt3TVZ0V2tvN194ZmtIVm82ZmtkMUhtV2I5Q0NVZTdpQTNVMG5GS3gyTjMzamo2Qnl1YTFONTlDNEZxT05ORDk2TldfSi14eHFNYVFJSzNMdWl1RjExVUY2N1kyUzNoS1F2WjdOUXAwTzU0VHdOcmJxUThPUGc4MEloa01yN2ZfZ0ZHLWEyZGZaTzdmRkhJWUg4?oc=5"
+        },
+        {
+          "title": "Ex-KenGen official jailed for 11 years over forgery of academic papers",
+          "source": "Citizen Digital",
+          "date": "2026-09-15T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdzJuWDFJTWw1eHJTdU82a3JqaXlha0NLeHhuTkZNOW5sWEMtOVdncjFNM3ZpX2NLY0FmTVdLVFpza1ptYWd6OXVUdk8tN08xd0RLSFVqTUpyQXNIdTMtSW9LaThOYWhaOHI1ZWFJXzhseXk0NGlSVUVJVS0tZG5Ha0RyRGRnVlo1QzV6SExHczNQQ2pPR0hackl4VWQ5RkxLQm85TlA3SW0wTFBfZTlF?oc=5"
+        },
+        {
+          "title": "Former KenGen official sentenced to 11 years over fraud",
+          "source": "KBC Digital",
+          "date": "2026-09-15T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbVl2ejZSOHdtNVBTMjJtcVlrSFlZYnBEbWVvMlNtQVhFVGVYWlZ3aUVCeEZqYW9iSWE0Ukw4RURpOWFLTGd5TllIMTE0aEtEeDFZYXUtbFJHTmhfZ3U1cldWYzA3dGJ2T3UyblBYYXdHS29odjhHc3VrYnNfQ3haWkVla2E?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KNRE": {
       "symbol": "KNRE",
@@ -1978,7 +2046,9 @@
           "date": "2024-01-05T05:07:44.000Z",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYLUQtd0ZvRFZDV09vbGhhMUY5QjNHMDUyMUVtR090aENsdFZKRjRoRUlKTGtldWliN0VyZDF4NHpiOHY2T2dkMFJ1eDNob1BZTFlNR29HdHJROFUtN1cxSU1lODhzc3VadWc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KPC": {
       "symbol": "KPC",
@@ -2036,7 +2106,9 @@
           "date": "2026-08-03T21:01:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPakFFZE9DeE1jdTcyUkRXNTlOWkdmSW5yQnFGaENpaWd4cjJfSDJGLTUwNTdIRGpsNnJ4bTRkcnZ2NnhMSzVDYmtYSXEtdzZWNlc3WkUyVzl5elUyVW42V2ZfWmRGTHMzdEhnQVR5a1NvQkhnWVU3X2gtMVVrcDRTc2pGREJDaUJTZ284cjlXcXVTSi1XNXFQeDRXUW9RUlNqakxEMWJtdEpHN0ZOdEZPcV92N1Z0Vkwwc2k2eFBrMFdYWUp0RUY0RWE1ZV9jUjhNQkl4cTRzeEpRODhOSjJaRk11V2VtbWNfVHFjaGlmV2Zxd2NiZndV?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KPLC": {
       "symbol": "KPLC",
@@ -2094,7 +2166,9 @@
           "date": "2026-03-20T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX0FNSGJNTXNxUTNuQzMxbnNuWTd6elhsNUJDdWZ0aVgxQ2ZVN0hMUTkxTmZ6S2tISERrSGFrbmJncjBrejBLOWFYT2Zuei12Y2hUQUg1MTlXLTQtYlJoS3N4Nk5fSklqY0dhZzI2d3MxcUJSNldOdzd0dG5KVnRzenNfVFdXSjBrZW5PMkY3Qm5kV016ZWhYLU96RQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KPLC-P4": {
       "symbol": "KPLC-P4",
@@ -2135,16 +2209,16 @@
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSHpPQ1Z6dVpBR2s0ZWRGUGdsUWpMUHlycjg1UGcxVUZjQkIxbHRBbkxIY3A0THUtSU1sekhpTkhjSnA4eWk0dUNLX0k1bVJlNDRmUzVidGpJdUFLOF9qMklKVno2bEIyRDdoRkVTcEdVUUZyeFFDVmctaDNpSXRjc3lmV1d5eG1YVXdFblZmb2V0Q1pvazNDNkktVmFEd1MwWm56LURpYmVQNG52eV9aQW1lbU11bUlOWGZ3WVdGTQ?oc=5"
         },
         {
+          "title": "Kenya to double Ethiopian power imports as domestic grid pressures mount",
+          "source": "The Africa Report",
+          "date": "2026-09-25T05:07:35.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYmNyNXdYV3ZrbnE5QzVPZlIyODJ6TGp0bS1TUlQxc3llUVE5LVg1MFJvX0EzRmtUbHVOaXpQdW96R0NxNDI3eC1BZnFDd0tmVVZHMlZuWGF5UmJxSlNLdnVSbDc2OU84TEdwTUM0MDQxM2xyYzBMYU5GRXZjeWdNT2ZyNEtnX2lOUXFlak13LTZzRnprbFIzbXpwTXZXamx2ZlpMb3ZXRS1wWjBwRkpxTnBn?oc=5"
+        },
+        {
           "title": "Kenya Power cuts supplier late payment penalties to Sh290m",
           "source": "Business Daily",
           "date": "2026-09-24T14:52:17.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNmhRcGk5R1FGSHEyRko0TjAwS3BJeUpreEJpQVVQQzBsVDdOcjBlM0NMak9zdUJlV3NYMTRlZmN6a08teHpHYUxQRXZyM2QyQVFnUDhFajBaRW1iVlB4akxwRnlpMVNZT3lMUmlhUHFTTnpiTnROam5pbzY2UHA4bkdSeEZBczY5WkNtdG1lWnNDRWNPMHhOQjh6UHhVQXgzSjdnQUlNMVZjcml0cGZvUXZYU2ZtUDd0THJuZlJJSkdGUlE?oc=5"
-        },
-        {
-          "title": "\"It is necessary\": Kenya Power schedules Friday power cuts in 3 counties",
-          "source": "Tuko News",
-          "date": "2026-09-24T14:35:24.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbzdsVmI2ejJnNnI2ZTY2UExkTWdhTEhwa1oyU1p0N0JQOU9KblFhd2o3MFpFLTZ1VVVUcUtPUG1QUXFsMW9uMTBMWkU4V1phWGt0OXJFQlA2SVl1QXNqNHJTWEpkRk40V0tGd0VxNWN6Tk5yRGc5YnpRRGZMdlRwRWtldWVFYnY4emg4bDBZaXRFMllSRUtHaG13TTlWOF95eTBMZXZST1Z1dzhYSUVaRGo1TGp6c2h6?oc=5"
         },
         {
           "title": "How Kenya teetered on the brink of widespread power rationing",
@@ -2152,7 +2226,9 @@
           "date": "2026-09-24T10:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMjI2Rk1rNW9HLUFTaEloWG93c0xEY1ZpUVdKbk05SnpqTlhUa2tWZVRTaDdfcXIyUEVYNFhXai02RkZxOWd0enlCVHdPeG5PUGdLcm9qSW9PTnFTaEMxck95ZDNZckNqdG5LdVNkSVdtbWx1Z2hDdDc0QlZOd1ZJVDJRUGhjSVJjTU42THgxSnA0VWp6R25XMmo4RWNBRDdHUF8xWWVhdTMxOTM4T3h3ejZRRlBsclVyOVgyLVktNzk1MG5aTFE?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KPLC-P7": {
       "symbol": "KPLC-P7",
@@ -2193,16 +2269,16 @@
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSHpPQ1Z6dVpBR2s0ZWRGUGdsUWpMUHlycjg1UGcxVUZjQkIxbHRBbkxIY3A0THUtSU1sekhpTkhjSnA4eWk0dUNLX0k1bVJlNDRmUzVidGpJdUFLOF9qMklKVno2bEIyRDdoRkVTcEdVUUZyeFFDVmctaDNpSXRjc3lmV1d5eG1YVXdFblZmb2V0Q1pvazNDNkktVmFEd1MwWm56LURpYmVQNG52eV9aQW1lbU11bUlOWGZ3WVdGTQ?oc=5"
         },
         {
+          "title": "Kenya to double Ethiopian power imports as domestic grid pressures mount",
+          "source": "The Africa Report",
+          "date": "2026-09-25T05:07:35.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYmNyNXdYV3ZrbnE5QzVPZlIyODJ6TGp0bS1TUlQxc3llUVE5LVg1MFJvX0EzRmtUbHVOaXpQdW96R0NxNDI3eC1BZnFDd0tmVVZHMlZuWGF5UmJxSlNLdnVSbDc2OU84TEdwTUM0MDQxM2xyYzBMYU5GRXZjeWdNT2ZyNEtnX2lOUXFlak13LTZzRnprbFIzbXpwTXZXamx2ZlpMb3ZXRS1wWjBwRkpxTnBn?oc=5"
+        },
+        {
           "title": "Kenya Power cuts supplier late payment penalties to Sh290m",
           "source": "Business Daily",
           "date": "2026-09-24T14:52:17.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNmhRcGk5R1FGSHEyRko0TjAwS3BJeUpreEJpQVVQQzBsVDdOcjBlM0NMak9zdUJlV3NYMTRlZmN6a08teHpHYUxQRXZyM2QyQVFnUDhFajBaRW1iVlB4akxwRnlpMVNZT3lMUmlhUHFTTnpiTnROam5pbzY2UHA4bkdSeEZBczY5WkNtdG1lWnNDRWNPMHhOQjh6UHhVQXgzSjdnQUlNMVZjcml0cGZvUXZYU2ZtUDd0THJuZlJJSkdGUlE?oc=5"
-        },
-        {
-          "title": "\"It is necessary\": Kenya Power schedules Friday power cuts in 3 counties",
-          "source": "Tuko News",
-          "date": "2026-09-24T14:35:24.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbzdsVmI2ejJnNnI2ZTY2UExkTWdhTEhwa1oyU1p0N0JQOU9KblFhd2o3MFpFLTZ1VVVUcUtPUG1QUXFsMW9uMTBMWkU4V1phWGt0OXJFQlA2SVl1QXNqNHJTWEpkRk40V0tGd0VxNWN6Tk5yRGc5YnpRRGZMdlRwRWtldWVFYnY4emg4bDBZaXRFMllSRUtHaG13TTlWOF95eTBMZXZST1Z1dzhYSUVaRGo1TGp6c2h6?oc=5"
         },
         {
           "title": "How Kenya teetered on the brink of widespread power rationing",
@@ -2210,7 +2286,9 @@
           "date": "2026-09-24T10:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMjI2Rk1rNW9HLUFTaEloWG93c0xEY1ZpUVdKbk05SnpqTlhUa2tWZVRTaDdfcXIyUEVYNFhXai02RkZxOWd0enlCVHdPeG5PUGdLcm9qSW9PTnFTaEMxck95ZDNZckNqdG5LdVNkSVdtbWx1Z2hDdDc0QlZOd1ZJVDJRUGhjSVJjTU42THgxSnA0VWp6R25XMmo4RWNBRDdHUF8xWWVhdTMxOTM4T3h3ejZRRlBsclVyOVgyLVktNzk1MG5aTFE?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KQ": {
       "symbol": "KQ",
@@ -2241,8 +2319,14 @@
         {
           "title": "Kenya Airways ditches 20-year-old booking system in tech overhaul",
           "source": "the-star.co.ke",
-          "date": "2026-09-24T03:36:47.000Z",
+          "date": "2026-09-24T03:33:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMm5QckVkNEQ0Z3JDcWw0QW9qNXpqWndGcGNDM3JxMHRhU3B3VzA2Q3N4aWx5ZUo0T0h1a0lvN2gtaXdSZ1R4VGxKTll1cDVXVnNGQUl6NktaSmRoRmJXWjVxM0V4M3dxeFJvWk55RTdnOXk5RWp0Qy1oQTBtTzB5VERGb2t4Z0VXWHhTQTJSTU9tZXRJUzJybXFCeWp2bXZTX1RHLU5ZcTBHYU04Znc?oc=5"
+        },
+        {
+          "title": "Kenya Airways partners with Sabre for airline retailing",
+          "source": "Asian Aviation",
+          "date": "2026-09-23T23:13:38.000Z",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSWlxS3hhdVBtQUEyVnNOVHFRaWRCdl8tVC01V0d6V1RRa0RaTjU5RGNVZGNQcFJmVndDQjNJRU5UYkpNVEJ6VlFoVXhxOXF4WHJVVGphVjJaTjgzWmF4cGhRelpERTh3dWRaQjducG55R2pZY2Rpclp4QXlCd1dxRlBRX1B0a0lsdkNkc3h3NW4?oc=5"
         },
         {
           "title": "New tech stack for Kenya Airways",
@@ -2257,18 +2341,14 @@
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOVVTVEtMbUFZQ29TLWJkLUY2MUloelpUb0g0LWQ5Sm53SmhIU3RONHg4VktMT2dyY2EyeWdFY3M4V0poemhRUzVPQUx2S1hFQ2gwM2YxeHprRVdQLW8ySE5IMmVULVNFOGRfZ1U0Y1EyX0VqaDhJQnM2a3U0UHlNYUlOdTVCWmNs0gGOAUFVX3lxTE1IalZENERkN2xYaWxPQkVkMHFRNkdHaHRPalZ3eWhSbWJQOENFdHZySDFIOGRLQS13T05aOEFWU0txeDN1cXNnSVVpMDVOWGtOQTJjVUM1aXhfMkp3N1VqRy0yc1p5TzZ3ZVI4N1RHeVZxS3o4QXhiV0NiRnh5Z1V2OElMMmk5OTBDUzExNGc?oc=5"
         },
         {
-          "title": "Kenya Airways to replace 20-year-old booking and ticketing system",
-          "source": "People Daily",
-          "date": "2026-09-22T15:57:16.000Z",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSk9HOG84NHN0Y2JTQW1BT1JkbHZPenlUSUlPRUVDejFDSUkwMjFXN3VfVEc3emtFMWxoMVlVcVhCbzZOdE8yN0tFTHh4c0hSWnJkTGU4Tzdxa3RFLVVlMUFNaGZzdXBVWUVBOVUwTk95UGx0ajlYVWdQS1N2dHkwYThKbkgxZ2pUb19xUm42UmVLZ0JtSTRfb05MLWloOXdyRkJVSA?oc=5"
-        },
-        {
-          "title": "Kenya Airways hires Sabre and Branchspace to rebuild how you book a flight",
-          "source": "tech-ish.com",
-          "date": "2026-09-22T13:45:26.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU2tEZ0syOFJJUktUN3lYRmpxWnI3RE04ckdsbXRuNklBWENJc3ZaQlNhQThvZUR3Y3duTWliMmdYM3liS1FSSk5zODQ1WEVxdVRjbEdTRHVzNmlRVllfWXduZTZMZ0hDWjNYYkNZUmh3N1d5Vk1SeldCQ2VUa1ozUl9SRXo2UndUNzg4Vkc5WkEwOEpPaGR6dEFGdHM5U3VudE1PVncwZlBsS2c?oc=5"
+          "title": "Kenya Airways Takes Off as a True Retailer, with Branchspace",
+          "source": "24-7 Press Release Newswire",
+          "date": "2026-09-23T07:08:59.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQejl6MGNwNnpBVGl0YVZ4dWllOXJTMExNRWFMN0lDZ18teEN6RDVUOXpkWi1oUTZHaklDNVlvRkw3YnFnOHljem5CSjJqV1R1SjNjUTJnYUk3VWVEQkxFcFpqTW05Q3c5WFljcVdjTEZqakthWFN2azJQRDZ6OUEtU3NlVER1UUdFcE5BdTJjM1A3cm13Y3VjX0hIdFZFZkFKXzdybGx5SU80LWZsd0dLRzFXcw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KUKZ": {
       "symbol": "KUKZ",
@@ -2303,6 +2383,12 @@
           "url": "https://news.google.com/rss/articles/CBMixglBVV95cUxQem1FTkx2R0NWOGhHTExQdEdHOGJsSjl0bTJUVlhrWVdNM01IVVRFbU5sQnB0LVFTYXJqc0ZlLTl6SWllakE4eEFweENmRHFxekc0MjNCdldsRXBJU1RBOTVvRUVuRVJBak92UzVRUk9FSEQxVWNLbGkzYm9iYTRoLWhkSDVzN3hQenhBRUxhNHluT0E1U0l4bk10THFCaElFdkFwQkg0UDZiczJUelF1dmE1TUZINHl5c1VwQUNsUGdBWWoxd0NibzNEeTA2NFlIajVBdDItbVZ1VkNUSmMyQnk5azFxdUdKOWtRRlJBU2FBM2tIcDctekctNkJfS21XTW9aTkF4TFpwdGVacEFNeUlYNllSdGNBOGRpZC1acFdjaFRoWDNIQ3dQQnloOV9KRXBYTzdRbVRTeHg0ZkVLNjJjUm1HR0tobmxCeDRNZllkOFQzZGV1elczNXNUVWF3MVh5N0p6bjlTNHd0ZkxhVmx2WnZIR3RCSFBzdHRyUlh3OHNCMnJOcnhlblVzNzdDa3dEUGdESXQ2MW1MWFIyWXBpWXIzOUNzWjZnak1ETnZRTnNJdkJEVW5hY3dETXlsdTRTYUpocHJGZUgtakpLWVpIQUNXWU1RWXNaMl95SXdUaDJUd3U5cFFFSHh4ZGtuMUNZcjFlTW9SRFA2UXotbDZjbU41bEZPN1ZNQ2ctSF9VWEdkWWlOaXNaM3VSeUVmOHFaXzRjVUI3Snk5dF9rNlBqUDlFRWJHSW9BbFNfRWtDY1MyaGZvSm92UWJqMFpDaHZuWC12RmJXTXBOTC1GVzRxczlNcGQ2YTRDV3dvbnp5eWl0WWY2VHBRY2JhcmhlVXlFODN4a2dPSmpXb1NGQ1F5UTZiMzYzcHhMQk5ZcWU3YWlaNjRDOVNGdWxHR3dZbkZacXN5QmkwTzViaHBuU3BXYU5seHNMUW8yQjJBaV9pa3VEc0Q0U3l5clBsUFN1ZnFPYmZDMTM5RUhFNmlzX3ZmS2docmVVdl9YUWVCYXZ5X2ZVbXF5dlhKN1JsanlDLTBqSTRWRFg0RklSLURYMmNTTDdTeURLdnczOGo5WUVlOWpWbG1KR3puZ0Foc3N2TzVBeExNM1N1OGFyWDk5T2szSWF6Y0kzODRoc1lIWUdrWEd0d0hzQ25lNW1WZkV5OU1tQjV4RlpxTVZ2V3B6Nzc0NmpXSWw5Q1RicGpmS3dRV08xQzNtSTlIdElhd2Jyd1hZeWNGNEVnbl9kb3R6Q0hQMVJma09TOHpFRDJBLU50Q21FQ1pJTXM2bFZFNGIxTEJ4YV9TNlNMUVdsQkJ6Q1IyUE9NeG1Md3VwTWxoSkloUlJ5ZjdyeW9NbGNOZld6cENHQTIzTk1TMVY3NklZVHIwZjBaUHpvbGFMdmtWcFF1RDBIZ3JIWlZoQzBEWW5VVUl0M2xIU3ZwcGVPU2FyRERzbk15Tjd4RjV4cWFrRHRuQkpaeGJNNDhrMW45MDQ4blNiUEs4QU42bHljMjg4Y2dCX3UwRjZxOVlLUXFCV3c5cEswMjlyMjlEckFzYmw0ZTJsWEh6MmhQczV0bElKdEloUUxvdTJrcFhTbkpxOEUzVFAwbXJETzV5Y0RFWXZON1hhSzRn?oc=5"
         },
         {
+          "title": "Kakuzi Plc Goes Full Scale on Blueberries With New 30-acre Greenhouse",
+          "source": "Business Today Kenya",
+          "date": "2026-09-01T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90Mlg2SFlFM3FZWEJTQ3oySFpteVFfZ3hiWXgxTGZ0OEF4VHVwbU9RRXJ6cE16ZC1PZlVWZXBRaldaSVVZSjdMMl81M1Z2ZkUxVjRvVkRYemNGdlNiRDRyT0tBTXl5eFB2b2tKNS02SE5UaDc3dzR5Q0x3?oc=5"
+        },
+        {
           "title": "Kakuzi profits plunge amid Midle East war",
           "source": "standardmedia.co.ke",
           "date": "2026-08-27T07:00:00.000Z",
@@ -2319,14 +2405,10 @@
           "source": "KBC Digital",
           "date": "2026-08-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdlFudU1RQ05GTHdxblozNVJLbnM1dmxyWDM1QVIwLVptd0FpVXlrNjFCSzFSSkwzX1hPZjNHOEZlWHVZYUhCN0ZzWWVBQ053clBpZDJiX2ZxT3FQcy1tRmtmeXV5YS1NNldnbkNsTFl2RzhaLTFibUZLZk5jZVlOVjlKaw?oc=5"
-        },
-        {
-          "title": "Kakuzi Accelerates Digital Technology Adoption",
-          "source": "Kilimo News",
-          "date": "2026-08-17T08:05:11.000Z",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWDV0V2N6YlFUUHNzczFGTUNDQzNoRTZpRlpFU0dic1RSNHRzN1ZMQnIwNVlSWWxwRTBaSF90b0FCaUNVeDlRQ3NiY2dOV1NLaVVmV0J4MXV1WDFjZHV0dGozMVcydjY2Y1RxRThESGpnLXdqeFpEMlVvc2JRR244c2RiYWNLMzVvakVSQV9QWnJRb29tTjBUWXBXOA?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "KURV": {
       "symbol": "KURV",
@@ -2356,13 +2438,13 @@
         },
         {
           "title": "NSE to abolish mid-cap trading platform under new rules",
-          "source": "The EastAfrican",
+          "source": "theeastafrican.co.ke",
           "date": "2024-12-13T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdnJGVUFmamJDZjZ6ZzRCVU9QaVFGVER6Zzl3QTdJM0FrZmlucWo1OFJZNTB1LW90T0Vva215UDRKZmEwM0JJbmtkQVVmUHp6aWZuY2xJbjFnemEzLU92cmJpNVlrTGlGM1IyVVM4T3VFV1R5N3dCekZJRmJJQ0E3eGVqbF9IUGdQdW10bjdFNFQxcnozWHpEQ1VCSEVnZkRVWGhwWmdfWjh4cXpUZ29ucVJjS2Y?oc=5"
         },
         {
           "title": "Nairobi bourse fails to attract small firms",
-          "source": "The EastAfrican",
+          "source": "theeastafrican.co.ke",
           "date": "2023-06-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOGFDRFlxYkg0M2V4dGtMRDN3UlRPLWlSNUpaNFNDSzhpVDJrLWpWOS03ZzI5eUxiWC1OUGQwV2h1eFFxOXlQazBvaTZlOURDaWFyZzVkYVQwaUVDTVlrcGo3WTItdzJNS1ZCV0JoUE04WVlseHlLcV9SZ1hVSTJKVWRZZUxSVU9NakxEZXZTS0R6b1NJZExLNTdHeElCSjZueDBaVjFR?oc=5"
         },
@@ -2384,7 +2466,9 @@
           "date": "2022-01-31T21:00:59.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUUpBNDBpX0hVUGFuYUpjVjVPZ2ZkMWRhVDR3c3dsdHNoQjdWeEV3UGdzSGNSRjdobXBhUmYxZ2N4ajdDZkV5RHZKM1kyZ3BraHNYcndrejdkQXFiRVZ6eURmUlpleFl6bl9tOGVlN0FsM3pMRFNBOHk2WTZwN01DU3lySEpmTWp1c0dER1pjaWhEdkJnWTRzZlRQV0ZobldYeTBBOWFOMGlYUnpqYTdaZ2lmT3EzUkd0TXNFR182a0U?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "LAPR": {
       "symbol": "LAPR",
@@ -2442,7 +2526,9 @@
           "date": "2025-12-02T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY2pUUGRUbjgtVWlrOE5OQ1hhUzYwX19rZ2dKN21pT2dDZlBsSTRxaEpMa2ZhWTY3ZERWSjc0QS1tZUYzTGVLUTFUbjZ6bC1uR1pjVkhoMnpvRVIxV250NTE0N3gxb1ZXcm1tRUlKcGhoR3FKU3MxVHdoTi1nOGdTY19PbDVZNUtzWnRERmtDNTkzVWtKWlFwaE5ZMFY3NGRVRFcyck42MUo?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "LBTY": {
       "symbol": "LBTY",
@@ -2500,7 +2586,9 @@
           "date": "2026-01-30T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVDBKRlBaNEFaQS00eGUzS3hYRWxrUm9Yd3llQzBMZDNWQnVaY2Y5d0EwWnBGV1BmdVhpaXRlcEgxdFlfajlaNEpTZ19EOWxQSlotNWdkRWduWWtKTE1lUFd1ZUF4cEZOQjYzUGdKU0R3OFpJeVNEcHVyblZsRVdIdVFKTkU5MWN1TVRsSE1TX3ZjT0lhYUE?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "LIMT": {
       "symbol": "LIMT",
@@ -2558,7 +2646,9 @@
           "date": "2022-08-10T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa2s1RlBnSXVwZ04xS2RNdk11czNiRzRwU0Jkb2xOWkpmSE10SUZPX0dUejUtOEVHNGYtLVR6b2s4SnJQamdWZTZNLTRHMjRCQ2R1cVpSYWhVWTBaR1ltY2FrbEU5ZzdjZUlfLXNVcmZoTy1TbWNNZTlQbHVSdDJ3MWhIZXVpSkc4UjNNaktFUmxIZWpPczhHcXRMYw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "LKL": {
       "symbol": "LKL",
@@ -2616,7 +2706,9 @@
           "date": "2025-10-22T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObWZCRVJPZ3FlRmpxeG9TREtVUExaWkZYdDBBby1pQmJBYVhRRjAyb3FWSDB4RUZScXdMQ3pFUFRiRy1HRjZmVGxrcGtmbEpxdWtWOEotX29tc2JoQ0hDa0Q1VmZIRDEzdnhRRndMaVlHNnpPdVhhTWdvNEkwalVaeEZOZFRFcnpLSTBiU2VEeWhGdmc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "MSC": {
       "symbol": "MSC",
@@ -2664,7 +2756,7 @@
         },
         {
           "title": "Mumias Sugar shareholder demands answers over prolonged suspension of shares",
-          "source": "The Eastleigh Voice",
+          "source": "eastleighvoice.co.ke",
           "date": "2026-08-31T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcjJ1T1RmandvY0Z3U2NxQmZHWFd6Nlg5OXFnektIMEVDX0lrYXVUY2hBWDBLRDhDVGVmZ1VMb3oxZElmNmlZbndGd0V2MkN5X2NVRHJlX1dkbkRlRGtFZVpGSF9Id0M2SWNGV3Y1VDl5Wm05eE5GZDJPeUFKUEFzNnU1UEJmUDRjLVBzWjdOR1Fwa29MRUxGUVBBY0Q1Vm90TWhuSlpHc2ZWTWtkMklJdmdFVzYyd1hX?oc=5"
         },
@@ -2674,7 +2766,9 @@
           "date": "2026-08-10T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbUVVRGJmVzFUVUNDeWJiMG4xOWNrYVlXUHhHSmh1S1Awd1dXcTd6MWFvV1FHeTJHVnRIY1FZV1prRjNvdklEU1hjSWJ2T2Ziai1tLTF3dlZjU0NwUTVuUXRCQW9ONllYeThxSXc2OVBqbzdfV1BsblFPMWsxa0NJLVNJd0I4bTFFRHNTSFJxSjdtOHdUX1R2TWQ4N2Z5ejF2U2l0YTVYZDVuTkI3M2c?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "NBV": {
       "symbol": "NBV",
@@ -2732,7 +2826,9 @@
           "date": "2025-09-01T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91M1VtV1ZXMzgzS1dEekItQUp1bTZ4eEZVczlkanFsQmpRQzVVRmxKME4wTjJvMTlVSDVER2xlMjk0bGJwU1U3d3VGUWxWM18zQjdqT1FIUEY1dEE5OW1qVDM5eVp3Y2pnNDdlZ2g1dDVvcTJUUTJxT2pWYUtyZVk?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "NCBA": {
       "symbol": "NCBA",
@@ -2767,12 +2863,6 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUmh5U0Zmc1VrY3o5azlVZ1dFZzNaSU9mdEYzakh2Y1psSmp5WGwtTndHSUlsNFcwTXUyeXpGVGhiYVprUXBHQzluQnVXb1pZRl9ZNHJEZ1JDT3FzY3gtOWhQTGNSS3JHUXp0MVJJYzd6UDkxczlMS2llX2huNVJJQl9mcTB3RUpsUVloVGdlbEtMWUMwMG9kNg?oc=5"
         },
         {
-          "title": "R13.9bn Nedbank-NCBA Deal: What Shareholders Should Expect",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-09-02T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tcFhlTG5jeTVxR0RVYkt0ejBCY0NycU5jOE5OR0JsU0hzVEZaMjhOY2lEUllRb2VDTUU0S000UWFHenRld01qUmF4MDYzY2l1TnJ5bDJMeUJjOVdaZW9GbS1Zbnh4SEU?oc=5"
-        },
-        {
           "title": "Central Bank approves Nedbank buyout of NCBA Group",
           "source": "Business Daily",
           "date": "2026-08-31T07:00:00.000Z",
@@ -2789,8 +2879,16 @@
           "source": "Citizen Digital",
           "date": "2026-08-31T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVUhyVlNOWWFzVFlHZ0taSHg3SFl3R0JXUEotY2VhbVV2TVNXRmVyZVlQTFRrN292YVFWTjFLV2Y4MWNkREhobTZFM0haQ1p6a0YzZ2dqckVzUVFKN2p2VnRubDJQLWZXZldublFGV2RSUG00N2pWQWZEUDdFNGNYMUdzWk0tUDJSQ2VMWQ?oc=5"
+        },
+        {
+          "title": "CBK clears Nedbank's $842m takeover of NCBA Group",
+          "source": "Billionaires.Africa",
+          "date": "2026-08-31T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTHNiMVg5ZXl1RTJISU4zX0ViRWRtc0Njd19uSEE5WEpnSHVrUTAxVTFsWmpsVTZmRE0yOGdybE03VnlDblVqeTBSVFpfaHUxQnhkbkVESGlQb2ltbFIza2Roc0piZjJ3a1ZWTzQwcWdiUkJxR1J6cDRJRlJDcVF6N2NlZ0Z5SXc0NmdrRWtDanR2WGZKWVFUN2RXa0IyTjI0N3lza3E5aW5lLUdKQ1R3ZXlWT2dLRjd5LUFleGh4Y2hlelU?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "NMG": {
       "symbol": "NMG",
@@ -2813,22 +2911,22 @@
       "tenYear": null,
       "news": [
         {
-          "title": "Lawyer quits investment firm's Sh146bn case against KCB",
+          "title": "Kenya’s oil clock starts ticking as Sh2.6bn rig arrives for Turkana drilling",
           "source": "Daily Nation",
-          "date": "2026-09-25T14:46:36.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNamtMYjFuYU5HZktWbmpQdG1kZ3RLZU1hZXRKZzVqemFYdHpMUmw4UExmSUwzazFqR3AyQnpjcURtbi1CWWhnV2xFMTNOczdXVXpJVnZsSEZrTGxiN1NPai1VdDlkbHJfc0RuU1B0ZGJzRGNGU0dxZXdTWGNmeWJvRzBfNDBOMUNiazJPSTVBblI0WVVBODJibnV2LXVsZEhQV1E?oc=5"
+          "date": "2026-09-25T17:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVXQ4ZFRISlZHbXdIOGNlbHE5RkR5M0tFeEtXdmYxa09odk44RTRaZ0R4N1FNRkdLYkF4NWxHeU9IYW5nWUpaWkVOMUltODF1RUtwY2pnVUlLd2UtRzVwSnR3V1dwUi1DSTRWT3plUzVudDlvN0pZNnlxSVB4ckcxMFlfZDl4R09rd1ZxQnVuVlY5VnBkNWtKTF8wbC1EZGt6Z1hIa25YT0RJQ2VtelFUUzg3elM0dzZrVXJSblNqRDdwVV9SZEFUQQ?oc=5"
+        },
+        {
+          "title": "Date with accountability: Six national schools’ heads face MPs",
+          "source": "Daily Nation",
+          "date": "2026-09-25T16:58:35.000Z",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORWZhWDZ1OS1OdTNhZ2tDcFpERktGdkNjV29iN0JVb1NvMlk2cHB5TklONXU3a0lNY0x0UGVQOTVzd2JLTUVTd000cUQ0OF9xOTM3Z2VkQm12UEtkRlBoQkRwR1RKYTBXREVINzVuNFM3dHBWejZiQk5KMy0zaHlNekJ4REJNeFhfOFd1eU0xcjNuT0VNcl9QbUFWbHdTbEdpX2JabDg5X1pJcDN5V0h6Vjdn?oc=5"
         },
         {
           "title": "Ruto set for Coast tour featuring groundbreaking for Sh2 trillion Dangote refinery",
           "source": "Daily Nation",
           "date": "2026-09-25T14:19:18.000Z",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTHBPcTZ4YXZzUHQ3UndsTjczcGR5RkRHdlNhbmdzUFZsUWExLUN1R01UQ01kTGE0dk9ITERSWjlLVDJqOUZwcmVIZ1FvUjFtdEVFeWJMMGdMU3Nka2RPZk52bUZmUE5hWW1TWVdNRmxYeW1xTGpYTnRNVm95ckJPaC1jRjBWOE9lendORFI1Q3NrWC1jZEJTLXBPTXZOTnpTVEVBV0RocW1ka3hHb3QwUDNqVVNVR1hOUXpETW5ENXFsdks5eThEaHN0V3o?oc=5"
-        },
-        {
-          "title": "Garissa braces for floods as residents question disaster preparedness",
-          "source": "Daily Nation",
-          "date": "2026-09-25T13:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeE1GWTlCeU1fcU9jVERTOFgyN2VPMk5MZ0QyTUFDS3VLMG9BV18tNVhhSW9MbkV6eG1Nc3JOYnJtUlRVZVlfeDhGU045dVBLVEpoeFBabjRLRVBXN1NEbW9jdUc4QXNRaVhmdVJPYlQyMzR2Uk5UTjU4dDU3Q2wyanpvN1Z5dlFwNkNUU1lQaktzeXBGSndXZlB1dGhubkVkR2ZOSGdUZ0JFVHBjOWN5VG1HOA?oc=5"
         },
         {
           "title": "Kalonzo takes fight to Nyanza, Western to counter Ruto gains",
@@ -2848,7 +2946,9 @@
           "date": "2026-09-25T12:05:28.000Z",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVEtwN0xVRWNpeWhmWWRITFNHRmVHZ2hJY2VCc1BfQ1dTeExjRWoxcDBOUEp0Skl5SjRWUGJCeW9sVmtGZGVaYmVya2ZkVkdZSUE4SkY2TTZmclItc3AxZDFFSHpjaXFOQTBjZU9EaHRVVkpwdEMxZzRhYTktMWpqWTBvdldDaDBpM2JPeTdKSDlZeHJubFViSzJRM3VDTU1UdW1nSlVNdklnZkdHMjhLLWxqaTNJWEFMWmh6Ukt1QThVNDI2SGdlSDRYWWJBUUhaSzJTTA?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "NSE": {
       "symbol": "NSE",
@@ -2871,8 +2971,14 @@
       "tenYear": null,
       "news": [
         {
+          "title": "Domestic bond trading surges to Ksh71.2 billion",
+          "source": "People Daily",
+          "date": "2026-09-25T18:11:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObWhQUVYyaFdmcTVtTE1TWWJkeEVFR3A3eU1JV0RscjBxWWZtWjJNRHJOMm1OckdteFk5MklvbjNoMDFEei1ZeDYwanpYSFZvZFpoczEzR1YxWmxta3BqaUdscXQyVVhPT1hVRVRONE5Ecm1KMjVDSHhXSkw4LXZoMVlRNzhzc3NZXzBwXw?oc=5"
+        },
+        {
           "title": "Quickmart targets Nairobi Securities Exchange listing",
-          "source": "africabusinesscommunities.com",
+          "source": "Africa Business Communities",
           "date": "2026-09-25T06:20:10.000Z",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR1BrVFY4UFVJRl9BcGxLRUx0T2NoM01PWXNoY0VCdmJFYTMyOVJoQ1VKLXhVclpnZ3VnRmVpanJfX214YjRETkRsSXVDeFZObDlGQXlHRkh5NkVKbi1CSGlwV1pXMWQ5VTlRUEhvbnpwdi1ISlU2Y01OQ2RNTEItUVkxMFBmSzhMVWJPV25IVlhwbnR3bkFoM1pXM1JyTXQtOUE?oc=5"
         },
@@ -2899,14 +3005,10 @@
           "source": "africaprivateequitynews.com",
           "date": "2026-09-23T14:30:51.000Z",
           "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSkhoaENwYUxwaWNNYi04bDlzSTNzUWRWU3pCUWJxeVpXbFVrNGF4R3VGdGhYMVlPM05VN3VVbENGaTRocXhTaEd1VDdyQUhXRmxqa3o5dk9BSWJxSm0wOFBqeER6SkZGbTd6RUR2WHdndlV0VllSZWdPVjF1NHB1NC1wUXJrUQ?oc=5"
-        },
-        {
-          "title": "Kenya's second-largest supermarket chain, Quickmart, plans listing on Nairobi stock exchange",
-          "source": "Businessfront",
-          "date": "2026-09-23T13:57:50.000Z",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMnF3Z21jV2I0d2Q1WDhpN2xBeER1YTJBOUlrREQyUkJkNV9keUU4OGZNSmhWeXhkazFRWElWU1p6ay1NWUUtQlJMSEcwejVUdDQtX0RYTTZyekl3SDNTcW0ybXd4dks1S1BzM09ueHpyYWZTTmtNcVJhZHJreVh6Ynhwdw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "OCH": {
       "symbol": "OCH",
@@ -2964,7 +3066,9 @@
           "date": "2026-06-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1DakUyTVVkSGtTbVg2eHhmczR3eThfbU4wVUZjWEVRWjlydkdQclRlM2xrRURRUExSQmMtR1VKRDF4MURXbW5LUUJGdGRhb2xVX0RUakdubFJWZF8wZGJsVFIydDVPSEhmN294UW9DaFNnSXlDWkZJ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "PORT": {
       "symbol": "PORT",
@@ -3022,7 +3126,9 @@
           "date": "2026-03-09T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHeDBqbnowZ0VhVm0tdDNoalBoWldzc2Vja1g0NWpLa0VlY2RuaXoxcm9fQzZzSElaWUJDSUNNYXluUGFBeTFJTUpHQkQ0Wkl6dEp5VlU0YkJwYkREUExyal93M3FaV09GQXc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SASN": {
       "symbol": "SASN",
@@ -3080,7 +3186,9 @@
           "date": "2021-06-12T08:06:14.000Z",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV19fQWlfazRVX2ktTGE0R21YejZnWWR2TjBWeE8ycVV6ZEdkd1g0Tl9JRmxHR21heV9RY3NPTXY1QUx3WDZRallvQkNqQjA4aFRHQ3V6T3owcWJQRGV3eEdKb1ZJaVBmLXRPZ1lkZW5MOWFFTTItdDUyVG5oTzgzWWZkVDdfQkZqb3g4S1U1ZnNzWWhPUjlpVlhXLUNrVHQtQ3JGa0UzeTFqUmc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SBIC": {
       "symbol": "SBIC",
@@ -3138,7 +3246,9 @@
           "date": "2026-07-17T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV3ZxWjNoTVdkQTloeS1WRDZ1OHV2OTM0OU1zNmJmZzFQUmIwQWZ5dFBtZlJzWkdqd1NJYVUzSTlHNUdfVXcwYjZvVnJxR1N3N3UxUURWM1RETmVBcjZaWVVaLUNnZVB5eDhkeGhoU2l1Um1TNmtwMXR3cEVVRTQ0MDc5aTl4Y1k?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SCAN": {
       "symbol": "SCAN",
@@ -3167,16 +3277,22 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORTJjVV9vLTFaWjJzSmVTeWpSRUYzc09CU3NhYWZsMnJfc1R6YkN6bkNfbzZkeHJYNmZ3M05TMFRDZ3FaYWozV2VjOXI2anlwWGxnTVpuVlBmX0p2LXg1MS04MGlETTg4ZjNjaWJqaFhGZEdRazFUeDEzV3BpanVfSzJRTW9qWFFha0ozNDk5V3JvM0F3bjVhVHAtRjkxY1JSZ0ZIOGpJTWtBX21ETVkzNTBB?oc=5"
         },
         {
-          "title": "WPP Scangroup : Five half-years without profit",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-08-25T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZHVSOG9YTnc5eDhNR2RIdlBlSU9Kek15ZUdTQmZYMnhJaExvY2U4YVJqS2pIa3BRSHFIekxtTllFcU1oV19oUUNjZzJGZWUxNWFxaDlnYzlwR2xpVVNMMThPbmgtM1JBUkxFRTVVXzF0WC1LdUJtbUoyWi1KVmtzcC1LQlhxaThVdFBvUA?oc=5"
-        },
-        {
           "title": "Price to sales forward of WPP Scangroup Plc – NSEKE:SCAN",
           "source": "TradingView",
           "date": "2026-07-03T23:55:14.000Z",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWlcxVkpqdkt0NGhuMFIydjc5c2tsdFBGemFxQV9hb1JHWG9UbWtGZWE4anVRbnp5cUFPMXUzRjl2NE00RV9DRE11N0lRZzJjQ3Q4dG5IRWE0enRJXzE5VVlaajh2YTlmT09pMDJPZ0puZldqSWNWMHhzeW1EajFiWlB5bHZEeGw1Nk5pLVE1R3BhclJlV19BN09hb3Y?oc=5"
+        },
+        {
+          "title": "How Bharat Thakrar Lost Scangroup and Won't Let Go",
+          "source": "The Kenyan Wallstreet",
+          "date": "2026-06-18T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBvZlNkZXdyVDd5dHpXcExwOVRKcmNvX21VQ0VNRjNHUzRrSnkwVEpSbVhzaU1BSEZydTVxclIzZ3lCQTRNLUQ1bkFkNzdyRFloRTlCemx0WVhtU0VPM0tYYUpVbi16WjlRUmphV21Uaw?oc=5"
+        },
+        {
+          "title": "Bharat Thakrar Lost The Vote, But The Bigger Story Is Governance",
+          "source": "TechTrendsKE",
+          "date": "2026-06-16T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMGw0SWktNW91NldkalcwUEhqWGNSMl9OeUNwN1lBV1JKbTQ2NW8wNXRZbTlvSGMzd3VINUYzNXZoLUk3U0xzaTZiS0FSendfTFNvNVk2TjJwem5PTU9Xd3FNSEJuWHlZVGswNWQzSDZhb001eUREcExiaVU2clByekpld28?oc=5"
         },
         {
           "title": "WPP blocks Bharat Thakrar's Scangroup boardroom revolt",
@@ -3189,14 +3305,10 @@
           "source": "thekenyatimes.com",
           "date": "2026-06-09T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMEdYUXdWSU93RUNiZGUweGdOZUZpTVVGUGFEaWpsUXF1elpqRnVZTlY4ZmZsZVFEWHVTTEhxRzhCa1pSX0xaTVgtM2E5eXQ2VEVya3BSYm9iZERNRm82VHQydDdPYkpQTVJaSmVmZkVrNkZaRXM2c1JHcEdPZFFZeEhfNXQyd2ZlWlRTdWNQOGlJcHZmWC1xUnFLSGREdDI5eHdFNnMwVG14ZzJWNlVuc2UwMU1zaGFZVkxGSGQ1RFY5Qk0?oc=5"
-        },
-        {
-          "title": "WPP Defeats Every Resolution as 99% of Independent Shareholders Vote for Board Change",
-          "source": "Khusoko",
-          "date": "2026-06-09T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FdjljdG0tM1Q0QkNlWjJWdGw3YW9BUldhSW5jY3ExWm1sZWlvNHFITy1IRmNhNzdVM3Zuc0h6bkpadDFFNTM3YVY4dGhOTk85d0Q5NjIwRWpyVmVnQWk0SUkxLTZ3eXVJTHI5SHJLRWVQbjA?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SCBK": {
       "symbol": "SCBK",
@@ -3254,7 +3366,9 @@
           "date": "2026-09-21T17:30:24.000Z",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPanVqUDFDWms3V0c5ZEFkNnBHOEJ0UDV6M1V6QTJnU1lwcmYzTEdPb3JjR3RaLXRBMjQ0TzNZN2hiN3BlejFwMVJNUmlFVkdYUUhCUFZNYzlycDlTYW5adXd2V2hERDM5Mlg3bEh6b0wxS2FNU2ctMGE2NmU5emFXR0dENUc?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SCOM": {
       "symbol": "SCOM",
@@ -3283,12 +3397,6 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjRpbTB4SGNXNTAzY0JKd1Z4NEJnWE8zQUxqMFMyZ2JkdG9FUHlieHZ4eWpNdlZfZ2tUeVk2TGk0NzB6NmNHd2czRlNPX0FrdGJWUlJ6WmxLOXY4dEt0cS0wNV82ekJ5MWdnR2VOVE5LNzZhMjFpSU5FSlk4UUVORkFOMUpUSG9HLTNxeDBCYUZDNU5hYVJYNDU3ZzRuRVpwYjJqZ1NucG1EX2JFUG9TMjdB?oc=5"
         },
         {
-          "title": "Digital lab upgrade to boost skills training at Embu TVET",
-          "source": "the-star.co.ke",
-          "date": "2026-09-25T09:24:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnQxMUNGTVRwUXRrZTZ5aE1KUEVzQUhLNlV3Y1RYaVd2V3BaMURDemVtMm5yQk9ncjRLa0V1QWxaRW1LRTlITUdtM1BhMThCcXQ4anJFRkdaQzk3UTQ2d1VPQUNmVHhVUUEwWEVyeGJuZlhGQmloMXkzRVV2QmpIOWJoYXdKRHNVUG9YUGNJcEhuYUtlS3pxMWdoQVhYWDR0WlE?oc=5"
-        },
-        {
           "title": "State moves to save Sh204bn Safaricom stake sale",
           "source": "Nairobi Law Monthly",
           "date": "2026-09-25T08:24:58.000Z",
@@ -3301,18 +3409,26 @@
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTkVWdlRCbEM2OVNuVkNZTExxUi1XM2hsVGxXZ0JfMkZjeGt3N1p6cXlYTmdISDJCUTJiYmEzZmNOZVhIVWRwdnlzb1hfRThjUTJkVG5rNzR1YnhtV1BQMzhNb3V4am9sV1JZNi1ZZWt2bDVRMW9WTHdiY2ZWR2RjNm9GcmRCSXZ5NGdJb2ZEdXJIQkRrc1BMLU5MTFVsMndHR05n?oc=5"
         },
         {
-          "title": "Safaricom, Ethiopia discuss deeper role for telecoms in DPI expansion",
-          "source": "biometricupdate.com",
-          "date": "2026-09-24T21:50:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcFgzSmdEcTk3RWpGSk1VclQ2N2NoMzB3ZV9ZeTZIUHA0VEg2Q3ZyQ1l0aHJ4RDRoY0M4dWpnNHEtS2piZjdqYUt6MVRLcVNpZnN0S2NZN2ptUHctb09oWWgxcl9wV3M5U3pRQ1hyY2czdGxxenhHdjBMeG1EYzhpTHNwMEVMeWlaQ3FJN3IxQWJna2NGOXBvTVg0LVBTU3ZvbWlTSGxITVNiLWc?oc=5"
+          "title": "NPR officer shot as suspected bandits ambush Safaricom technicians in Isiolo",
+          "source": "eastleighvoice.co.ke",
+          "date": "2026-09-24T06:59:23.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaXcyWDhMZG94M0JTZ0ktQTV2RGU5bkc5UmN0Nlk0VUhkTmpyWHREMW9CeUlYOFQ3ZEtpcXIzTzd2UFJGOVVyNUVPdGZwc1BOalcyb3I2MlJDajM0ZDJkcm5CV19TM2QwWS1hUlNJcmlta1J0Z2hmdHpsS0xPM2Nya1BmUlhGS0Zaa1hBaS1QVWVDamNQWUNYRjhOVEtrVDlGZDVLbU5HTjBsR05QMHRZNUswYU5ZbVdy?oc=5"
         },
         {
           "title": "Safaricom now has more fixed internet subscriptions than Faiba and Zuku combined",
           "source": "tech-ish.com",
           "date": "2026-09-23T15:19:55.000Z",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTjY2ZXNaVW5sMHNBcG03QnJKVmg5aDh6RGpUSFY4V0pxOWZjOEwxM05VN3Y3T3ViY3hXV1htaEk3SFQtb3diaWU3dkd1S2hlMEpUOUhxVHhldEhrTXlSbHVkVVBDUEpFNkdRcjc1VmQtNHI2U2REYjRlOENfUUNxa2tHOGlTTFA2MjlsRzdTVmlaTWZFcXF1RWtaZ1dsUjlrZEVNdDhKbm1xZmxQUzhqNTJoWQ?oc=5"
+        },
+        {
+          "title": "Why We Are Unable to Return Money from Safaricom Sale - AG to Judges",
+          "source": "Money254",
+          "date": "2026-09-23T07:00:46.000Z",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMUdfTlhyRTJzakJrVU40RDBGakFoTFhYVm52ZFhXMllQRDVOT1FEQ3pmcjVycG9PYk9CdkR3eGV2MmlGaGpXYzBIa0dUci1hTmU3NGpHejFoUS1XLXNwSzRtRGVCc1JkY1NhVEcxR1BRZUZkdk5OT01LVEpQcHVHLVZiMzYtNlB4cUpCVW1fTQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SGL": {
       "symbol": "SGL",
@@ -3337,7 +3453,7 @@
         {
           "title": "Festus Odingo - The Standard Business",
           "source": "standardmedia.co.ke",
-          "date": "2026-09-25T14:29:28.000Z",
+          "date": "2026-09-25T14:47:28.000Z",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vRy1lS016UnFWMmhwTjdTVXI0bzVyUE9pR1FIVGlYWkcxamE0cEZBN1lpenpkUTZDUnluZDhwWTlaY3ZkaENOYnJEUnVTNkd2d0NqSTU0N0pMdlZ4SUROYlE5U2tzTjdMX3dSQWZHVDFfXzB4?oc=5"
         },
         {
@@ -3353,12 +3469,6 @@
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOa2U1b1dqT1VYUjhUX2xnVUpNZG9IWlpQSXdzVFk0dFhDalpHeEV2cjhYa1JsOWUzMWRUUnRUZmkzeF9sTy05MTdrMXZHRkcyNlFnVUZvVTYtYWhmek5oMWZxdGVGTzk5TzdidzJSSDIyT0E1bEVkWlc5TWdHYmhFR0RKU1RwUkVIaEZvZkc3M2pxbzNyUlMta2JibkFlYUVJd1VqaDdGNE9Xa1kzRHZ5QnZvQWZYQkZNWnZqa2pqTU04dEpmWTVQTnR1ZDM?oc=5"
         },
         {
-          "title": "Uhuru Claims Raila Odinga Won 2022 Presidential Election Against William Ruto",
-          "source": "standardmedia.co.ke",
-          "date": "2026-09-23T08:07:47.000Z",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR1BMbjRsS3JOcmdhSENMSlF3TUNsTG1DUnJjV2pDanVpcXdCTmlPMWxLR1lUYXRxX0o5Nk9DTlozZGJPelZ3dDhvZDZsMkxLY0N4U0tjLTRRdVRtTEVIemdnZ3JkcFN0SzRwNmlRZ0V5cXVzNEgtbWNHY25aaXIyQlgtTzdpVzdzUjZoanlwLW81aVp6aWpnSmxManhET0QxeUsycnFPcFVCYnJKaV8zdVBGdFNXQjd6REZpREFZT05FejlURk9Dc19ROEFkLWp6aXBIdURaOA?oc=5"
-        },
-        {
           "title": "End of an era as veteran editor Andy Kagwa retires from Standard Group",
           "source": "standardmedia.co.ke",
           "date": "2026-09-21T15:16:14.000Z",
@@ -3369,8 +3479,16 @@
           "source": "Citizen Digital",
           "date": "2026-09-14T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQNzJzZnl5eWRCaVNxUkw5VTg4LXJBQ2hiNldWSmJ6OVFEc1NlTVdvMFVUY21RMnhPdmdQSjVabkxrU2N4QmNSVmhXZlppOHptc28yelJYRERFVEdWRmQ2eUZwMXoxd3FlU2loSEVwc3FzcWFxTTZtTlN3V2JhVWFjQVlXU3NpaFFOa1RkQ2tJUG96bG4zOXNJSjR4SFg2bUFscVdWT2RqTHlBXzgwZDJIalNMc3lIY19UWXE2b2w2UXAyNk9yVmZBUl9YbEE?oc=5"
+        },
+        {
+          "title": "Kenya: Standard Group editor found safe following abduction / FIP",
+          "source": "International Federation of Journalists - IFJ",
+          "date": "2026-09-10T14:37:08.000Z",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQnRBMnFMaDhodWVIeXZKREZGS1k4czRlRHNUT3dvVjk0NFJCZGoyWFJsUk01N1RLX0F0UjlKVUtrRGV2ejVMcUZ0Tzlic0FUUXRhajlTQy1TNEVIUWx6ZGNoTGRRZE9Qc3pRUDFLdlB2eHFVcXItOGdqaENkZlVrb0RSOHd6N3NzWXBya3B2NjFLcDFfbm9DVm1tU01Nc0d6YUJIczRlbUEyclVPMkNmX1ZzWXlqMEwxYXAzbVY1U25PWXk2OGo3MHdtV1VUbDJMWG5VRmpUOElFWW13VGFsV0VDZkZieFk?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SKL": {
       "symbol": "SKL",
@@ -3428,7 +3546,9 @@
           "date": "2025-07-23T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2OExKanUxcTkyaEdiYS1wRzJCTmY3a1BseDR0dnpaQU0yUzJzUU0tR3RNUzNKU1FWQXVZaU9GWTZLV2l2QTVUdzgzUENjcTJvZnZGdUROd212Zw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SLAM": {
       "symbol": "SLAM",
@@ -3486,7 +3606,9 @@
           "date": "2026-04-24T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMFVvZXhfTGNyY2lVYzMtRVNfY3NhaEhVa29vdHY3OGl0dTVicU1XbS1yWTYtWnk2aWtoVDl3MDdJU1VCdXo1OFlPb3FkSHBfX0pYSWt6bzlBYjFLbUYyeVJZdWtYWnVJck5wQ2FweEJDeV9BdlNEV1BDVzJTQUs3a3c0ZFBObFlNNXEtUncyZnh1SnF3NGpB?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SMER": {
       "symbol": "SMER",
@@ -3544,7 +3666,9 @@
           "date": "2026-04-24T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcDFNb2hablFoVjJueWdmWFZ5NjdUQjRoY0hLSzVfcWVRZ1hyQVdsSEZHWXJ4TTFlMzdna0NUS0h0R1I5S0p2M2xxYlVJLWlIQmV2dV9oRkhPU2lua3MzR0NUTmk2bmZMYTVCRzA4X0JHSlY0cWxFenZ2emZVcnppVmNIY0ZoSXpXcWotQkVmRXRoOVZudVNkc2hIZTBuSS0teVM4bkxpVQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "SMWF": {
       "symbol": "SMWF",
@@ -3602,7 +3726,9 @@
           "date": "2026-05-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PU1JUcm1Ta2Y2R1pJTGliNmNzZmJVRGNwaE8yWWxRSVYwb3hwck1taXVPS1VVMnk5UjlocmdUcXVpTy1Ram41bE1Ic2NCTm1VNVg0eDA4UlNOeHcxdjU0Q3REeEt1dw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "TCL": {
       "symbol": "TCL",
@@ -3638,7 +3764,7 @@
         },
         {
           "title": "Equity Bank to Recover Nearly Half of TransCentury Debt in KSh 2.2 Billion Asset Sale",
-          "source": "dawan.africa",
+          "source": "Dawan Africa",
           "date": "2026-07-02T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPakR4LU5WdlFhQkU2RUV6bEpEUEtDZmNZV2xpSjg0VHZsT1B3MXU4bEJyYWJaVHJTYWw2WFAxNENHeDdQNnpLdmxfWkwzVm9yMk50UVQzbE55VjhKQ1dWelhSaXZBQlBlTmc4WmlrWkF5M0ZyeDF2bHptQUItY1J6bWdMT0hCT0tiekZDMnRvRkRfQmt3akt2dXBjb1dyLVBoQlgtT0paSmxDMlJtYjhCV2ZZaS0?oc=5"
         },
@@ -3660,7 +3786,9 @@
           "date": "2026-05-24T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUXo4SW13VUtfZnNqY1ROUkZLczJhTVg5TWRTVWNqWDVCODZKQ2FfYU1HLXhiZ096WllYblg2QzRkcHFUYnlqeDNLS0JSSWFKR1ZwSXhncnJsYTNOUFRSbFY1c3NOc2txUTIyNzhlN0RLcXZ4eHViNUJaMEY0Mkw5SWo3cHB5NVhQUDE2LWdmV29oUnZfejVWYk5SdTBBMFg2NEFBMkk5RHNHNmt5bWRR?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "TOTL": {
       "symbol": "TOTL",
@@ -3718,7 +3846,9 @@
           "date": "2026-06-22T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbWhmcm0tTV9ROEtlY0VzeGhKQkpLNHFNSWxjX0RSOG9PZTl5Wm5aLWI4eWxZZGhoUUhabnhpNFpXMG03Z0NvYlBCcGN0ajZkWmlRbmEwY0NEUy1SS2VHMi15RmZYNGxab0pvcHVrc3dKbEJiYmdCYlhETHRiNFo1U2oxUUpuaHNGdnhWN28ydVJvZ3Y3a3ZXLTdqUXJWWTJDX21MWk5nR2N4WEcyUTdDdUlBd2NaQ0E?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "TPSE": {
       "symbol": "TPSE",
@@ -3739,44 +3869,9 @@
       "threeYear": 26.06,
       "fiveYear": 16.61,
       "tenYear": null,
-      "news": [
-        {
-          "title": "Safaricom, KCB Lead Top 10 Most Traded NSE-Listed Companies In 2025 (FULL LIST)",
-          "source": "thekenyatimes.com",
-          "date": "2026-07-24T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbWh0YWktdmQxQ1hKSHBSRnN6TWNCX2lXR2FPcWJqaVg1cHdtYWo5UG5HeHFkZC01NXkyLURwV29JbXRUb2lTdDJ1S1VtOHlXRlpUZkdlWnpDY3BTN2c2aWhsY0hJeFdKbkFyUEZmN1c5MTh4aU84SldIajVwOHVobjF4d2luRjh4dW9lUmRYUk5pTk1Ec2g4a2VvT1dRalVjV2puOFhlMlNNcmFwSGo3RjV3?oc=5"
-        },
-        {
-          "title": "Serena Hotels Profit Falls 40% as Forex Gains Fades",
-          "source": "The Kenyan Wallstreet",
-          "date": "2026-04-29T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSTJleU5FWEJ2RjhveGJqcUltRWZBWnhWTGNDS2JtOTRaQzUxWmVrcXFfaEc2cUVZRTdQbnVIYVpOTzQ3ZjZpNG1kQ3l3RVZGQVdBaWh6TGJ2b1dOWXJJTlpjbmZtZVpQdXFkX1pFNS1UM0pvWTZSTUJ1ZkFlbWhKS1p2djlqYVBlaEpyczJ3WloxaHUwWjdwWk1rbXpMOXQxaFFCZWktRW8?oc=5"
-        },
-        {
-          "title": "CIC Insurance Group Plc Issues Profit Warning",
-          "source": "Business Today Kenya",
-          "date": "2026-02-24T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5rVFlJcnREUWpkdHNibWZjZENvS21kRmRZLXIwLUdtSWdINnJXZU5VQlhHQm5TNWIxWEFHQUpHZzFfY2F6Sm1XbFVhTGNZN2REN3YzeGwtekxjN3BVX1RHQUF0Zno4VDM5dXBKSkhoLWhIcW0wMzAycmRYVFA?oc=5"
-        },
-        {
-          "title": "Kenya Airways, StanChart Kenya Among 9 Kenyan Firms Issuing Profit Warnings In 2025",
-          "source": "thekenyatimes.com",
-          "date": "2025-12-20T08:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSHRSNk8yZTVBUEF4a1V1Y1FFTTcxOXlQX240S1ZFRldFNGkyRW1vQkFvZ2dUMVAwUWJ3QmpYODhqMzZleU92Um9aX3hxN0xWOGwwd2FacU5yNGJkRjUzNjdLdWpJRHFZSDBLbU5USjBJQXc1b3llREcwMS1reVlyVkpjSUZyTXEzNHQtY0pXS1diUU05VnJ1R3N6ckhxeXRPdzAxa09lTkoxdUpCM1FxdG5Ddl81ak1H?oc=5"
-        },
-        {
-          "title": "Kempinski and others: Top ranked hotels in Kenya and their owners",
-          "source": "Tuko News",
-          "date": "2024-09-01T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVU8zdnZwbnlRVi1faFRkalpIejN6bTF2LUxHMlprVE9ERkhTM2luT2ZCQkJUb2pDTjVTdWhGZ3BSaGkzNTlGSG9ISVdSUk0zUTVfUWYyNEpSZ3lCSHJKeDd6am85dU9QQTVralRQV1ZjeWpiS0pMZ3JXWmRscDVOS0RYYzJRUGl6R2lraHhvdW9SRzIzSkVSVA?oc=5"
-        },
-        {
-          "title": "TPS Eastern Africa (Serena) in KShs 570mn Profit After KShs 30mn Loss in H1 2024",
-          "source": "The Kenyan Wallstreet",
-          "date": "2024-08-23T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRHZmcTdCRzExTHgxSHYxdm5lNjRZU1padEQ2UkctcmhHSXpJbE13T3c5b3hiQ2VHdUVtTmdiT015NkMzb1o3UHR2MlFLckNWMncxaEE3WUVyZ0hodzlpZEJaYzhNdFBSNHVQSC1hemZOZkRaZFpCSzYtM2o5cUk0ZDdKOWpEUndObEYtbm8yMTJ5N25uWUU5aVpzdGluSlhEZEJUNXVkUW9HMUE?oc=5"
-        }
-      ]
+      "news": [],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "TRFC": {
       "symbol": "TRFC",
@@ -3810,7 +3905,9 @@
           "date": "2026-06-18T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbmxwVE5WQlVsd1JtTFd6QXZzaXJCQ1ZMSk4wUDZMRDVOWVJOR0xlS1B1Q3N5RmpBLVpPLW9fekJUUW1sVEpLVW80ci0xS3FBUE9jZm1UY254U0hFRHV3X0FleGxtTzZDU2ljX0xicC1UM29lZF94bGFfajVoTnhEVGtaT19GRDl0d1Z2anQ5bkxaczlQMEM4eFVqVVpYaFlnbGtRY2oxeVpGdDds?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "UCHM": {
       "symbol": "UCHM",
@@ -3868,7 +3965,9 @@
           "date": "2026-04-07T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SbUJROWVyTDFveEh3aW02R1VPX1VUVVNwMFFJajdGYUlkSjQyVTVQbElDWl9uekVGRndfSEppaEFsWjNqQW1JR0VLajFjdDZfS2pBNDZYcXpCUkFrS2pRX29vcU5CLVBsY05fUVhzb3BGOTFrSHV6MmN5VjJSVEE?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "UMME": {
       "symbol": "UMME",
@@ -3891,6 +3990,18 @@
       "tenYear": null,
       "news": [
         {
+          "title": "Govt seeks sh2 trillion for Umeme concession takeover",
+          "source": "NewVision.co.ug",
+          "date": "2026-09-08T09:04:53.000Z",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUW9SN29XQkhCVkNYMkU0RWpoUlZhSFdJYkdtTFR0NmNtZnd4Z040Q1ZsV1hlcUpqTjAyZTFOZk8welhVR1daVmpfclVuQnc3VURxOEFGWHFMRGVCWGNmX0lNNnVwLV83QzVRZ3pIc091bFo0RkVPZUZpdkR3WVBndTF6MTJpXzB3REFteWx1eVRtUEZUenZEdU1XcHBvT2JNeG1TbTh3?oc=5"
+        },
+        {
+          "title": "Uganda electricity distribution rebuilds its network a year after Umeme’s concession ended",
+          "source": "Energy News Network",
+          "date": "2026-09-02T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUnYyOGpUSzBja0VHZkhtQ0RzYTgtbUpHR0lBa0htcGhTNGR5R1dyMXlZTE96ZTZQTEhORU93dmptcEYyYTd2Z1lrMFhMMzQ2ek1HY1hRemVJOU9nM29FUHJyeXpiSTZTVlNoZHhTTGtiWUpKcF9QdXQ3TnAtZWdrUnlESE10N2NjRjRWN1A0VUJ6Nm1XX25IODBEVQ?oc=5"
+        },
+        {
           "title": "Umeme nears 15-year Sierra Leone power distribution deal",
           "source": "Daily Monitor",
           "date": "2026-08-31T07:00:00.000Z",
@@ -3898,7 +4009,7 @@
         },
         {
           "title": "Why Umeme is eyeing Sierra Leone power distribution agreement",
-          "source": "The EastAfrican",
+          "source": "theeastafrican.co.ke",
           "date": "2026-08-21T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVUhReHEyZnMxRFJRV1VwZ3BseGVfcFBFTVlzMzRGa2pyS2NfeXAyQk1SZjQ5eGhOeWp6c2Zpb3MtdHZicUlqSkluMERlamR4LVZqRW5TVVJfX1A4WV9yOHA5T0toUi1ldElQNmVhbXpFUWFtS1RnQkxWRUZwU2tVLWRzVWY5dmhrdjlkcFlaeGNzdzVNdGY3cGVjVmdZTElqREQ3Y2ZkalozaW96T1FDMjR0dXRSTmZuM1lVVQ?oc=5"
         },
@@ -3913,20 +4024,10 @@
           "source": "The Independent Uganda",
           "date": "2026-08-05T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbk1wM3ZxV3E4THVKS3RqQUpGVWFXNDQwcnR4UDFZLTN2T2ZYeEgzU3ZQUWpsR1J0S3NVS25Kamt5cHZkcGFZWEJpWTV0ZEdWT3BBNHVxdUlqZWcxU29KNWk1SU0zZ2t4T21yc0VyQ2oyQVZrZVpzbVJiNDNxVXV4bXRaYklEVGFIWmVHNg?oc=5"
-        },
-        {
-          "title": "Umeme Profit Warning After 20-Year Revenue Stream Switched Off",
-          "source": "Business Today Kenya",
-          "date": "2026-07-31T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPazB2Tm5JV2ZrWlFwdUZFRHJ2YU5hTHRmRGh0TzRFZk1GdHdIcHYtZlBBaWo3YnJWTk9ZZE9ERlp0N2tMVHhmdkQyVk9ERDUwQWhuSzdNUHVhd0M0ZlY2OHMwQm5NYVVnT180ai11YVpQSGJJMlVJMTREbmR6V1k1OVFONWJjTm9NZzQ5OE41RnRJVzh0cUE?oc=5"
-        },
-        {
-          "title": "Umeme Warns Of Another Loss After Uganda Govt Takes Over Power Distribution",
-          "source": "thekenyatimes.com",
-          "date": "2026-07-31T07:00:00.000Z",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUko4RVYxS1cwVG1PN3QxUzlmemtMTDc0TzNDVG5kclFpeGdVR1YzQVRvbkpQT1pweTA5MWNIV2JNcGItT2JhSkhlWVFPVy1kOFV1MURuaHdnV0MzNm9hUUEwWEtMUnNVOWZHZ0o2TnQ1UDJUMlpQUjg4RnhFRFBXUGZuOVNINl94TzNNQU81MzRtOGZhRkFmTUJGMHdyNUlHOUk0dGZ6c1NuaUluT0JBYQ?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "UNGA": {
       "symbol": "UNGA",
@@ -3984,7 +4085,9 @@
           "date": "2026-02-26T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU0VWWEZGbldmM3BMSkE4bkRSTVdCSFE5Uk9lUHU3cDBxZnR6SkpJS2tLOGZCTnc5bmlWb0MxdzdtNUVsZHozZmI0V1AtMkZaVGpndHBrZnZUU24yalgzWDVNcTBRNDR1YXF2UHQxaVo3N0ZwOFl0RHBRcndQNmZDYjFyalhUYzVzeXJsMUZoV1Y?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "WTK": {
       "symbol": "WTK",
@@ -4008,7 +4111,7 @@
       "news": [
         {
           "title": "Williamson Tea Kenya, Kapchorua Tea pay George Williamson US$4.5M dividends and royalties",
-          "source": "foodbusinessmea.com",
+          "source": "Food Business Middle East & Africa",
           "date": "2026-07-21T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa1JxSmdPaGxDMmhiaXFlMXhEcU85cktvT0VVRVEwb1NrRjZXOEZrRHZEdDBkWkNyaWptVkVJQ05EbmhZRlBodTNhNXRJaFcxRFVMTTlvY3Qyc3ZtU19aRTJFTXo5V0FhWDBZQU4xS2pqM2NpdllQMmhJR2E0Q3NTcDNiZWI3Ylo3V2FLQ2RRVlZQNzVnYmphcmwwWW1CUkxBNVJ3bTN1M242SkxrMV81aHZLVVRqMGtZUzFvMw?oc=5"
         },
@@ -4020,7 +4123,7 @@
         },
         {
           "title": "Williamson Tea, Kapchorua Tea raise dividends above profits as retained earnings support higher shareholder payouts",
-          "source": "foodbusinessmea.com",
+          "source": "Food Business Middle East & Africa",
           "date": "2026-06-29T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONHM2d3FhQ1lxenJFYXVCOFNpVDNrQjIxclp2WHVia0Vtd1ZBaXdJVnE3Wk1KcHdhQzBoTzlSUndYUFNfRVQ3Ukh6bnQ5RXdHNHJzT0ZzZUxsZTBBUk9uNFVXS1lRTWo2N3lBVlRQbG43ZjlYWFh4dERrX282UTJXRU56R1FuQ1JHN1Q3TlN4Q1dERzR4RDNDY1V2NWN3di1XRmtSbjkzWENUSUhieE1wb3ZmSlJxNEQyZDlveUR3dGpQMEI2RmtZbWFHTVNLcG9tdVBaOUlvN3BmUkItWTQ2Vw?oc=5"
         },
@@ -4042,7 +4145,9 @@
           "date": "2026-01-30T08:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEtLMGdhdnQwWERXTHA4Z2s5UEo1bUtSbmZST0NBOHc2TmQ2aUdtbDhMcWRFR0FlNmFOTWJ6eVNPM2lzT1otQmN6UTNIYjJnNVZCUzN5NlY4SXBSQzlKR1phbVByU2hPSjFZMzR2VDdVTTlsVncwdlhMYk53LVF1RF9wMjVtTmJkLTBjNXBtN1VBZDVqZnFpRjRTS2x2ZFF1ZF9Fa2ZnSTdSaFlBMUFOMjNXZkU?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     },
     "XPRS": {
       "symbol": "XPRS",
@@ -4090,7 +4195,7 @@
         },
         {
           "title": "East Africa’s Largest Ship MV Baltimore Express Docks at Lamu Port",
-          "source": "Kenya News Agency",
+          "source": "kenyanews.go.ke",
           "date": "2026-05-12T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSV9yWjRJY3JTbGF0UkpkVUFXVXBRZW1hTFpGSDFUb0N5ZXdxUEFJdXltTVhGOHdJRzc4TFpiYTdWUThLdU5WNk1obFp1aUdIYWExZmlJVXo1V2g3TWszdlZKYUlUR3Rpb3ktMy1mXzVPTkdLUGpWVDBXa01WZXNHQkFEZWxGX2lYM3RBZGd0R01nNWZrMUxPVWxB?oc=5"
         },
@@ -4100,7 +4205,9 @@
           "date": "2026-05-12T07:00:00.000Z",
           "url": "https://news.google.com/rss/articles/CBMihAhBVV95cUxPWUZ5OU9BZU5ueWZOVFBjbFY5ZEFYbXR0Mi1YalUzbTQ1cmtEZUVXNTlCYVZXaUs3TUxXMGg3WFB6V3FSLXB3Ti1uMlNQMDQ4ZXEzeFhPejh6WFFpY01GbWdBYjdDNHBSRU5FLUNmTU1OOURJTEVKbnFBeEo4QWZDS2pwQjRseVNfUmF3amZKb0sxTXlyU3FsUTJUdnRQSDR4UG5NZEk5TVJycThjb1RTVWNydll3WUpZc3NkeUstbnlDUXRnNFpTZGpCTGJIQ1FjZ0lsWW03YmhUODVXM0F6N1VEbU11MDdvWk9kZ3lhT3hjQ19jQXVqM0lRNVowVlJTY1pyWWVvQUVFY2NjR0RhZHBDYzk3TlZ4ckhJQnE5Vk1xb0pDY0RuNUt3QzRrN21NRi1LbWUzM1NkcjV5Nl9mNmVma1dHRV9ad2NiTU5IOFpoaGlYdFp2WHdyc25INVFVRUotQlpSZWo5UnBITUNzSkoybTh3dlZnRDJSaVJLMGRodE1KV0haZDhSQUNfOU9TaTNCZXk2VmRKamFRQzByZ1FxUEVfNGR2V2NCNXU0eDd5cUp5TTVLdXY3cHJ4dVg2aDREeHEzZkZWM1lxLTVaV0FrbnhJalhiVTVMNlRVRVo2TkF2eU83d01tZWFMdmJPTFNsd2MzcXloQWRjZlhWbG01cktHbUd4RkJ2T0ZHMENCcHAxOXBITWJfeUZmRWZJREoyYlp5VHQwZGZwbWRORzFTNnJYUnVpYjVMLWNJWkFMYkZ1MVRDdW9FOTdLY0tRZG1rNHh3UFlnV1BCVV9McmV6SG5NWTdiR0FsMUhaQmluRmJHbUlVWFlVQjVhb2NaYmdPdlZsQmtub3cxbEdfVm9yanp3M2NCeUZQT3hZN2RkeVdwZjBWaUFJbXYzd3RUTzdjUVBiLTVWM0N6Vno1eHlfQXBwMEgxVTBXTDh3Wno5TTN1SkdGTktpYXdteUlEcjh0VlhzVDE2MDJFS0EwZ0dwOGFSWFJkVlFHMnE0dGJKWG84XzlSSzM4RGlNQ0FMdFM1WWZ5UExWY1ZMOFdUTWNvRUpqeGZQa0lnOXFITEo0aUU4eHBaZjRCcE1EQkU3dEROcWVXNXZWRVh6d1g5c1dzQ2FmaG9RV0RkR1MxcHFicTVoU1RVWTdUU1ZTR0NxenVTOXRvcElYdUlSRk55dWxCVlN1UnZSYUNURmFHNTNzTFZxMWtsZVozNkstS3lBRGJUckxfUHdlaUsyU0FwVmM1WlNKQW5pS3p5VmY3Y1IwbjZsb1hzTzR4SXIyQU9HNDczcFZYY0s4Z3BIc0NDNDZmMG5IMjhhQ3JLT2NqcWcycFhnZXBJVV9ZQllfaUhPdi1sTw?oc=5"
         }
-      ]
+      ],
+      "stale": true,
+      "staleSince": "2026-09-25T14:28:12+00:00"
     }
   }
 }
