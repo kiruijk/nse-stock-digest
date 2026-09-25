@@ -43,7 +43,16 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "🤖 Update NSE prices and news - $(date +'%Y-%m-%d %H:%M:%S')"
-            git push
+            # Someone may have pushed during the run (it takes ~12 min). Replay the bot's
+            # commit on top; on a clash in generated files keep the bot's copy (-X theirs:
+            # in a rebase "theirs" is the commit being replayed). The next run re-renders
+            # everything from the merged state anyway.
+            pushed=""
+            for attempt in 1 2 3; do
+              if git pull --rebase -X theirs && git push; then pushed=1; break; fi
+              sleep 10
+            done
+            [ -n "$pushed" ] || { echo "::error::Could not push the update after 3 attempts"; exit 1; }
           fi
 
       # Runs after the commit so good data is still saved; a failure here turns the run
