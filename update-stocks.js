@@ -352,6 +352,8 @@ async function fetchAll(previous, detailsPerRun) {
     console.log(`Listing: ${rows.length} securities as of ${pricesAsOf}`);
   } catch (err) {
     console.warn(`⚠️  Listing fetch failed: ${err.message} — keeping previous prices (stale)`);
+    // Recorded in market.json so a failure in GitHub Actions can be diagnosed from the repo
+    market = { ...previous.market, fetchError: err.message, fetchErrorAt: new Date().toISOString() };
   }
   const bySymbol = Object.fromEntries(rows.map(r => [r.symbol, r]));
   const unknown = rows.filter(r => !STOCK_INFO[r.symbol]).map(r => `${r.symbol} (${r.name})`);

@@ -38,22 +38,29 @@ jobs:
         run: |
           git config --local user.name "Stock Bot"
           git config --local user.email "bot@github.com"
-          git add index.html sitemap.xml robots.txt stocks/ sectors/ data/market.json data/history/ data/details/
+          FILES="index.html sitemap.xml robots.txt stocks/ sectors/ data/market.json data/history/ data/details/"
+          MESSAGE="🤖 Update NSE prices and news - $(date +'%Y-%m-%d %H:%M:%S')"
+          git add $FILES
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "🤖 Update NSE prices and news - $(date +'%Y-%m-%d %H:%M:%S')"
-            # Someone may have pushed during the run (it takes ~12 min). Replay the bot's
-            # commit on top; on a clash in generated files keep the bot's copy (-X theirs:
-            # in a rebase "theirs" is the commit being replayed). The next run re-renders
-            # everything from the merged state anyway.
-            pushed=""
-            for attempt in 1 2 3; do
-              if git pull --rebase -X theirs && git push; then pushed=1; break; fi
-              sleep 10
-            done
-            [ -n "$pushed" ] || { echo "::error::Could not push the update after 3 attempts"; exit 1; }
+            exit 0
           fi
+          git commit -m "$MESSAGE"
+          pushed=""
+          for attempt in 1 2 3; do
+            if git push; then pushed=1; break; fi
+            # Someone pushed during the run (it takes ~12 min). Start again from the remote
+            # and merge this run's data into it file by file (never a line-level git merge
+            # of JSON), then rebuild the pages with the remote's templates.
+            echo "Push rejected; merging onto the latest remote (attempt $attempt)"
+            rm -rf "$RUNNER_TEMP/bot-data" && cp -r data "$RUNNER_TEMP/bot-data"
+            git fetch origin main && git reset --hard origin/main
+            node merge-bot-data.js "$RUNNER_TEMP/bot-data"
+            node update-stocks.js --render-only
+            git add $FILES
+            git diff --cached --quiet || git commit -m "$MESSAGE"
+          done
+          [ -n "$pushed" ] || { echo "::error::Could not push the update after 3 attempts"; exit 1; }
 
       # Runs after the commit so good data is still saved; a failure here turns the run
       # red and triggers GitHub's failed-workflow email
