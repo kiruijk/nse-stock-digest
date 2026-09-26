@@ -2,7 +2,7 @@
 
 A daily tracker for every security listed on the Nairobi Securities Exchange (NSE): prices and returns (1 day to 10 years), P/E ratios, dividend yields, price charts, sector comparisons and news.
 
-It's a static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages. A GitHub Actions workflow runs `update-stocks.js` after the NSE close each weekday, regenerates the pages, and commits them.
+It's a static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages. After the NSE close each weekday, `daily-update.sh` runs on a Mac (scheduled by launchd, since the price source doesn't answer requests from GitHub's servers), regenerates the pages, and pushes them.
 
 ## Data sources
 

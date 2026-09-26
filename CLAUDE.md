@@ -28,4 +28,8 @@ Add `{symbol, name, sector}` to `data/universe.json` (sector must be one of `sec
 
 ## Automation
 
-`.github/workflows/update-stocks.yml`: weekdays 16:00 UTC (7 PM EAT) or manual dispatch; not on push. Runs tests, updates, commits generated files and `data/` as "Stock Bot", then `check-freshness.js`. Expect frequent `🤖 Update NSE prices and news` commits.
+AFX doesn't answer requests from GitHub's servers (the fetch times out), so the daily update runs on James's Mac: `daily-update.sh` (pull → test → `update-stocks.js` → commit → push → `check-freshness.js`), scheduled by launchd at 12:15 PM Mac time on weekdays (`launchd/com.kiruijk.nse-stock-digest.plist`, installed in `~/Library/LaunchAgents`; install/run/uninstall commands are in the plist). It logs to `logs/daily-update.log` (git-ignored) and shows a macOS notification on failure. It refuses to run with uncommitted changes in the repo. If a push is rejected because something was pushed during the run, it resets to the remote and merges its data file by file with `merge-bot-data.js` (newer `market.json`, fewer stale stocks on a tie; history unioned by date; newer details), then re-renders. Never merge data JSON with a line-level git merge.
+
+`.github/workflows/update-stocks.yml` is now manual-only ("Run workflow") and does the same steps; from GitHub the AFX fetch fails and every stock is flagged stale, which the freshness check catches. When a fetch fails, the error is recorded in `market.fetchError` in `data/market.json`.
+
+Expect frequent `🤖 Update NSE prices and news` commits by "Stock Bot".

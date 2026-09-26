@@ -1,13 +1,11 @@
-name: Update NSE Data Daily
+name: Update NSE Data (manual)
 
-# No push trigger: code/content pushes already include locally rendered pages, and a
-# push-triggered run would race with them. Use "Run workflow" for an immediate refresh.
+# Manual only. AFX, the price source, doesn't answer requests from GitHub's servers (the
+# fetch times out), so the daily update runs on James's Mac instead (daily-update.sh,
+# scheduled by launchd/com.kiruijk.nse-stock-digest.plist). Kept for manual runs in case
+# that changes; a run whose fetch fails is caught by the freshness check.
 on:
-  schedule:
-    # 7:00 PM EAT (16:00 UTC) on weekdays; the NSE closes at 3:00 PM EAT and the price
-    # source publishes the day's figures in the afternoon
-    - cron: "0 16 * * MON-FRI"
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
