@@ -10,10 +10,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// market.json: the copy with the newer prices wins; the bot's on a tie
+// market.json: the copy with the newer prices wins. On a tie (same prices), the one with
+// fewer stale stocks: a run whose fetch failed keeps the old prices but flags them stale.
+// Then the bot's.
 function pickMarket(ours, bots) {
   const asOf = (d) => d?.market?.asOf || '';
-  return asOf(bots) >= asOf(ours) ? bots : ours;
+  const stale = (d) => Object.values(d?.stocks || {}).filter(s => s.stale).length;
+  if (asOf(bots) !== asOf(ours)) return asOf(bots) > asOf(ours) ? bots : ours;
+  return stale(bots) <= stale(ours) ? bots : ours;
 }
 
 // History: union by date, the bot's close winning on the same date

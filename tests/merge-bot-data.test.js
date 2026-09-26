@@ -12,6 +12,9 @@ test('pickMarket keeps the copy with newer prices, so a stale bot run never over
   assert.strictEqual(pickMarket(fresh, stale), fresh);
   assert.strictEqual(pickMarket(stale, fresh), fresh);
   assert.strictEqual(pickMarket(fresh, { ...fresh }).market, fresh.market); // tie: bot's copy
+  // Same prices, but the bot's fetch failed and flagged everything stale: keep ours
+  const staleSameDay = { market: fresh.market, stocks: { A: { stale: true } } };
+  assert.strictEqual(pickMarket(fresh, staleSameDay), fresh);
 });
 
 test('mergeHistoryRows unions by date with the bot winning ties', () => {
